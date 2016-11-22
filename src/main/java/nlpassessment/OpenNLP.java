@@ -23,11 +23,13 @@
  */
 package nlpassessment;
 
-import edu.stanford.nlp.pipeline.Annotation;
-import edu.stanford.nlp.pipeline.StanfordCoreNLP;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Properties;
+import opennlp.tools.sentdetect.SentenceDetectorME;
+import opennlp.tools.sentdetect.SentenceModel;
 
 /**
  *
@@ -37,14 +39,36 @@ public class OpenNLP {
 
     public static void runAnnotator(String inputFileName) {
 
+    }
+
+    public static void runSentenceSplitter() {
+        
+        //Initialization of Sentence Detection API
+        InputStream modelIn = null;
+        SentenceModel model = null;
+        
+        try {
+            modelIn = new FileInputStream("en-sent.bin");
+            model = new SentenceModel(modelIn);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (modelIn != null) {
+                try {
+                    modelIn.close();
+                } catch (IOException e) {
+                }
+            }
+        }
+
+        SentenceDetectorME sentenceDetector = new SentenceDetectorME(model);
+        String[] sentences = sentenceDetector.sentDetect("SampleText");
         
         
         
         
     }
-    
-    
-    
+
     //PUBLIC METHODS
     //Works as of V5
     public static void standardizePOS(String inputFile, String outputFile) {
