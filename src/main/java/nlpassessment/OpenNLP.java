@@ -49,7 +49,9 @@ public class OpenNLP {
     public static Document runAnnotator(String inputFileName, String outputFileName) {
 
         
-        String modelPath = System.getProperty("user.dir") + "/src/main/OpenNLPModels/";
+//        String modelPath = System.getProperty("user.dir") + "/src/main/OpenNLPModels/";
+        String modelPath = "/home/neal/OpenNLP/";
+        
         String input = Utility.readFileAsString(inputFileName, true);
 
         //Initialization of Tokenization API        
