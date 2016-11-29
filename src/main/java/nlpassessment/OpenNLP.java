@@ -28,8 +28,14 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
+import opennlp.tools.namefind.TokenNameFinderModel;
+import opennlp.tools.postag.POSModel;
+import opennlp.tools.postag.POSTaggerME;
 import opennlp.tools.sentdetect.SentenceDetectorME;
 import opennlp.tools.sentdetect.SentenceModel;
+import opennlp.tools.tokenize.Tokenizer;
+import opennlp.tools.tokenize.TokenizerME;
+import opennlp.tools.tokenize.TokenizerModel;
 
 /**
  *
@@ -37,114 +43,118 @@ import opennlp.tools.sentdetect.SentenceModel;
  */
 public class OpenNLP {
 
-    public static void runAnnotator(String inputFileName) {
+    //Returns an annotated Document object
+    //Including sentence-splits, tokenization, POS-tagging
+    //TODO: Add NE recognition for person, org, time, ...?
+    public static Document runAnnotator(String inputFileName, String outputFileName) {
 
-    }
+        
+        String modelPath = System.getProperty("user.dir") + "/src/main/OpenNLPModels/";
+        String input = Utility.readFileAsString(inputFileName, true);
 
-    public static void runSentenceSplitter() {
-        
-        //Initialization of Sentence Detection API
-        InputStream modelIn = null;
-        SentenceModel model = null;
-        
+        //Initialization of Tokenization API        
+        InputStream sentenceModelIn = null;
+        SentenceModel sentenceModel = null;
+
+        InputStream tokenModelIn = null;
+        TokenizerModel tokenizerModel = null;
+
+        InputStream nerPersonModelIn = null;
+        TokenNameFinderModel nerPersonModel = null;
+
+        InputStream posMaxEntModelIn = null;
+        POSModel posMaxEntModel = null;
+        InputStream posPerceptronModelIn = null;
+        POSModel posPerceptronModel = null;
+
         try {
-            modelIn = new FileInputStream("en-sent.bin");
-            model = new SentenceModel(modelIn);
+            sentenceModelIn = new FileInputStream(modelPath + "en-sent.bin");
+            sentenceModel = new SentenceModel(sentenceModelIn);
+
+            tokenModelIn = new FileInputStream(modelPath + "en-token.bin");           
+            tokenizerModel = new TokenizerModel(tokenModelIn);
+            
+            nerPersonModelIn = new FileInputStream(modelPath + "en-ner-person.bin");
+            nerPersonModel = new TokenNameFinderModel(nerPersonModelIn);
+            
+            
+            posMaxEntModelIn = new FileInputStream(modelPath + "en-pos-maxent.bin");
+            posMaxEntModel = new POSModel(posMaxEntModelIn);
+            posPerceptronModelIn = new FileInputStream(modelPath + "en-pos-perceptron.bin");
+            posPerceptronModel = new POSModel(posPerceptronModelIn);
+
         } catch (IOException e) {
             e.printStackTrace();
-        } finally {
-            if (modelIn != null) {
-                try {
-                    modelIn.close();
-                } catch (IOException e) {
-                }
-            }
         }
 
-        SentenceDetectorME sentenceDetector = new SentenceDetectorME(model);
-        String[] sentences = sentenceDetector.sentDetect("SampleText");
-        
-        
-        
-        
-    }
+        SentenceDetectorME sentenceDetector = new SentenceDetectorME(sentenceModel);
 
-    //PUBLIC METHODS
-    //Works as of V5
-    public static void standardizePOS(String inputFile, String outputFile) {
-        ArrayList<String> raw = Utility.readFileAsLines(inputFile);
-        ArrayList<Token> tokens = tokenizeRawPOS(raw);
-        simplifyPOSTags(tokens);
-        correctSpecialTokens(tokens);
-        Utility.writeFile(Utility.tokensToStandardLines(tokens), outputFile);
-    }
+        //Can also get span[], but 
+        String[] sentences = sentenceDetector.sentDetect(input);
 
-    //TODO: Finish components
-    public static void standardizeNER(String inputFile, String outputFile) {
-        ArrayList<String> raw = Utility.readFileAsLines(inputFile);
-        ArrayList<Token> tokens = tokenizeRawNER(raw);
-        simplifyNETags(tokens);
-        correctSpecialTokens(tokens);
-        Utility.writeFile(Utility.tokensToStandardLines(tokens), outputFile);
-    }
+//        for(String sent : sentences) {
+//            System.out.println(sent);
+//        }
+        Tokenizer tokenizer = new TokenizerME(tokenizerModel);
+        String[][] tokens = new String[sentences.length][]; //[sentence#][word# in sentence]
 
-    //Looks good
-    public static void standardizeSplits(String inputFile, String outputFile) {
-        ArrayList<String> raw = Utility.readFileAsLines(inputFile);
-        ArrayList<Token> tokens = tokenizeRawSplits(raw);
-        correctSpecialTokens(tokens);
-        Utility.writeFile(Utility.tokensToStandardLines(tokens), outputFile);
-    }
-
-    //TODO: Write this
-    public static void standardizeLemmas(String inputFile, String outputFile) {
-
-    }
-
-    //GENERAL INPUT STUFF
-    private static void correctSpecialTokens(ArrayList<Token> tokens) {
-
-        HashMap<String, String> mapping = new HashMap<>();
-
-        mapping.put("-LRB-", "(");
-        mapping.put("-RRB-", ")");
-        mapping.put("-LSB-", "[");
-        mapping.put("-RSB-", "]");
-
-        int replacedTokens = 0;
-        for (Token token : tokens) {
-            if (mapping.containsKey(token.token)) {
-                token.token = mapping.get(token.token);
-                replacedTokens++;
-            }
+        for (int i = 0; i < sentences.length; i++) {
+            tokens[i] = tokenizer.tokenize(sentences[i]);
         }
-    }
 
-    //PARTS OF SPEECH TAGGER - POS
-    private static ArrayList<Token> tokenizeRawPOS(ArrayList<String> lines) {
+//        for (String[] sent : tokens) {
+//            for(String token : sent) {
+//                System.out.print(token + " ");
+//            }
+//            System.out.print("\n");
+//        }
+//        POSTaggerME posTagger = new POSTaggerME(posMaxEntModel);
+        POSTaggerME posTagger = new POSTaggerME(posPerceptronModel);
+        String[][] posTags = new String[sentences.length][];
 
-        ArrayList<Token> taggedTokens = new ArrayList<>();
-        int tokenCount = 0;
-        for (String line : lines) {
-            //Tokens and tags are separated by an underscore
-            String[] split = line.split("_+");
+        for (int i = 0; i < sentences.length; i++) {
+            posTags[i] = posTagger.tag(tokens[i]);
+        }
 
-            if (split.length == 2) {
-                tokenCount++;
-                Token token = new Token(split[0].trim());
+        for (int i = 0; i < sentences.length; i++) {
+            String[] currentTokens = tokens[i];
+            String[] currentTags = posTags[i];
+            for (int j = 0; j < currentTokens.length; j++) {
+                System.out.print(currentTokens[j] + "/" + currentTags[j] + "  ");
+            }
+            System.out.print("\n");
+        }
+
+//      Produce Document
+        Document document = new Document();
+        int tokenCount = 1;
+        for (int i = 0; i < tokens.length; i++) {
+            for (int j = 0; j < tokens[i].length; j++) {
+                Token token = new Token(tokens[i][j]);
+                //All 1-indexed according to Token standard
+                token.indexInSentence = j+1; 
                 token.indexInText = tokenCount;
-                taggedTokens.add(token);
-            } else {
-//                System.out.println("Failed to tokenize '" + line + "'\nTokens: " + split.length + "\n");
+                token.sentenceNumber = i+1;
+                token.set(Tag.POS, posTags[i][j]);
+                document.tokenList.add(token);
+                tokenCount++;
             }
-
         }
-        return taggedTokens;
+        
+        //Output TSV
+//        document.writeToTSV(outputFileName);       
+        
+        
+        return new Document();
     }
+    
+    
+    
+
 
     private static void simplifyPOSTags(ArrayList<Token> tokens) {
         for (Token token : tokens) {
-            token.tags.put("pos", simplifyPOSTag(token.tags.get("pos")));
+            token.set("posTag", simplifyPOSTag(token.get("posTag")));
         }
     }
 
@@ -183,7 +193,7 @@ public class OpenNLP {
                 tokenCount++;
                 //TODO: Check following
                 Token token = new Token(split[0].trim());
-                token.tags.put("ne", split[1].trim());
+                token.set("neTag", split[1]);
             } else {
             }
 
@@ -193,11 +203,11 @@ public class OpenNLP {
 
     private static void simplifyNETags(ArrayList<Token> tokens) {
         for (Token token : tokens) {
-            token.tags.put("ne", simplifyPOSTag(token.tags.get("ne")));
+            //TODO: Write
         }
     }
 
-    //TODO: Write
+    //TODO: Check
     private static String simplifyNETag(String tag) {
 
         if (tag.matches("")) {
@@ -227,7 +237,7 @@ public class OpenNLP {
                 Token token = new Token("" + combined.charAt(i));
                 token.indexInText = tokenCount;
                 token.indexInSentence = i + 1;
-                token.tags.put("split", "_");
+                token.set("split", "_");
                 tokenCount++;
 
             }

@@ -70,7 +70,6 @@ public class CoreNLP {
 //        }
 //        
 //    }
-        
     //TODO: Test. 
     //Not sure about working directories etc.
     public static void runAnnotator(String inputFile, String outputFile) {
@@ -79,17 +78,16 @@ public class CoreNLP {
         Properties props = new Properties();
         props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner");
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-        
+
         // create an empty Annotation just with the given text
         Annotation document = new Annotation(Utility.readFileAsString(inputFile, true));
 
         // run all Annotators on this text
         pipeline.annotate(document);
-        
+
         //TODO: Output document?
-        
     }
-    
+
     public static void standardizePOS(String inputFile, String outputFile) {
         ArrayList<String> raw = Utility.readFileAsLines(inputFile);
         ArrayList<Token> tokens = tokenizeRawPOS(raw);
@@ -111,10 +109,10 @@ public class CoreNLP {
     public static void standardizeSplits(String inputFile, String outputFile) {
         ArrayList<String> raw = Utility.readFileAsLines(inputFile);
         ArrayList<Token> tokens = tokenizeRawSplits(raw);
-        
+
         Utility.writeFile(Utility.tokensToStandardLines(tokens), outputFile);
     }
-    
+
     public static void cleanSplits(String inputFile, String outputFile) {
         ArrayList<String> raw = Utility.readFileAsLines(inputFile);
         ArrayList<String> clean = cleanRawSplits(raw);
@@ -130,7 +128,7 @@ public class CoreNLP {
 
     //TODO: Write this
     public static void standardizeLemmas(String inputFile, String outputFile) {
-        
+
     }
 
     //PRIVATE METHODS
@@ -148,7 +146,7 @@ public class CoreNLP {
                 + "[\\s]+_.*")) {
             return false;
         }
-        
+
         return true;
     }
 
@@ -156,22 +154,13 @@ public class CoreNLP {
      Converts Penn-standardized brackets to their correct single-character forms
      */
     private static void renormalizeAllBrackets(ArrayList<Token> tokens) {
-        
-        HashMap<String, String> map = getBracketMap();
-        
+
         for (Token token : tokens) {
-            token.token = renormalizeBracket(token.token, map);
+            token.set("token", renormalizeBracket(token.get("token")));
         }
     }
-    
-    private static String renormalizeBracket(String token, HashMap<String, String> map) {
-        if (map.containsKey(token)) {
-            token = map.get(token);
-        }
-        return token;
-    }
-    
-    private static HashMap<String, String> getBracketMap() {
+
+    private static String renormalizeBracket(String token) {
         HashMap<String, String> map = new HashMap<>();
         map.put("-LRB-", "(");
         map.put("-RRB-", ")");
@@ -179,39 +168,43 @@ public class CoreNLP {
         map.put("-RCB-", "}");
         map.put("-LSB-", "[");
         map.put("-RSB-", "]");
-        return map;
+
+        if (map.containsKey(token)) {
+            token = map.get(token);
+        }
+        return token;
     }
 
     //PARTS OF SPEECH TAGGING - POS
     private static ArrayList<Token> tokenizeRawPOS(ArrayList<String> lines) {
-        
+
         ArrayList<Token> taggedTokens = new ArrayList<Token>();
         int tokenCount = 0;
-        
+
         for (String line : lines) {
             if (validatePOSLine(line)) {
                 tokenCount++;
                 String[] split = line.split("\\s+");
                 Token token = new Token(split[1]);
-                token.tags.put("pos", split[3]);
+                token.set(Tag.POS, split[3]);
                 token.indexInText = tokenCount;
                 taggedTokens.add(token);
 //                System.out.println("Tokenized as: " + token + "\t" + tagset);
             }
         }
-        
+
         return taggedTokens;
-        
+
     }
-    
+
     private static void simplifyPOSTags(ArrayList<Token> tokens) {
         for (Token token : tokens) {
-            token.tags.put("pos", simplifyPOSTag(token.tags.get("pos")));
+            token.set(Tag.POS, simplifyPOSTag(token.get(Tag.POS)));
         }
     }
-    
+
     private static String simplifyPOSTag(String tag) {
-        
+
         if (tag.matches("NN.*")
                 || tag.equals("PRP")
                 || tag.equals("WP")) {
@@ -234,47 +227,42 @@ public class CoreNLP {
     //NAMED ENTITY RECOGNITION - NER
     //TODO: Test/Confirm
     private static ArrayList<Token> tokenizeRawNER(ArrayList<String> lines) {
-        
+
         ArrayList<Token> taggedTokens = new ArrayList<Token>();
-        int tokenCount = 0;
-        
-        for (String line : lines) {
-            if (validatePOSLine(line)) {
-                tokenCount++;
-                String[] split = line.split("\\s+");
-                Token token = new Token(split[2]);
-                token.tags.put("ner", split[4]);
-                token.indexInText = tokenCount;
-                taggedTokens.add(token);
-            }
-        }
-        
+//        int tokenCount = 0;
+//        
+//        for (String line : lines) {
+//            if (validatePOSLine(line)) {
+//                tokenCount++;
+//                String[] split = line.split("\\s+");
+//                Token token = new Token(split[2]);
+//                token.set(Tag.NE, split[4]);
+//                token.indexInText = tokenCount;
+//                taggedTokens.add(token);
+//            }
+//        }
+
         return taggedTokens;
     }
 
-    
+    //TODO: Test
     private static void simplifyNERTags(ArrayList<Token> tokens) {
+                
         for (Token token : tokens) {
-            token.tags.put("ner", simplifyNERTag(token.tags.get("ner")));
+            String tag = token.get(Tag.NE);
+            String replacement = tag;
+            if (tag.equalsIgnoreCase("O")) {
+                replacement = "_";
+            } else if (tag.equalsIgnoreCase("LOCATION")) {
+                replacement = "LOC";
+            } else if (tag.equalsIgnoreCase("")) {
+                
+            } else {
+                System.out.println("Error simplifying CoreNLP NER tags");
+            }
         }
     }
 
-    //TODO: Test
-    private static String simplifyNERTag(String tag) {
-        
-        if (tag.equalsIgnoreCase("O")) {
-            return "_";
-        } else if (tag.equalsIgnoreCase("LOCATION")) {
-            return "LOC";
-        } else if (tag.equalsIgnoreCase("")) {
-            
-        } else {
-            System.out.println("Error simplifying CoreNLP NER tags");
-            return "--ERROR--";
-        }
-        
-        return "";
-    }
 
     //SENTENCE SPLITTING
     private static ArrayList<String> cleanRawSplits(ArrayList<String> lines) {
@@ -293,23 +281,22 @@ public class CoreNLP {
                 combined += line;
             }
         }
-        
+
         if (!combined.equals("")) {
             output.add(combined);
         }
-        
+
         return output;
     }
 
     //Tokenizes by whitespace; number tokens according to place in sentence
     //TODO: Finish/test
     private static ArrayList<Token> tokenizeRawSplits(ArrayList<String> lines) {
-        HashMap<String, String> map = getBracketMap();
         ArrayList<Token> output = new ArrayList<>();
         int characterInText = 0;
         int characterInSentence = 0;
         for (int i = 1; i < lines.size(); i++) {
-            
+
             String line = lines.get(i);
             if (line.matches("Sentence #[0-9]+.*")) {
                 characterInSentence = 0;
@@ -317,12 +304,12 @@ public class CoreNLP {
                 //Do nothing, we don't want these
 //                System.out.println("ERROR: CLEAN FIRST sent:" + line);
             } else {
-                
+
                 String[] split = line.split("\\s+");
 
                 //Renormalize brackets and build combined renormalized string
                 for (int j = 0; j < split.length; j++) {
-                    split[j] = renormalizeBracket(split[j], map);
+                    split[j] = renormalizeBracket(split[j]);
                 }
                 String combined = "";
                 for (int j = 0; j < split.length; j++) {
@@ -336,14 +323,14 @@ public class CoreNLP {
                     Token token = new Token("" + combined.charAt(j));
                     token.indexInText = characterInText;
                     token.indexInSentence = characterInSentence;
-                    token.tags.put("split", "_");
+                    token.set("split", "_");
                     output.add(token);
-                    
+
                 }
             }
         }
-        
+
         return output;
     }
-    
+
 }

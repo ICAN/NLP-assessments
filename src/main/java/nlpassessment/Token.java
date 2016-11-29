@@ -28,24 +28,33 @@ import java.util.HashMap;
 /**
  *
  * @author Neal Logan
- * 
+ *
  */
-public class Token {
+public class Token {    
+    
+    //Properties
     public int indexInText = -1; //1-indexed
     public int indexInSentence = -1; //1-indexed
-    public String token = "";
-    public HashMap<String, String> tags;
-    public boolean semantic = true;
+    public int sentenceNumber = -1; //1-indexed
+    private HashMap<String, String> props = new HashMap<>();
     
+    public Token() {}
     
     public Token(String token) {
-        this.token = token;
-        tags = new HashMap<>();
-        tags.put("lemma", "??");
-        tags.put("pos", "??");
-        tags.put("ne", "??");
-        tags.put("split", "??");
+        props.put("token", token);
     }
+    
+    //Neither keys nor values are case sensitive
+    public void set(String key, String value) {
+        props.put(key.toLowerCase(), value.toLowerCase());
+    }
+
+    //Not case sensitive
+    //Returns the empty string if property is not set
+    public String get(String key) {
+        return props.getOrDefault(key.toLowerCase(), "");
+    }
+    
     
     
 //    
@@ -55,14 +64,10 @@ public class Token {
 //        this.token = token.trim();
 //        this.semantic = semantic;
 //    }
-    
     //TODO ensure this is standard
     //Columns are: wordIndex (in entire text),wordIndex(in sentence), token, lemma, POS, NER
     public String toString() {
-        
-        return indexInText + "\t " + indexInSentence + "\t " + token + "\t "
-                + tags.get("lemma") + "\t" + tags.get("pos") + "\t" 
-                + tags.get("ne") + "\t" + tags.get("split");
+        return indexInText + "\t " + indexInSentence + "\t" + props.get("token");
     }
-    
+
 }

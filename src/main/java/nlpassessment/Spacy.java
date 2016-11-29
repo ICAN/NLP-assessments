@@ -71,7 +71,7 @@ public class Spacy {
             if (split.length == 2) {
                 if (!split[0].trim().equalsIgnoreCase("")) {
                     Token token = new Token(split[0]);
-                    token.tags.put("pos", split[1]);
+                    token.set("posTag", split[1]);
                     token.indexInText = tokenCount;
                     tokenCount++;
                 }
@@ -88,7 +88,7 @@ public class Spacy {
 
     private static void simplifyPOSTags(ArrayList<Token> tokens) {
         for (Token token : tokens) {
-            token.tags.put("pos", simplifyPOSTag(token.tags.get("pos")));
+            token.set("posTag", simplifyPOSTag(token.get("posTag")));
         }
     }
 
@@ -128,7 +128,7 @@ public class Spacy {
                 Token token = new Token("" + combined.charAt(i));
                 token.indexInText = tokenCount;
                 token.indexInSentence = i + 1;
-                token.tags.put("split", "_");
+                token.set("split", "_");
                 output.add(token);
                 tokenCount++;
             }

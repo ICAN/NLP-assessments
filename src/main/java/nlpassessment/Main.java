@@ -38,40 +38,17 @@ public class Main {
      */
     public static void main(String[] args) {
 
-        Stemming.runStemmerTests();
+//        Stemming.runStemmerTests();
+        OpenNLP.runAnnotator("test.txt", "output.txt");
 
-    }
-
-    //Prints the number of tags of type tagType in the specified file
-    public static void printTagCounts(String fileName, String tagType) {
-        HashMap<String, Integer> tagCounts = Utility.getTagCounts(
-                Utility.readFileAsStandardTokens(fileName, tagType), tagType);
-
-        System.out.println("\nTags in " + fileName);
-        for (String tag : tagCounts.keySet()) {
-            System.out.println(tag + "\t" + tagCounts.get(tag));
-        }
-
-    }
-
-    //First step in producing/comparing POS texts
-    //Inptus: raw sentence splitter output "-out"
-    //Outputs: standardized format for sentence splitting "-std"
-    public static void standardizeAllSplits(String inputPath, String outputPath) {
-        Spacy.standardizeSplits("split-spacy-out.txt", "split-spacy-std.txt");
-        OpenNLP.standardizeSplits("split-opennlp-out.txt", "split-opennlp-std.txt");
-        CoreNLP.standardizeSplits("split-corenlp-out.txt", "split-corenlp-std.txt");
-        NLTK.standardizeSplits("split-nltk-out.txt", "split-nltk-std.txt");
-        MBSP.standardizeSplits("split-mbsp-out.txt", "split-mbsp-std.txt");
     }
 
     //First step in producing/comparing POS texts
     //Inptus: raw POS-tagger output "-out"
     //Outputs: standardized format POS-tagger "-std"
     public static void standardizeAllPOS(String inputPath, String outputPath) {
-        MBSP.standardizePOS(inputPath + "pos-mbsp-out.txt", outputPath + "pos-mbsp-std.txt");
         CoreNLP.standardizePOS(inputPath + "pos-corenlp-out.txt", outputPath + "pos-corenlp-std.txt");
-        OpenNLP.standardizePOS(inputPath + "pos-opennlp-out.txt", outputPath + "pos-opennlp-std.txt");
+//        OpenNLP.standardizePOS(inputPath + "pos-opennlp-out.txt", outputPath + "pos-opennlp-std.txt");
         NLTK.standardizePOS(inputPath + "pos-nltk-out.txt", outputPath + "pos-nltk-std.txt");
         Spacy.standardizePOS(inputPath + "pos-spacy-out.txt", outputPath + "pos-spacy-std.txt");
     }
@@ -85,12 +62,10 @@ public class Main {
         HashMap<String, ArrayList<Token>> tokenLists = new HashMap<>();
 
         //Add lists
-        tokenLists.put("mbsp", Utility.readFileAsStandardTokens(tagType + "-mbsp-std.txt", tagType));
-        tokenLists.put("core", Utility.readFileAsStandardTokens(tagType + "-corenlp-std.txt", tagType));
-        tokenLists.put("open", Utility.readFileAsStandardTokens(tagType + "-opennlp-std.txt", tagType));
-        tokenLists.put("nltk", Utility.readFileAsStandardTokens(tagType + "-nltk-std.txt", tagType));
-        tokenLists.put("spacy", Utility.readFileAsStandardTokens(tagType + "-spacy-std.txt", tagType));
-
+//        tokenLists.put("core", Utility.readFileAsStandardTokens(tagType + "-corenlp-std.txt", tagType));
+//        tokenLists.put("open", Utility.readFileAsStandardTokens(tagType + "-opennlp-std.txt", tagType));
+//        tokenLists.put("nltk", Utility.readFileAsStandardTokens(tagType + "-nltk-std.txt", tagType));
+//        tokenLists.put("spacy", Utility.readFileAsStandardTokens(tagType + "-spacy-std.txt", tagType));
         //Restrict lists iteratively
         //TODO: Make less ugly
         int iterations = 0;
@@ -149,12 +124,13 @@ public class Main {
         HashMap<String, ArrayList<Token>> outputs = new HashMap<>();
 
         for (String test : tests) {
-            outputs.put(test, Utility.readFileAsStandardTokens(test + "-pos-restricted.txt", "pos"));
+            //TODO: Fix
+//            outputs.put(test, Utility.readFileAsStandardTokens(test + "-pos-restricted.txt", "pos"));
         }
 
         //read in gold std
-        ArrayList<Token> gold = Utility.readFileAsStandardTokens(goldStd, "pos");
-
+        //TODO: Fix
+//        ArrayList<Token> gold = Utility.readFileAsStandardTokens(goldStd, "pos");
         String[] keys = {"VB", "RB", "NN", "JJ", "Other"};
 
         //For each tool
@@ -164,7 +140,8 @@ public class Main {
             //For each key, 
             for (String key : keys) {
                 //add the tool- and key-specific report
-                report += Utility.compareTags(outputs.get(test), gold, key, "pos");
+                //TODO: Fix
+//                report += Utility.compareTags(outputs.get(test), gold, key, "pos");
                 report += "\n\n";
             }
             //When the tool report is finished for all keys, output the report
@@ -179,12 +156,11 @@ public class Main {
 
         ArrayList<ArrayList<Token>> tokenLists = new ArrayList<>();
 
-        tokenLists.add(Utility.readFileAsStandardTokens("mbsp-pos-restricted.txt", "pos"));
-        tokenLists.add(Utility.readFileAsStandardTokens("core-pos-restricted.txt", "pos"));
-        tokenLists.add(Utility.readFileAsStandardTokens("open-pos-restricted.txt", "pos"));
-        tokenLists.add(Utility.readFileAsStandardTokens("nltk-pos-restricted.txt", "pos"));
-        tokenLists.add(Utility.readFileAsStandardTokens("spacy-pos-restricted.txt", "pos"));
-
+//        tokenLists.add(Utility.readFileAsStandardTokens("mbsp-pos-restricted.txt", "pos"));
+//        tokenLists.add(Utility.readFileAsStandardTokens("core-pos-restricted.txt", "pos"));
+//        tokenLists.add(Utility.readFileAsStandardTokens("open-pos-restricted.txt", "pos"));
+//        tokenLists.add(Utility.readFileAsStandardTokens("nltk-pos-restricted.txt", "pos"));
+//        tokenLists.add(Utility.readFileAsStandardTokens("spacy-pos-restricted.txt", "pos"));
         Utility.writeFile(
                 Utility.tokensToStandardLines(Utility.getTagConsensus(tokenLists, threshold, "pos")),
                 "all-pos-consensus.txt");
@@ -195,33 +171,17 @@ public class Main {
     public static void produceSplitConsensus(String inputPath, String outputPath, double threshold) {
         ArrayList<ArrayList<Token>> tokenLists = new ArrayList<>();
 
-        tokenLists.add(Utility.readFileAsStandardTokens("mbsp-split-tagged.txt", "split"));
-        tokenLists.add(Utility.readFileAsStandardTokens("core-split-tagged.txt", "split"));
-        tokenLists.add(Utility.readFileAsStandardTokens("open-split-tagged.txt", "split"));
-        tokenLists.add(Utility.readFileAsStandardTokens("nltk-split-tagged.txt", "split"));
-        tokenLists.add(Utility.readFileAsStandardTokens("spacy-split-tagged.txt", "split"));
+        Document coreNLP = Utility.importTSVDocument("core-split-tagged.txt", "\t", "indexInText indexInSentence token " + Tag.SPLIT);
+        //TODO: Fix like this
 
+//        tokenLists.add(Utility.readFileAsStandardTokens("mbsp-split-tagged.txt", "split"));
+//        tokenLists.add(Utility.readFileAsStandardTokens("core-split-tagged.txt", "split"));
+//        tokenLists.add(Utility.readFileAsStandardTokens("open-split-tagged.txt", "split"));
+//        tokenLists.add(Utility.readFileAsStandardTokens("nltk-split-tagged.txt", "split"));
+//        tokenLists.add(Utility.readFileAsStandardTokens("spacy-split-tagged.txt", "split"));
         Utility.writeFile(
                 Utility.tokensToStandardLines(Utility.getTagConsensus(tokenLists, threshold, "split")),
                 "all-split-consensus.txt");
-    }
-
-    //Takes all tagged-stage sentence splitter outputs and condenses them
-    public static void produceSplitCondensed() {
-        Splitting.condenseSentences("core-split-tagged.txt", "core-split-condensed.txt");
-        Splitting.condenseSentences("nltk-split-tagged.txt", "nltk-split-condensed.txt");
-        Splitting.condenseSentences("open-split-tagged.txt", "open-split-condensed.txt");
-        Splitting.condenseSentences("mbsp-split-tagged.txt", "mbsp-split-condensed.txt");
-        Splitting.condenseSentences("spacy-split-tagged.txt", "spacy-split-condensed.txt");
-        Splitting.condenseSentences("all-split-consensus.txt", "all-split-consensus-condensed.txt");
-    }
-
-    public static void tagAllSplits(String inputPath, String outputPath) {
-        Splitting.tagFinalCharacters("mbsp-split-restricted.txt", "mbsp-split-tagged.txt");
-        Splitting.tagFinalCharacters("open-split-restricted.txt", "open-split-tagged.txt");
-        Splitting.tagFinalCharacters("core-split-restricted.txt", "core-split-tagged.txt");
-        Splitting.tagFinalCharacters("nltk-split-restricted.txt", "nltk-split-tagged.txt");
-        Splitting.tagFinalCharacters("spacy-split-restricted.txt", "spacy-split-tagged.txt");
     }
 
 }

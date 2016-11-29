@@ -35,28 +35,25 @@ public class Document {
     //Use primarily token-in-sentence field to determine sentence breaks
     //TODO: include "whitespace" tokens so that extra spaces,tabs, etc. can be preserved?
     //Tags go on tokens
-    public ArrayList<Token> tokenList; 
+    public ArrayList<Token> tokenList;
+    
     
     
     public Document() {
         tokenList = new ArrayList<>();
     }
     
-    //From word-tokens to character-tokens
-    public Document toCharacterTokenDocument() {
+
+    
+    public int getTagCounts(String key, String value) {
         
-        
-        //TODO: write
-        
-        return this;
-    }
-        
-    //Convert from character-tokens to word-tokens
-    public Document toWordTokenDocument() {
-        
-        //TODO: write
-        
-        return this;
+        int count = 0;
+        for (Token token : tokenList) {
+            if(token.get("key").equalsIgnoreCase(value)) {
+                count++;
+            }
+        }
+        return count;
     }
     
     
@@ -70,6 +67,27 @@ public class Document {
         return lines;
     }
 
+    public int getPositionOf(Token token) {
+        for(int i = 0; i < tokenList.size(); i++) {
+            if(token == tokenList.get(i)) {
+                return i;
+            }
+        }
+        //If not found:
+        return -1;
+    }
+    
+    public void tagSentenceSplits() {
+        for(int i = 1; i < tokenList.size(); i++) {
+            if(tokenList.get(i).indexInSentence <= tokenList.get(i-1).indexInSentence) {
+                tokenList.get(i).set("split", "1");
+            }
+        }
+        //Tag final char
+        tokenList.get(tokenList.size()-1).set("split", "1");
+    }
+            
+            
     
     
     

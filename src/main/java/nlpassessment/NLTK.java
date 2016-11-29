@@ -73,7 +73,7 @@ public class NLTK {
                     //TODO: FIX
                     Token token = new Token(split[0]);
                     taggedTokens.add(token);
-                    token.tags.put("pos", split[1]);
+                    token.set(Tag.POS, split[1]);
                 } else {
                     System.out.println("Failed to validate line " + " " + split[0] + " " + split[1]);
                 }
@@ -87,7 +87,7 @@ public class NLTK {
 
     private static void simplifyPOSTags(ArrayList<Token> tokens) {
         for (Token token : tokens) {
-            token.tags.put("pos", simplifyPOSTag(token.tags.get("pos")));
+            token.set(Tag.POS, simplifyPOSTag(token.get(Tag.POS)));
         }
     }
 
@@ -134,7 +134,7 @@ public class NLTK {
                 Token token = new Token("" + combined.charAt(i));
                 token.indexInText = tokenCount;
                 token.indexInSentence = i + 1;
-                token.tags.put("split", "_");
+                token.set(Tag.SPLIT, "_");
                 output.add(token);
                 tokenCount++;
 

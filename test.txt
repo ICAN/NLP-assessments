@@ -1,0 +1,136 @@
+﻿Between us there was, as I have already said somewhere, the bond of the sea. Besides holding our hearts together through long periods of separation, it had the effect of making us tolerant of each other's yarns--and even convictions. The Lawyer--the best of old fellows--had, because of his many years and many virtues, the only cushion on deck, and was lying on the only rug. The Accountant had brought out already a box of dominoes, and was toying architecturally with the bones. Marlow sat cross-legged right aft, leaning against the mizzen-mast. He had sunken cheeks, a yellow complexion, a straight back, an ascetic aspect, and, with his arms dropped, the palms of hands outwards, resembled an idol. The director, satisfied the anchor had good hold, made his way aft and sat down amongst us. We exchanged a few words lazily. Afterwards there was silence on board the yacht. For some reason or other we did not begin that game of dominoes. We felt meditative, and fit for nothing but placid staring. The day was ending in a serenity of still and exquisite brilliance. The water shone pacifically; the sky, without a speck, was a benign immensity of unstained light; the very mist on the Essex marsh was like a gauzy and radiant fabric, hung from the wooded rises inland, and draping the low shores in diaphanous folds. Only the gloom to the west, brooding over the upper reaches, became more sombre every minute, as if angered by the approach of the sun.
+
+ And at last, in its curved and imperceptible fall, the sun sank low, and from glowing white changed to a dull red without rays and without heat, as if about to go out suddenly, stricken to death by the touch of that gloom brooding over a crowd of men.
+
+The swaying had come to a halt and it was dark. The Explorer was not comfortable in the alien air. It felt as thick as soup and he had to breathe shallowly. Even so—
+
+He reached out in a sudden need for company. The Merchant was warm to the touch. His breathing was rough, he moved in an occasional spasm, and was obviously asleep. The Explorer hesitated and decided not to wake him. It would serve no real purpose.
+
+There would be no rescue, of course. That was the penalty paid for the high profits which unrestrained competition could lead to. The Merchant who opened a new planet could have a ten year monopoly of its trade, which he might hug to himself or, more likely, rent out to all comers at a stiff price. It followed that planets were searched for in secrecy and, preferably, away from the usual trade routes. In a case such as theirs, then, there was little or no chance that another ship would come within range of their subetherics except for the most improbable of coincidences. Even if they were in their ship, that is, rather than in this—this—cage.
+
+The Explorer grasped the thick bars. Even if they blasted those away, as they could, they would be stuck too high in open air for leaping.
+
+It was too bad. They had landed twice before in the scout-ship. They had established contact with the natives who were grotesquely huge, but mild and unaggressive. It was obvious that they had once owned a flourishing technology, but hadn't faced up to the consequences of such a technology. It would have been a wonderful market.
+
+And it was a tremendous world. The Merchant, especially, had been taken aback. He had known the figures that expressed the planet's diameter, but from a distance of two light-seconds, he had stood at the visi-plate and muttered, "Unbelievable!"
+
+Several allocation methods in the literature are based on a choice of a univariate risk measure and an allocation principle. Others are based on optimizing a multivariate ruin probability or some multivariate risk indicators. In this paper, we focus on the allocation technique by minimizing some risk indicators.
+
+The literature on the subject of capital allocation methods is very rich. Several principles have been proposed over the last twenty years. The most important and most studied are the Shapley method, the Aumann-Shapley method and the Euler’s method. 
+The Shapley method is based on cooperative game theory. It is described in detail in Denault’s paper (2001) [10].  Denault proved that this method, originally used to allocate the total cost between players in coalitional games context, can be easily adapted to solve the problem of the overall risk allocation between segments.
+
+Tasche devoted two papers [21] and [22] to describe Euler’s method. Euler’s method is also found in the literature under the name of gradient method. It is based on the idea of allocating capital according to the infinitesimal marginal impact of each risk. This impact corresponds to the increase obtained on the overall risk, yielding an infinitely small increment in a marginal risk.  
+
+The majority of Lecturers are hired year-by-year or quarter-by-quarter as "temp" workers, which leaves them with no job security. Additionally, a full-time Lecturer's workload is typically twice that of a tenure track professor, yet they are paid significantly less.
+
+Many of the picket signs displayed at the picnic communicated around the theme of precarity. One such message, "A Precarious Faculty = A Precarious University," was emblazoned on a gold flag along with the stencil of a fist holding a pencil.
+
+Precarity has been defined as a condition of instability in the workforce created in postindustrial societies when management seeks to increase its own strength by limiting job opportunities to temporary and or part-time work.
+
+In February, organizers of the National Adjunct Day of Action adopted "Saint Precaria" as their "icon saint" and individuals at UC Santa Cruz continue to develop themes surrounding precarity.
+
+"All these movements that we are building together are really interconnected, all the student movements and the union movements that we have been working on for many years together," explained Josh Brahinsky at a mid-day rally held at the picnic. Brahinsky teaches courses at both UC Santa Cruz and San Jose State University.
+
+"We're all facing a certain kind of neo-liberal budget where they play with it, and mess with the money," he said. "They don't spend the money on undergraduate education, which is what we are all here to make happen."
+
+In this paper we have performed logical reasoning by modus ponens using DNA  strand algebra, which can be defined as a branch of process algebra. The operations of DNA strands in present model are based on the mechanism of DNA strand displacement. Process algebras are widely used for defining the formal semantics of concurrent communicating processes. Process calculi provide a tool for the high-level description of interactions, communications, and synchronizations between a collection of independent agents or processes. They also provide algebraic laws that allow process descriptions to be manipulated and analyzed, and permit  formal reasoning about equivalences between processes. The main components of DNA strand algebra are DNA strands, DNA gates, and their interactions.
+
+Before going in detail description of DNA strand algebra we first have to know  what is syntax and semantics. 
+
+In mathematics, computer science and linguistics, a formal language is a set of strings of symbols that may be constrained by rules that are specific to it.
+
+In computer science, the process algebras [Baeten, 2004] are mathematically rigorous languages with well defined semantics that permit describing and verifying properties of concurrent communicating systems. Process calculi provide a tool for the high-level description of interactions, communications, and synchronizations between a collection of independent agents or processes. They also provide algebraic laws that allow process descriptions to be manipulated and analyzed, and permit formal reasoning about equivalences between processes.
+
+Suppose that you and I were sitting in a quiet room overlooking a garden, chatting and sipping at our cups of green tea while we talked about something that had happened a long while ago, and I said to you, "That afternoon when I met so-and-so... was the very best afternoon of my life, and also the very worst afternoon." I expect you might put down your teacup and say, "Well, now, which was it? Was it the best or the worst? Because it can't possibly have been both!" Ordinarily I'd have to laugh at myself and agree with you. But the truth is that the afternoon when I met Mr. Tanaka Ichiro really was the best and the worst of my life. He seemed so fascinating to me, even the fish smell on his hands was a kind of perfume. If I had never known him, I'm sure I would not have become a geisha. I wasn't born and raised to be a Kyoto geisha. I wasn't even born in Kyoto. I'm a fisherman's daughter from a little town called Yoroido on the Sea of Japan. In all my life I've never told more than a handful of people anything at all about Yoroido, or about the house in which I grew up, or about my mother and father, or my older sister-and certainly not about how I became a geisha, or what it was like to be one. Most people would much rather carry on with their fantasies that my mother and grandmother were geisha, and that I began my training in dance when I was weaned from the breast, and so on. As a matter of fact, one day many years ago I was pouring a cup of sake for a man who happened to mention that he had been in Yoroido only the previous week. Well, I felt as a bird must feel when it has flown across the ocean and comes upon a creature that knows its nest. I was so shocked I couldn't stop myself from saying: "Yoroido! Why, that's where I grew up!" This poor man! His face went through the most remarkable series of changes. He tried his best to smile, though it didn't come out well because he couldn't get the look of shock off his face.
+
+Most people had probably never heard the term "affluenza" until Ethan Couch's legal team used it as a defense in his trial for driving drunk and killing four people in Texas. And, judging by the robust online conversations, most think the claim that Couch was so spoiled by his parents that he didn't grow up with boundaries and realize the consequences of his actions was a ridiculous argument for why he shouldn't be held accountable for his crimes.
+
+Couch's decision to head to Mexico, a violation of his 10-year probation sentence, accompanied by his mother has only heightened the criticism of him and his upbringing.
+
+But psychologists around the country say there is something here that society should not overlook: There is growing evidence that children of the affluent are becoming "increasingly troubled, reckless and self-destructive," wrote Suniya Luthar, a professor of psychology at Arizona State University along with Barry Schwartz, professor of psychology at Swarthmore College, in a blog post for Reuters titled "Sometimes 'poor little rich kids' are really poor little rich kids."
+
+Luthar has been studying the lives of privileged children for 25 years. Her research has shown that drug and alcohol use among affluent teens is higher than among kids of the same age group in inner cities.
+
+Further, children growing up in wealthier households are more likely to be suffering from anxiety and depression compared with the national average, according to the research. And, while crime is believed to be more of an issue for children living in poverty, there are "comparable levels of delinquency" for children in lower-income and upper-income households, wrote Luthar and Schwartz.
+
+The only difference is the form the rule-breaking takes, they said. In well-off households, it tends to include widespread cheating and stealing from parents and peers.
+
+"Perhaps we needn't feel sorry for these 'poor little rich kids.' But if we don't do something about their problems, they will become everyone's problems," they wrote.
+
+Luthar says there are plenty of reasons why people get uneasy about this topic. One is because of the word "affluent."
+
+People living in upper middle class households don't like to think of themselves as affluent, but they are. "The truth is if you are an educated, white-collar professional family, you are this demographic," she said in an interview.
+
+In a 2003 research paper called "The Culture of Affluence," she pointed to a range of factors that are unique to wealthy, upwardly mobile America, which present their own kinds of challenges.
+
+Money is plentiful, so children have more money to buy drugs and alcohol and get sophisticated fake IDs, and parents have the money to pay for high-profile lawyers to make sure their children continue to have an "absolutely pristine record," she said.
+
+"We are certainly not saying that all affluent parents do this, or even that most do. But there is a sizable and vocal minority of parents who do not just bail their kids out but do it repeatedly and do it in very inappropriate circumstances," said Luthar, who is also professor emerita at Columbia University's Teachers College.
+
+"So these are the kids who then start to believe, and rightfully so, I'm not getting caught and even if I do, nothing's going to happen to me."
+
+Modeling is a key issue in all households, including wealthy ones, psychologists say.
+
+"You are literally displaying a behavior and then younger people who are more prone to being influenced by things see it and there's a sense of entitlement by some people with money, not all people, and there's also a sense that you're not being corrected if you're getting away with things," said Harris Stratyner, a Manhattan psychologist who works primarily with wealthy families.
+
+"It's what we call acquired narcissism. Some people, young kids, learn to be narcissistic," said Stratyner, who is also regional clinical vice president of the Caron Treatment Centers in New York.
+
+Though T-Mobile still wants to play games with words, the company has admitted it’s slowing down streams as part of its unlimited video service.
+
+T-Mobile customers who activate the company’s controversial Binge On video service will experience downgraded internet connection speeds when viewing videos on YouTube or other sites that don’t take part in Binge On, a T-Mobile spokesperson confirmed today. They’ll also experience slower speeds when trying to download video files for offline use from websites that do not participate in Binge On, at least until the customer deactivates the service.
+
+The confirmation brings clarity to questions that have swirled for weeks about Binge On. The service, which is turned on by default but can be switched off at any time, allows some T-Mobile customers to watch unlimited amounts of video from Netflix and Hulu (which are T-Mobile partners) but not YouTube (which isn’t) without having those streams count against their data plans.
+
+In other words, the data usage exemptions only apply to T-Mobile’s partners, and video quality is limited to 480p, the same resolution that DVDs use. That may sound like a good tradeoff, but a report released by digital advocacy group the Electronic Frontier Foundation on Monday concluded that the service may include some side effects for video sites that don’t participate in the program. Critics have worried since the beginning that these exemption policies, also known as “zero rating,” undermine network neutrality principles. But the EFF report raises other questions, namely the lack of transparency about how the service actually works.
+
+T-Mobile has insisted that it “optimizes” videos for Binge On customers, but the EFF found that T-Mobile is actually downgrading all connections to video sites, including those that aren’t Binge On partners. As a result, users are typically served 480p versions of nearly all videos, since sites like YouTube and Netflix will automatically route customers with slow connections to the lower quality stream.
+
+The problem is that the EFF found is that connections are slowed even when users try to access video sites that don’t offer alternate versions. As a result, trying to stream, say, a 1040p video from a non-participating site could result in choppy video performance if you have Binge On activated. You can switch Binge On off to get the full speed back, but in order to do that you have to know that Binge On, not the site, is responsible for the degraded performance.
+
+Brazil; Portuguese: Brasil, officially the Federative Republic of Brazil (Portuguese: República Federativa do Brasil, About this sound listen, is the largest country in both South America and the Latin American region. It is the world's fifth-largest country, both by geographical area and by population. It is the largest Portuguese-speaking country in the world, and the only one in the Americas.
+
+Bounded by the Atlantic Ocean on the east, Brazil has a coastline of 7,491 km (4,655 mi). It borders all other South American countries except Ecuador and Chile and occupies 47.3 percent of the continent of South America. Its Amazon River basin includes a vast tropical forest, home to diverse wildlife, a variety of ecological systems, and extensive natural resources spanning numerous protected habitats. This unique environmental heritage makes Brazil one of 17 megadiverse countries, and is the subject of significant global interest and debate regarding deforestation and environmental protection.
+
+Brazil was inhabited by numerous tribal nations prior to the landing in 1500 of explorer Pedro Álvares Cabral, who claimed the area for the Portuguese Empire. Brazil remained a Portuguese colony until 1808, when the capital of the empire was transferred from Lisbon to Rio de Janeiro.
+
+Tlaltecuhtli is a pre-Columbian Mesoamerican deity, identified from sculpture and iconography dating to the Late Postclassic period of Mesoamerican chronology (ca. 1200–1519), primarily among the Mexica (Aztec) and other Nahuatl-speaking cultures. Tlaltecuhtli is also known from several post-conquest manuscripts that surveyed Mexica mythology and belief systems, such as the Histoyre du méchique compiled in the mid-16th century.
+
+According to Alfonso Caso There were four earth gods - Tlaltecuhti who was male and three earth goddesses - Coatlique, Cihuacoatl and Tlazolteotl. In one of the Mexica creation accounts Tlaltecuhtli is described as a sea monster who dwelled in the ocean after the fourth Great Flood, an embodiment of the raging chaos before creation. Quetzalcoatl and Tezcatlipoca, in the form of serpents, tore him in half, throwing half upwards to create the sky and stars and leaving the other half to become the land of the earth. He remained alive, however, and demanded human blood.
+
+In 1965, Antony Hewish and Samuel Okoye discovered "an unusual source of high radio brightness temperature in the Crab Nebula". This source turned out to be the Crab Pulsar that resulted from the great supernova of 1054.
+
+In 1967, Iosif Shklovsky examined the X-ray and optical observations of Scorpius X-1 and correctly concluded that the radiation comes from a neutron star at the stage of accretion.
+
+In 1967, Jocelyn Bell and Antony Hewish discovered regular radio pulses from CP 1919. This pulsar was later interpreted as an isolated, rotating neutron star. The energy source of the pulsar is the rotational energy of the neutron star. The majority of known neutron stars (about 2000, as of 2010) have been discovered as pulsars, emitting regular radio pulses.
+
+In 1971, Riccardo Giacconi, Herbert Gursky, Ed Kellogg, R. Levinson, E. Schreier, and H. Tananbaum discovered 4.8 second pulsations in an X-ray source in the constellation Centaurus, Cen X-3. They interpreted this as resulting from a rotating hot neutron star. The energy source is gravitational and results from a rain of gas falling onto the surface of the neutron star from a companion star or the interstellar medium.
+
+In 1974, Antony Hewish was awarded the Nobel Prize in Physics "for his decisive role in the discovery of pulsars" without Jocelyn Bell who shared in the discovery.
+
+The Pacific Type. This type is found in all of the territory west of the Cascade and Sierra Nevada ranges, and also obtains in a fringe of country to the eastward of the mountain summits. The distinguishing characteristic of the Pacific type is a wet season, extending from October to March, and a practically rainless summer, except in northern California and parts of Oregon and Washington About half of the yearly precipitation comes in the months of December January and February the remaining half being distributed throughout the seven months— September October November March April May and June.
+
+Sub-Pacific Type. The term ’Sub-Pacific’ has been given to that type of rainfall which obtains over eastern Washington, Nevada and Utah. The influences that control the precipitation of this region are much similar to those that prevail west of the Sierra Nevada and Cascade ranges. There is not, however, as in the eastern type, a steady diminution in the precipitation with the approach of spring, but rather a culmination in the precipitation.
+
+The story of Merlin, that man of magic, is the least important of the four branches, though Merlin is still an intensely interesting figure in the story of Arthur that we read to-day. The story of Lancelot was to prove very important; starting as a romance that had very little connection with Arthur, it became with Malory and Tennyson the real center of interest of the plot. The story of the Holy Grail proved almost equally important. In the earliest accounts of this Perceval was the knight chosen above all others to reach the Grail Castle, but Perceval was too rough and worldly a knight to suit the taste of the monks who wrote out the legends and so they created Galahad to take his place as their own ideal of perfection. And into these adventures are woven some of the tales of Sir Gawain, among them the delightful story of Gawain and the Little Maid with the Narrow Sleeves. To the legend of Perceval, Wolfram von Eschenbach, a Bavarian, added the story of the son of Perceval, or Parzival, as he calls him, the story of Lohengrin, the famous Swan-knight. Tristram and Iseult, the fourth of the branches, though less connected with Arthur than either Lancelot or the Holy Grail, became immensely popular with poets and remancers because of its great love story, and is to be found told again and again in widely varying forms all through the Middle Ages.
+
+On 30 September 2015, Russia started its own air campaign on the side and at the request of the government of Syria. The resultant proxy war between the U.S. and Russia led some commentators to characterise the situation as a "a proto-world war with nearly a dozen countries embroiled in two overlapping conflicts".
+
+In July 2013, the Syrian government was said to be in control of approximately 30–40% of the country's territory and 60% of the Syrian population; in August 2015, the territory fully controlled by the Syrian Army was reported to have shrunk to 29,797 km2, roughly 16% of the country. The Syrian government enjoys high levels of support in certain areas under its control; according to a poll organised by British ORB International, up to 73% of the population in government-controlled areas support the government effort.
+
+International organizations have accused the Syrian government, ISIL and other opposition forces of severe human rights violations, with multiple massacres occurring. The conflict caused a considerable displacement of population. The US, the EU big four, Russia, China and several countries from the middle east (including Turkey, Egypt, Saudi Arabia and, for the first time, Iran) have started peace talks in Vienna that are aimed at bringing an end to the conflict.
+
+Try to imagine a tiny ball sitting on one fingertip yet also on your shoulder at the same instant. Are you struggling? Most of us can’t conceive of an object being in two places at once – yet physicists have just demonstrated the effect over a distance of half a metre, smashing previous records.
+
+It’s an example of superposition, the idea that an object can exist in two quantum states at the same time. This persists until it is observed, causing a property called its wave function to collapse into one state or the other. The same principle allows Schrödinger’s cat to be both dead and alive inside a box until you open the lid.
+
+We often think of quantum mechanics as applying only to subatomic particles, but there is nothing in the theory that limits its range. That’s why experiments try to probe the transition between the quantum and everyday realms. “We’re all wondering whether there is some regime where superpositions turn into classical states of matter,” says Mark Kasevich of Stanford University in California.
+
+To find out, Kasevich and his colleagues created a Bose-Einstein condensate (BEC) – a cloud of 10,000 rubidium atoms, all in the same quantum state. They shot this cloud, just a few millimetres across, up a 10-metre-high chamber using lasers, which also gradually push the atoms into two separate states.
+
+By the time the BEC reaches the top of the chamber, its wave function is a 50-50 mixture of those states, representing positions 54 centimetres apart. It stays in this superposition for about a second, then falls back down. At the bottom, the lasers turn the two states back into one, and this reveals that the atoms appear to arrive from two different heights, confirming that the BEC was indeed in a superposition at the top of the chamber.
+
+Previous experiments demonstrated superposition over much smaller distances and times – the old record was just under a centimetre for a quarter of a second. Kasevich’s work pushes it into human scales. “Our work really is definitive for large separations,” he says. “Nobody else has done that.”
+
+Pulling it off involved cooling the chamber to a fraction above absolute zero, and minutely adjusting the BEC’s trajectory to account for Earth’s rotation during the experiment. “They’ve explored the unknown,” says Klaus Hornberger of the University of Duisburg-Essen, Germany.
+
+But it may be less of a breakthrough than it seems. In 2013, Hornberger helped devise a “weirdness scale” that scores experiments according to how far they show quantum effects extending into the everyday world. Kasevich’s work extends the distance scale but compromises in other ways, so scores about the same as previous attempts, says Hornberger. That means a true Schrödinger’s cat is still far from being realised.
