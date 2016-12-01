@@ -39,8 +39,9 @@ public class Main {
     public static void main(String[] args) {
 
 //        Stemming.runStemmerTests();
-        OpenNLP.runAnnotator("test.txt", "output.txt");
+        Document openNLP = OpenNLP.runAnnotator("test.txt");
 
+        
     }
 
     //First step in producing/comparing POS texts

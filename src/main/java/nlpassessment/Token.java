@@ -36,6 +36,8 @@ public class Token {
     public int indexInText = -1; //1-indexed
     public int indexInSentence = -1; //1-indexed
     public int sentenceNumber = -1; //1-indexed
+    public int firstCharInSentence = -1;
+    public int lastCharInSentence = -1;
     private HashMap<String, String> props = new HashMap<>();
     
     public Token() {}

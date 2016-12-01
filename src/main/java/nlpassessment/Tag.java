@@ -11,6 +11,9 @@ package nlpassessment;
  */
 public class Tag {
 
+    //General
+    public static final String TAG_SEP = ","; //Intra-tagset separator
+    
     //TagTypes
     public static final String POS = "posTag";
     public static final String TOKEN = "token";
@@ -26,13 +29,13 @@ public class Tag {
     public static final String POS_OTHER = "OO";
     
     //Standard NE tags
-    public static final String NE_PERSON = "person";
-    public static final String NE_ORG = "organization";
-    public static final String NE_PLACE = "place";
-    public static final String NE_TIME = "time";
-    public static final String NE_DATE = "date";
-//    public static final String POS = "posTag";
-//    public static final String TOKEN = "sentSplit";
+    public static final String NE_PERSON = "PERS";
+    public static final String NE_ORG = "ORG";
+    public static final String NE_LOCATION = "LOC";
+    public static final String NE_TIME = "TIME";
+    public static final String NE_DATE = "DATE";
+    public static final String NE_MONEY = "MONEY";
+    public static final String NE_PERCENT = "PCT";
 //    public static final String NE = "neTag";
 //    public static final String LEMMA = "lemma";
 //    public static final String SPLIT = "split";

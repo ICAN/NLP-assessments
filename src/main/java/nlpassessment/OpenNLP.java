@@ -27,7 +27,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.HashMap;
+import opennlp.tools.namefind.NameFinderME;
 import opennlp.tools.namefind.TokenNameFinderModel;
 import opennlp.tools.postag.POSModel;
 import opennlp.tools.postag.POSTaggerME;
@@ -36,6 +36,7 @@ import opennlp.tools.sentdetect.SentenceModel;
 import opennlp.tools.tokenize.Tokenizer;
 import opennlp.tools.tokenize.TokenizerME;
 import opennlp.tools.tokenize.TokenizerModel;
+import opennlp.tools.util.Span;
 
 /**
  *
@@ -45,43 +46,80 @@ public class OpenNLP {
 
     //Returns an annotated Document object
     //Including sentence-splits, tokenization, POS-tagging
-    //TODO: Add NE recognition for person, org, time, ...?
-    public static Document runAnnotator(String inputFileName, String outputFileName) {
+    //TODO: Break up into several methods
+    public static Document runAnnotator(String inputFileName) {
 
-        
 //        String modelPath = System.getProperty("user.dir") + "/src/main/OpenNLPModels/";
         String modelPath = "/home/neal/OpenNLP/";
-        
+
         String input = Utility.readFileAsString(inputFileName, true);
 
-        //Initialization of Tokenization API        
+        //Sentence splitting
         InputStream sentenceModelIn = null;
         SentenceModel sentenceModel = null;
-
+        //Tokenization
         InputStream tokenModelIn = null;
         TokenizerModel tokenizerModel = null;
-
+        //NER Date
+        InputStream nerDateModelIn = null;
+        TokenNameFinderModel nerDateModel = null;
+        //NER Location
+        InputStream nerLocationModelIn = null;
+        TokenNameFinderModel nerLocationModel = null;
+        //NER Money
+        InputStream nerMoneyModelIn = null;
+        TokenNameFinderModel nerMoneyModel = null;
+        //NER Organization
+        InputStream nerOrganizationModelIn = null;
+        TokenNameFinderModel nerOrganizationModel = null;
+        //NER Percentage
+        InputStream nerPercentageModelIn = null;
+        TokenNameFinderModel nerPercentageModel = null;
+        //NER Person
         InputStream nerPersonModelIn = null;
         TokenNameFinderModel nerPersonModel = null;
-
+        //NER Time
+        InputStream nerTimeModelIn = null;
+        TokenNameFinderModel nerTimeModel = null;
+        //POS Maximum Entropy
         InputStream posMaxEntModelIn = null;
         POSModel posMaxEntModel = null;
+        //POS Perceptron
         InputStream posPerceptronModelIn = null;
         POSModel posPerceptronModel = null;
 
         try {
+            //Sentence splitting
             sentenceModelIn = new FileInputStream(modelPath + "en-sent.bin");
             sentenceModel = new SentenceModel(sentenceModelIn);
-
-            tokenModelIn = new FileInputStream(modelPath + "en-token.bin");           
+            //Tokenization
+            tokenModelIn = new FileInputStream(modelPath + "en-token.bin");
             tokenizerModel = new TokenizerModel(tokenModelIn);
-            
+            //NER Date
+            nerDateModelIn = new FileInputStream(modelPath + "en-ner-date.bin");
+            nerDateModel = new TokenNameFinderModel(nerDateModelIn);
+            //NER Location
+            nerLocationModelIn = new FileInputStream(modelPath + "en-ner-location.bin");
+            nerLocationModel = new TokenNameFinderModel(nerLocationModelIn);
+            //NER Money
+            nerMoneyModelIn = new FileInputStream(modelPath + "en-ner-money.bin");
+            nerMoneyModel = new TokenNameFinderModel(nerMoneyModelIn);
+            //NER Organization
+            nerOrganizationModelIn = new FileInputStream(modelPath + "en-ner-organization.bin");
+            nerOrganizationModel = new TokenNameFinderModel(nerOrganizationModelIn);
+            //NER Percentage
+            nerPercentageModelIn = new FileInputStream(modelPath + "en-ner-percentage.bin");
+            nerPercentageModel = new TokenNameFinderModel(nerPercentageModelIn);
+            //NER Person
             nerPersonModelIn = new FileInputStream(modelPath + "en-ner-person.bin");
             nerPersonModel = new TokenNameFinderModel(nerPersonModelIn);
-            
-            
+            //NER Time
+            nerTimeModelIn = new FileInputStream(modelPath + "en-ner-time.bin");
+            nerTimeModel = new TokenNameFinderModel(nerTimeModelIn);
+            //POS Maximum Entropy
             posMaxEntModelIn = new FileInputStream(modelPath + "en-pos-maxent.bin");
             posMaxEntModel = new POSModel(posMaxEntModelIn);
+            //POS Perceptron model
             posPerceptronModelIn = new FileInputStream(modelPath + "en-pos-perceptron.bin");
             posPerceptronModel = new POSModel(posPerceptronModelIn);
 
@@ -89,19 +127,21 @@ public class OpenNLP {
             e.printStackTrace();
         }
 
+        //Sentence splitting
         SentenceDetectorME sentenceDetector = new SentenceDetectorME(sentenceModel);
-
-        //Can also get span[], but 
-        String[] sentences = sentenceDetector.sentDetect(input);
+        String[] sentences = sentenceDetector.sentDetect(input); //Could also get spans rather than strings
 
 //        for(String sent : sentences) {
 //            System.out.println(sent);
 //        }
+        //Tokenization
         Tokenizer tokenizer = new TokenizerME(tokenizerModel);
         String[][] tokens = new String[sentences.length][]; //[sentence#][word# in sentence]
+        Span[][] tokenSpans = new Span[sentences.length][];
 
         for (int i = 0; i < sentences.length; i++) {
             tokens[i] = tokenizer.tokenize(sentences[i]);
+            tokenSpans[i] = tokenizer.tokenizePos(sentences[i]);
         }
 
 //        for (String[] sent : tokens) {
@@ -110,53 +150,152 @@ public class OpenNLP {
 //            }
 //            System.out.print("\n");
 //        }
-//        POSTaggerME posTagger = new POSTaggerME(posMaxEntModel);
-        POSTaggerME posTagger = new POSTaggerME(posPerceptronModel);
+        //POS Tagging
+        POSTaggerME posTagger = new POSTaggerME(posMaxEntModel); //Alternative POS tagger
+//        POSTaggerME posTagger = new POSTaggerME(posPerceptronModel);
         String[][] posTags = new String[sentences.length][];
 
+        //Do tagging
         for (int i = 0; i < sentences.length; i++) {
             posTags[i] = posTagger.tag(tokens[i]);
         }
 
-        for (int i = 0; i < sentences.length; i++) {
-            String[] currentTokens = tokens[i];
-            String[] currentTags = posTags[i];
-            for (int j = 0; j < currentTokens.length; j++) {
-                System.out.print(currentTokens[j] + "/" + currentTags[j] + "  ");
-            }
-            System.out.print("\n");
+        //Debug
+//        for (int i = 0; i < sentences.length; i++) {
+//            String[] currentTokens = tokens[i];
+//            String[] currentTags = posTags[i];
+//            for (int j = 0; j < currentTokens.length; j++) {
+//                System.out.print(currentTokens[j] + "/" + currentTags[j] + "  ");
+//            }
+//            System.out.print("\n");
+//        }
+        //NE Tagging
+        NameFinderME nerDateFinder = new NameFinderME(nerDateModel);
+        NameFinderME nerLocationFinder = new NameFinderME(nerLocationModel);
+        NameFinderME nerMoneyFinder = new NameFinderME(nerMoneyModel);
+        NameFinderME nerOrganizationFinder = new NameFinderME(nerOrganizationModel);
+        NameFinderME nerPercentageFinder = new NameFinderME(nerPercentageModel);
+        NameFinderME nerPersonFinder = new NameFinderME(nerPersonModel);
+        NameFinderME nerTimeFinder = new NameFinderME(nerTimeModel);
+
+        Span[][] nerDateTags = new Span[tokens.length][];
+        Span[][] nerLocationTags = new Span[tokens.length][];
+        Span[][] nerMoneyTags = new Span[tokens.length][];
+        Span[][] nerOrganizationTags = new Span[tokens.length][];
+        Span[][] nerPercentageTags = new Span[tokens.length][];
+        Span[][] nerPersonTags = new Span[tokens.length][];
+        Span[][] nerTimeTags = new Span[tokens.length][];
+
+        //Get named entity spans
+        for (int i = 0; i < tokens.length; i++) {
+            nerDateTags[i] = nerDateFinder.find(tokens[i]);
+            nerLocationTags[i] = nerLocationFinder.find(tokens[i]);
+            nerMoneyTags[i] = nerMoneyFinder.find(tokens[i]);
+            nerOrganizationTags[i] = nerOrganizationFinder.find(tokens[i]);
+            nerPercentageTags[i] = nerPercentageFinder.find(tokens[i]);
+            nerPersonTags[i] = nerPersonFinder.find(tokens[i]);
+            nerTimeTags[i] = nerTimeFinder.find(tokens[i]);
         }
 
-//      Produce Document
+        //Get NER tagsets
+        String[][] nerTagsets = new String[tokens.length][];
+        
+        //For each sentence
+        for(int i = 0; i < tokens.length; i++) {
+            //One NER tagset per token            
+            nerTagsets[i] = new String[tokens[i].length];
+            
+            //For each token
+            for(int j = 0; j < tokens[i].length; j++) {
+                nerTagsets[i][j] = "";
+                //For each span
+                for(Span span : nerDateTags[i]) {
+                    if(span.intersects(tokenSpans[i][j])) {
+                        nerTagsets[i][j] += Tag.NE_DATE + Tag.TAG_SEP;
+                    }
+                }
+                for(Span span : nerLocationTags[i]) {
+                    if(span.intersects(tokenSpans[i][j])) {
+                        nerTagsets[i][j] += Tag.NE_LOCATION + Tag.TAG_SEP;
+                    }
+                }
+                for(Span span : nerMoneyTags[i]) {
+                    if(span.intersects(tokenSpans[i][j])) {
+                        nerTagsets[i][j] += Tag.NE_MONEY + Tag.TAG_SEP;
+                    }
+                }
+                for(Span span : nerOrganizationTags[i]) {
+                    if(span.intersects(tokenSpans[i][j])) {
+                        nerTagsets[i][j] += Tag.NE_ORG + Tag.TAG_SEP;
+                    }
+                }
+                for(Span span : nerPercentageTags[i]) {
+                    if(span.intersects(tokenSpans[i][j])) {
+                        nerTagsets[i][j] += Tag.NE_PERCENT + Tag.TAG_SEP;
+                    }
+                }
+                for(Span span : nerPersonTags[i]) {
+                    if(span.intersects(tokenSpans[i][j])) {
+                        nerTagsets[i][j] += Tag.NE_PERSON + Tag.TAG_SEP;
+                    }
+                }
+                for(Span span : nerTimeTags[i]) {
+                    if(span.intersects(tokenSpans[i][j])) {
+                        nerTagsets[i][j] += Tag.NE_TIME + Tag.TAG_SEP;
+                    }
+                }
+            }
+            
+            
+            
+        }
+        
+        
+        
+        
+        //Must call clearAdaptiveData after every document 
+        //According to OpenNLP documentation
+        nerDateFinder.clearAdaptiveData();
+        nerLocationFinder.clearAdaptiveData();
+        nerMoneyFinder.clearAdaptiveData();
+        nerOrganizationFinder.clearAdaptiveData();
+        nerPercentageFinder.clearAdaptiveData();
+        nerPersonFinder.clearAdaptiveData();
+        nerTimeFinder.clearAdaptiveData();
+
+        //Produce Document
         Document document = new Document();
         int tokenCount = 1;
         for (int i = 0; i < tokens.length; i++) {
             for (int j = 0; j < tokens[i].length; j++) {
                 Token token = new Token(tokens[i][j]);
                 //All 1-indexed according to Token standard
-                token.indexInSentence = j+1; 
+                token.indexInSentence = j + 1;
                 token.indexInText = tokenCount;
-                token.sentenceNumber = i+1;
+                token.sentenceNumber = i + 1;
+                token.firstCharInSentence = tokenSpans[i][j].getStart();
+                token.lastCharInSentence = tokenSpans[i][j].getEnd();
                 token.set(Tag.POS, posTags[i][j]);
+                token.set(Tag.NE, nerTagsets[i][j]);
                 document.tokenList.add(token);
                 tokenCount++;
             }
         }
         
-        //Output TSV
-//        document.writeToTSV(outputFileName);       
-        
-        
         return new Document();
     }
-    
-    
-    
 
+    public static void runAnnotator(String inputFileName, String outputFileName) {
+        Document document = runAnnotator(inputFileName);
+        //TODO: Write document to TSV
 
+    }
+
+    
+    
     private static void simplifyPOSTags(ArrayList<Token> tokens) {
         for (Token token : tokens) {
-            token.set("posTag", simplifyPOSTag(token.get("posTag")));
+            token.set(Tag.POS, simplifyPOSTag(token.get(Tag.POS)));
         }
     }
 
@@ -179,28 +318,6 @@ public class OpenNLP {
         } else {
             return "Other";
         }
-    }
-
-    //NAMED-ENTITY RECOGNITION - NER
-    //TODO: Finish
-    private static ArrayList<Token> tokenizeRawNER(ArrayList<String> lines) {
-
-        ArrayList<Token> taggedTokens = new ArrayList<>();
-        int tokenCount = 0;
-        for (String line : lines) {
-            //Tokens and tags are separated by an underscore
-            String[] split = line.split("_+");
-
-            if (split.length == 2) {
-                tokenCount++;
-                //TODO: Check following
-                Token token = new Token(split[0].trim());
-                token.set("neTag", split[1]);
-            } else {
-            }
-
-        }
-        return taggedTokens;
     }
 
     private static void simplifyNETags(ArrayList<Token> tokens) {
