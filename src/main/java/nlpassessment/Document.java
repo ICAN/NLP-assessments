@@ -31,41 +31,100 @@ import java.util.ArrayList;
  */
 public class Document {
     
-    
     //Use primarily token-in-sentence field to determine sentence breaks
     //TODO: include "whitespace" tokens so that extra spaces,tabs, etc. can be preserved?
     //Tags go on tokens
     public ArrayList<Token> tokenList;
     
     
+    public void print(String[] fields) {
+        for(Token token : tokenList) {
+            for(String field : fields) {
+                System.out.print(token.get(field) + "\t");
+            }
+        }
+    }
     
+            
+    public void printText(){
+        int sentence = -1;
+        for(int i = 0; i < tokenList.size(); i++) {
+            if(this.get(i).sentenceNumber > sentence) {
+                System.out.print("\n");
+            }
+            System.out.print(this.get(i).get("token") + " ");
+        }
+    }
+        
     public Document() {
         tokenList = new ArrayList<>();
     }
-    
-
-    
-    public int getTagCounts(String key, String value) {
+        
+    public int getTagCounts(String tagType, String tagValueRegex) {
         
         int count = 0;
         for (Token token : tokenList) {
-            if(token.get("key").equalsIgnoreCase(value)) {
+            if(token.get(tagType).matches(tagValueRegex)) {
                 count++;
             }
         }
         return count;
     }
     
-    
-    //Use token-in-sentence field to determine sentence breaks
-    public ArrayList<String> toLines() {
-        ArrayList<String> lines = new ArrayList<>();
+    //Adds any tags in "other" to the tokens in this document
+    //Overwrites any existing tags in this document
+    //"other" is not modified
+    public void mergeDocumentProperties(Document other) {
+        //Validate first
+        if(this.tokenList.size() != other.tokenList.size()) {
+            System.out.println("Merging failed. Unequal sizes.");
+            return;
+        }
         
-        //TODO: write
+        for(int i = 0; i < this.tokenList.size(); i++) {
+            if(!this.get(i).get("token").equals(other.get(i).get("token"))) {
+                System.out.println("Merging failed. Token mismatch at index = " + i);
+                return;
+            }
+        }
         
-        
-        return lines;
+        for(int i = 0; i < this.tokenList.size(); i++) {
+            for(String tag : other.get(i).getTagset()) {
+                this.get(i).set(tag, other.get(i).get(tag));
+            }
+        }
     }
+    
+    public Token get(int index) {
+        return this.tokenList.get(index);
+    }
+    
+    public Document deepClone() {
+        Document document = new Document();
+        for(Token token : tokenList) {
+            document.tokenList.add(token.deepClone());
+        }
+        return document;
+    }
+    
+    
+    public ArrayList<ArrayList<Token>> toSentences() {
+        ArrayList<ArrayList<Token>> sentences = new ArrayList<>();
+        int sentenceNumber = -1;
+        ArrayList<Token> currentSentence = null;
+        for(Token token : tokenList) {
+            if(token.sentenceNumber > sentenceNumber) {
+                if(sentences != null) {
+                    sentences.add(currentSentence);
+                }
+                sentenceNumber = token.sentenceNumber;
+                currentSentence = new ArrayList<>();
+            }
+            currentSentence.add(token);
+        }
+        return sentences;
+    }
+    
 
     public int getPositionOf(Token token) {
         for(int i = 0; i < tokenList.size(); i++) {

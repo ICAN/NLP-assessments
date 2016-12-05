@@ -86,70 +86,13 @@ public class CoreNLP {
         pipeline.annotate(document);
 
         //TODO: Output document?
+        
+        
     }
 
-    public static void standardizePOS(String inputFile, String outputFile) {
-        ArrayList<String> raw = Utility.readFileAsLines(inputFile);
-        ArrayList<Token> tokens = tokenizeRawPOS(raw);
-        simplifyPOSTags(tokens);
-        renormalizeAllBrackets(tokens);
-        Utility.writeFile(Utility.tokensToStandardLines(tokens), outputFile);
-    }
+    
 
-    //TODO: Double-check
-    public static void standardizeNER(String inputFile, String outputFile) {
-        ArrayList<String> raw = Utility.readFileAsLines(inputFile);
-        ArrayList<Token> tokens = tokenizeRawNER(raw);
-        simplifyNERTags(tokens);
-        renormalizeAllBrackets(tokens);
-        Utility.writeFile(Utility.tokensToStandardLines(tokens), outputFile);
-    }
-
-    //TODO: Test
-    public static void standardizeSplits(String inputFile, String outputFile) {
-        ArrayList<String> raw = Utility.readFileAsLines(inputFile);
-        ArrayList<Token> tokens = tokenizeRawSplits(raw);
-
-        Utility.writeFile(Utility.tokensToStandardLines(tokens), outputFile);
-    }
-
-    public static void cleanSplits(String inputFile, String outputFile) {
-        ArrayList<String> raw = Utility.readFileAsLines(inputFile);
-        ArrayList<String> clean = cleanRawSplits(raw);
-        ArrayList<String> spaced = new ArrayList<>();
-        int sentenceNumber = 1;
-        for (String string : clean) {
-            spaced.add("<SENTENCE " + sentenceNumber + ">\t" + string);
-            spaced.add("<>");
-            sentenceNumber++;
-        }
-        Utility.writeFile(spaced, outputFile);
-    }
-
-    //TODO: Write this
-    public static void standardizeLemmas(String inputFile, String outputFile) {
-
-    }
-
-    //PRIVATE METHODS
-    /*
-     Confirms that the string is a valid line
-     */
-    private static boolean validatePOSLine(String string) {
-        String[] split = string.split("\\s+");
-        if (split.length != 7) {
-            return false;
-        } else if (!string.matches("[\\S]+" //Token number in sentence
-                + "[\\s]+[\\S]+" //Token
-                + "[\\s]+_"
-                + "[\\s]+[\\S]+" //Tag
-                + "[\\s]+_.*")) {
-            return false;
-        }
-
-        return true;
-    }
-
+    
     /*
      Converts Penn-standardized brackets to their correct single-character forms
      */
@@ -174,28 +117,7 @@ public class CoreNLP {
         }
         return token;
     }
-
-    //PARTS OF SPEECH TAGGING - POS
-    private static ArrayList<Token> tokenizeRawPOS(ArrayList<String> lines) {
-
-        ArrayList<Token> taggedTokens = new ArrayList<Token>();
-        int tokenCount = 0;
-
-        for (String line : lines) {
-            if (validatePOSLine(line)) {
-                tokenCount++;
-                String[] split = line.split("\\s+");
-                Token token = new Token(split[1]);
-                token.set(Tag.POS, split[3]);
-                token.indexInText = tokenCount;
-                taggedTokens.add(token);
-//                System.out.println("Tokenized as: " + token + "\t" + tagset);
-            }
-        }
-
-        return taggedTokens;
-
-    }
+    
 
     private static void simplifyPOSTags(ArrayList<Token> tokens) {
         for (Token token : tokens) {
@@ -223,114 +145,4 @@ public class CoreNLP {
             return "Other";
         }
     }
-
-    //NAMED ENTITY RECOGNITION - NER
-    //TODO: Test/Confirm
-    private static ArrayList<Token> tokenizeRawNER(ArrayList<String> lines) {
-
-        ArrayList<Token> taggedTokens = new ArrayList<Token>();
-//        int tokenCount = 0;
-//        
-//        for (String line : lines) {
-//            if (validatePOSLine(line)) {
-//                tokenCount++;
-//                String[] split = line.split("\\s+");
-//                Token token = new Token(split[2]);
-//                token.set(Tag.NE, split[4]);
-//                token.indexInText = tokenCount;
-//                taggedTokens.add(token);
-//            }
-//        }
-
-        return taggedTokens;
-    }
-
-    //TODO: Test
-    private static void simplifyNERTags(ArrayList<Token> tokens) {
-                
-        for (Token token : tokens) {
-            String tag = token.get(Tag.NE);
-            String replacement = tag;
-            if (tag.equalsIgnoreCase("O")) {
-                replacement = "_";
-            } else if (tag.equalsIgnoreCase("LOCATION")) {
-                replacement = "LOC";
-            } else if (tag.equalsIgnoreCase("")) {
-                
-            } else {
-                System.out.println("Error simplifying CoreNLP NER tags");
-            }
-        }
-    }
-
-
-    //SENTENCE SPLITTING
-    private static ArrayList<String> cleanRawSplits(ArrayList<String> lines) {
-        ArrayList<String> intermediate = new ArrayList<>();
-
-        //Combining multi-line sentences 
-        ArrayList<String> output = new ArrayList<>();
-        String combined = "";
-        for (String line : intermediate) {
-            if (line.matches("Sentence #[0-9]+.*")) {
-                if (!combined.equals("")) {
-                    output.add(combined);
-                    combined = "";
-                }
-            } else {
-                combined += line;
-            }
-        }
-
-        if (!combined.equals("")) {
-            output.add(combined);
-        }
-
-        return output;
-    }
-
-    //Tokenizes by whitespace; number tokens according to place in sentence
-    //TODO: Finish/test
-    private static ArrayList<Token> tokenizeRawSplits(ArrayList<String> lines) {
-        ArrayList<Token> output = new ArrayList<>();
-        int characterInText = 0;
-        int characterInSentence = 0;
-        for (int i = 1; i < lines.size(); i++) {
-
-            String line = lines.get(i);
-            if (line.matches("Sentence #[0-9]+.*")) {
-                characterInSentence = 0;
-            } else if (line.matches("\\[Text=.+ CharacterOffsetEnd=[0-9]+\\]")) {
-                //Do nothing, we don't want these
-//                System.out.println("ERROR: CLEAN FIRST sent:" + line);
-            } else {
-
-                String[] split = line.split("\\s+");
-
-                //Renormalize brackets and build combined renormalized string
-                for (int j = 0; j < split.length; j++) {
-                    split[j] = renormalizeBracket(split[j]);
-                }
-                String combined = "";
-                for (int j = 0; j < split.length; j++) {
-                    combined += split[j];
-                }
-
-                //Tokenize by character
-                for (int j = 0; j < combined.length(); j++) {
-                    characterInText++;
-                    characterInSentence++;
-                    Token token = new Token("" + combined.charAt(j));
-                    token.indexInText = characterInText;
-                    token.indexInSentence = characterInSentence;
-                    token.set("split", "_");
-                    output.add(token);
-
-                }
-            }
-        }
-
-        return output;
-    }
-
 }

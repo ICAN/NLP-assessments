@@ -24,6 +24,7 @@
 package nlpassessment;
 
 import java.util.HashMap;
+import java.util.Set;
 
 /**
  *
@@ -36,9 +37,9 @@ public class Token {
     public int indexInText = -1; //1-indexed
     public int indexInSentence = -1; //1-indexed
     public int sentenceNumber = -1; //1-indexed
-    public int firstCharInSentence = -1;
-    public int lastCharInSentence = -1;
-    private HashMap<String, String> props = new HashMap<>();
+    public int startingChar = -1; //inclusive
+    public int endingChar = -1; //exclusive //TODO: Check
+    public HashMap<String, String> props = new HashMap<>();
     
     public Token() {}
     
@@ -46,27 +47,36 @@ public class Token {
         props.put("token", token);
     }
     
-    //Neither keys nor values are case sensitive
+    //Both keys and values are case sensitive
     public void set(String key, String value) {
-        props.put(key.toLowerCase(), value.toLowerCase());
+        props.put(key, value);
     }
 
-    //Not case sensitive
+    //Case sensitive
     //Returns the empty string if property is not set
     public String get(String key) {
-        return props.getOrDefault(key.toLowerCase(), "");
+        return props.getOrDefault(key, "");
+    }
+    
+    public Set<String> getTagset() {
+        return props.keySet();
     }
     
     
+    public Token deepClone() {
+        Token clone = new Token(this.get("token"));
+        clone.indexInText = this.indexInText;
+        clone.indexInSentence = this.indexInSentence;
+        clone.sentenceNumber = this.sentenceNumber;
+        clone.startingChar = this.startingChar;
+        clone.endingChar = this.endingChar;
+        for(String tag : this.getTagset()) {
+            clone.set(tag, this.get(tag));
+        }
+        return clone;
+    }
     
-//    
-//    public Token (int tokenInText, int tokenInSentence, String token, String tag) {
-//        this.indexInText = tokenInText;
-//        this.indexInSentence = tokenInSentence;
-//        this.token = token.trim();
-//        this.semantic = semantic;
-//    }
-    //TODO ensure this is standard
+    //TODO: fix
     //Columns are: wordIndex (in entire text),wordIndex(in sentence), token, lemma, POS, NER
     public String toString() {
         return indexInText + "\t " + indexInSentence + "\t" + props.get("token");

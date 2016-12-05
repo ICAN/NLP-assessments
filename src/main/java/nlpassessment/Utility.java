@@ -38,33 +38,32 @@ import java.util.Scanner;
  */
 public class Utility {
 
-    
     //Uses the "header" to determine field names
     //If "header" is the empty string, then the first line of the input file is used
     //If a header is provided as an argument, it will be split on whitespace
     public static Document importTSVDocument(String fileName, String columnSeparator, String header) {
-        
+
         ArrayList<String> lines = Utility.readFileAsLines(fileName);
         int i = 0;
         ArrayList<Token> tokens = new ArrayList<>();
-        
+
         String[] fields;
-        
+
         //Use the first line as the header if none was provided
-        if(header.equalsIgnoreCase("")) {
+        if (header.equalsIgnoreCase("")) {
             fields = lines.get(0).split(columnSeparator);
             i++;
         } else {
             //If a header was provided, split it on whitespace
             fields = header.split("\\s+");
         }
-        
+
         //Parse each line, adding new tokens to the token list
-        while(i<lines.size()) {
+        while (i < lines.size()) {
             String[] split = lines.get(i).split(columnSeparator);
             Token token = new Token();
-            for(int j = 0; j < fields.length; j++) {
-                if(fields[j].equalsIgnoreCase("indexInText")) {
+            for (int j = 0; j < fields.length; j++) {
+                if (fields[j].equalsIgnoreCase("indexInText")) {
                     token.indexInText = Integer.parseInt(split[j]);
                 } else if (fields[j].equalsIgnoreCase("indexInSentence")) {
                     token.indexInSentence = Integer.parseInt(split[j]);
@@ -74,20 +73,12 @@ public class Utility {
             }
             tokens.add(token);
             i++;
-        } 
-        
+        }
+
         Document document = new Document();
         document.tokenList = tokens;
         return document;
     }
-
-
-
-
-
-
-
-
 
     //Waits for the process to end & returns the result
     //TODO: build variant which returns Process
@@ -133,8 +124,6 @@ public class Utility {
         return lineCount;
     }
 
-       
-    
 //    public static ArrayList<Token> readFileAsStandardTokens(String fileName, String targetTag) {
 //        return standardLinesToTokens(readFileAsLines(fileName), targetTag);
 //    }
@@ -142,7 +131,6 @@ public class Utility {
 //    public static ArrayList<Token> readFileAsShortTokens(String fileName, int lineLength, String targetTag) {
 //        return shortLinesToTokens(readFileAsLines(fileName), lineLength, targetTag);
 //    }
-
     public static String listToString(ArrayList<String> lines, boolean insertLineBreaks) {
         String condensed = "";
         if (insertLineBreaks) {
@@ -199,86 +187,14 @@ public class Utility {
         return listToString(readFileAsLines(fileName), insertLineBreaks);
     }
 
-    
     //TODO: 
     public static ArrayList<Token> tsvToTokens(ArrayList<String> lines, ArrayList<String> fields) {
         ArrayList<Token> tokens = new ArrayList<>();
-        
+
         //TODO: Write. Generalized.
-        
-        
         return tokens;
     }
-    
-    //Input: Any standardized set of lines (one token per line, 4 fields per token)
-    //Returns a list of tokens corresponding to the tokens on those lines
-    //Assumes all tokens are semantic
-    //TODO: Check/test
-//    public static ArrayList<Token> standardLinesToTokens(ArrayList<String> lines, String targetTag) {
-//
-//        ArrayList<Token> tokens = new ArrayList<>();
-//        for (String line : lines) {
-//            String[] split = line.split("\\s+");
-//            if (split.length == 4) {
-//                Token token = new Token(split[2]);
-//                token.indexInText = Integer.parseInt(split[0]);
-//                token.indexInSentence = Integer.parseInt(split[1]);
-//                token.tags.put(targetTag, split[3]);
-//                tokens.add(token);
-//            } else {
-//                System.out.println("Invalid line: " + line + " has " + split.length + " tokens.");
-//            }
-//        }
-//        return tokens;
-//    }
 
-    //Input: Lines in token-whitepace-tag format
-    //Output: Token list with indexInText set, and "semantic" defaulted to true
-    //TODO: FIX
-//    public static ArrayList<Token> shortLinesToTokens(ArrayList<String> lines, int lineLength, String targetTag) {
-//        ArrayList<Token> tokens = new ArrayList<>();
-//        int tokenCount = 0;
-//        for (String line : lines) {
-//            String[] split = line.split("\\s+");
-//            if (split.length == 3
-//                    && lineLength == 3) {
-//                tokenCount++;
-//                //TODO: THIS IS WRONG
-//                Token token = new Token(split[0]);
-//                token.indexInText = tokenCount;
-//
-//                tokens.add(token);
-//            } else if (split.length == 2
-//                    && lineLength == 2) {
-//                tokenCount++;
-//                Token token = new Token(split[0]);
-//                token.indexInText = tokenCount;
-//                token.tags.put(targetTag, split[1]);
-//                tokens.add(token);
-//            } else {
-//                System.out.println("Invalid line: " + line + " has " + split.length + " tokens.");
-//            }
-//        }
-//        return tokens;
-//    }
-
-    //Uses Token.toString()
-    public static ArrayList<String> tokensToStandardLines(ArrayList<Token> tokens) {
-        ArrayList<String> lines = new ArrayList<>();
-        for (Token token : tokens) {
-            lines.add(token.toString());
-        }
-        return lines;
-    }
-
-    //Includes only Token.token and Token.tagset in each line
-    public static ArrayList<String> tokensToShortLines(ArrayList<Token> tokens, String targetTag) {
-        ArrayList<String> lines = new ArrayList<>();
-        for (Token token : tokens) {
-            lines.add(token.indexInText + "\t" + token.get("token") + "\t" + token.get(targetTag));
-        }
-        return lines;
-    }
 
     public static void writeFile(String contents, String fileName) {
         try {
@@ -331,16 +247,6 @@ public class Utility {
         return tagCounts;
     }
 
-    public static int getSemanticTokenCount(ArrayList<Token> tokens) {
-        int count = 0;
-        for (Token token : tokens) {
-            if (token.get("semantic").equalsIgnoreCase("true")); {
-                count++;
-            }
-        }
-        return count;
-    }
-
     public static void countTags(ArrayList<Token> tokens) {
         int adj = 0, noun = 0, adv = 0, verb = 0, other = 0;
 
@@ -360,277 +266,5 @@ public class Utility {
         }
 
     }
-
-    //Compares tags of two standardized token lists
-    //NOTE: list lengths and all contained tokens MUST match
-    public static String compareTags(ArrayList<Token> results, ArrayList<Token> goldStandard, String key, String tagType) {
-
-        if (results.size() != goldStandard.size()) {
-            System.out.println("Tokens list lengths differ");
-        }
-
-        System.out.println("\n\n\nSTARTING COMPARISON"
-                + "\n");
-
-        int trueNegatives = 0;
-        int falseNegatives = 0;
-        int truePositives = 0;
-        int falsePositives = 0;
-        int tokenMismatches = 0;
-
-        //Detect mismatches on tokens which differ between results and standard
-        //Unless both are tagged "other"
-        for (int i = 0; i < results.size(); i++) {
-            if (!results.get(i).get("token").equalsIgnoreCase(goldStandard.get(i).get("token")) //                    && !results.get(goldIter).tagset.equalsIgnoreCase("Other")
-                    //                    && !goldStandard.get(goldIter).tagset.equalsIgnoreCase("Other")
-                    ) {
-                tokenMismatches++;
-                System.out.println("Mismatch: " + results.get(i).toString() + " \t\t " + goldStandard.get(i).toString());
-                System.out.println("Warning: Results invalid due to " + tokenMismatches + " token mismatches");
-            }
-
-            if (results.get(i).get(tagType).equalsIgnoreCase(key)
-                    && goldStandard.get(i).get(tagType).equalsIgnoreCase(key)) {
-
-                truePositives++;
-
-            } else if (goldStandard.get(i).get(tagType).equalsIgnoreCase(key)
-                    && !results.get(i).get(tagType).equalsIgnoreCase(key)) {
-
-                falseNegatives++;
-
-            } else if (results.get(i).get(tagType).equalsIgnoreCase(key)
-                    && !goldStandard.get(i).get(tagType).equalsIgnoreCase(key)) {
-                falsePositives++;
-
-            } else {
-                trueNegatives++;
-            }
-
-        }
-
-        assert results.size() == (trueNegatives + truePositives + falseNegatives + falsePositives);
-
-        double sensitivity = (double) truePositives / (double) (falseNegatives + truePositives);
-        double specificity = (double) trueNegatives / (double) (falsePositives + trueNegatives);
-
-        String report = key;
-        report += "\nSampleSize = " + results.size();
-        report += "\nTruePos = " + truePositives;
-        report += "\nFalseNeg = " + falseNegatives;
-        report += "\nFalsePos = " + falsePositives;
-        report += "\nSensitivity = " + sensitivity;
-        report += "\nSpecificity = " + specificity;
-
-        return report;
-
-    }
-
-    //Returns the consensus of the input token lists
-    //Inputs must already be standardized and restricted to common tokens 
-    //so that input list lengths are identical and all tokens match
-    public static ArrayList<Token> getTagConsensus(ArrayList<ArrayList<Token>> inputs, double threshold, String key) {
-
-        int agreement = 0;
-        int unanimousDecision = 0;
-        int disagreement = 0;
-
-        ArrayList<Token> consensus = new ArrayList<>();
-
-        //For each token i
-        for (int i = 0; i < inputs.get(0).size(); i++) {
-
-            HashMap<String, Integer> tagCount = new HashMap<>();
-            Token token = new Token(inputs.get(0).get(i).get("token"));
-            token.indexInText = i;
-
-            System.out.print("\nToken: " + token.get("token") + " ");
-
-            //Count instances of each tagset for this token i
-            for (ArrayList<Token> list : inputs) {
-
-                //Tokens must match
-                assert list.get(i).get("token").equalsIgnoreCase(list.get((i + 1) % inputs.size()).get("token"));
-
-                String tag = list.get(i).get(key);
-                System.out.print(tag + " ");
-                if (tagCount.containsKey(tag)) {
-                    tagCount.put(tag, tagCount.get(tag) + 1);
-                } else {
-                    tagCount.put(tag, 1);
-                }
-            }
-
-            //Find & set consensus tagset
-            for (String tag : tagCount.keySet()) {
-                if (tagCount.get(tag) > inputs.size() * threshold) {
-                    token.set(key, tag);
-//                    System.out.print(" : " + tag);
-                    agreement++;
-                    if (tagCount.get(tag) == inputs.size()) {
-                        unanimousDecision++;
-                    }
-                }
-            }
-
-            if (token.get(key).equalsIgnoreCase("??")) {
-                System.out.print(" : ????");
-                disagreement++;
-            }
-            consensus.add(token);
-        }
-
-        assert (agreement + disagreement) == inputs.get(0).size();
-
-        System.out.println("\nTarget tag type: " + key
-                + "\nTokens: " + (agreement + disagreement)
-                + "\nDisagreement: " + disagreement
-                + "\nAgreements: " + agreement
-                + "\nUnanimous: " + unanimousDecision);
-
-        System.out.print("\nSizes: ");
-        for (int i = 0; i < inputs.size(); i++) {
-            System.out.print(inputs.get(i).size() + " ");
-        }
-        return consensus;
-    }
-    
-    //Returns a new token list based on the "input" token list, 
-    //and excluding those tokens which fail to find a match in "standard"
-    //"input" and "standard" lists are not modified
-    //TODO: rewrite/clarify
-    //skipCatchupRange helps determine how far to look when dealing with token mismatches
-    //Higher skipCatchupRange numbers search further; 3 seems to work well for word-tokens
-    //8 seems to work for character-tokens
-    public static ArrayList<Token> getCommonTokenList(ArrayList<Token> input, ArrayList<Token> standard, int skipCatchupRange) {
-
-        ArrayList<Token> output = new ArrayList<>();
-
-        System.out.println("\n\nSTARTING PAIRWISE TOKEN REMOVAL");
-
-        //Results variables
-        int standardTokensIgnored = 0;
-        int inputTokensExcluded = 0;
-        int tokenCount = 0;
-
-        //Iterators
-        int stdIter = 0, inputIter = 0;
-        while (stdIter < standard.size()
-                && inputIter < input.size()) {
-
-            //DETECTING TOKEN MISMATCH
-            boolean tokenMatch = false;
-            if (!input.get(inputIter).get("token").equalsIgnoreCase(standard.get(stdIter).get("token"))) {
-//                System.out.println("Token mismatch: std='" + standard.get(stdIter).i + "' input='" + input.get(inputIter).i + "'");
-            } else {
-                tokenMatch = true;
-            }
-
-            //HANDLING TOKEN MISMATCH
-            //Uses the standard iterator as an anchor, searches in increasingly wide regions
-            //around the output iterator, but only forward of the starting point
-            //The further the standard iterator has to increase, the further the input iterator is allowed to range
-            //Neither is permitted to search backwards from their starting position at mismatch, 
-            //since it can be assumed that immediately preceding tokens are properly matched
-            if (!tokenMatch) {
-                int startingInputIter = inputIter;
-
-                //corrections for ugly algorithm below
-                int deltaStdIter = -1;
-                stdIter--;
-
-                //ITERATING FORWARD IN GOLD STANDARD
-                while (!tokenMatch
-                        && stdIter < standard.size() - 2) {
-                    stdIter++;
-                    deltaStdIter++;
-
-                    //SEARCHING INCREASINGLY WIDE IN RESULTS TO FIND MATCHING TOKEN
-                    inputIter = startingInputIter + Math.max(0, deltaStdIter / 2 - skipCatchupRange);
-
-                    while (inputIter < startingInputIter + deltaStdIter * 1.5 + skipCatchupRange
-                            && inputIter < input.size()) {
-                        if (input.get(inputIter).get("token").equalsIgnoreCase(standard.get(stdIter).get("token"))) {
-                            tokenMatch = true;
-
-                            //Debug
-//                            System.out.println("Match found: " + input.get(inputIter).i + "=" + standard.get(stdIter).i);
-                            break;
-                        } else {
-                            inputIter++;
-                        }
-                    }
-
-                }
-
-                //CALCULATING TRACKERS
-                int deltaInputIter = inputIter - startingInputIter;
-//                System.out.println("Ignored " + deltaInputIter + " input tokens and " + deltaStdIter + " standard tokens this mismatch");
-                standardTokensIgnored += deltaStdIter;
-                inputTokensExcluded += deltaInputIter;
-
-                //Debug
-//                if (stdIter < standard.size() && inputIter < input.size()) {
-//                    System.out.println("Gold: " + stdIter + " " + standard.get(stdIter).i + " Res: " + inputIter + " " + input.get(inputIter).i);
-//                }
-            }
-
-            //ADD INPUT TOKEN TO OUTPUT
-            if (tokenMatch) {
-                tokenCount++;
-                Token token = input.get(inputIter);
-                token.indexInText = tokenCount;
-                output.add(token);
-            } else {
-                System.out.println("ERROR: MATCHING FAILED");
-            }
-
-//            //Debug
-//            if (stdIter >= standard.size()
-//                    || inputIter >= input.size()) {
-//                System.out.println("ITERATOR OUT OF BOUNDS");
-//                System.out.println("Standard Iterator: " + stdIter + "/" + standard.size()
-//                        + "\n" + "Target Iterator: " + inputIter + "/" + input.size());
-//                break;
-//            }
-            inputIter++;
-            stdIter++;
-        }
-
-        assert (output.size() + inputTokensExcluded == input.size());
-
-        System.out.println("\n" + standardTokensIgnored + "/" + standard.size() + " standard tokens unmatched "
-                + "\n" + inputTokensExcluded + "/" + input.size() + " input tokens excluded");
-
-        return output;
-
-    }
-
-    //Returns a list of tokens, excluding any tokens which don't appear in *all* input lists
-    //Uses the list at "base" as the starting list (so its tags and other data are used)
-    //and restricts from there
-    public static ArrayList<Token> getCommonlTokenList(ArrayList<ArrayList<Token>> inputs, int base, int skipCatchupRange) {
-
-        //Start with arbitrary base token list
-        ArrayList<Token> output = inputs.get(base);
-
-        //Iterate through other lists, restricting base list to tokens for which
-        //matches are found in the other lists
-        for (int i = 0; i < inputs.size(); i++) {
-            if (i != base) {
-                output = getCommonTokenList(output, inputs.get(i), skipCatchupRange);
-            }
-        }
-
-        System.out.print("\nInput lengths: ");
-        for (ArrayList<Token> list : inputs) {
-            System.out.print(list.size() + ", ");
-        }
-
-        System.out.print("\nOutput length: " + output.size());
-        return output;
-    }
-    
-    
 
 }
