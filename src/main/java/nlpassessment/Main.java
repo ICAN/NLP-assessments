@@ -27,10 +27,7 @@ import stemming.Stemming;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-/**
- *
- * @author Neal
- */
+
 public class Main {
 
     /**
@@ -38,9 +35,10 @@ public class Main {
      */
     public static void main(String[] args) {
 
-//        Stemming.runStemmerTests();
-        Document openNLP = OpenNLP.runPOSAnnotator("test.txt");
+//        Assessment.runStemmerTests();
         
+        CoreNLP.runAnnotator("test.txt", "output-core.tsv");
+        OpenNLP.runPOSAnnotator("test.txt", "output-open.tsv");
         
         
     }

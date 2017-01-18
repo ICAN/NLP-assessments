@@ -31,38 +31,86 @@ import java.util.Set;
  * @author Neal Logan
  *
  */
-public class Token {    
+public class Token {
+
     
+
     //Properties
     public int indexInText = -1; //1-indexed
     public int indexInSentence = -1; //1-indexed
     public int sentenceNumber = -1; //1-indexed
     public int startingChar = -1; //inclusive
     public int endingChar = -1; //exclusive //TODO: Check
-    public HashMap<String, String> props = new HashMap<>();
-    
-    public Token() {}
-    
-    public Token(String token) {
-        props.put("token", token);
+    public HashMap<String, String> properties = new HashMap<>();
+
+    public Token() {
     }
-    
+
+    public Token(String token) {
+        properties.put("token", token);
+    }
+
     //Both keys and values are case sensitive
     public void set(String key, String value) {
-        props.put(key, value);
+        if (isCoreNumericField(key)) {
+            System.out.println("ERROR: " + key + " is a core property");
+            return;
+        } else {
+            properties.put(key, value);
+        }
+    }
+
+    public void set(String key, int value) {
+
     }
 
     //Case sensitive
     //Returns the empty string if property is not set
+    //Returns core numeric fields as strings
     public String get(String key) {
-        return props.getOrDefault(key, "");
+        if (!isCoreNumericField(key)) {
+            return properties.getOrDefault(key, "");
+        } else if (key.equalsIgnoreCase("indexInText")) {
+            return "" + indexInText;
+        } else if (key.equalsIgnoreCase("indexInSentence")) {
+            return "" + indexInSentence;
+        } else if (key.equalsIgnoreCase("sentenceNumber")) {
+            return "" + sentenceNumber;
+        } else if (key.equalsIgnoreCase("startingChar")) {
+            return "" + startingChar;
+        } else if (key.equalsIgnoreCase("endingChar")) {
+            return "" + endingChar;
+        } else {
+            System.out.println("ERROR: Property " + key + " not found in token.");
+            return "";
+        }
     }
-    
+
+    //Returns this token as a single TSV line with the specified fields
+    public String getAsTSV(String[] fields) {
+        String tsv = "";
+        for (String field : fields) {
+            tsv += this.get(field) + "\t";
+        }
+        return tsv.trim();
+    }
+
+    private boolean isCoreNumericField(String key) {
+        if (key.equalsIgnoreCase("indexInText")
+                || key.equalsIgnoreCase("indexInSentence")
+                || key.equalsIgnoreCase("sentenceNumber")
+                || key.equalsIgnoreCase("startingChar")
+                || key.equalsIgnoreCase("endingChar")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public Set<String> getTagset() {
-        return props.keySet();
+        return properties.keySet();
     }
-    
-    
+
     public Token deepClone() {
         Token clone = new Token(this.get("token"));
         clone.indexInText = this.indexInText;
@@ -70,16 +118,16 @@ public class Token {
         clone.sentenceNumber = this.sentenceNumber;
         clone.startingChar = this.startingChar;
         clone.endingChar = this.endingChar;
-        for(String tag : this.getTagset()) {
+        for (String tag : this.getTagset()) {
             clone.set(tag, this.get(tag));
         }
         return clone;
     }
-    
+
     //TODO: fix
     //Columns are: wordIndex (in entire text),wordIndex(in sentence), token, lemma, POS, NER
     public String toString() {
-        return indexInText + "\t " + indexInSentence + "\t" + props.get("token");
+        return indexInText + "\t " + indexInSentence + "\t" + properties.get("token");
     }
 
 }

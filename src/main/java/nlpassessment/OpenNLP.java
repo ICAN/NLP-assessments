@@ -45,10 +45,21 @@ import opennlp.tools.util.Span;
 public class OpenNLP {
 
     public static final String modelPath = "/home/neal/OpenNLP/";
+    public static final String[] OPEN_FIELDS = {
+        Tag.IN_TEXT,
+        Tag.IN_SENT,
+        Tag.SENT,
+        Tag.S_CHAR,
+        Tag.E_CHAR,
+        Tag.TOKEN,
+        Tag.POS
+        };
+
 
     //Returns an annotated Document object
     //Including sentence-splits, tokenization, POS-tagging
-    public static Document runPOSAnnotator(String inputFileName) {
+    //TODO: Test output
+    public static void runPOSAnnotator(String inputFileName, String outputFileName) {
 
         String input = Utility.readFileAsString(inputFileName, true);
 
@@ -136,13 +147,15 @@ public class OpenNLP {
                 tokenCount++;
             }
         }
+        
+        ArrayList<String> output = document.toTSV(OPEN_FIELDS);
 
-        return new Document();
     }
 
     //Returns an annotated Document object
     //Includes sentence-splitting, tokenization, NE-tagging
     //TODO: Confirm NER-tagger functionality (looks broken)
+    //TODO: Once NER working, make sure the output also works
     public static Document runNERAnnotator(String inputFileName) {
 
         String input = Utility.readFileAsString(inputFileName, true);
@@ -356,7 +369,6 @@ public class OpenNLP {
         return new Document();
     }
 
-    
     public static String simplifyPOSTag(String posTag) {
 
         if (posTag.matches("NN.*")

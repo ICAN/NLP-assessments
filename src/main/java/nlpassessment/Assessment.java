@@ -1,17 +1,31 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * The MIT License
+ *
+ * Copyright 2016 Neal Logan.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
  */
 package nlpassessment;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
-/**
- *
- * @author neal
- */
 public class Assessment {
 
     //Compares tags of two standardized token lists
@@ -33,10 +47,9 @@ public class Assessment {
 
         //Detect mismatches on tokens which differ between results and standard
         //Unless both are tagged "other"
+        //TODO: Why not always detect token mismatches?
         for (int i = 0; i < results.size(); i++) {
-            if (!results.get(i).get("token").equalsIgnoreCase(goldStandard.get(i).get("token")) //                    && !results.get(goldIter).tagset.equalsIgnoreCase("Other")
-                    //                    && !goldStandard.get(goldIter).tagset.equalsIgnoreCase("Other")
-                    ) {
+            if (!results.get(i).get("token").equalsIgnoreCase(goldStandard.get(i).get("token"))) {
                 tokenMismatches++;
                 System.out.println("Mismatch: " + results.get(i).toString() + " \t\t " + goldStandard.get(i).toString());
                 System.out.println("Warning: Results invalid due to " + tokenMismatches + " token mismatches");
@@ -148,14 +161,20 @@ public class Assessment {
         return consensus;
     }
     
-    //Returns a new token list based on the "input" token list, 
-    //and excluding those tokens which fail to find a match in "standard"
-    //"input" and "standard" lists are not modified
+  /* 
+    Returns a new token list based on the "input" token list, 
+    and excluding those tokens which fail to find a match in "standard"
+    "input" and "standard" lists are not modified
+
+    searchRange variable:
+    searchRange helps determine how far to look when dealing with token mismatches
+    It is not literally the distance to be searched in characters or tokens
+    Higher search range numbers search further
+    3 seems to work fine for word-tokens
+    8 seems to work for character-tokens
+*/
     //TODO: rewrite/clarify
-    //skipCatchupRange helps determine how far to look when dealing with token mismatches
-    //Higher skipCatchupRange numbers search further; 3 seems to work well for word-tokens
-    //8 seems to work for character-tokens
-    private static ArrayList<Token> getCommonTokenList(ArrayList<Token> input, ArrayList<Token> standard, int skipCatchupRange) {
+private static ArrayList<Token> getCommonTokenList(ArrayList<Token> input, ArrayList<Token> standard, int searchRange) {
 
         ArrayList<Token> output = new ArrayList<>();
 
@@ -180,11 +199,10 @@ public class Assessment {
             }
 
             //HANDLING TOKEN MISMATCH
-            //Uses the standard iterator as an anchor, searches in increasingly wide regions
-            //around the output iterator, but only forward of the starting point
-            //The further the standard iterator has to increase, the further the input iterator is allowed to range
-            //Neither is permitted to search backwards from their starting position at mismatch, 
-            //since it can be assumed that immediately preceding tokens are properly matched
+            //Uses the "standard" iterator as an anchor, searches in increasingly wide regions
+            //around the "input" iterator, but only forward from the starting point 
+            //because all previous tokens are assumed to have been matched or discarded
+            //The further the "standard" iterator has had to increase, the further the "input" iterator is allowed to search from there
             if (!tokenMatch) {
                 int startingInputIter = inputIter;
 
@@ -199,9 +217,9 @@ public class Assessment {
                     deltaStdIter++;
 
                     //SEARCHING INCREASINGLY WIDE IN RESULTS TO FIND MATCHING TOKEN
-                    inputIter = startingInputIter + Math.max(0, deltaStdIter / 2 - skipCatchupRange);
+                    inputIter = startingInputIter + Math.max(0, deltaStdIter / 2 - searchRange);
 
-                    while (inputIter < startingInputIter + deltaStdIter * 1.5 + skipCatchupRange
+                    while (inputIter < startingInputIter + deltaStdIter * 1.5 + searchRange
                             && inputIter < input.size()) {
                         if (input.get(inputIter).get("token").equalsIgnoreCase(standard.get(stdIter).get("token"))) {
                             tokenMatch = true;
@@ -235,6 +253,7 @@ public class Assessment {
                 token.indexInText = tokenCount;
                 output.add(token);
             } else {
+                //Fail fast if tokens are being rejected excessively
                 System.out.println("ERROR: MATCHING FAILED");
             }
 

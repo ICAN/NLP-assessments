@@ -50,20 +50,20 @@ def print_file(file):
 
 def write_tsv(doc, out_file):
     
-    sents = doc.sents
+    sents = doc.sents       
     sent_starts = set()
     sent_ends = set()
+    
     for sent in sents:
         sent_starts.add(sent.start)
-
-
-
+        sent_ends.add(sent.end)
         
+    
     internal_token_number = 0
     tokenInText = 1 #1-indexed
     tokenInSentence = 1 #1-indexed
     sentenceNumber = 1 #1-indexed
-    
+        
     #TSV column headers
     out_file.write(
                   "tokenInText"
@@ -77,15 +77,42 @@ def write_tsv(doc, out_file):
                   )
         
     for token in doc:
-
+        
+        
+    #Sentence-splitting debugging    
+#        is_start = False
+#        is_end = False
+#        starting_sentence_ending_tokens = "        "        
+#        ending_sentence_starting_tokens = "        "
+#        
         if internal_token_number in sent_starts:
             tokenInSentence = 1
-            sentenceNumber += 1                    
+            sentenceNumber += 1
+#            is_start = True
+#            starting_sentence_ending_tokens = "e:"
+#        
+#        if internal_token_number in sent_ends:
+#            is_end = True
+#            ending_sentence_starting_tokens = "s:"   
+#            
+#        for sent in doc.sents:
+#            sent_start = sent.start
+#            sent_end = sent.end
+#            if internal_token_number == sent_end:
+#                ending_sentence_starting_tokens += (str(sent.label) + " " + str(sent_start) + " ")   
+#            if internal_token_number == sent_start:
+#                starting_sentence_ending_tokens += (str(sent.label) + " " + str(sent_end) + " ")                    
+                    
+            
         if token.tag_ != 'SP': #'SP' tokens excluded
+#            print(
             out_file.write(
-                          str(tokenInText)
+                           str(tokenInText)
+#                          "\t" + str(internal_token_number) 
                           + "\t" + str(tokenInSentence)
-                          + "\t" + str(sentenceNumber)    
+                          + "\t" + str(sentenceNumber)
+#                          + "\t" + starting_sentence_ending_tokens
+#                          + "\t" + ending_sentence_starting_tokens
                           + "\t" + str(token)      
                           + "\t" + token.tag_ 
                           + "\t" + token.lemma_
@@ -96,7 +123,8 @@ def write_tsv(doc, out_file):
             
         internal_token_number += 1 #Count all tokens regardless of inclusion
 
-            
+        
+        
 if __name__ == '__main__':           
       
     #command line args; sys.argv[0] is the script name
@@ -104,7 +132,7 @@ if __name__ == '__main__':
     #out_file_name = sys.argv[2] # Second cmd-line arg is output file
       
     in_file_name = 'test.txt'
-    out_file_name = 'spacyOut.tsv'
+    out_file_name = 'spacy-out.tsv'
             
     in_file = open(in_file_name, "r", encoding="utf-8")
     out_file = open(out_file_name, "w", encoding ="utf-8")   
@@ -127,67 +155,8 @@ if __name__ == '__main__':
     nlp.entity(doc)
 
 
-#    write_tsv(doc, out_file)
-
-    
-    sents = doc.sents
-    filtered_sents = set()
-    sents_checked = 0
-    for checked_sent in sents:
-        is_contained = False
-        sents_checked += 1
-        for possible_containing_sent in sents:
-            if span_contains(possible_containing_sent, checked_sent):
-                is_contained = True;
-
-                
-        if is_contained != True:
-            filtered_sents.add(checked_sent)
-
-     
-            
-    print("sents discarded: " + str(sents_checked - len(filtered_sents)))
-            
-            
-    sent_starts = set()
-    sent_ends = set()
-    for sent in sents:
-        sent_starts.add(sent.start)
+    write_tsv(doc, out_file)
 
 
-    
-#        
-#    internal_token_number = 0
-#    tokenInText = 1; #1-indexed
-#    tokenInSentence = 1; #1-indexed
-#    sentenceNumber = 1; #1-indexed
-#    for token in doc:
-#
-#        if internal_token_number in sent_starts:
-#
-#            tokenInSentence = 1
-#            sentenceNumber += 1    
-#            
-#        if token.tag_ != 'SP':
-#            print(
-##                          str(internal_token_number) + "\t" +
-#                          str(tokenInText)
-#                          + "\t" + str(tokenInSentence)
-#                          + "\t" + str(sentenceNumber)
-#
-#                          + "\t" + str(token) 
-# 
-#                          + "\t" + token.tag_ 
-#                          + "\t" + token.lemma_
-#                          + "\t" + token.ent_type_
-#                          + "\r")
-#            tokenInText += 1 #Count only tokens that are included
-#            tokenInSentence += 1
-#        
-#            
-#        internal_token_number += 1
-#
-#
-#    
 
 

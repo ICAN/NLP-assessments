@@ -233,38 +233,8 @@ public class Utility {
 
     }
 
-    public static HashMap<String, Integer> getTagCounts(ArrayList<Token> tokens, String key) {
+    
 
-        HashMap<String, Integer> tagCounts = new HashMap<>();
 
-        for (Token token : tokens) {
-            if (tagCounts.keySet().contains(token.get(key))) {
-                tagCounts.put(token.get(key), tagCounts.get(token.get(key)) + 1);
-            } else {
-                tagCounts.put(token.get(key), 1);
-            }
-        }
-        return tagCounts;
-    }
-
-    public static void countTags(ArrayList<Token> tokens) {
-        int adj = 0, noun = 0, adv = 0, verb = 0, other = 0;
-
-        for (Token token : tokens) {
-            String tag = token.get("posTag");
-            if (tag.equalsIgnoreCase("NN")) {
-                noun++;
-            } else if (tag.equalsIgnoreCase("JJ")) {
-                adj++;
-            } else if (tag.equalsIgnoreCase("RB")) {
-                adv++;
-            } else if (tag.equalsIgnoreCase("VB")) {
-                verb++;
-            } else {
-                other++;
-            }
-        }
-
-    }
 
 }

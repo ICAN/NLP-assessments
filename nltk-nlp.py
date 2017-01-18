@@ -18,6 +18,7 @@ def get_wordnet_pos(treebank_tag):
 	else:
 		return ''
 
+  
 def token_process(file_in):
 	_tokens = nltk.word_tokenize(file_in)
 	return _tokens
