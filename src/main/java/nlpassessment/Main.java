@@ -30,6 +30,19 @@ import java.util.HashMap;
 
 public class Main {
 
+    public static final String[] RAW_TEXTS = {
+        "Academic1.txt",
+        "Academic3.txt",
+        "Academic10.txt",
+        "GenFict1.txt",
+        "GenFict5.txt",
+        "GenFict6.txt",
+        "NewsArticle1.txt",
+        "NewsArticle3.txt",
+        "NewsArticle10.txt"
+    };
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -37,10 +50,12 @@ public class Main {
 
 //        Assessment.runStemmerTests();
         
-        CoreNLP.runAnnotator("test.txt", "output-core.tsv");
-        OpenNLP.runPOSAnnotator("test.txt", "output-open.tsv");
-        
+        for(String input : RAW_TEXTS) {
+            CoreNLP.runAnnotator("corpora/" + input, "output/" + input.replaceAll(".txt", "-core.tsv"));
+            OpenNLP.runPOSAnnotator("corpora/" + input, "output/" + input.replaceAll(".txt", "-open.tsv"));
+        }
         
     }
-
+    
+    
 }

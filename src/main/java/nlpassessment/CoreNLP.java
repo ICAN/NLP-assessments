@@ -24,13 +24,31 @@
 package nlpassessment;
 //
 
+import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.TokensAnnotation;
+import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
+import edu.stanford.nlp.util.CoreMap;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Properties;
 
 public class CoreNLP {
+
+    public static final String[] FIELDS = {
+        Tag.INDEX_IN_TEXT,
+        Tag.INDEX_IN_SENT,
+        Tag.SENT_NUMBER,
+        //        Tag.START_CHAR,
+        //        Tag.END_CHAR,
+        Tag.TOKEN,
+        Tag.POS
+    };
 
     //PUBLIC METHODS
     //A script for running the CoreNLP pipeline
@@ -70,40 +88,72 @@ public class CoreNLP {
 //        }
 //        
 //    }
-    //TODO: Test. 
-    //Not sure about working directories etc.
-    public static void runAnnotator(String inputFile, String outputFile) {
+    
+    //TODO: Test.
+    public static void runAnnotator(String inputFileName, String outputFileName) {
 
-        // creates a StanfordCoreNLP object, with POS tagging, lemmatization, NER, parsing, and coreference resolution 
+        // creates a StanfordCoreNLP object, with POS tagging, lemmatization, NER
         Properties props = new Properties();
         props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner");
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 
-        // create an empty Annotation just with the given text
-        Annotation document = new Annotation(Utility.readFileAsString(inputFile, true));
+        //Create empty Annotation
+        Annotation annotation = new Annotation(Utility.readFileAsString(inputFileName, true));
 
-        // run all Annotators on this text
-        pipeline.annotate(document);
+        //Run annotators
+        pipeline.annotate(annotation);
+        List<CoreMap> sentences = annotation.get(SentencesAnnotation.class);
 
-        //TODO: Output document?
+        Document document = new Document();
+
+        int sentenceNumber = 1;
+        int indexInText = 1;
+        for (CoreMap sentence : sentences) {
+            int indexInSentence = 1;
+            for (CoreLabel coreToken : sentence.get(TokensAnnotation.class)) {
+                String word = coreToken.get(TextAnnotation.class);
+                String pos = coreToken.get(PartOfSpeechAnnotation.class);
+                String ne = coreToken.get(NamedEntityTagAnnotation.class);
+
+                Token token = new Token();
+                token.set(Tag.INDEX_IN_SENT, indexInSentence);
+                token.set(Tag.INDEX_IN_TEXT, indexInText);
+                token.set(Tag.SENT_NUMBER, sentenceNumber);
+                //TODO: Add start char & end char if feasible             
+                token.set(Tag.TOKEN, word);
+                token.set(Tag.POS, pos);
+                token.set(Tag.NE, ne);
+                document.tokenList.add(token);
+
+                indexInSentence++;
+                indexInText++;
+            }
+
+            sentenceNumber++;
+        }
+
+        document.PennToSimplifiedPOSTags();
         
-        
+        renormalizeBrackets(document.tokenList);
+        Utility.writeFile(document.toTSV(FIELDS), outputFileName);
+
     }
 
-    
+    public static void runAnnotator(String[] inputFileNames, String[] outputFileNames) {
+        if (inputFileNames.length != outputFileNames.length) {
+            System.out.println("Error: number of input files and number of output files differ");
+            System.exit(-1);
+        }
 
-    
-    /*
-     Converts Penn-standardized brackets to their correct single-character forms
-     */
-    private static void renormalizeAllBrackets(ArrayList<Token> tokens) {
-
-        for (Token token : tokens) {
-            token.set("token", renormalizeBracket(token.get("token")));
+        for (int i = 0; i < inputFileNames.length; i++) {
+            runAnnotator(inputFileNames[i], outputFileNames[i]);
         }
     }
 
-    private static String renormalizeBracket(String token) {
+    /*
+        Converts Penn-standardized brackets to their correct single-character forms
+     */
+    private static void renormalizeBrackets(ArrayList<Token> tokens) {
         HashMap<String, String> map = new HashMap<>();
         map.put("-LRB-", "(");
         map.put("-RRB-", ")");
@@ -112,37 +162,12 @@ public class CoreNLP {
         map.put("-LSB-", "[");
         map.put("-RSB-", "]");
 
-        if (map.containsKey(token)) {
-            token = map.get(token);
-        }
-        return token;
-    }
-    
-
-    private static void simplifyPOSTags(ArrayList<Token> tokens) {
         for (Token token : tokens) {
-            token.set(Tag.POS, simplifyPOSTag(token.get(Tag.POS)));
+            if (map.containsKey(token.get(Tag.TOKEN))) {
+                token.set(Tag.TOKEN, map.get(token.get(Tag.TOKEN)));
+            }
         }
     }
 
-    private static String simplifyPOSTag(String tag) {
-
-        if (tag.matches("NN.*")
-                || tag.equals("PRP")
-                || tag.equals("WP")) {
-            return "NN";
-        } else if (tag.matches("JJ.*")
-                || tag.equals("WP$")
-                || tag.equals("PRP$")) {
-            return "JJ";
-        } else if (tag.matches("V.*")
-                || tag.equals("MD")) {
-            return "VB";
-        } else if (tag.matches("RB.*")
-                || tag.equals("WRB")) {
-            return "RB";
-        } else {
-            return "Other";
-        }
-    }
+    
 }

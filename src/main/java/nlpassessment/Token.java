@@ -33,27 +33,26 @@ import java.util.Set;
  */
 public class Token {
 
-    
-
     //Properties
     public int indexInText = -1; //1-indexed
     public int indexInSentence = -1; //1-indexed
     public int sentenceNumber = -1; //1-indexed
-    public int startingChar = -1; //inclusive
-    public int endingChar = -1; //exclusive //TODO: Check
+    public int startingChar = -1; //inclusive, 1-indexed
+    public int endingChar = -1; //exclusive, 1-indexed //TODO: Check
     public HashMap<String, String> properties = new HashMap<>();
 
     public Token() {
+        properties.put(Tag.TOKEN, "");
     }
 
     public Token(String token) {
-        properties.put("token", token);
+        properties.put(Tag.TOKEN, token);
     }
-
+    
     //Both keys and values are case sensitive
     public void set(String key, String value) {
         if (isCoreNumericField(key)) {
-            System.out.println("ERROR: " + key + " is a core property");
+            System.out.println("ERROR: " + key + " is a core numeric field");
             return;
         } else {
             properties.put(key, value);
@@ -61,7 +60,22 @@ public class Token {
     }
 
     public void set(String key, int value) {
-
+        
+        if (!isCoreNumericField(key)) {
+            System.out.print("Error: attempting to set non-existent numeric field");
+        } else if (key.equalsIgnoreCase(Tag.INDEX_IN_TEXT)) {
+            indexInText = value;
+        } else if (key.equalsIgnoreCase(Tag.INDEX_IN_SENT)) {
+            indexInSentence = value;
+        } else if (key.equalsIgnoreCase(Tag.SENT_NUMBER)) {
+            sentenceNumber = value;
+        } else if (key.equalsIgnoreCase(Tag.START_CHAR)) {
+            startingChar = value;
+        } else if (key.equalsIgnoreCase(Tag.END_CHAR)) {
+            endingChar = value;
+        } else {
+            System.out.print("Error: attempting to set non-existent numeric field");
+        }
     }
 
     //Case sensitive

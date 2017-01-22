@@ -45,12 +45,12 @@ import opennlp.tools.util.Span;
 public class OpenNLP {
 
     public static final String modelPath = "/home/neal/OpenNLP/";
-    public static final String[] OPEN_FIELDS = {
-        Tag.IN_TEXT,
-        Tag.IN_SENT,
-        Tag.SENT,
-        Tag.S_CHAR,
-        Tag.E_CHAR,
+    public static final String[] FIELDS = {
+        Tag.INDEX_IN_TEXT,
+        Tag.INDEX_IN_SENT,
+        Tag.SENT_NUMBER,
+        Tag.START_CHAR,
+        Tag.END_CHAR,
         Tag.TOKEN,
         Tag.POS
         };
@@ -140,16 +140,19 @@ public class OpenNLP {
                 token.indexInSentence = j + 1;
                 token.indexInText = tokenCount;
                 token.sentenceNumber = i + 1;
-                token.startingChar = tokenSpans[i][j].getStart();
-                token.endingChar = tokenSpans[i][j].getEnd();
+                token.startingChar = tokenSpans[i][j].getStart() + 1; 
+                token.endingChar = tokenSpans[i][j].getEnd() + 1; 
                 token.set(Tag.POS, posTags[i][j]);
                 document.tokenList.add(token);
                 tokenCount++;
             }
         }
         
-        ArrayList<String> output = document.toTSV(OPEN_FIELDS);
+        document.PennToSimplifiedPOSTags();
+        
+        ArrayList<String> output = document.toTSV(FIELDS);
 
+        Utility.writeFile(output, outputFileName);
     }
 
     //Returns an annotated Document object
@@ -369,25 +372,7 @@ public class OpenNLP {
         return new Document();
     }
 
-    public static String simplifyPOSTag(String posTag) {
-
-        if (posTag.matches("NN.*")
-                || posTag.equals("PRP")
-                || posTag.equals("WP")) {
-            return Tag.POS_NOUN;
-        } else if (posTag.matches("JJ.*")
-                || posTag.equals("WP$")
-                || posTag.equals("PRP$")) {
-            return Tag.POS_ADJ;
-        } else if (posTag.matches("V.*")
-                || posTag.equals("MD")) {
-            return Tag.POS_VERB;
-        } else if (posTag.matches("RB.*")
-                || posTag.equals("WRB")) {
-            return Tag.POS_ADV;
-        } else {
-            return Tag.POS_OTHER;
-        }
-    }
+    
+    
 
 }

@@ -1,0 +1,56 @@
+﻿News
+NewsArticle1.txt - Retrieved from http://www.nytimes.com/2015/06/02/us/senate-bill-patriot-act-spying-nsa.html on 6/01/2015
+NewsArticle2.txt - Retrieved from http://news.yahoo.com/obama-administration-cracking-down-trans-fats-125438044--finance.html
+NewsArticle3.txt - Retrieved from http://www.indybay.org/newsitems/2011/01/26/18670258.php
+NewsArticle4.txt - Retrieved from http://www.washingtonpost.com/news/world/wp/2014/12/22/pope-francis-warns-vatican-leaders-against-spiritual-alzheimers/
+NewsArticle5.txt - Retrieved from http://www.indybay.org/newsitems/2015/06/03/18773093.php
+NewsArticle6.txt - Retrieved from http://www.npr.org/sections/health-shots/2015/01/27/381888697/to-protect-his-son-a-father-asks-school-to-bar-unvaccinated-children
+NewsArticle7.txt -Retrieved from http://www.forbes.com/sites/gbcurley/2015/05/25/south-koreas-startup-culture-marred-by-misguided-ambitions/
+NewsArticle8.txt - Retrieved from http://www.theguardian.com/us-news/2015/may/20/hundreds-tech-companies-oppose-tpp-trade-agreement
+NewsArticle9.txt -Retrieved from http://articles.philly.com/2015-04-09/news/60947598_1_three-officers-police-dog-administrative-leave
+NewsArticle10.txt - Retrieved from http://www.adn.com/article/20150616/willow-residents-defy-evacuation-advisory-fire-advances
+
+
+Poetry
+Poetry1.txt - retrieved from https://www.gutenberg.org/cache/epub/1567/pg1567.txt on June 17th, 2015
+Poetry2.txt - retrieved from https://www.gutenberg.org/cache/epub/1322/pg1322.txt on June 17th, 2015
+Poetry3.txt - retrieved from https://www.gutenberg.org/files/1934/1934-0.txt on June 17th, 2015
+Poetry4.txt - retrieved from https://www.gutenberg.org/cache/epub/20/pg20.txt on June 17th, 2015
+Poetry5.txt - retrieved from https://www.gutenberg.org/cache/epub/17192/pg17192.txt on June 17th, 2015
+Poetry6.txt - retrieved from https://www.gutenberg.org/cache/epub/1279/pg1279.txt on June 17th, 2015
+Poetry7.txt - retrieved from https://www.gutenberg.org/cache/epub/15272/pg15272.txt on June 17th, 2015
+Poetry8.txt - retrieved from https://www.gutenberg.org/cache/epub/151/pg151.txt on June 17th, 2015
+Poetry9.txt - retrieved from https://www.gutenberg.org/cache/epub/2817/pg2817.txt on June 17th, 2015
+Poetry10.txt - retrieved from https://www.gutenberg.org/cache/epub/33156/pg33156.txt on June 17th, 2015
+
+
+General Fiction
+GenFict1.txt - retrieved from https://www.gutenberg.org/cache/epub/5200/pg5200.txt on June 17th, 2015
+GenFict2.txt - retrieved from https://www.gutenberg.org/cache/epub/98/pg98.txt on June 17th, 2015
+GenFict3.txt - retrieved from https://www.gutenberg.org/cache/epub/76/pg76.txt on June 17th, 2015
+GenFict4.txt - retrieved from https://www.gutenberg.org/cache/epub/1661/pg1661.txt on June 17th, 2015
+GenFict5.txt - retrieved from https://www.gutenberg.org/cache/epub/158/pg158.txt on June 17th, 2015
+GenFict6.txt - retrieved from https://www.gutenberg.org/cache/epub/174/pg174.txt on June 17th, 2015
+GenFict7.txt - retrieved from https://www.gutenberg.org/cache/epub/2600/pg2600.txt on June 17th, 2015
+GenFict8.txt - retrieved from https://www.gutenberg.org/cache/epub/219/pg219.txt on June 17th, 2015
+GenFict9.txt - retrieved from https://www.gutenberg.org/cache/epub/41/pg41.txt on June 17th, 2015
+GenFict10.txt - retrieved from https://www.gutenberg.org/cache/epub/31547/pg31547.txt on June 17th, 2015
+
+
+
+
+
+
+Academic Papers
+Academic1.txt - retrieved from http://arxiv.org/pdf/1506.02593.pdf on June 17th, 2015
+Academic2.txt - retrieved from http://arxiv.org/pdf/1506.04767.pdf on June 17th, 2015
+Academic3.txt - retrieved from http://arxiv.org/pdf/1506.04923.pdf on June 17th, 2015
+Academic4.txt - retrieved from http://arxiv.org/pdf/1506.04889.pdf on June 17th, 2015
+Academic5.txt - retrieved from http://arxiv.org/pdf/1506.03259.pdf on June 17th, 2015
+Academic6.txt - retrieved from http://arxiv.org/pdf/1506.03599.pdf on June 17th, 2015
+Academic7.txt - retrieved from http://arxiv.org/pdf/1506.02208.pdf on June 17th, 2015
+Academic8.txt - retrieved from http://arxiv.org/pdf/1506.04177.pdf on June 17th, 2015
+Academic9.txt - retrieved from http://arxiv.org/pdf/1506.02079.pdf on June 17th, 2015
+Academic10.txt - retrieved from http://arxiv.org/pdf/1506.04125.pdf on June 17th, 2015
+
+Tweets

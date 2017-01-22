@@ -176,6 +176,35 @@ public class Document {
         return tagCounts;
     }
     
+    /*
+        Converts standard POS tags to an extremely simplified set
+     */
+    public void PennToSimplifiedPOSTags() {
+        for (Token token : tokenList) {
+            String tag = token.get(Tag.POS);
+            String replacementTag;
+
+            if (tag.matches("NN.*")
+                    || tag.equals("PRP")
+                    || tag.equals("WP")) {
+                replacementTag = Tag.POS_NOUN;
+            } else if (tag.matches("JJ.*")
+                    || tag.equals("WP$")
+                    || tag.equals("PRP$")) {
+                replacementTag = Tag.POS_ADJ;
+            } else if (tag.matches("V.*")
+                    || tag.equals("MD")) {
+                replacementTag = Tag.POS_VERB;
+            } else if (tag.matches("RB.*")
+                    || tag.equals("WRB")) {
+                replacementTag = Tag.POS_ADV;
+            } else {
+                replacementTag = Tag.POS_OTHER;
+            }
+
+            token.set(Tag.POS, replacementTag);
+        }
     
+    }
 
 }

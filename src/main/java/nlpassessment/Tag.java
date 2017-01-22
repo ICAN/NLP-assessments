@@ -29,11 +29,11 @@ public class Tag {
     public static final String TAG_SEP = ","; //Intertag separator
 
     //Properties
-    public static final String IN_TEXT = "indexInText";
-    public static final String IN_SENT = "indexInSentence";
-    public static final String SENT = "sentenceNumber";
-    public static final String S_CHAR = "startingChar";
-    public static final String E_CHAR = "endingChar"; 
+    public static final String INDEX_IN_TEXT = "indexInText";
+    public static final String INDEX_IN_SENT = "indexInSentence";
+    public static final String SENT_NUMBER = "sentenceNumber";
+    public static final String START_CHAR = "startingChar";
+    public static final String END_CHAR = "endingChar"; 
     public static final String POS = "posTag";
     public static final String TOKEN = "token";
     public static final String NE = "nerTag";

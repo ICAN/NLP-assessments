@@ -30,7 +30,7 @@ public class Assessment {
 
     //Compares tags of two standardized token lists
     //NOTE: list lengths and all contained tokens MUST match
-    public static String compareTags(ArrayList<Token> results, ArrayList<Token> goldStandard, String key, String tagType) {
+    public static String compareTags(ArrayList<Token> results, ArrayList<Token> goldStandard, String tagValue, String tagKey) {
 
         if (results.size() != goldStandard.size()) {
             System.out.println("Tokens list lengths differ");
@@ -47,7 +47,7 @@ public class Assessment {
 
         //Detect mismatches on tokens which differ between results and standard
         //Unless both are tagged "other"
-        //TODO: Why not always detect token mismatches?
+        //TODO: Why not *always* detect token mismatches?
         for (int i = 0; i < results.size(); i++) {
             if (!results.get(i).get("token").equalsIgnoreCase(goldStandard.get(i).get("token"))) {
                 tokenMismatches++;
@@ -55,18 +55,18 @@ public class Assessment {
                 System.out.println("Warning: Results invalid due to " + tokenMismatches + " token mismatches");
             }
 
-            if (results.get(i).get(tagType).equalsIgnoreCase(key)
-                    && goldStandard.get(i).get(tagType).equalsIgnoreCase(key)) {
+            if (results.get(i).get(tagKey).equalsIgnoreCase(tagValue)
+                    && goldStandard.get(i).get(tagKey).equalsIgnoreCase(tagValue)) {
 
                 truePositives++;
 
-            } else if (goldStandard.get(i).get(tagType).equalsIgnoreCase(key)
-                    && !results.get(i).get(tagType).equalsIgnoreCase(key)) {
+            } else if (goldStandard.get(i).get(tagKey).equalsIgnoreCase(tagValue)
+                    && !results.get(i).get(tagKey).equalsIgnoreCase(tagValue)) {
 
                 falseNegatives++;
 
-            } else if (results.get(i).get(tagType).equalsIgnoreCase(key)
-                    && !goldStandard.get(i).get(tagType).equalsIgnoreCase(key)) {
+            } else if (results.get(i).get(tagKey).equalsIgnoreCase(tagValue)
+                    && !goldStandard.get(i).get(tagKey).equalsIgnoreCase(tagValue)) {
                 falsePositives++;
 
             } else {
@@ -80,7 +80,7 @@ public class Assessment {
         double sensitivity = (double) truePositives / (double) (falseNegatives + truePositives);
         double specificity = (double) trueNegatives / (double) (falsePositives + trueNegatives);
 
-        String report = key;
+        String report = tagValue;
         report += "\nSampleSize = " + results.size();
         report += "\nTruePos = " + truePositives;
         report += "\nFalseNeg = " + falseNegatives;
@@ -95,7 +95,7 @@ public class Assessment {
     //Returns the consensus of the input token lists
     //Inputs must already be standardized and restricted to common tokens 
     //so that input list lengths are identical and all tokens match
-    public static ArrayList<Token> getTagConsensus(ArrayList<ArrayList<Token>> inputs, double threshold, String key) {
+    public static ArrayList<Token> getTagConsensus(ArrayList<ArrayList<Token>> inputs, double threshold, String tagKey) {
 
         int agreement = 0;
         int unanimousDecision = 0;
@@ -118,7 +118,7 @@ public class Assessment {
                 //Tokens must match
                 assert list.get(i).get("token").equalsIgnoreCase(list.get((i + 1) % inputs.size()).get("token"));
 
-                String tag = list.get(i).get(key);
+                String tag = list.get(i).get(tagKey);
                 System.out.print(tag + " ");
                 if (tagCount.containsKey(tag)) {
                     tagCount.put(tag, tagCount.get(tag) + 1);
@@ -130,7 +130,7 @@ public class Assessment {
             //Find & set consensus tagset
             for (String tag : tagCount.keySet()) {
                 if (tagCount.get(tag) > inputs.size() * threshold) {
-                    token.set(key, tag);
+                    token.set(tagKey, tag);
 //                    System.out.print(" : " + tag);
                     agreement++;
                     if (tagCount.get(tag) == inputs.size()) {
@@ -139,7 +139,7 @@ public class Assessment {
                 }
             }
 
-            if (token.get(key).equalsIgnoreCase("??")) {
+            if (token.get(tagKey).equalsIgnoreCase("??")) {
                 System.out.print(" : ????");
                 disagreement++;
             }
@@ -148,7 +148,7 @@ public class Assessment {
 
         assert (agreement + disagreement) == inputs.get(0).size();
 
-        System.out.println("\nTarget tag type: " + key
+        System.out.println("\nTarget tag type: " + tagKey
                 + "\nTokens: " + (agreement + disagreement)
                 + "\nDisagreement: " + disagreement
                 + "\nAgreements: " + agreement
