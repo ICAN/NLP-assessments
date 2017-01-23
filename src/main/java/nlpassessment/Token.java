@@ -52,8 +52,7 @@ public class Token {
     //Both keys and values are case sensitive
     public void set(String key, String value) {
         if (isCoreNumericField(key)) {
-            System.out.println("ERROR: " + key + " is a core numeric field");
-            return;
+            set(key, Integer.parseInt(value.trim()));
         } else {
             properties.put(key, value);
         }
@@ -109,7 +108,7 @@ public class Token {
         return tsv.trim();
     }
 
-    private boolean isCoreNumericField(String key) {
+    public boolean isCoreNumericField(String key) {
         if (key.equalsIgnoreCase("indexInText")
                 || key.equalsIgnoreCase("indexInSentence")
                 || key.equalsIgnoreCase("sentenceNumber")

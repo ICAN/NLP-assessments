@@ -38,16 +38,22 @@ public class Tag {
     public static final String TOKEN = "token";
     public static final String NE = "nerTag";
     public static final String LEMMA = "lemma";
-    public static final String SPLIT = "ssplit";
+    public static final String SPLITTING = "ssplit";
 
-    //Standard POS tags (small set)
+    //Simplified POS tags (small set)
     public static final String POS_NOUN = "NN";
     public static final String POS_VERB = "VB";
     public static final String POS_ADV = "RB";
     public static final String POS_ADJ = "JJ";
     public static final String POS_OTHER = "OO";
 
-    //Standard NE tags
+    //Penn POS tags
+    //TODO: Finish adding
+    public static final String PPOS_NOUN = "NN";
+    
+    
+    //Standard-ish NE tags
+    //TODO: Come up with actual standard? Is this possible?
     public static final String NE_PERSON = "PERS";
     public static final String NE_ORG = "ORG";
     public static final String NE_LOCATION = "LOC";
@@ -59,6 +65,11 @@ public class Tag {
     public static final String NE_CARDINAL = "CARD#";
     public static final String NE_GPE = "GPE";
     
-  
+    //Machine voting tags
+    public static final String NO_MAJORITY = "??"; 
+    
+    //Sentence splitting tags
+    public static final String SS_END_OF_SENT = "SPLIT";
+    public static final String SS_NONSPLIT = "--";  
     
 }

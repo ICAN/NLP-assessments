@@ -23,6 +23,7 @@
  */
 package nlpassessment;
 
+import edu.stanford.nlp.util.StringUtils;
 import java.io.File;
 
 import java.io.FileReader;
@@ -39,23 +40,17 @@ import java.util.Scanner;
 public class Utility {
 
     //Uses the "header" to determine field names
-    //If "header" is the empty string, then the first line of the input file is used
+    //If "header" is empty, then the first line of the input file is used
     //If a header is provided as an argument, it will be split on whitespace
-    public static Document importTSVDocument(String fileName, String columnSeparator, String header) {
-
+    public static Document importTSVDocument(String fileName, String columnSeparator, String[] fields) {
         ArrayList<String> lines = Utility.readFileAsLines(fileName);
         int i = 0;
         ArrayList<Token> tokens = new ArrayList<>();
 
-        String[] fields;
-
         //Use the first line as the header if none was provided
-        if (header.equalsIgnoreCase("")) {
+        if (fields.length == 0) {
             fields = lines.get(0).split(columnSeparator);
             i++;
-        } else {
-            //If a header was provided, split it on whitespace
-            fields = header.split("\\s+");
         }
 
         //Parse each line, adding new tokens to the token list
@@ -63,22 +58,24 @@ public class Utility {
             String[] split = lines.get(i).split(columnSeparator);
             Token token = new Token();
             for (int j = 0; j < fields.length; j++) {
-                if (fields[j].equalsIgnoreCase("indexInText")) {
-                    token.indexInText = Integer.parseInt(split[j]);
-                } else if (fields[j].equalsIgnoreCase("indexInSentence")) {
-                    token.indexInSentence = Integer.parseInt(split[j]);
-                } else {
-                    token.set(fields[j], split[j]);
-                }
+                token.set(fields[j], split[j]);
             }
             tokens.add(token);
             i++;
         }
-
-        Document document = new Document();
-        document.tokenList = tokens;
+        //Use file name, excluding path and extension, to get document name
+        String docName = fileName.replaceFirst("\\.\\w+", "").replaceFirst(".*/", "");
+        Document document = new Document(docName);
+        System.out.println("Imported " + docName);
+        document.tokens = tokens;
         return document;
     }
+    
+    //Uses the "header" to determine field names
+    public static Document importTSVDocument(String fileName, String columnSeparator) {
+        return importTSVDocument(fileName, columnSeparator, new String[0]);
+    }
+    
 
     //Waits for the process to end & returns the result
     //TODO: build variant which returns Process
@@ -187,14 +184,6 @@ public class Utility {
         return listToString(readFileAsLines(fileName), insertLineBreaks);
     }
 
-    //TODO: 
-    public static ArrayList<Token> tsvToTokens(ArrayList<String> lines, ArrayList<String> fields) {
-        ArrayList<Token> tokens = new ArrayList<>();
-
-        //TODO: Write. Generalized.
-        return tokens;
-    }
-
 
     public static void writeFile(String contents, String fileName) {
         try {
@@ -233,8 +222,126 @@ public class Utility {
 
     }
 
-    
+    /* 
+    Returns a new token list based on the "input" token list, 
+    and excluding those tokens which fail to find a match in "standard"
+    "input" and "standard" lists are not modified
+    searchRange variable:
+    searchRange helps determine how far to look when dealing with token mismatches
+    It is not literally the distance to be searched in characters or tokens
+    Higher search range numbers search further
+    3 seems to work fine for word-tokens
+    8 seems to work for character-tokens
+     */
+//    private static ArrayList<Token> getCommonTokenList(ArrayList<Token> input, ArrayList<Token> standard, int searchRange) {
+//
+//        ArrayList<Token> output = new ArrayList<>();
+//
+//        System.out.println("\n\nSTARTING PAIRWISE TOKEN REMOVAL");
+//
+//        //Results variables
+//        int standardTokensIgnored = 0;
+//        int inputTokensExcluded = 0;
+//        int tokenCount = 0;
+//
+//        //Iterators
+//        int stdIter = 0, inputIter = 0;
+//        while (stdIter < standard.size()
+//                && inputIter < input.size()) {
+//
+//            //DETECTING TOKEN MISMATCH
+//            boolean tokenMatch = false;
+//            if (!input.get(inputIter).get("token").equalsIgnoreCase(standard.get(stdIter).get("token"))) {
+////                System.out.println("Token mismatch: std='" + standard.get(stdIter).i + "' input='" + input.get(inputIter).i + "'");
+//            } else {
+//                tokenMatch = true;
+//            }
+//
+//            //HANDLING TOKEN MISMATCH
+//            //Uses the "standard" iterator as an anchor, searches in increasingly wide regions
+//            //around the "input" iterator, but only forward from the starting point 
+//            //because all previous tokens are assumed to have been matched or discarded
+//            //The further the "standard" iterator has had to increase, the further the "input" iterator is allowed to search from there
+//            if (!tokenMatch) {
+//                int startingInputIter = inputIter;
+//
+//                //corrections for ugly algorithm below
+//                int deltaStdIter = -1;
+//                stdIter--;
+//
+//                //ITERATING FORWARD IN GOLD STANDARD
+//                while (!tokenMatch
+//                        && stdIter < standard.size() - 2) {
+//                    stdIter++;
+//                    deltaStdIter++;
+//
+//                    //SEARCHING INCREASINGLY WIDE IN RESULTS TO FIND MATCHING TOKEN
+//                    inputIter = startingInputIter + Math.max(0, deltaStdIter / 2 - searchRange);
+//
+//                    while (inputIter < startingInputIter + deltaStdIter * 1.5 + searchRange
+//                            && inputIter < input.size()) {
+//                        if (input.get(inputIter).get("token").equalsIgnoreCase(standard.get(stdIter).get("token"))) {
+//                            tokenMatch = true;
+//
+//                            //Debug
+////                            System.out.println("Match found: " + input.get(inputIter).i + "=" + standard.get(stdIter).i);
+//                            break;
+//                        } else {
+//                            inputIter++;
+//                        }
+//                    }
+//
+//                }
+//
+//                //CALCULATING TRACKERS
+//                int deltaInputIter = inputIter - startingInputIter;
+////                System.out.println("Ignored " + deltaInputIter + " input tokens and " + deltaStdIter + " standard tokens this mismatch");
+//                standardTokensIgnored += deltaStdIter;
+//                inputTokensExcluded += deltaInputIter;
+//
+//                //Debug
+////                if (stdIter < standard.size() && inputIter < input.size()) {
+////                    System.out.println("Gold: " + stdIter + " " + standard.get(stdIter).i + " Res: " + inputIter + " " + input.get(inputIter).i);
+////                }
+//            }
+//
+//            //ADD INPUT TOKEN TO OUTPUT
+//            if (tokenMatch) {
+//                tokenCount++;
+//                Token token = input.get(inputIter);
+//                token.indexInText = tokenCount;
+//                output.add(token);
+//            } else {
+//                //Fail fast if tokens are being rejected excessively
+//                System.out.println("ERROR: MATCHING FAILED");
+//            }
+//
+////            //Debug
+////            if (stdIter >= standard.size()
+////                    || inputIter >= input.size()) {
+////                System.out.println("ITERATOR OUT OF BOUNDS");
+////                System.out.println("Standard Iterator: " + stdIter + "/" + standard.size()
+////                        + "\n" + "Target Iterator: " + inputIter + "/" + input.size());
+////                break;
+////            }
+//            inputIter++;
+//            stdIter++;
+//        }
+//
+//        assert (output.size() + inputTokensExcluded == input.size());
+//
+//        System.out.println("\n" + standardTokensIgnored + "/" + standard.size() + " standard tokens unmatched "
+//                + "\n" + inputTokensExcluded + "/" + input.size() + " input tokens excluded");
+//
+//        return output;
+//
+//    }
 
+    //TODO: Test
+    public static boolean almostEquals(String s, String t, double threshold) {
+        double diff = StringUtils.levenshteinDistance(s, t) / ((double) (s.length() + t.length()));
+        return diff < threshold;
+    }
 
 
 }

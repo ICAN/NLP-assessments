@@ -47,7 +47,8 @@ public class CoreNLP {
         //        Tag.START_CHAR,
         //        Tag.END_CHAR,
         Tag.TOKEN,
-        Tag.POS
+        Tag.POS,
+//        Tag.NE
     };
 
     //PUBLIC METHODS
@@ -123,7 +124,7 @@ public class CoreNLP {
                 token.set(Tag.TOKEN, word);
                 token.set(Tag.POS, pos);
                 token.set(Tag.NE, ne);
-                document.tokenList.add(token);
+                document.tokens.add(token);
 
                 indexInSentence++;
                 indexInText++;
@@ -134,7 +135,7 @@ public class CoreNLP {
 
         document.PennToSimplifiedPOSTags();
         
-        renormalizeBrackets(document.tokenList);
+        renormalizeBrackets(document.tokens);
         Utility.writeFile(document.toTSV(FIELDS), outputFileName);
 
     }

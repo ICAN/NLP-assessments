@@ -49,8 +49,6 @@ public class OpenNLP {
         Tag.INDEX_IN_TEXT,
         Tag.INDEX_IN_SENT,
         Tag.SENT_NUMBER,
-        Tag.START_CHAR,
-        Tag.END_CHAR,
         Tag.TOKEN,
         Tag.POS
         };
@@ -143,7 +141,7 @@ public class OpenNLP {
                 token.startingChar = tokenSpans[i][j].getStart() + 1; 
                 token.endingChar = tokenSpans[i][j].getEnd() + 1; 
                 token.set(Tag.POS, posTags[i][j]);
-                document.tokenList.add(token);
+                document.tokens.add(token);
                 tokenCount++;
             }
         }
@@ -345,7 +343,7 @@ public class OpenNLP {
                 token.startingChar = tokenSpans[i][j].getStart();
                 token.endingChar = tokenSpans[i][j].getEnd();
                 token.set(Tag.NE, nerTagsets[i][j]);
-                document.tokenList.add(token);
+                document.tokens.add(token);
                 tokenCount++;
             }
         }

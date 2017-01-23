@@ -27,35 +27,152 @@ import stemming.Stemming;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-
 public class Main {
 
-    public static final String[] RAW_TEXTS = {
-        "Academic1.txt",
-        "Academic3.txt",
-        "Academic10.txt",
-        "GenFict1.txt",
-        "GenFict5.txt",
-        "GenFict6.txt",
-        "NewsArticle1.txt",
-        "NewsArticle3.txt",
-        "NewsArticle10.txt"
+    public static final String[] TEXTS = {
+        "Academic1",
+        "Academic3",
+        "Academic10",
+        "GenFict1",
+        "GenFict5",
+        "GenFict6",
+        "NewsArticle1",
+        "NewsArticle3",
+        "NewsArticle10"
     };
+
+    public static final String[] ANNOTATORS = {
+        "core",
+        "open", //        "nltk",
+    //        "spacy"
+    };
+
+    public static final String[] FIELDS_TO_USE = {
+        Tag.INDEX_IN_SENT,
+        Tag.TOKEN,};
+
+    public static final String[] BASIC_FIELDS = {
+        Tag.INDEX_IN_TEXT,
+        Tag.INDEX_IN_SENT,
+        Tag.SENT_NUMBER,
+        Tag.TOKEN,
+        Tag.POS
+    };
+
+    public static void runJavaAnnotators() {
+        for (String text : TEXTS) {
+            CoreNLP.runAnnotator("corpora/" + text + ".txt", 
+                    "annotator_outputs/" + text + "-core.tsv");
+            OpenNLP.runPOSAnnotator("corpora/" + text + ".txt", 
+                    "annotator_outputs/" + text + "-open.tsv");
+        }
+    }
     
+    //Assumes annotators have been run
+    public static void runPreGoldAssessmentPipeline() {
+        double threshold = 0.1; //for fuzzy string matching
+
+        //STEP 0: Import annotated docs
+        ArrayList<Document> docs = new ArrayList<>();
+        for (String text : TEXTS) {
+            for (String annotator : ANNOTATORS) {
+                docs.add(Utility.importTSVDocument(
+                        "annotator_outputs/" + text + "-" + annotator + ".tsv", "\t"));
+            }
+        }
+
+        //STEP 1: Cleanup, conversions
+        for (Document doc : docs) {
+            doc.removeNonwordChars();
+            doc.removeEmptyTokens();
+            doc.PennToSimplifiedPOSTags();
+            Utility.writeFile(doc.toTSV(BASIC_FIELDS),
+                    "clean_outputs/" + doc.name + ".tsv");
+        }
+
+        //STEP 2: Produce common token annotations
+        for (String text : TEXTS) {
+            //Get all annotators' versions of this document
+            ArrayList<Document> currentSet = new ArrayList<>();
+            for (Document doc : docs) {
+                if (doc.name.matches(text + "-.+")) {
+                    currentSet.add(doc);
+                }
+            }
+            
+            //Keep working on this text until done
+            while (true) {
+                for (Document doc : currentSet) {
+                    doc.restrictToTokensInOtherDocs((ArrayList<Document>) currentSet.clone(), 2, threshold);
+                }
+
+                if (!Document.sameLength(currentSet)) {
+                    System.out.println("\n\nSome documents not the same length--beginning another pass");
+                } else if (!Document.tokensMatchAlmost(currentSet, threshold)) {
+                    System.out.println("\n\nTokens don't match sufficiently--beginning another pass");
+                } else {
+                    //Docs in set are same length and match sufficiently
+                    //Write results and stop working on text
+                    for (Document doc : currentSet) {
+                        Utility.writeFile(doc.toTSV(BASIC_FIELDS),
+                                "common_tokens/" + doc.name + ".tsv");
+                    }
+                    break;
+                }                
+            }
+        }
+        
+        
+        //STEP 3: Produce machine consensus for each document on all specified fields
+        //Add sentence splits
+        for(Document doc : docs) {
+            doc.tagSentenceSplits();
+        }
+        //Specify fields for consensus-building
+        String[] consensusFields = {
+            Tag.TOKEN,
+            Tag.SPLITTING,
+            Tag.POS,
+//            Tag.NE,
+        };
+        
+        for(String text : TEXTS) {
+            
+            //Get all annotators' versions of this document
+            ArrayList<Document> currentSet = new ArrayList<>();
+            for (Document doc : docs) {
+                if (doc.name.matches(text + "-.+")) {
+                    currentSet.add(doc);
+                }
+            }
+            
+            Document consensus = Assessment.getTagConsensus(currentSet, 0.6, consensusFields);
+            Utility.writeFile(consensus.toTSV(consensusFields), "consensus/" + text + ".tsv");
+        }
+        
+        
+    }
     
+    public static void runPostGoldAssessmentPipeline() {
+        
+        //STEP 0: Import docs, gold standards, etc. from "common_tokens" and "gold_std"
+        
+        
+        //STEP 1: Run assessments
+        
+        
+        //STEP 2: Format and output results
+        
+    }
+    
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
 
-//        Assessment.runStemmerTests();
-        
-        for(String input : RAW_TEXTS) {
-            CoreNLP.runAnnotator("corpora/" + input, "output/" + input.replaceAll(".txt", "-core.tsv"));
-            OpenNLP.runPOSAnnotator("corpora/" + input, "output/" + input.replaceAll(".txt", "-open.tsv"));
-        }
-        
+        runPreGoldAssessmentPipeline();
+
     }
-    
-    
+
 }
