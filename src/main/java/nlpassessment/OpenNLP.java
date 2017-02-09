@@ -43,7 +43,8 @@ import opennlp.tools.util.Span;
  * @author Neal
  */
 public class OpenNLP {
-
+    
+    //modelPath must point to the OpenNLP models, which are large and packaged seperately
     public static final String modelPath = "/home/neal/OpenNLP/";
     public static final String[] FIELDS = {
         Tag.INDEX_IN_TEXT,
@@ -53,10 +54,8 @@ public class OpenNLP {
         Tag.POS
         };
 
-
     //Returns an annotated Document object
     //Including sentence-splits, tokenization, POS-tagging
-    //TODO: Test output
     public static void runPOSAnnotator(String inputFileName, String outputFileName) {
 
         String input = Utility.readFileAsString(inputFileName, true);
@@ -96,9 +95,6 @@ public class OpenNLP {
         SentenceDetectorME sentenceDetector = new SentenceDetectorME(sentenceModel);
         String[] sentences = sentenceDetector.sentDetect(input); //Could also get spans rather than strings
 
-//        for(String sent : sentences) {
-//            System.out.println(sent);
-//        }
         //Tokenization
         Tokenizer tokenizer = new TokenizerME(tokenizerModel);
         String[][] tokens = new String[sentences.length][]; //[sentence#][word# in sentence]        
@@ -119,15 +115,7 @@ public class OpenNLP {
             posTags[i] = posTagger.tag(tokens[i]);
         }
 
-        //Debug
-//        for (int i = 0; i < sentences.length; i++) {
-//            String[] currentTokens = tokens[i];
-//            String[] currentTags = posTags[i];
-//            for (int j = 0; j < currentTokens.length; j++) {
-//                System.out.print(currentTokens[j] + "/" + currentTags[j] + "  ");
-//            }
-//            System.out.print("\n");
-//        }
+
         //Produce Document
         Document document = new Document();
         int tokenCount = 1;
@@ -348,25 +336,6 @@ public class OpenNLP {
             }
         }
 
-//                Debug
-//        for (int i = 0; i < sentences.length; i++) {
-//            String[] currentTokens = tokens[i];
-//            String[] currentTags = nerTagsets[i];
-//            System.out.print(i + ") ");           
-//            for (int j = 0; j < currentTokens.length; j++) {
-//                System.out.print(currentTokens[j] + "/" + currentTags[j] + "  ");
-//            }
-//            System.out.print("\nTags: ");
-//            for (Span span : nerDateTags[i]) {
-//                System.out.print(Tag.NE_DATE + span.getStart() + "-" + span.getEnd() + "...");
-//            }
-//            
-//            for (Span span : nerOrganizationTags[i]) {
-//                System.out.print(Tag.NE_ORG + span.getStart() + "-" + span.getEnd() + "...");
-//            }
-//            
-//            System.out.print("\n");
-//        }
         return new Document();
     }
 

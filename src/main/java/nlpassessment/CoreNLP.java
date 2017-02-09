@@ -33,6 +33,10 @@ import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
+import java.io.File;
+import java.lang.ProcessBuilder.Redirect;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -54,43 +58,43 @@ public class CoreNLP {
     //PUBLIC METHODS
     //A script for running the CoreNLP pipeline
     //Temporary setup for Windows
-//    private static void runCoreNLPTerminal(String inputFileName) {
-//        
-//        Path currentRelativePath = Paths.get("");
-//        String s = currentRelativePath.toAbsolutePath().toString();
-//        System.out.println("Current relative path is: " + s);
-//
-//        //Order of command-line arguments changed because it doesn't work 
-//        //if you put them in the order specified in the CoreNLP instructions
-//        String cmd = "java -cp \"c:\\NLP\\CoreNLP\\3.6.0\\*\" -Xmx2g "
-//                + "edu.stanford.nlp.pipeline.StanfordCoreNLP -outputFormat conll "
-//                + "-file " + inputFileName + " -annotators tokenize,ssplit,pos,lemma,ner";
-//        
-//        ProcessBuilder pb = new ProcessBuilder(cmd.split("\\s"));
-////        System.out.println("Process created");
-////        pb.directory(new File("c:\\NLP\\CoreNLP\\3.6.0\\"));
-//
-//        try {
-//            
-//            File log = new File("0_CoreNLP-log.txt");
-////            System.out.println("Created test log");
-//            pb.redirectErrorStream(true);
-//            pb.redirectOutput(Redirect.appendTo(log));
-//            
-//            Process process = pb.start();
-////            Process process = Runtime.getRuntime().exec(cmd.split("\\s"));
-////            System.out.println("Process started");
-////            System.out.println("CoreNLP path is " + Paths.get("").toAbsolutePath().toString());
-//            System.out.println("CoreNLP finished, returned: " + process.waitFor());
-//            
-//        } catch (Exception e) {
-//            System.out.println("Error running CoreNLP\nMessage: " + e.getMessage());
-//            
-//        }
-//        
-//    }
+    //TODO: Make sure it still works
+    private static void runCoreNLPTerminal(String inputFileName) {
+        
+        Path currentRelativePath = Paths.get("");
+        String s = currentRelativePath.toAbsolutePath().toString();
+        System.out.println("Current relative path is: " + s);
+
+        //Order of command-line arguments changed because it doesn't work 
+        //if you put them in the order specified in the CoreNLP instructions
+        String cmd = "java -cp \"c:\\NLP\\CoreNLP\\3.6.0\\*\" -Xmx2g "
+                + "edu.stanford.nlp.pipeline.StanfordCoreNLP -outputFormat conll "
+                + "-file " + inputFileName + " -annotators tokenize,ssplit,pos,lemma,ner";
+        
+        ProcessBuilder pb = new ProcessBuilder(cmd.split("\\s"));
+//        System.out.println("Process created");
+//        pb.directory(new File("c:\\NLP\\CoreNLP\\3.6.0\\"));
+
+        try {
+            
+            File log = new File("0_CoreNLP-log.txt");
+//            System.out.println("Created test log");
+            pb.redirectErrorStream(true);
+            pb.redirectOutput(Redirect.appendTo(log));
+            
+            Process process = pb.start();
+//            Process process = Runtime.getRuntime().exec(cmd.split("\\s"));
+//            System.out.println("Process started");
+//            System.out.println("CoreNLP path is " + Paths.get("").toAbsolutePath().toString());
+            System.out.println("CoreNLP finished, returned: " + process.waitFor());
+            
+        } catch (Exception e) {
+            System.out.println("Error running CoreNLP\nMessage: " + e.getMessage());
+            
+        }
+    }
     
-    //TODO: Test.
+    //Runs the CoreNLP annotator
     public static void runAnnotator(String inputFileName, String outputFileName) {
 
         // creates a StanfordCoreNLP object, with POS tagging, lemmatization, NER
@@ -113,8 +117,8 @@ public class CoreNLP {
             int indexInSentence = 1;
             for (CoreLabel coreToken : sentence.get(TokensAnnotation.class)) {
                 String word = coreToken.get(TextAnnotation.class);
-                String pos = coreToken.get(PartOfSpeechAnnotation.class);
-                String ne = coreToken.get(NamedEntityTagAnnotation.class);
+                String posTag = coreToken.get(PartOfSpeechAnnotation.class);
+                String namedEntityTag = coreToken.get(NamedEntityTagAnnotation.class);
 
                 Token token = new Token();
                 token.set(Tag.INDEX_IN_SENT, indexInSentence);
@@ -122,8 +126,8 @@ public class CoreNLP {
                 token.set(Tag.SENT_NUMBER, sentenceNumber);
                 //TODO: Add start char & end char if feasible             
                 token.set(Tag.TOKEN, word);
-                token.set(Tag.POS, pos);
-                token.set(Tag.NE, ne);
+                token.set(Tag.POS, posTag);
+                token.set(Tag.NE, namedEntityTag);
                 document.tokens.add(token);
 
                 indexInSentence++;
@@ -140,6 +144,7 @@ public class CoreNLP {
 
     }
 
+    //Runs the annotator on multiple files
     public static void runAnnotator(String[] inputFileNames, String[] outputFileNames) {
         if (inputFileNames.length != outputFileNames.length) {
             System.out.println("Error: number of input files and number of output files differ");
