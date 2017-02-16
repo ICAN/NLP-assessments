@@ -1,0 +1,9 @@
+Academic1.txt
+Academic3.txt
+Academic10.txt
+GenFict1.txt
+GenFict5.txt
+GenFict6.txt
+NewsArticle1.txt
+NewsArticle3.txt
+NewsArticle10.txt
