@@ -70,12 +70,11 @@ public class Utility {
         document.tokens = tokens;
         return document;
     }
-    
+
     //Uses the "header" to determine field names
     public static Document importTSVDocument(String fileName, String columnSeparator) {
         return importTSVDocument(fileName, columnSeparator, new String[0]);
     }
-    
 
     //Waits for the process to end & returns the result
     //TODO: build variant which returns Process
@@ -129,15 +128,13 @@ public class Utility {
 //        return shortLinesToTokens(readFileAsLines(fileName), lineLength, targetTag);
 //    }
     public static String listToString(ArrayList<String> lines, boolean insertLineBreaks) {
+        return listToString(lines, "\n");
+    }
+
+    public static String listToString(ArrayList<String> lines, String spacer) {
         String condensed = "";
-        if (insertLineBreaks) {
-            for (String line : lines) {
-                condensed += ("\n" + line);
-            }
-        } else {
-            for (String line : lines) {
-                condensed += (line);
-            }
+        for (String line : lines) {
+            condensed += ("spacer" + line);
         }
         return condensed;
     }
@@ -145,7 +142,10 @@ public class Utility {
     public static String arrayToString(String[] tokens, boolean spacesBetweenTokens) {
         String string = tokens[0];
         for (int i = 1; i < tokens.length; i++) {
-            string += (" " + tokens[i]);
+            string += (tokens[i]);
+            if (spacesBetweenTokens) {
+                string += " ";
+            }
         }
         return string;
     }
@@ -183,7 +183,6 @@ public class Utility {
     public static String readFileAsString(String fileName, boolean insertLineBreaks) {
         return listToString(readFileAsLines(fileName), insertLineBreaks);
     }
-
 
     public static void writeFile(String contents, String fileName) {
         try {
@@ -336,12 +335,10 @@ public class Utility {
 //        return output;
 //
 //    }
-
     //TODO: Test
     public static boolean almostEquals(String s, String t, double threshold) {
         double diff = StringUtils.levenshteinDistance(s, t) / ((double) (s.length() + t.length()));
         return diff < threshold;
     }
-
 
 }

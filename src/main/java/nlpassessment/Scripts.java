@@ -30,25 +30,23 @@ import java.util.HashMap;
 public class Scripts {
 
     public static final String[] TEXTS = {
-//        "Academic1",
-//        "Academic3",
-//        "Academic10",
-//        "GenFict1",
-//        "GenFict5",
-//        "GenFict6",
-//        "NewsArticle1",
-//        "NewsArticle3",
-//        "NewsArticle10",
-        "splits"
-    };
+        //        "Academic1",
+        //        "Academic3",
+        //        "Academic10",
+        //        "GenFict1",
+        //        "GenFict5",
+        //        "GenFict6",
+        //        "NewsArticle1",
+        //        "NewsArticle3",
+        //        "NewsArticle10",
+        "splits",
+        "mixed",};
 
-    public static final String[] SPLITTING = {
-        
-    };
-    
+    public static final String[] SPLITTING = {};
+
     public static final String[] PIPELINE_ANNOTATORS = {
         "core",
-        "open", 
+        "open",
         "nltk",
         "spacy",
         "mbsp"
@@ -58,11 +56,10 @@ public class Scripts {
         "core",
         "open"
     };
-    
+
 //    public static final String[] FIELDS_TO_USE = {
 //        Tag.INDEX_IN_SENT,
 //        Tag.TOKEN,};
-
     public static final String[] BASIC_FIELDS = {
         Tag.INDEX_IN_TEXT,
         Tag.INDEX_IN_SENT,
@@ -73,14 +70,13 @@ public class Scripts {
 
     public static void runJavaAnnotators() {
         for (String text : TEXTS) {
-            CoreNLP.runAnnotator("corpora/" + text + ".txt", 
+            CoreNLP.runAnnotator("corpora/" + text + ".txt",
                     "annotator_outputs/" + text + "-core.tsv");
-            OpenNLP.runPOSAnnotator("corpora/" + text + ".txt", 
+            OpenNLP.runPOSAnnotator("corpora/" + text + ".txt",
                     "annotator_outputs/" + text + "-open.tsv");
         }
     }
-    
-    
+
     //Assumes annotators have been run
     public static void runPreGoldAssessmentPipeline() {
         double threshold = 0.1; //for fuzzy string matching
@@ -112,7 +108,7 @@ public class Scripts {
                     currentSet.add(doc);
                 }
             }
-            
+
             //Keep working on this text until done
             while (true) {
                 for (Document doc : currentSet) {
@@ -131,26 +127,24 @@ public class Scripts {
                                 "common_tokens/" + doc.name + ".tsv");
                     }
                     break;
-                }                
+                }
             }
         }
-        
-        
+
         //STEP 3: Produce machine consensus for each document on all specified fields
         //Add sentence splits
-        for(Document doc : docs) {
+        for (Document doc : docs) {
             doc.tagSentenceSplits();
         }
         //Specify fields for consensus-building
         String[] consensusFields = {
             Tag.TOKEN,
             Tag.SPLITTING,
-            Tag.POS,
-//            Tag.NE,
+            Tag.POS, //            Tag.NE,
         };
-        
-        for(String text : TEXTS) {
-            
+
+        for (String text : TEXTS) {
+
             //Get all annotators' versions of this document
             ArrayList<Document> currentSet = new ArrayList<>();
             for (Document doc : docs) {
@@ -158,29 +152,51 @@ public class Scripts {
                     currentSet.add(doc);
                 }
             }
-            
+
             Document consensus = Assessment.getTagConsensus(currentSet, 0.6, consensusFields);
             Utility.writeFile(consensus.toTSV(consensusFields), "consensus/" + text + ".tsv");
         }
-        
-        
+
     }
-    
+
     public static void runPostGoldAssessmentPipeline() {
-        
+
         //STEP 0: Import docs, gold standards, etc. from "common_tokens" and "gold_std"
         //TODO:
-        
-        
-        
         //STEP 1: Run assessments
         //TODO:
-        
         //STEP 2: Format and output results
-        
     }
-    
 
-    
+    public static void convertCsvToSentences() {
+
+        for (String annotator : PIPELINE_ANNOTATORS) {
+
+            Document doc = Utility.importTSVDocument("annotator_outputs/splits-" + annotator + ".tsv", "\t");
+            ArrayList<ArrayList<Token>> sentences = doc.asSentences();
+            if (sentences != null) {
+                System.out.println("Got doc as sentences");
+            } else {
+                System.out.println("Failed to get doc as sentences");
+            }
+
+            ArrayList<String> collapsedSents = new ArrayList<>();
+            for (ArrayList<Token> sent : sentences) {
+                String s = "";
+                for (Token token : sent) {
+                    s += token.get(Tag.TOKEN) + " ";
+                }
+                collapsedSents.add(s);
+            }
+            String output = "";
+            int i = 0;
+            for (String sent : collapsedSents) {
+                i++;
+                output += i + ">\t " + sent + "\n";
+            }
+            Utility.writeFile(output, "annotator_outputs/splitsReadable-" + annotator + ".txt");
+        }
+
+    }
 
 }

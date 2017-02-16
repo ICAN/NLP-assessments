@@ -23,6 +23,8 @@
  */
 package nlpassessment;
 
+import java.util.ArrayList;
+
 
 
 /**
@@ -36,10 +38,14 @@ public class Main {
      */
     public static void main(String[] args) {
 
-        Scripts.runJavaAnnotators();
-        
+//        Scripts.runJavaAnnotators();
+
 //        Scripts.runPreGoldAssessmentPipeline();
 
+        
+
+        
+        
     }
     
 }

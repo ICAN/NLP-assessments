@@ -1,5 +1,5 @@
 indexInDoc	indexInText	indexInSentence	sentenceNumber	token	posTag
-1	1	1	1	Solvency	NN
+1	1	1	1	spacerSolvency	NN
 2	2	2	1	2	OO
 3	3	3	1	standards	NN
 4	4	4	1	will	VB

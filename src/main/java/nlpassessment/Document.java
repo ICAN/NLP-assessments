@@ -37,26 +37,25 @@ public class Document {
     //TODO: include "whitespace" tokens so that extra spaces,tabs, etc. can be preserved?
     public String name = "";
     public ArrayList<Token> tokens = new ArrayList<>();
-    
-    
+
     //////////////////////////CONSTRUCTORS////////////////////////////////
-    public Document(){}
-    
+    public Document() {
+    }
+
     public Document(String name) {
         this.name = name;
     }
-    
+
     public Document(ArrayList<Token> tokens, String name) {
         this.tokens = tokens;
         this.name = name;
     }
-    
-    
+
     //////////////////////////////ACCESSORS/MUTATORS///////////////////////////
     public Token get(int index) {
         return this.tokens.get(index);
     }
-    
+
     public int getPositionOf(Token token) {
         for (int i = 0; i < tokens.size(); i++) {
             if (token == tokens.get(i)) {
@@ -66,7 +65,7 @@ public class Document {
         //If not found:
         return -1;
     }
-    
+
     public Document deepClone() {
         Document document = new Document(this.name);
         for (Token token : tokens) {
@@ -74,8 +73,7 @@ public class Document {
         }
         return document;
     }
-  
-    
+
     public void tagSentenceSplits() {
         for (int i = 0; i < tokens.size() - 1; i++) {
             if (tokens.get(i).indexInSentence >= tokens.get(i + 1).indexInSentence) {
@@ -87,7 +85,7 @@ public class Document {
         //Tag final char
         tokens.get(tokens.size() - 1).set(Tag.SPLITTING, Tag.SS_END_OF_SENT);
     }
-    
+
     //For each token, removes all instances of the specified pattern from the specified tag
     public void replaceAll(String replacedPattern, String replacementPattern, String tag) {
         for (Token token : tokens) {
@@ -109,7 +107,7 @@ public class Document {
         }
         this.tokens = replacement;
     }
-    
+
     /*
         Converts standard POS tags to an extremely simplified set
         
@@ -143,7 +141,7 @@ public class Document {
         }
 
     }
-    
+
     //Adds any tags in "other" document to the tokens in this document
     //Overwrites any existing tags in this document
     //"other" is not modified
@@ -187,33 +185,31 @@ public class Document {
     reach stability.
      */
     public void restrictToTokensInOtherDocs(ArrayList<Document> otherDocs, int baseSearchRange, double matchThreshold) {
-        
+
         System.out.println("\n\nInitial " + this.name + " doc length: " + this.tokens.size());
-        if(otherDocs.contains(this)) {
+        if (otherDocs.contains(this)) {
             System.out.println("Removed this document (" + this.name + ") from restricters");
             otherDocs.remove(this);
-        }  
+        }
         System.out.print("Input lengths: ");
         for (Document document : otherDocs) {
             System.out.print(document.name + ": " + document.tokens.size() + ", ");
         }
         System.out.println();
-        
-        
+
         Document original = this.deepClone();
         int searchRange = baseSearchRange;
         //Iterate through other documents, restricting results to tokens for which
         //matches are found in the other lists
         for (Document other : otherDocs) {
-            
+
             int thisBaseIter = 0, otherBaseIter = 0;
             //Start with arbitrary base token list
             Document intermediateResult = new Document();
             int discarded = 0;
-            while (thisBaseIter < this.tokens.size() 
+            while (thisBaseIter < this.tokens.size()
                     && otherBaseIter < other.tokens.size()) {
-                
-                
+
                 String thisToken = this.tokens.get(thisBaseIter).get(Tag.TOKEN);
                 String otherToken = other.tokens.get(otherBaseIter).get(Tag.TOKEN);
 
@@ -224,38 +220,38 @@ public class Document {
                     //Continue forward!
                     thisBaseIter++;
                     otherBaseIter++;
-                    
+
                 } else { //Token mismatch: search!
                     boolean match = false;
                     int thisOffset = 0;
-                    while(!match 
+                    while (!match
                             && thisOffset <= searchRange
-                            && thisBaseIter + thisOffset < original.tokens.size()){
+                            && thisBaseIter + thisOffset < original.tokens.size()) {
                         int otherOffset = Math.max(otherBaseIter + thisOffset * -1 + 1, otherBaseIter) - otherBaseIter;
-                        while(!match 
+                        while (!match
                                 && otherOffset <= searchRange
                                 && otherBaseIter + otherOffset < other.tokens.size()) {
                             //If a match is found at this offset...                                                       
-                            if(Utility.almostEquals(
-                                    original.tokens.get(thisBaseIter+thisOffset).get(Tag.TOKEN),
-                                    other.tokens.get(otherBaseIter+otherOffset).get(Tag.TOKEN),
+                            if (Utility.almostEquals(
+                                    original.tokens.get(thisBaseIter + thisOffset).get(Tag.TOKEN),
+                                    other.tokens.get(otherBaseIter + otherOffset).get(Tag.TOKEN),
                                     matchThreshold)) {
                                 //Move base iterators to this position and continue loop
                                 thisBaseIter += thisOffset;
                                 otherBaseIter += otherOffset;
                                 match = true;
-                            }        
+                            }
                             otherOffset++;
                         }
                         thisOffset++;
                     }
                     //Escalate search range to double the base search range if 
-                    if (!match && searchRange <= 3*baseSearchRange) {
-                        searchRange++;                        
-                    } else if(!match && searchRange > 3*baseSearchRange) {
-                        System.out.println("Error: match not found in range! Discarded " + 
-                                original.tokens.get(thisBaseIter).get(Tag.TOKEN) + " and "
-                                +other.tokens.get(otherBaseIter).get(Tag.TOKEN) + " at "
+                    if (!match && searchRange <= 3 * baseSearchRange) {
+                        searchRange++;
+                    } else if (!match && searchRange > 3 * baseSearchRange) {
+                        System.out.println("Error: match not found in range! Discarded "
+                                + original.tokens.get(thisBaseIter).get(Tag.TOKEN) + " and "
+                                + other.tokens.get(otherBaseIter).get(Tag.TOKEN) + " at "
                                 + "this: " + thisBaseIter + " and " + otherBaseIter);
                         discarded++;
                         thisBaseIter++;
@@ -272,10 +268,8 @@ public class Document {
         this.tokens = original.tokens;
         System.out.print("\nOutput length: " + this.tokens.size());
     }
-    
-    
+
     ////////////////////////DOCUMENT STATISTICS/////////////////////////////////
-    
     public int getTagCounts(String tagType, String tagValueRegex) {
 
         int count = 0;
@@ -301,25 +295,25 @@ public class Document {
         }
         return tagCounts;
     }
-    
+
     public static boolean sameLength(ArrayList<Document> docs) {
         int length = docs.get(0).tokens.size();
-        for(Document doc : docs) {
-            if(doc.tokens.size() != length) {
+        for (Document doc : docs) {
+            if (doc.tokens.size() != length) {
                 return false;
             }
         }
         return true;
     }
-    
+
     public static boolean tokensMatchExactly(ArrayList<Document> docs) {
-        if(!sameLength(docs)) {
+        if (!sameLength(docs)) {
             return false;
         }
-        
-        for(int i = 0; i < docs.get(0).tokens.size(); i++) {
+
+        for (int i = 0; i < docs.get(0).tokens.size(); i++) {
             String token = docs.get(0).get(i).get(Tag.TOKEN);
-            for(Document doc : docs) {
+            for (Document doc : docs) {
                 if (!doc.get(i).get(Tag.TOKEN).equals(token)) {
                     return false;
                 }
@@ -327,15 +321,15 @@ public class Document {
         }
         return true;
     }
-    
+
     public static boolean tokensMatchAlmost(ArrayList<Document> docs, double threshold) {
-        if(!sameLength(docs)) {
+        if (!sameLength(docs)) {
             return false;
         }
-        
-        for(int i = 0; i < docs.get(0).tokens.size(); i++) {
+
+        for (int i = 0; i < docs.get(0).tokens.size(); i++) {
             String token = docs.get(0).get(i).get(Tag.TOKEN);
-            for(Document doc : docs) {
+            for (Document doc : docs) {
                 if (!Utility.almostEquals(doc.get(i).get(Tag.TOKEN), token, threshold)) {
                     return false;
                 }
@@ -343,18 +337,18 @@ public class Document {
         }
         return true;
     }
-    
-   ///////////////////////////////CONVERSIONS//////////////////////////////////
-   public ArrayList<ArrayList<Token>> toSentences() {
+
+    ///////////////////////////////CONVERSIONS//////////////////////////////////
+    public ArrayList<ArrayList<Token>> asSentences() {
         ArrayList<ArrayList<Token>> sentences = new ArrayList<>();
-        int sentenceNumber = -1;
+        int currentSentenceNumber = -1;
         ArrayList<Token> currentSentence = null;
         for (Token token : tokens) {
-            if (token.sentenceNumber > sentenceNumber) {
-                if (sentences != null) {
+            if (token.sentenceNumber > currentSentenceNumber) {
+                if (currentSentence != null) {
                     sentences.add(currentSentence);
                 }
-                sentenceNumber = token.sentenceNumber;
+                currentSentenceNumber = token.sentenceNumber;
                 currentSentence = new ArrayList<>();
             }
             currentSentence.add(token);
@@ -372,13 +366,11 @@ public class Document {
         }
         tsv.add(header.trim());
         for (int i = 0; i < tokens.size(); i++) {
-            tsv.add((i+1) + "\t" + tokens.get(i).getAsTSV(fields));
+            tsv.add((i + 1) + "\t" + tokens.get(i).getAsTSV(fields));
         }
         return tsv;
     }
 
-    
-    
     /////////////////////////////DISPLAY/DEBUG///////////////////////////////
     //Print entire document, specific fields only
     public void print(String[] fields) {
@@ -399,17 +391,5 @@ public class Document {
             System.out.print(this.get(i).get("token") + " ");
         }
     }
-    
-
-
-
-
-
-
-    
-    
-
-    
-
 
 }
