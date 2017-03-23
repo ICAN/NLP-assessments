@@ -40,7 +40,8 @@ public class Scripts {
         //        "NewsArticle3",
         //        "NewsArticle10",
         "splits",
-        "mixed",};
+//        "mixed",
+    };
 
     public static final String[] SPLITTING = {};
 

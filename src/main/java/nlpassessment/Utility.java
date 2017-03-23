@@ -54,7 +54,7 @@ public class Utility {
         }
 
         //Parse each line, adding new tokens to the token list
-        while (i < lines.size()) {
+        while (i < lines.size() && !lines.get(i).matches("//.*")) {
             String[] split = lines.get(i).split(columnSeparator);
             Token token = new Token();
             for (int j = 0; j < fields.length; j++) {
@@ -160,6 +160,7 @@ public class Utility {
 
     /*
      Reads a file and returns its lines in an arraylist
+    Ignores commented lines
      */
     public static ArrayList<String> readFileAsLines(String fileName) {
         ArrayList<String> lines = new ArrayList<>();
@@ -175,7 +176,10 @@ public class Utility {
         }
 
         while (inFile.hasNextLine()) {
-            lines.add(inFile.nextLine());
+            String line = inFile.nextLine();
+            if (!line.matches("//.*")) {
+                lines.add(line);
+            }
         }
         return lines;
     }

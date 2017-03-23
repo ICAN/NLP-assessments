@@ -42,22 +42,22 @@ public class Stemming {
     //TODO: Check
     public static void runStemmerTests() {
 
-        String testFileName = "stem-test.txt";
-
-        Stemming.cleanStemTest(testFileName, "stem-test-clean.txt");
         
-        Stemming.stemDocument("stem-test-clean.txt", "stem-porter1-out.txt", new stemming.Porter1());
-        Stemming.stemDocument("stem-test-clean.txt", "stem-porter2-out.txt", new stemming.Porter2());
-        Stemming.stemDocument("stem-test-clean.txt", "stem-lancaster-out.txt", new stemming.Lancaster());
+        String testFileName = "stems/stems.txt";
+
+        Stemming.cleanStemTest(testFileName, "stems/stems-clean.txt");
         
-        collapseStemmingResults("stem-porter1-out.txt", "stem-porter1-unique.txt");
-        collapseStemmingResults("stem-porter2-out.txt", "stem-porter2-unique.txt");
-        collapseStemmingResults("stem-lancaster-out.txt", "stem-lancaster-unique.txt");
+        Stemming.stemDocument("stems/stems-clean.txt", "stems/stems-out-porter1.txt", new stemming.Porter1());
+        Stemming.stemDocument("stems/stems-clean.txt", "stems/stems-out-porter2.txt", new stemming.Porter2());
+        Stemming.stemDocument("stems/stems-clean.txt", "stems/stems-out-lancaster.txt", new stemming.Lancaster());
+        
+        collapseStemmingResults("stems/stems-out-porter1.txt", "stems/stems-unique-porter1.txt");
+        collapseStemmingResults("stems/stems-out-porter2.txt", "stems/stems-unique-porter2.txt");
+        collapseStemmingResults("stems/stems-out-lancaster.txt", "stems/stems-unique-lancaster.txt");
 
-
-        assessStemmingResults("stem-test-clean.txt", "stem-porter1-unique.txt", "stem-porter1-data.tsv");
-        assessStemmingResults("stem-test-clean.txt", "stem-porter2-unique.txt", "stem-porter2-data.tsv");
-        assessStemmingResults("stem-test-clean.txt", "stem-lancaster-unique.txt", "stem-lancaster-data.tsv");
+        assessStemmingResults("stems/stems-clean.txt", "stems/stems-unique-porter1.txt", "stems/stems-data-porter1.tsv");
+        assessStemmingResults("stems/stems-clean.txt", "stems/stems-unique-porter2.txt", "stems/stems-data-porter2.tsv");
+        assessStemmingResults("stems/stems-clean.txt", "stems/stems-unique-lancaster.txt", "stems/stems-data-lancaster.tsv");
         
     }
         
@@ -202,19 +202,19 @@ public class Stemming {
         //Interline results
 
         Integer[] numberOfLinesContainingMatches = new Integer[testLines.size()];
-                
+        
         //For each line, 
         //Determine how many other lines contain tokens matching a token the current line
         for (int currentLineIndex = 0; currentLineIndex < testTokensPerLine.length; currentLineIndex++) {
-            int linesContainingMatches = 0;        
+            int otherLinesContainingMatches = 0;        
             
-            for (int comparedLineIndex= 0; comparedLineIndex < testTokensPerLine.length; comparedLineIndex++) {
+            for (int otherLineIndex= 0; otherLineIndex < testTokensPerLine.length; otherLineIndex++) {
                 boolean matchFoundInThisLine = false;
                 //Don't compare lines to themselves                
-                if(currentLineIndex!=comparedLineIndex) {
+                if(currentLineIndex!=otherLineIndex) {
                     
                     for(String tokenInCurrentLine : stemmerOutputLines.get(currentLineIndex).split("\\s+")) {
-                        for(String tokenInComparedLine : stemmerOutputLines.get(comparedLineIndex).split("\\s+")) {
+                        for(String tokenInComparedLine : stemmerOutputLines.get(otherLineIndex).split("\\s+")) {
                             if(tokenInCurrentLine.trim().equalsIgnoreCase(tokenInComparedLine.trim())) {
                                 matchFoundInThisLine = true;
                             }
@@ -222,15 +222,17 @@ public class Stemming {
                     }                    
                 }
                 if(matchFoundInThisLine) {
-                    linesContainingMatches += 1;
+                    otherLinesContainingMatches += 1;
                 }
             }
-            numberOfLinesContainingMatches[currentLineIndex] = linesContainingMatches;            
+            numberOfLinesContainingMatches[currentLineIndex] = otherLinesContainingMatches;            
         }
 
         //Prepare TSV lines & field headers
         ArrayList<String> assessmentLines = new ArrayList<>();
-        assessmentLines.add("line number\t"
+        assessmentLines.add(""
+                + "line number\t"
+                + "sample stem\t"
                 + "unstemmed tokens\t"
                 + "stemmed tokens\t"
                 + "proportion of tokens remaining\t"
@@ -240,19 +242,19 @@ public class Stemming {
         for(int i = 0; i < testTokensPerLine.length; i++) {
             //Line number
             String line = (i+1) + "\t";
+            //Stem
+            line += stemmerOutputLines.get(i).split("\\s+")[0] + "\t";
             //Unstemmed tokens in line
             line += testTokensPerLine[i] + "\t";
             //Stemmed tokens in line
             line += stemmedTokensPerLine[i] + "\t";
             //Proportion of tokens remaining
             line += proportionOfUniqueTokensRemaining[i] + "\t";
-            
-            
-            //Number of other lines which contain a token which matches a token in this line
+            //Number of other lines which contain at least one token
+            //matching at least one token in this line
             line += numberOfLinesContainingMatches[i] + "\t";
             
-            assessmentLines.add(line);
-            
+            assessmentLines.add(line);    
         }
         
         Utility.writeFile(assessmentLines, dataOutputFile);
