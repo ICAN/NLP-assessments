@@ -24,32 +24,40 @@
 package nlpassessment;
 
 import java.util.ArrayList;
-import stemming.Stemming;
-
 
 /**
  *
  * @author neal
  */
-public class Main {
+public class FormatChangeScripts {
+
     
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-//
-//        AnnotatorScripts.convertSplits();
-        AssessmentPipelineScripts.runJavaAnnotators();
-
-//        AnnotatorScripts.runPreGoldAssessmentPipeline();
-
-
-
-//        Stemming.runStemmerTests();
-
-
-        
-        
+    //Turns a document in format used to make document the splitting test cases 
+    //into a raw text format on a single line for use by machine annotators
+    public static void convertSplittingForInput() {
+        ArrayList<String> inputLines = Utility.readFileAsLines("corpora/splits.txt");
+        System.out.println("input done");
+        int i = 0;
+        String output = "";
+        for (String line : inputLines) {
+            String[] split = line.trim().replaceAll("\\n", "").split("\\t+");
+            if (split.length == 2 && !split[0].matches("//.*")) {
+                System.out.println(line);
+                output += split[1] + " ";
+                i++;
+            }
+        }
+        System.out.println("Wrote " + i + " lines");
+        Utility.writeFile(output, "corpora/cleanSplits.txt");
     }
+    
+
+    
+    
+    
+    
+    
+    
+    
     
 }

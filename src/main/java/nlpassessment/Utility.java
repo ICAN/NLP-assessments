@@ -134,7 +134,7 @@ public class Utility {
     public static String listToString(ArrayList<String> lines, String spacer) {
         String condensed = "";
         for (String line : lines) {
-            condensed += ("spacer" + line);
+            condensed += (spacer + line);
         }
         return condensed;
     }

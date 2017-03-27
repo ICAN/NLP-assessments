@@ -27,7 +27,7 @@ import stemming.Stemming;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Scripts {
+public class AssessmentPipelineScripts {
 
     public static final String[] TEXTS = {
         //        "Academic1",
@@ -39,7 +39,7 @@ public class Scripts {
         //        "NewsArticle1",
         //        "NewsArticle3",
         //        "NewsArticle10",
-        "splits",
+        "cleanSplits",
 //        "mixed",
     };
 
@@ -50,7 +50,6 @@ public class Scripts {
         "open",
         "nltk",
         "spacy",
-        "mbsp"
     };
 
     public static final String[] JAVA_ANNOTATORS = {
@@ -68,7 +67,9 @@ public class Scripts {
         Tag.TOKEN,
         Tag.POS
     };
-
+    
+    
+    //Phase 1: Start a new assessment
     public static void runJavaAnnotators() {
         for (String text : TEXTS) {
             CoreNLP.runAnnotator("corpora/" + text + ".txt",
@@ -78,11 +79,24 @@ public class Scripts {
         }
     }
 
-    //Assumes annotators have been run
+    //Phase 1.5
+    public static void prettySplittingOutput() {
+        
+        for(String annotator : PIPELINE_ANNOTATORS) {
+            Document doc = Utility.importTSVDocument("annotator_outputs/cleanSplits-" + annotator, "\t");
+            doc.tagSentenceSplits();
+            
+            ArrayList<String> lines = new ArrayList<>();
+        } 
+        
+        
+    }
+    
+    //Phase 2: Assumes annotators have been run, include python annotators covered elsewhere
     public static void runPreGoldAssessmentPipeline() {
         double threshold = 0.1; //for fuzzy string matching
 
-        //STEP 0: Import annotated docs
+        //STEP 1: Import annotated docs
         ArrayList<Document> docs = new ArrayList<>();
         for (String text : TEXTS) {
             for (String annotator : PIPELINE_ANNOTATORS) {
@@ -91,7 +105,7 @@ public class Scripts {
             }
         }
 
-        //STEP 1: Cleanup, conversions
+        //STEP 2: Cleanup, conversions
         for (Document doc : docs) {
             doc.removeNonwordChars();
             doc.removeEmptyTokens();
@@ -100,7 +114,7 @@ public class Scripts {
                     "clean_outputs/" + doc.name + ".tsv");
         }
 
-        //STEP 2: Produce common token annotations
+        //STEP 3: Produce common token annotations
         for (String text : TEXTS) {
             //Get all annotators' versions of this document
             ArrayList<Document> currentSet = new ArrayList<>();
@@ -132,7 +146,7 @@ public class Scripts {
             }
         }
 
-        //STEP 3: Produce machine consensus for each document on all specified fields
+        //STEP 4: Produce machine consensus for each document on all specified fields
         //Add sentence splits
         for (Document doc : docs) {
             doc.tagSentenceSplits();
@@ -159,16 +173,19 @@ public class Scripts {
         }
 
     }
-
+    
+    //Phase 3: Assumes pre-gold std assessment pipeline has been run and that gold standards have been assembled
     public static void runPostGoldAssessmentPipeline() {
 
-        //STEP 0: Import docs, gold standards, etc. from "common_tokens" and "gold_std"
+        //STEP 1: Import docs, gold standards, etc. from "common_tokens" and "gold_std"
+        
+       
+        //STEP 2: Run assessments
         //TODO:
-        //STEP 1: Run assessments
-        //TODO:
-        //STEP 2: Format and output results
+        //STEP 3: Format and output results
     }
-
+    
+    //TODO: move this?
     public static void convertCsvToSentences() {
 
         for (String annotator : PIPELINE_ANNOTATORS) {

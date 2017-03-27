@@ -30,8 +30,8 @@
       <file leaf-file-name="nltkWrapper.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nltkWrapper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="-180">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="e#11#22#0" expanded="true" />
               </folding>
@@ -42,11 +42,21 @@
       <file leaf-file-name="SpaCyWrapper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SpaCyWrapper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="150" column="35" lean-forward="true" selection-start-line="150" selection-start-column="35" selection-end-line="150" selection-end-column="35" />
+            <state relative-caret-position="271">
+              <caret line="168" column="21" lean-forward="true" selection-start-line="168" selection-start-column="21" selection-end-line="168" selection-end-column="21" />
               <folding>
                 <element signature="e#203#216#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utility.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utility.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,9 +78,9 @@
         <option value="$PROJECT_DIR$/nltk-nlp.py" />
         <option value="$PROJECT_DIR$/../415_1/regression.py" />
         <option value="$PROJECT_DIR$/Utility.py" />
-        <option value="$PROJECT_DIR$/SpaCyWrapper.py" />
         <option value="$PROJECT_DIR$/utility.py" />
         <option value="$PROJECT_DIR$/nltkWrapper.py" />
+        <option value="$PROJECT_DIR$/SpaCyWrapper.py" />
       </list>
     </option>
   </component>
@@ -390,11 +400,43 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/nltkNER.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nltkWrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#11#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpaCyWrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2190">
+          <caret line="150" column="35" lean-forward="true" selection-start-line="150" selection-start-column="35" selection-end-line="150" selection-end-column="35" />
+          <folding>
+            <element signature="e#203#216#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nltkWrapper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1905">
           <caret line="133" column="23" lean-forward="false" selection-start-line="133" selection-start-column="23" selection-end-line="133" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="e#11#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -410,7 +452,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="28" column="19" lean-forward="false" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="e#203#216#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -447,13 +491,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nltk-nlp.py" />
-    <entry file="file://$PROJECT_DIR$/Texts.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Texts.txt" />
     <entry file="file://$PROJECT_DIR$/NTLKWrapper.py" />
     <entry file="file://$PROJECT_DIR$/SpaCyWrapper.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -463,13 +501,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nltk-nlp.py" />
-    <entry file="file://$PROJECT_DIR$/Texts.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Texts.txt" />
     <entry file="file://$PROJECT_DIR$/NTLKWrapper.py" />
     <entry file="file://$PROJECT_DIR$/SpaCyWrapper.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -479,29 +511,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nltk-nlp.py" />
-    <entry file="file://$PROJECT_DIR$/Texts.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Texts.txt" />
     <entry file="file://$PROJECT_DIR$/NTLKWrapper.py" />
     <entry file="file://$PROJECT_DIR$/nltk-nlp.py" />
-    <entry file="file://$PROJECT_DIR$/Texts.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Texts.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Texts.txt" />
+    <entry file="file://$PROJECT_DIR$/Texts.txt" />
     <entry file="file://$PROJECT_DIR$/nltk-nlp.py" />
     <entry file="file://$USER_HOME$/anaconda3/envs/NLP2.7/lib/python2.7/site-packages/spacy/language.py" />
     <entry file="file://$PROJECT_DIR$/NTLKWrapper.py" />
@@ -509,13 +523,6 @@
     <entry file="file://$PROJECT_DIR$/../415_1/drift-har-eff.csv" />
     <entry file="file://$PROJECT_DIR$/../415_1/set-har-eff.csv" />
     <entry file="file://$PROJECT_DIR$/../415_1/regression.py" />
-    <entry file="file://$PROJECT_DIR$/utility.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nltkNER.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -526,10 +533,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/utility.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SpaCyWrapper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="150" column="35" lean-forward="true" selection-start-line="150" selection-start-column="35" selection-end-line="150" selection-end-column="35" />
+        <state relative-caret-position="271">
+          <caret line="168" column="21" lean-forward="true" selection-start-line="168" selection-start-column="21" selection-end-line="168" selection-end-column="21" />
           <folding>
             <element signature="e#203#216#0" expanded="true" />
           </folding>
@@ -538,8 +553,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nltkWrapper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="-180">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="e#11#22#0" expanded="true" />
           </folding>

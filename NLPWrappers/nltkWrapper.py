@@ -138,7 +138,7 @@ if __name__ == '__main__':
         # "NewsArticle1",
         # "NewsArticle3",
         # "NewsArticle10",
-        "splits",
+        "cleanSplits",
         # "mixed"
         ]
 
@@ -146,4 +146,4 @@ if __name__ == '__main__':
     for text in texts:
         in_file_name = 'corpora/' + text + ".txt"
         out_file_name = 'annotator_outputs/' + text + "-nltk.tsv"
-        run_annotator(in_file_name, utility.read_splits, out_file_name)
+        run_annotator(in_file_name, utility.read_raw, out_file_name)
