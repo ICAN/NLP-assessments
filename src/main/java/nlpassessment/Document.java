@@ -339,7 +339,7 @@ public class Document {
     }
 
     ///////////////////////////////CONVERSIONS//////////////////////////////////
-    public ArrayList<ArrayList<Token>> asSentences() {
+    public ArrayList<ArrayList<Token>> toSentenceListsOfTokens() {
         ArrayList<ArrayList<Token>> sentences = new ArrayList<>();
         int currentSentenceNumber = -1;
         ArrayList<Token> currentSentence = null;
@@ -355,7 +355,24 @@ public class Document {
         }
         return sentences;
     }
-
+    
+    public ArrayList<String> toSentences() {
+        ArrayList<String> sentences = new ArrayList<>();
+        String sentence = "";
+        int currentSentence = 0;
+        for(Token token : this.tokens) {
+            if(token.sentenceNumber > currentSentence) {
+                currentSentence = token.sentenceNumber;
+                sentences.add(sentence);
+                sentence = token.get(Tag.TOKEN) + " ";
+            } else {
+                sentence += token.get(Tag.TOKEN) + " ";
+            }
+        }
+        sentences.add(sentence); //Add last sentence 
+        return sentences;
+    }
+    
     //Returns the entire document as a TSV, one token per line,
     //including only the specified fields, in the specified order (left to right)
     public ArrayList<String> toTSV(String[] fields) {

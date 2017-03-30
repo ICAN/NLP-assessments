@@ -23,8 +23,7 @@
  */
 package nlpassessment;
 
-import java.util.ArrayList;
-import stemming.Stemming;
+import java.util.regex.Pattern;
 
 
 /**
@@ -39,14 +38,15 @@ public class Main {
     public static void main(String[] args) {
 //
 //        AnnotatorScripts.convertSplits();
-        AssessmentPipelineScripts.runJavaAnnotators();
-
+//        AssessmentPipelineScripts.runJavaAnnotators();
+//        AssessmentPipelineScripts.prettySplittingOutput();
 //        AnnotatorScripts.runPreGoldAssessmentPipeline();
 
 
 
 //        Stemming.runStemmerTests();
 
+        AssessmentPipelineScripts.countSplittingErrors();
 
         
         

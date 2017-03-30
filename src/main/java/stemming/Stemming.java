@@ -78,7 +78,7 @@ public class Stemming {
     //Removes unique splitLines; ignores the first token in each unstemmedLine
     private static void cleanStemTest(String inputFile, String outputFile) {
 
-        ArrayList<String> inputLines = Utility.readFileAsLines(inputFile);
+        ArrayList<String> inputLines = Utility.readFileAsLines(inputFile, true);
         ArrayList<String> outputLines = new ArrayList<>();
 
         for (int i = 0; i < inputLines.size(); i++) {
@@ -107,7 +107,7 @@ public class Stemming {
     public static void stemDocument(String inputFile, String outputFile, stemming.Stemmer stemmer) {
 
         //Get the stemming test case
-        ArrayList<String> inputLines = Utility.readFileAsLines(inputFile);
+        ArrayList<String> inputLines = Utility.readFileAsLines(inputFile, true);
         ArrayList<String> stemmedLines = new ArrayList<>();
 
         //For each inputLine
@@ -146,7 +146,7 @@ public class Stemming {
     //TODO: Test (looks okay)
     private static void collapseStemmingResults(String inputFile, String outputFile) {
 
-        ArrayList<String> lines = Utility.readFileAsLines(inputFile);
+        ArrayList<String> lines = Utility.readFileAsLines(inputFile, true);
 
         ArrayList<String> collapsedLines = new ArrayList<>();
 
@@ -175,8 +175,8 @@ public class Stemming {
     //and a collapsed stemmer output file (must already be collapsed so that each line consists only of unique tokens)
     public static void assessStemmingResults(String testFile, String stemmerOutputFile, String dataOutputFile) {
 
-        ArrayList<String> testLines = Utility.readFileAsLines(testFile);
-        ArrayList<String> stemmerOutputLines = Utility.readFileAsLines(stemmerOutputFile);
+        ArrayList<String> testLines = Utility.readFileAsLines(testFile, true);
+        ArrayList<String> stemmerOutputLines = Utility.readFileAsLines(stemmerOutputFile, true);
 
         //Validity checks
         if (testLines.size() != stemmerOutputLines.size()) {

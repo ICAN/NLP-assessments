@@ -58,7 +58,7 @@ public class OpenNLP {
     //Including sentence-splits, tokenization, POS-tagging
     public static void runPOSAnnotator(String inputFileName, String outputFileName) {
 
-        String input = Utility.readFileAsString(inputFileName, true);
+        String input = Utility.readFileAsString(inputFileName, true, true);
 
         //Sentence splitting
         InputStream sentenceModelIn = null;
@@ -147,7 +147,7 @@ public class OpenNLP {
     //TODO: Once NER working, make sure the output also works
     public static Document runNERAnnotator(String inputFileName) {
 
-        String input = Utility.readFileAsString(inputFileName, true);
+        String input = Utility.readFileAsString(inputFileName, true, true);
 
         //Sentence splitting
         InputStream sentenceModelIn = null;

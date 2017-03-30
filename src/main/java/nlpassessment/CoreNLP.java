@@ -103,7 +103,7 @@ public class CoreNLP {
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 
         //Create empty Annotation
-        Annotation annotation = new Annotation(Utility.readFileAsString(inputFileName, true));
+        Annotation annotation = new Annotation(Utility.readFileAsString(inputFileName, true, true));
 
         //Run annotators
         pipeline.annotate(annotation);

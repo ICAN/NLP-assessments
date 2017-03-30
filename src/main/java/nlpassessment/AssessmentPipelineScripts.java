@@ -23,9 +23,8 @@
  */
 package nlpassessment;
 
-import stemming.Stemming;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.regex.Pattern;
 
 public class AssessmentPipelineScripts {
 
@@ -83,14 +82,29 @@ public class AssessmentPipelineScripts {
     public static void prettySplittingOutput() {
         
         for(String annotator : PIPELINE_ANNOTATORS) {
-            Document doc = Utility.importTSVDocument("annotator_outputs/cleanSplits-" + annotator, "\t");
-            doc.tagSentenceSplits();
-            
-            ArrayList<String> lines = new ArrayList<>();
-        } 
-        
-        
+            Document doc = Utility.importTSVDocument("annotator_outputs/cleanSplits-" + annotator + ".tsv", "\t");
+            for(Token token : doc.tokens) {
+                System.out.print(token.get(Tag.TOKEN));
+            }
+            System.out.println();
+            Utility.writeFile(doc.toSentences(), "results_workspace/splitting/prettySplits-"+annotator+".txt");
+        }   
     }
+    
+    public static void countSplittingErrors() {
+        
+        Pattern missing = Pattern.compile("//-//");
+        Pattern extra = Pattern.compile("//\\+//");
+        for(String annotator : PIPELINE_ANNOTATORS) {
+            String doc = Utility.readFileAsString("results_workspace/splitting/splitsAssessment-" + annotator + ".txt", false, false);
+            doc = doc.replaceAll("\n", " ");
+            System.out.println(doc);
+            System.out.println("Missing: " + Utility.countInstancesOf(missing, doc));
+            System.out.println("Extra: " + Utility.countInstancesOf(extra, doc));
+            
+        } 
+    }
+    
     
     //Phase 2: Assumes annotators have been run, include python annotators covered elsewhere
     public static void runPreGoldAssessmentPipeline() {
@@ -191,7 +205,7 @@ public class AssessmentPipelineScripts {
         for (String annotator : PIPELINE_ANNOTATORS) {
 
             Document doc = Utility.importTSVDocument("annotator_outputs/splits-" + annotator + ".tsv", "\t");
-            ArrayList<ArrayList<Token>> sentences = doc.asSentences();
+            ArrayList<ArrayList<Token>> sentences = doc.toSentenceListsOfTokens();
             if (sentences != null) {
                 System.out.println("Got doc as sentences");
             } else {

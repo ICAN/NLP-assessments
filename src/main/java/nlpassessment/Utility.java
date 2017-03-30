@@ -23,15 +23,17 @@
  */
 package nlpassessment;
 
+import static com.sun.xml.internal.ws.util.ServiceFinder.find;
 import edu.stanford.nlp.util.StringUtils;
 import java.io.File;
 
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.lang.ProcessBuilder.Redirect;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  *
@@ -43,7 +45,7 @@ public class Utility {
     //If "header" is empty, then the first line of the input file is used
     //If a header is provided as an argument, it will be split on whitespace
     public static Document importTSVDocument(String fileName, String columnSeparator, String[] fields) {
-        ArrayList<String> lines = Utility.readFileAsLines(fileName);
+        ArrayList<String> lines = Utility.readFileAsLines(fileName, true);
         int i = 0;
         ArrayList<Token> tokens = new ArrayList<>();
 
@@ -52,23 +54,69 @@ public class Utility {
             fields = lines.get(0).split(columnSeparator);
             i++;
         }
-
+        Pattern colSepPattern = Pattern.compile(columnSeparator);
         //Parse each line, adding new tokens to the token list
-        while (i < lines.size() && !lines.get(i).matches("//.*")) {
-            String[] split = lines.get(i).split(columnSeparator);
-            Token token = new Token();
-            for (int j = 0; j < fields.length; j++) {
-                token.set(fields[j], split[j]);
+        while (i < lines.size()) {
+            if (!lines.get(i).matches("//.*") && !lines.get(i).isEmpty()) {
+                String[] split = lines.get(i).split(columnSeparator);
+                Token token = new Token();
+                if (split.length == fields.length) {
+
+                    for (int j = 0; j < fields.length; j++) {
+                        token.set(fields[j], split[j]);
+                    }
+
+                } else if (fields.length == Utility.countInstancesOf(colSepPattern, lines.get(i)) + 1) {
+                    //String.split() ignores trailing whitespace/empty strings, 
+                    //causing the previous case to fail if the last field in row is empty
+                    //This should handle that (and only that) unfortunate case
+                    String[] replacementSplit = new String[fields.length];
+                    System.arraycopy(split, 0, replacementSplit, 0, split.length);
+                    replacementSplit[fields.length - 1] = "";
+                    for (int j = 0; j < fields.length; j++) {
+                        token.set(fields[j], replacementSplit[j]);
+                    }
+
+                } else {
+                    System.out.println("Error: " + lines.get(i) + "     contains an incorrect number of fields");
+                    System.out.println("Should contain " + fields.length + " but contains " + split.length);
+                }
+                tokens.add(token);
             }
-            tokens.add(token);
             i++;
         }
         //Use file name, excluding path and extension, to get document name
         String docName = fileName.replaceFirst("\\.\\w+", "").replaceFirst(".*/", "");
         Document document = new Document(docName);
-        System.out.println("Imported " + docName);
+
+        System.out.println(
+                "Imported " + docName);
         document.tokens = tokens;
         return document;
+    }
+
+//    //Includes trailing empty strings
+//TODO: write this, account for empty strings
+//    public static String[] split(String s, Pattern delimiter) {
+//        int delimiters = Utility.countInstancesOf(delimiter, s);
+//        String[] split = new String[delimiters+1];
+//        Matcher matcher = delimiter.matcher(s);
+//        int start = 0;
+//        for(int i = 0; i < delimiters; i++) {
+//            matcher.find();
+//            split[i] = s.substring(start, matcher.start());
+//            start = matcher.end();
+//        }
+//        split[delimiters] = s.substring()
+//    }
+//Counts instances of pattern in s
+    public static int countInstancesOf(Pattern pattern, String s) {
+        Matcher matcher = pattern.matcher(s);
+        int i = 0;
+        while (matcher.find()) {
+            i++;
+        }
+        return i;
     }
 
     //Uses the "header" to determine field names
@@ -95,7 +143,7 @@ public class Utility {
     }
 
     public static int countNonemptyLines(String fileName) {
-        ArrayList<String> lines = readFileAsLines(fileName);
+        ArrayList<String> lines = readFileAsLines(fileName, true);
         int lineCount = 0;
         for (String line : lines) {
             if (!line.trim().isEmpty()) {
@@ -108,7 +156,7 @@ public class Utility {
     }
 
     public static int countLinesMatching(String fileName, String regex) {
-        ArrayList<String> lines = readFileAsLines(fileName);
+        ArrayList<String> lines = readFileAsLines(fileName, true);
         int lineCount = 0;
         for (String line : lines) {
             if (!line.trim().matches(regex)) {
@@ -162,7 +210,7 @@ public class Utility {
      Reads a file and returns its lines in an arraylist
     Ignores commented lines
      */
-    public static ArrayList<String> readFileAsLines(String fileName) {
+    public static ArrayList<String> readFileAsLines(String fileName, boolean ignoreComments) {
         ArrayList<String> lines = new ArrayList<>();
         Scanner inFile = null;
 
@@ -175,17 +223,26 @@ public class Utility {
             System.exit(-1);
         }
 
-        while (inFile.hasNextLine()) {
-            String line = inFile.nextLine();
-            if (!line.matches("//.*")) {
+        if (ignoreComments) {
+            while (inFile.hasNextLine()) {
+                String line = inFile.nextLine();
+                if (!line.matches("//.*")) {
+                    lines.add(line);
+                }
+            }
+        } else {
+            while (inFile.hasNextLine()) {
+                String line = inFile.nextLine();
                 lines.add(line);
             }
+
         }
+
         return lines;
     }
 
-    public static String readFileAsString(String fileName, boolean insertLineBreaks) {
-        return listToString(readFileAsLines(fileName), insertLineBreaks);
+    public static String readFileAsString(String fileName, boolean insertLineBreaks, boolean ignoreComments) {
+        return listToString(readFileAsLines(fileName, ignoreComments), insertLineBreaks);
     }
 
     public static void writeFile(String contents, String fileName) {
@@ -197,9 +254,11 @@ public class Utility {
             writer.close();
 
         } catch (Exception e) {
-            System.out.println("Failed to complete output file. Exiting.");
+            System.out.println("Output file error: " + e.getMessage() + "        ...Exiting.");
+
             System.exit(-1);
         }
+
     }
 
     /*
@@ -207,21 +266,12 @@ public class Utility {
      */
     public static void writeFile(ArrayList<String> lines, String fileName) {
 
-        try {
-            File file = new File(fileName);
-            FileWriter writer = null;
-            writer = new FileWriter(file);
-
-            for (String line : lines) {
-                writer.write(line + "\n");
-            }
-
-            writer.close();
-
-        } catch (Exception e) {
-            System.out.println("Failed to complete output file. Exiting.");
-            System.exit(-1);
+        String contents = "";
+        for (String line : lines) {
+            contents += line + "\n";
         }
+
+        writeFile(contents, fileName);
 
     }
 
