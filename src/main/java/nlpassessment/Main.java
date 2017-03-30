@@ -25,31 +25,31 @@ package nlpassessment;
 
 import java.util.regex.Pattern;
 
-
 /**
  *
  * @author neal
  */
 public class Main {
-    
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
 //
 //        AnnotatorScripts.convertSplits();
-//        AssessmentPipelineScripts.runJavaAnnotators();
-//        AssessmentPipelineScripts.prettySplittingOutput();
+        AssessmentPipeline.runJavaAnnotators();
+
 //        AnnotatorScripts.runPreGoldAssessmentPipeline();
 
 
 
+        //STEMMING BRANCH
 //        Stemming.runStemmerTests();
 
-        AssessmentPipelineScripts.countSplittingErrors();
 
-        
-        
+        //SENTENCE SPLITTING BRANCH
+//        AssessmentPipelineScripts.prettySplittingOutput();
+//        AssessmentPipeline.countSplittingErrors();
     }
-    
+
 }

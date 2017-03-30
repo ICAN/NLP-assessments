@@ -37,7 +37,7 @@ import opennlp.tools.tokenize.Tokenizer;
 import opennlp.tools.tokenize.TokenizerME;
 import opennlp.tools.tokenize.TokenizerModel;
 import opennlp.tools.util.Span;
-
+import opennlp.tools.lemmatizer.SimpleLemmatizer;
 /**
  *
  * @author Neal
@@ -51,7 +51,8 @@ public class OpenNLP {
         Tag.INDEX_IN_SENT,
         Tag.SENT_NUMBER,
         Tag.TOKEN,
-        Tag.POS
+        Tag.POS,
+//        Tag.LEMMA,
         };
 
     //Returns an annotated Document object
@@ -72,7 +73,11 @@ public class OpenNLP {
         //POS Perceptron
         InputStream posPerceptronModelIn = null;
         POSModel posPerceptronModel = null;
-
+        //Lemmatizer
+        //TODO: find a model?
+//        InputStream lemmatizerModelIn = null;
+//        SimpleLemmatizer lemmatizer = null;
+        
         try {
             //Sentence splitting
             sentenceModelIn = new FileInputStream(modelPath + "en-sent.bin");
@@ -86,7 +91,10 @@ public class OpenNLP {
             //POS Perceptron model
             posPerceptronModelIn = new FileInputStream(modelPath + "en-pos-perceptron.bin");
             posPerceptronModel = new POSModel(posPerceptronModelIn);
-
+            //Lemmatizer
+//            lemmatizerModelIn = new FileInputStream(modelPath + "en-lemmatizer.dict");
+//            lemmatizer = new SimpleLemmatizer(lemmatizerModelIn);
+            
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -114,8 +122,8 @@ public class OpenNLP {
         for (int i = 0; i < sentences.length; i++) {
             posTags[i] = posTagger.tag(tokens[i]);
         }
-
-
+        
+        
         //Produce Document
         Document document = new Document();
         int tokenCount = 1;
@@ -129,6 +137,7 @@ public class OpenNLP {
                 token.startingChar = tokenSpans[i][j].getStart() + 1; 
                 token.endingChar = tokenSpans[i][j].getEnd() + 1; 
                 token.set(Tag.POS, posTags[i][j]);
+//                token.set(Tag.LEMMA, lemmatizer.lemmatize(tokens[i][j], posTags[i][j]));
                 document.tokens.add(token);
                 tokenCount++;
             }

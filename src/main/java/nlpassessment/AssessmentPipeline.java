@@ -26,7 +26,7 @@ package nlpassessment;
 import java.util.ArrayList;
 import java.util.regex.Pattern;
 
-public class AssessmentPipelineScripts {
+public class AssessmentPipeline {
 
     public static final String[] TEXTS = {
         //        "Academic1",
@@ -78,7 +78,7 @@ public class AssessmentPipelineScripts {
         }
     }
 
-    //Phase 1.5
+    //Splitting Branch
     public static void prettySplittingOutput() {
         
         for(String annotator : PIPELINE_ANNOTATORS) {
