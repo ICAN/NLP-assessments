@@ -1,4 +1,4 @@
-//Methodology: picked a somewhat representative inflection from stems list, then picked a sentence from it from a convenient source, usually between hits 90 and 110 in my google results 
+//Methodology: picked a somewhat representative inflection from stems list, then picked a sentence from it from a convenient source, usually between hits 90 and 110 in my google results; very slight modifications in a few to ensure the test focused on lemmas rather than strange formatting
 
 //control: uncontrollably
 Scare stories on ‘uncontrolled spread’ of GMOs are spreading uncontrollably.
@@ -252,35 +252,50 @@ After declaring reservation for women in constabulary in paramilitary forces, th
 //personal: personable
 According to the findings, being personable and straight-talking are the strongest attributes associated with being a trustworthy leader, with one of the main recommendations being that leaders step away from the ‘uniform of leadership’ from time to time in order to reveal their personal side.
 
+//85 handle: unhandled
+An unhandled exception occurs when the user clicks Supplier Bills in the Integration Manager.
 
-//85 handle: unhandled handleability
-
-//understand: understandable understandingly
+//understand: understandable
+He's clumsy and delusional, but the author somehow makes him — not likable, exactly, but understandable.
 
 //state: unstated
+Taking this rhetorical technique one step further, the writer may build up to the conclusion but leave it unstated.
 
-//express: expressly unexpressible
+//express: expressly
+Unless otherwise expressly agreed in writing by the Service Provider in relation to Services provided by it, these Terms and Conditions shall apply in their entirety, whether or not there shall be in existence any written or other express acceptance by the Client, to all Services provided by the Service Provider in respect of any Managed Entity. 
 
-//wild: wilderness wildly
+//wild: wildly
+Copper prices zigzagged wildly when almost no one was trading.
 
-//90 perfect: perfection imperfectly
+//90 perfect: imperfection
+Natural elegance refers to the ways websites and applications can function more powerfully by weaving natural imperfection into their design at every level.
 
-//pressure: unpressured pressurized
+//pressure: pressurized
+The basic function of a pressurized water reactor (PWR) nuclear power plant is to convert the energy of nuclear fission into electricity.
 
-//suffer: insufferably suffering
+//suffer: insufferable
+The Huffington Post recently published an article on “7 Ways to be Insufferable on Facebook.”
 
-//break: rebroke unbreaking
+//break: broken
+England’s housing market is broken, the government has admitted, with home ownership a “distant dream” for young families, as it unveiled a white paper promising a fresh wave of home building.
 
-//drink: drank drinkable
+//drink: drank
+He curiously prowled around his new surroundings, and came upon a stash of undiluted blackcurrant squash - which he promptly drank.
 
-//95 buy: bought unbuyable
+//95 buy: bought
+“We’ve, net, bought $12 billion of common stocks since the election,” he said in an interview with Charlie Rose that aired on Friday.
 
-//change: changing changelessness
+//change: changelessness
+Grandma was always a symbol of changelessness for me.
 
-//talk: talking talkative
+//talk: talkative
+Even though I have absolutely no scientific evidence, in my experience, when it comes to being talkative, tortoiseshell cats have most other cats beat.
 
-//hear: heard unhearing
+//hear: hearing
+Now, even with a hearing aid, she struggles to distinguish the sounds of each voice.
 
-//place: places misplaced
+//place: misplaced
+You can lose your car keys, your temper, and even your head—but please, don't misplace your modifiers. 
 
-//100 light: lighting lightly 
+//100 light: lit
+We held our annual candle lit procession from Queen Square to College Green.
