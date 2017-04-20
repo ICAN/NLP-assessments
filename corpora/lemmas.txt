@@ -1,9 +1,7 @@
-//Methodology: picked a somewhat representative inflection from stems list, then picked a sentence from it from a convenient source, usually between hits 90 and 110 in my google results; very slight modifications in a few to ensure the test focused on lemmas rather than strange formatting
-
 //control: uncontrollably
 Scare stories on ‘uncontrolled spread’ of GMOs are spreading uncontrollably.
 
-//contribute: contributive contribuatable
+//contribute: contributive
 The contributive standard allocates income based on the value of the goods and services a person contributes to production.
 
 //normal: abnormal 
@@ -19,16 +17,16 @@ The 63-year-old was Egypt’s first democratically elected president but was for
 Although our review focuses on literature in developing countries because of its predominance, we refer to literature in developed countries (primarily the United States) to gain a deeper understanding of the impacts of CF.
 
 //focus: refocusing
-The CPS after the Redesign: Refocusing the Economic Lens
+The CPS after the Redesign: Refocusing the Economic Lens.
 
-//indentity: identification
-Other government-issued photo identification cards (must be issued by US Government, the Commonwealth of Virginia, or a political subdivision of the Commonwealth)
+//indentity: identification.
+Other government-issued photo identification cards (must be issued by US Government, the Commonwealth of Virginia, or a political subdivision of the Commonwealth).
 
 //complete: completeness
 Those who travel outward seek completeness in things; those who gaze inward find sufficiency in themselves.
 
 //10 realize: unrealizable
-Ideal low-pass filters pass low frequency signals up to a determined cutoff frequency, and attenuate signals beyond it. Ideal low-pass filters are unrealizable due to the fact that when frequencies change from pass band to the stop band, the gain(reflection) is a jump that results in a discontinuous transition.
+Ideal low-pass filters are unrealizable due to the fact that when frequencies change from pass band to the stop band, the gain(reflection) is a jump that results in a discontinuous transition.
 
 //religion: religiosity
 Second, we discuss current findings on religiosity and SWB from Western industrialized nations.
@@ -217,7 +215,7 @@ It was an "affront to humanity", he said.
 This doctored up cake mix recipe is better than any from-scratch cake I've ever tried. 
 
 //play: plays
-B.C. plays the legal long game in private health-care fight.
+BC plays the legal long game in private health-care fight.
 
 //factor: factoring
 To solve a quadratic function by factoring, first set the equation to equal zero.
@@ -294,7 +292,7 @@ Even though I have absolutely no scientific evidence, in my experience, when it 
 //hear: hearing
 Now, even with a hearing aid, she struggles to distinguish the sounds of each voice.
 
-//place: misplaced
+//place: misplace
 You can lose your car keys, your temper, and even your head—but please, don't misplace your modifiers. 
 
 //100 light: lit

@@ -1,0 +1,137 @@
+//CASE	SENTENCE
+
+
+//ORDINARY 2
+Short	The justice department indictment shed significant light on the hackers’ tradecraft.
+Long	According to the indictment, not only did the hackers write authentication cookies for use on their own computers, they were also able to forge cookies, upload them to Yahoo’s system and push them to individual users they wished to target, according to the indictment.
+
+//MATH/SCI	8
+Inline_1.2.3	The issue of capital allocation in a multivariate context arises from the presence of dependence between the various risky activities in Section 2.4.5 which may generate a diversification effect.
+EndWith_az.az.az	The following command generates nlp4j.txt.nlp.
+EndWith_FileExt	It uses config-decode-en.xml.
+Inline_obj.method()	Capital allocation is an internal exercise calculated by class method scr.capital(), certainly not controlled by the first pillar.
+Inline_var=(array,array)	Several allocation methods in the literature use w=(l1[i],p1[j]) to initialize the choice of a univariate risk measure.
+Inline_MathematicalOperator|<w>|		The univeriate risk measure |<w>| can also be used as an allocation principle.
+Inline_Eqs. (6)-(14)	The Shapley method of both sides of Eqs. (6)–(14) is based on cooperative game theory.
+Inline_x^1.2	We found that the model Mw,x = wx^1.2 approximated the system's behavior adequately.
+
+
+//ABBREVIATIONS	28
+StartWith_Dr.	Dr. Denault proved that this method, originally used to allocate the total cost between players in coalitional games context, can be easily adapted.
+Inline_Tab.	The case of insurance groups, stated in Tab. 2, requires special treatment.
+EndWith_Etc.	The literature on the subject of capital allocation methods is very rich for every even publication year 2008, 2010, 2012, 2014 etc.
+Inline_p.m.	Several principles have been proposed later than the deadline of 6 p.m. over the last twenty years.
+Inline_i.e.	In this context, i.e. SCR calculations, a multi-variate analysis was defined.
+Inline_et al.	They are based on a strengthening of risk control and minimization of a ruin probability, Boolean et al. first introduced this method.
+StartWith_St.	St. Francis began selling commodities on three different exchanges in the same year.
+Inline_Profs.	However, we weren't able to reach Profs. Kowalski or Gambel for comment.
+Inline_Blvd.,	The rusty vehicle sped around the corner on Bragg Blvd., followed closely by a squad of paratroopers. 
+Inline_Jan.	On Jan. 25th, 2016, the deputy commander of USFK made a statement pertaining to aerial shows of force.
+
+Inline_"Gen."	"The 1st Gen. Dreamcast was a pinnacle achievement in computer engineering," said John Stevens.
+Inline_MiddleInitial	To be clear, that's John M. Stevens.
+Inline_State	The coherence of the allocation method for Pickens County, S.C. depends on the properties of the selected risk measure.
+Inline_MultipleInitials	Star Wars: Episode VII - The Force Awakens is a 2015 American epic space opera film directed, co-produced, and co-written by J. J. Abrams.
+EndWith_D.C.?	Did you enjoy living in Washington, D.C.?
+Inline_w/o		Substituting w/o for without, for example, can save valuable time and space.
+(Fig.)	A choices of a dependence model (for more details see Fig. 4) between different risks and of an aggregation methodology are both required.
+MultipleCommonAbbreviations	Two papers by Mr. Tasche and Mrs. deWry followed by Drs. dePaul & Jones co. devoted two papers to describe Euler-MacIntosh’s method.
+EndWith_Mar.	Please send a bar of pure chocolate to 100 Springview Drive by Mar.
+EndWith_(MultipleCommonAbbrevs)	It is used as a designation for a person who has obtained a Research Doctorate (i.e. Ph.D., Ed.D). 
+
+Inline_U.S.-Az	He tweeted from near the U.S.-Mexican border.
+Inline_Inc.	Netwhatevers, Inc. stocks are in a drastic slump according to recent reportings.
+Inline_"(Pt. 1)"	West's "Father Stretch My Hands (Pt. 1)" inspired the best meme of the year so far. 
+Inline_(c. date)	The Millennials (born c. 1981-2000) having been born before the turn of the century give way to the rise of Generation Y & Generation Z in Western countries.
+Inline_(MultipleUnusualAbbrevs)	The Journal of Asian and African Studies (J. Asian Afr. Std.) is a bimonthly peer-reviewed academic journal that covers research in the fields of Asian and African studies.
+Inline_vs.	The same goes for eə vs. ɛə. 
+EndWitih_Ph.D.()	This displaced the existing Doctor of Philosophy degree in some Universities; for instance, the higher doctorate in the faculty of philosophy at the University of St Andrews was discontinued and replaced with the Ph.D.(research doctorate).
+Inline_Abbrv(az)	Both Mrs.(for married) and Miss (for unmarried) were originally contractions of Mistress.
+
+
+
+//CITATIONS	6
+AfterSentenceNumericCitationWithSpace		Others are based on optimizing a multivariate ruin probability or some multivariate risk indicators. [2,4,7,23]
+InlineCitationWithAbbrev(e.g.)		In this paper, we focus on the work of Garfield (e.g., 1955) as an allocation technique by minimizing some risk indicators.
+InlnCitW/;	In the prescribed Standard Formula by Tobin’s q (Bitzer, 2005; Deng, 2007), risks aggregation is done using correlation matrices that connect families and subfamilies of risks.
+CitationAtEndOfSent		It is described in detail in Denault’s paper (2001) [10].
+ComplexCitationInParensAtEndOfSentence		Several papers analyze its properties under different assumptions (Tasche (2004) [20], Balog (2011) [2]).
+MultipleCitations	We quote as examples, Fischer et al (2003) [12], Bush and Dorfleitner (2008) [5], and Kalkbrener (2009) [16].
+
+
+
+//NUMERICS	12
+StartWith_11%	30% of these sentences are entirely made up.
+Inline_.12%	The total annual mortality decreased by .12%, a small but significant improvement. 
+Inline_1,234.5	This prudential mechanism has a magnitude of 12,345.24 dollars per capita, making it a kind of methodological revolution.
+EndOn_1.	This paper is organized as follows: an explanation of the methodology is in Section 2.
+Inline_$1.2	However, the company has a market capitalization of $3.2 billion.
+Inline_(7.2 az)	But the record breaking heat wasn't uniformly distributed - it was particularly pronounced at the top of the world, showing temperature anomalies above 4 degrees Celsius (7.2 degrees Fahrenheit) higher than the 1951 to 1980 average in this region.
+Inline_12.3%	Finally, the first billion-dollar trade occured, resulting in a 13.8% drop.
+EndWith_m/d/y.	Dates can also be written 5/13/1972.
+EndWith_(az y-m-d).	This version of the Noobs operating system contains the most recent version of Rasbian Jessie (released 2016-02-09).
+EndWith_yyyy.	Rolls-Royce said it expects its US sales to remain steady at about 1,200 cars in 1990.
+
+Time	It's 2:15 in the morning, time to head to the DZ.
+MultipleTime	Times like 11:11 and 23:45 tend to get noticed.
+
+//MISC PUNCTUATION	19
+Inline_...	We find that "a practive of calculating risk...for underprivilaged population" of risk seems relevant.
+#:	Once the Solvency Capital Requirement (SCR) is calculated using IPC #: A61K 031/455, operational risk assessment still presents a challenge.
+LastWordHyphenated	The context of the Own Risk and Solvency Assessment (ORSA) approach was assessed using the F-test.
+FirstWordHyphenated	F-22s fly low in a show of force.
+(())w/abbrevs	Thus, to achieve a Bachelor (with) Honours degree (abbr. e.g. BA (Hons.) or BA hons.), an extra "postgraduate" year and a high research honour's thesis must be completed; see Honours Degrees. 
+(!)	He thought it would be amusing (!) to throw a plastic mouse at me.
+EndWith_(?).	The bus timetable purports to be accurate (?).
+VeryShortSentence	Rule 1.
+Inline_!InWord		Read more in Yahoo! Finance.
+EndWith_:InWord	In American transcriptions, hot is written as hɑ:t.
+
+EndWith_:)	The three recipes for success: commitment to a goal; tenacity on the field; and a recipe for success :)
+EndWith_. . .	It's very difficult in fact to say some of these words in their 'full' form--try pronouncing the second t in patients, for example. . . .
+LongWithMultiple;	The regard formerly paid to pronunciation has been gradually declining; so that now the greatest improprieties in that point are to be found among people of fashion; many pronunciations, which thirty or forty years ago were confined to the vulgar, are gradually gaining ground; and if something be not done to stop this growing evil, and fix a general standard at present, the English is likely to become a mere jargon, which every one may pronounce as he pleases. 
+Inline_. . .	"Old nursery rhymes can . . . give us nice clues about earlier pronunciations."
+Inline_'InWord	They include such forms as Feb'ry for February, and lib'ry for library.
+Inline_(')	The vertical line (ˈ) is used to show word stress.
+Inline_()	In American English, t is often pronounced as a flap t, which sounds like d or (more accurately) like the quick, hard r heard in the Spanish word pero.
+Inline_"az";	In spin, the phoneme is pronounced “normally”; this “normal p” sound is represented by p in the IPA.
+Inline_[Superscript]	Often, slashes are used to signal broad or phonemic transcription; thus, /t/ is less specific than, and could refer to, either [t̺ʰ] or [t], depending on the context and language.
+
+
+//EMAILS/URLS	7
+(x.y, a@b.c).	Hyperlinks are recognized as one unit (alaska.edu, jmister@gmail.com). 
+az.az	Its principle is based on the value introduced by Aumann and Shaplay and reported on slashdot.com in game theory.
+StartWith_URL	http://trib.al/svQd7iF Sadly Kanye West missed out on the Billboard charts
+EndWith_URL	He did respond to a TIDAL hater, though http://on.vibe.com/20Txgpm.
+Inline_SimpleURL	Visit www.newegg.com for the best deals in top of the line gadgets.
+Inline_ComplexURL	Internet acronyms, text message jargon, abbreviations, initialisms, cyberslang, leetspeak, SMS code, textese - See more at: http://www.netlingo.com/acronyms.php#sthash.suX04zyM.dpuf, aka the best site on the internet.
+Inline_URLBefore()	Try to download the dmg at developer.apple.com/downloads (Command line tools OS X) for XCode seven. 
+
+
+//QUOTATIONS	10
+StartWith_SimpleQuote	“Yeah, it was great,” he said sarcastically.
+EndWith_SimpleQuote	Professor Mark Serreze PhD, the center's director, says, "We've looked at the average January temperatures, and we look at what we call the 925 millibar level, about 3,000 feet up in the atmosphere."
+EndWith_SingleQuoteWithSemicolonClosedBeforePeriod	The headline read: ‘Local Woman Saves Geese’. 
+Inline_SimpleQuote	I think they meant “...finds inspiration in cooking, her family, and her dog,” but you never can be sure about people. 
+Inline_QuoteInParentheses	Other than to indicate dates or to separate lines of poetry ("Celery, raw / Develops the jaw"), it has few defensible uses.
+Inline_SlashQuote	For example, /ˈkɒntrækt/ is pronounced with a hard k.
+BilateralQuote	"Still," she says suspiciously, "shouldn't it have a reddish tint?"
+Inline_(<.>)	Use a period (written <.>) at the end of a complete sentence that is a statement.
+EndWith_SingleQuoteWithDoubleDashClosedAfterPeriod	Take Jack and Jill--'Jack and Jill went up the hill to fetch a pail of water; Jack fell down and broke his crown and Jill came tumbling after.'
+Inline_LowAngleBrackets	It does not normally use combinations of letters to represent single sounds, the way English does with ⟨sh⟩ or single letters to represent multiple sounds, such as x.
+
+
+//AMBIGUOUS/EXTREME/EXPLORATORY CASES	8
+AfterSent_Attribution	The Scarecrow and the Tin Woodman stood up in a corner and kept quiet all night, although of course they could not sleep. - L. Frank Baum 
+AfterSent_:)	Because they did not understand English grammar very well, they came to this web page and posted inaccurate examples in the comment section. :) 
+EndWith_MultiSentQuote	The prime minister said: "We will fight. We will not give up. We will win the next election."
+StartWith_'az!'	'Run as fast as you can!' he shouted. 
+Inline_IPAchars	In eəʳ ɪəʳ ʊəʳ, the r is not pronounced in BrE, unless the sound comes before a vowel (as in dearest, dear Ann). 
+EndWith_ɔ:.	In American transcriptions, ɔ: is often written as ɒ: (e.g. law = lɒ:), unless it is followed by r, in which case it remains an ɔ:.
+ExtremelyLongWithManyBracketsAndUnusualChars	Other common capital-letter symbols are T for {tone}, N for {nasal}, F for {fricative} (also S for {voiceless fricative} and Z for {voiced fricative}), G for {glide} or for {semivowel/liquid}, P for {plosive} (stop) (also T for {voiceless stop} and D for {voiced stop}), S for {sibilant}, L for {liquid} (or R for {rhotic} and L for {lateral}), # or hash for {click}, A for {low vowel}, U for {rounded vowel} and B, D, J or Ɉ, K, Q, Φ, H for {labial}, {alveolar}, {post-alveolar} or {palatal}, {velar}, {uvular}, {pharyngeal} and {glottal}, respectively, and X for anything.
+Inline_MultiSentQuote	He says the big questions–“Do you really need this much money to put up these investments? Have you told investors what is happening in your sector? What about your track record?–“aren’t asked of companies coming to market.
+
+//DUMMY 1
+Final	This should wrap things up nicely.
+
+

@@ -74,6 +74,7 @@ def run_annotator(in_file_name, file_read_method, out_file_name):
     sentences = nltk.sent_tokenize(input_string)
     #Tokenize
     tokenized_sentences = []
+
     for sent in sentences:
         tokenized_sent = nltk.word_tokenize(sent)
         # print(sent)
@@ -100,7 +101,7 @@ def run_annotator(in_file_name, file_read_method, out_file_name):
             new_token.append(token[0]) #word
             new_token.append(token[1]) #pos
 
-            #Appent lemma to token
+            #Append lemma to token
             if(simplify_pos(token[1]) != ""):
                 new_token.append(wordnet_lemmatizer.lemmatize(token[0], simplify_pos(token[1])))
             else:
@@ -110,12 +111,88 @@ def run_annotator(in_file_name, file_read_method, out_file_name):
     #     for token in sent:
     #         print(token)
 
-
-
-
-
     print("writing tsv for " + in_file_name)
     write_tsv(lemmatized_sentences, out_file)
+
+
+def run_annotator_stacked_sents_done_badly(in_file_name, out_file_name):
+
+    # in_file = open(in_file_name, "r")
+    out_file = open(out_file_name, "w")
+
+    # input_string = "Between us there was, as I have already said somewhere, the bond of the sea. Only the gloom to the west, brooding over the upper reaches, became more sombre every minute, as if angered by the approach of the sun."
+    input = utility.read_raw_as_lines(in_file_name)
+    annotations = utility.read_annotations(in_file_name)
+
+    #Split sentences
+    #Even though there's already only one sentence per line
+    sentences = []
+    for line in input:
+        # print(line)
+        tokenized_line = nltk.sent_tokenize(line)
+        # print(tokenized_line)
+        sentences.append(tokenized_line)
+
+
+    #Tokenize
+    tokenized_sentences = []
+    for i in range(0, len(sentences)):
+        sent = sentences[i]
+        tokenized_sent = nltk.word_tokenize(utility.array_to_string(sent))
+        tokenized_sentences.append(tokenized_sent)
+
+
+    #POS-tag
+    tagged_sentences = []
+    for sent in tokenized_sentences:
+        tagged_sent = nltk.pos_tag(sent)
+        tagged_sentences.append(tagged_sent)
+        # print(sent)
+        # print(tagged_sent)
+
+    #Lemmatize using NLTK's api for the WordNet lemmatizer
+    lemmatized_sentences = []
+    wordnet_lemmatizer = WordNetLemmatizer()
+    for sent in tagged_sentences:
+        new_sentence = []
+        lemmatized_sentences.append(new_sentence)
+        for token in sent:
+            new_token = []
+            new_sentence.append(new_token)
+            new_token.append(token[0]) #word
+            new_token.append(token[1]) #pos
+
+            #Append lemma to token
+            if(simplify_pos(token[1]) != ""):
+                new_token.append(wordnet_lemmatizer.lemmatize(token[0], simplify_pos(token[1])))
+            else:
+                new_token.append(wordnet_lemmatizer.lemmatize(token[0]))
+
+
+    lemma_only_sentences = []
+    for sent in lemmatized_sentences:
+        lemma_only_sent = []
+        for token in sent:
+            # print(token[2] + " ")
+            lemma_only_sent.append(token[2] + " ")
+        lemma_only_sentences.append(lemma_only_sent);
+
+    print (str(len(lemma_only_sentences)))
+
+    for i in range(len(sentences)):
+        # lemma_only_sent = lemma_only_sentences[i];
+        # print(annotations[i])
+        # print(utility.array_to_string(lemma_only_sent))
+        # print(utility.array_to_string(sentences[i]))
+        # print("")
+
+        out_file.write(annotations[i] + "\n")
+        out_file.write(utility.array_to_string(lemma_only_sentences[i]) + "\n")
+        out_file.write(utility.array_to_string(sentences[i]) + "\n")
+        out_file.write("\n")
+
+
+
 
 
 if __name__ == '__main__':
@@ -129,21 +206,18 @@ if __name__ == '__main__':
 
 
     texts = [
-        # "Academic1",
-        # "Academic3",
-        # "Academic10",
-        # "GenFict1",
-        # "GenFict5",
-        # "GenFict6",
-        # "NewsArticle1",
-        # "NewsArticle3",
-        # "NewsArticle10",
-        "cleanSplits",
+        # "cleanSplits",
         # "mixed"
+        "lemmas"
         ]
 
+    in_file_name = 'corpora/' + "lemmas" + ".txt"
+    out_file_name = 'annotator_outputs/' + "lemmas" + "-nltk.tsv"
+    run_annotator_stacked_sents_done_badly(in_file_name, out_file_name)
 
-    for text in texts:
-        in_file_name = 'corpora/' + text + ".txt"
-        out_file_name = 'annotator_outputs/' + text + "-nltk.tsv"
-        run_annotator(in_file_name, utility.read_raw, out_file_name)
+    #
+    #
+    # for text in texts:
+    #     in_file_name = 'corpora/' + text + ".txt"
+    #     out_file_name = 'annotator_outputs/' + text + "-nltk.tsv"
+    #     # run_annotator(in_file_name, utility.read_raw, out_file_name)

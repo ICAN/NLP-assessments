@@ -155,31 +155,67 @@ def run_annotator(in_file_name, file_read_method, out_file_name):
     write_tsv(doc, out_file)
 
 
+def run_annotator_stacked_sentences(in_file_name, out_file_name):
+
+    input_lines = utility.read_raw_as_lines(in_file_name)
+    annotations = utility.read_annotations(in_file_name)
+    out_file = open(out_file_name, "w")
+
+    # Loads the nlp pipeline
+    nlp = spacy.load('en')
+
+    # Create Doc object from input file text, which should contain annotations
+    # Or should this be nlp.make_doc(text)? Instructions unclear
+
+    processed_lines = []
+    for i in range(len(input_lines)):
+        processed_line = nlp(input_lines[i])
+        nlp.tagger(processed_line)
+        nlp.entity(processed_line)
+        processed_lines.append(processed_line)
+
+    print("Processed lines: " + str(len(processed_lines)))
+
+    lemmas_only_sentences = []
+    for i in range(len(processed_lines)):
+        lemmas_only_sent = ""
+        for token in processed_lines[i]:
+            if(token.tag_ != "SP"):
+                if(token.lemma_ is not None):
+                    lemmas_only_sent += token.lemma_ + " "
+                else:
+                    lemmas_only_sent += "\t"
+        lemmas_only_sentences.append(lemmas_only_sent)
+
+
+    for i in range(len(input_lines)):
+        # print(annotations[i])
+        # print(lemmas_only_sentences[i])
+        # print(input_lines[i])
+        # print()
+        out_file.write(annotations[i] + "\n")
+        out_file.write(lemmas_only_sentences[i] + "\n")
+        out_file.write(input_lines[i] + "\n")
+        out_file.write("\n")
+
 
 if __name__ == '__main__':
     # command line args; sys.argv[0] is the script name
     # in_file_name = sys.argv[1] # First cmd-line arg is input file
     # out_file_name = sys.argv[2] # Second cmd-line arg is output file
     texts = [
-        # "Academic1",
-        # "Academic3",
-        # "Academic10",
-        # "GenFict1",
-        # "GenFict5",
-        # "GenFict6",
-        # "NewsArticle1",
-        # "NewsArticle3",
-        # "NewsArticle10",
-        "cleanSplits",
-        # "mixed"
         ]
 
-    #Run splits
-    for text in texts:
-        in_file_name = 'corpora/' + text + ".txt"
-        out_file_name = 'annotator_outputs/' + text + "-spacy.tsv"
-        run_annotator(in_file_name, utility.read_raw, out_file_name)
+    # Run lemmas
+    in_file_name = 'corpora/' + "lemmas" + ".txt"
+    out_file_name = 'annotator_outputs/' + "lemmas" + "-spacy.tsv"
+    run_annotator_stacked_sentences(in_file_name, out_file_name)
 
+
+    # #Run splits
+    # in_file_name = 'corpora/' + "splits" + ".txt"
+    # out_file_name = 'annotator_outputs/' + "splits" + "-spacy.tsv"
+    # run_annotator(in_file_name, utility.read_raw, out_file_name)
 
 
 

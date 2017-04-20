@@ -22,5 +22,31 @@ def read_raw(in_file_name):
     in_file = open(in_file_name, "r")
     input_string = ""
     for line in in_file:
-        input_string += line + " "
+        if (line.startswith("/") != True and len(line) > 3):
+            input_string += line + " "
     return input_string
+
+
+def read_raw_as_lines(in_file_name):
+    in_file = open(in_file_name, "r")
+    input_lines = []
+    for line in in_file:
+        if (line.startswith("/") != True and len(line) > 3):
+            input_lines.append(line)
+    return input_lines
+
+
+def read_annotations(in_file_name):
+    in_file = open(in_file_name, "r")
+    input_lines = []
+    for line in in_file:
+        if (line.startswith("/") == True and len(line) != 0):
+            input_lines.append(line)
+    return input_lines
+
+def array_to_string(array):
+    output = ""
+    for string in array:
+        output += string;
+
+    return output;
