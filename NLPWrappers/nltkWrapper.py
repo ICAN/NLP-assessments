@@ -187,8 +187,8 @@ def run_annotator_stacked_sents_done_badly(in_file_name, out_file_name):
         # print("")
 
         out_file.write(annotations[i] + "\n")
-        out_file.write(utility.array_to_string(lemma_only_sentences[i]) + "\n")
         out_file.write(utility.array_to_string(sentences[i]) + "\n")
+        out_file.write(utility.array_to_string(lemma_only_sentences[i]) + "\n")
         out_file.write("\n")
 
 
@@ -212,7 +212,7 @@ if __name__ == '__main__':
         ]
 
     in_file_name = 'corpora/' + "lemmas" + ".txt"
-    out_file_name = 'annotator_outputs/' + "lemmas" + "-nltk.tsv"
+    out_file_name = 'annotator_outputs/' + "lemmas" + "-nltk.txt"
     run_annotator_stacked_sents_done_badly(in_file_name, out_file_name)
 
     #

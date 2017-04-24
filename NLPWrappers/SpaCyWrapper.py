@@ -194,8 +194,8 @@ def run_annotator_stacked_sentences(in_file_name, out_file_name):
         # print(input_lines[i])
         # print()
         out_file.write(annotations[i] + "\n")
-        out_file.write(lemmas_only_sentences[i] + "\n")
         out_file.write(input_lines[i] + "\n")
+        out_file.write(lemmas_only_sentences[i] + "\n")
         out_file.write("\n")
 
 
@@ -208,7 +208,7 @@ if __name__ == '__main__':
 
     # Run lemmas
     in_file_name = 'corpora/' + "lemmas" + ".txt"
-    out_file_name = 'annotator_outputs/' + "lemmas" + "-spacy.tsv"
+    out_file_name = 'annotator_outputs/' + "lemmas" + "-spacy.txt"
     run_annotator_stacked_sentences(in_file_name, out_file_name)
 
 

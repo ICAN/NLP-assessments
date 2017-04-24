@@ -55,9 +55,8 @@ public class CoreNLP {
     };
 
     //PUBLIC METHODS
-
     //Runs the CoreNLP annotator
-    public static void runAnnotator(String inputFileName, String outputFileName) {
+    public static void runAnnotator(String infileName, String outfileName) {
 
         // creates a StanfordCoreNLP object, with POS tagging, lemmatization, NER
         Properties props = new Properties();
@@ -65,7 +64,7 @@ public class CoreNLP {
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 
         //Create empty Annotation
-        Annotation annotation = new Annotation(Utility.readFileAsString(inputFileName, true, true));
+        Annotation annotation = new Annotation(Utility.readFileAsString(infileName, true));
 
         //Run annotators
         pipeline.annotate(annotation);
@@ -82,7 +81,7 @@ public class CoreNLP {
                 String posTag = coreToken.get(PartOfSpeechAnnotation.class);
                 String namedEntityTag = coreToken.get(NamedEntityTagAnnotation.class);
                 String lemma = coreToken.get(LemmaAnnotation.class);
-                
+
                 Token token = new Token();
                 token.set(Tag.INDEX_IN_SENT, indexInSentence);
                 token.set(Tag.INDEX_IN_TEXT, indexInText);
@@ -102,27 +101,81 @@ public class CoreNLP {
         }
 
         document.PennToSimplifiedPOSTags();
-        
+
         renormalizeBrackets(document.tokens);
-        Utility.writeFile(document.toTSV(FIELDS), outputFileName);
+        Utility.writeFile(document.toTSV(FIELDS), outfileName);
 
     }
 
     //Runs the annotator on multiple files
-    public static void runAnnotator(String[] inputFileNames, String[] outputFileNames) {
-        if (inputFileNames.length != outputFileNames.length) {
+    public static void runAnnotator(String[] infileNames, String[] outfileNames) {
+        if (infileNames.length != outfileNames.length) {
             System.out.println("Error: number of input files and number of output files differ");
             System.exit(-1);
         }
 
-        for (int i = 0; i < inputFileNames.length; i++) {
-            runAnnotator(inputFileNames[i], outputFileNames[i]);
+        for (int i = 0; i < infileNames.length; i++) {
+            runAnnotator(infileNames[i], outfileNames[i]);
         }
     }
 
-    
-    
-    
+    //Runs the CoreNLP annotator by lines, weaving in comments
+    //Currently configured to output comments over lemmatized output
+    public static void runAnnotatorStackedLines(String infileName, String outfileName) {
+
+        // creates a StanfordCoreNLP object, with POS tagging, lemmatization, NER
+        Properties props = new Properties();
+        props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner");
+        StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+
+        //Create empty Annotation
+        ArrayList<String> inputLines = Utility.readFileAsLines(infileName);
+        ArrayList<String> comments = Utility.readCommentsAsLines(infileName);
+        ArrayList<String> processedLines = new ArrayList<>();
+
+        Document document = new Document();
+
+        for (String line : inputLines) {
+            Annotation annotation = new Annotation(line);
+            //Run annotators
+            pipeline.annotate(annotation);
+            List<CoreMap> coreSentences = annotation.get(SentencesAnnotation.class);
+            String procLine = "";
+            for (CoreMap sentence : coreSentences) {
+
+                for (CoreLabel coreToken : sentence.get(TokensAnnotation.class)) {
+                    String word = coreToken.get(TextAnnotation.class);
+                    String posTag = coreToken.get(PartOfSpeechAnnotation.class);
+                    String namedEntityTag = coreToken.get(NamedEntityTagAnnotation.class);
+                    String lemma = coreToken.get(LemmaAnnotation.class);
+
+                    procLine += lemma + " ";
+
+                }
+
+            }
+            processedLines.add(procLine);
+        }
+
+        document.PennToSimplifiedPOSTags();
+
+        renormalizeBrackets(document.tokens);
+
+        System.out.println("Comment lines: " + comments.size() + "   Sentences: " + processedLines.size());
+
+        ArrayList<String> outputLines = new ArrayList<>();
+        for (int i = 0; i < comments.size(); i++) {
+            outputLines.add(comments.get(i));
+            outputLines.add("");
+            outputLines.add(inputLines.get(i));
+            outputLines.add(processedLines.get(i));
+            outputLines.add("");
+        }
+
+        Utility.writeFile(outputLines, outfileName);
+
+    }
+
     /*
         Converts Penn-standardized brackets to their correct single-character forms
      */
@@ -142,7 +195,7 @@ public class CoreNLP {
         }
     }
 
-        //A script for running the CoreNLP pipeline from the command line in windows
+    //A script for running the CoreNLP pipeline from the command line in windows
     //TODO: Make sure it still works
 //    private static void runCoreNLPTerminal(String inputFileName) {
 //        

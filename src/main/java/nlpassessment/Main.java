@@ -37,7 +37,11 @@ public class Main {
     public static void main(String[] args) {
 //
 //        AnnotatorScripts.convertSplits();
-        AssessmentPipeline.runJavaAnnotators();
+//        AssessmentPipeline.runJavaAnnotators();
+        
+        CoreNLP.runAnnotatorStackedLines("corpora/lemmas.txt", "annotator_outputs/lemmas-core.txt");
+        
+
 
 //        AnnotatorScripts.runPreGoldAssessmentPipeline();
 

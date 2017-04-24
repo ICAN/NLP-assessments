@@ -38,7 +38,7 @@ public class AssessmentPipeline {
         //        "NewsArticle1",
         //        "NewsArticle3",
         //        "NewsArticle10",
-        "cleanSplits",
+        "lemmas",
 //        "mixed",
     };
 
@@ -96,7 +96,7 @@ public class AssessmentPipeline {
         Pattern missing = Pattern.compile("//-//");
         Pattern extra = Pattern.compile("//\\+//");
         for(String annotator : PIPELINE_ANNOTATORS) {
-            String doc = Utility.readFileAsString("results_workspace/splitting/splitsAssessment-" + annotator + ".txt", false, false);
+            String doc = Utility.readFileAsString("results_workspace/splitting/splitsAssessment-" + annotator + ".txt", false);
             doc = doc.replaceAll("\n", " ");
             System.out.println(doc);
             System.out.println("Missing: " + Utility.countInstancesOf(missing, doc));

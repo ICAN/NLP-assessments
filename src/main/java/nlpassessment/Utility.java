@@ -45,7 +45,7 @@ public class Utility {
     //If "header" is empty, then the first line of the input file is used
     //If a header is provided as an argument, it will be split on whitespace
     public static Document importTSVDocument(String fileName, String columnSeparator, String[] fields) {
-        ArrayList<String> lines = Utility.readFileAsLines(fileName, true);
+        ArrayList<String> lines = Utility.readFileAsLines(fileName);
         int i = 0;
         ArrayList<Token> tokens = new ArrayList<>();
 
@@ -143,7 +143,7 @@ public class Utility {
     }
 
     public static int countNonemptyLines(String fileName) {
-        ArrayList<String> lines = readFileAsLines(fileName, true);
+        ArrayList<String> lines = readFileAsLines(fileName);
         int lineCount = 0;
         for (String line : lines) {
             if (!line.trim().isEmpty()) {
@@ -156,7 +156,7 @@ public class Utility {
     }
 
     public static int countLinesMatching(String fileName, String regex) {
-        ArrayList<String> lines = readFileAsLines(fileName, true);
+        ArrayList<String> lines = readFileAsLines(fileName);
         int lineCount = 0;
         for (String line : lines) {
             if (!line.trim().matches(regex)) {
@@ -210,7 +210,7 @@ public class Utility {
      Reads a file and returns its lines in an arraylist
     Ignores commented lines
      */
-    public static ArrayList<String> readFileAsLines(String fileName, boolean ignoreComments) {
+    public static ArrayList<String> readFileAsLines(String fileName) {
         ArrayList<String> lines = new ArrayList<>();
         Scanner inFile = null;
 
@@ -223,26 +223,47 @@ public class Utility {
             System.exit(-1);
         }
 
-        if (ignoreComments) {
-            while (inFile.hasNextLine()) {
-                String line = inFile.nextLine();
-                if (!line.matches("//.*")) {
-                    lines.add(line);
-                }
-            }
-        } else {
-            while (inFile.hasNextLine()) {
-                String line = inFile.nextLine();
+        while (inFile.hasNextLine()) {
+            String line = inFile.nextLine();
+            if (!line.matches("//.*")
+                    && line.length() > 2) {
                 lines.add(line);
             }
-
         }
 
         return lines;
     }
 
-    public static String readFileAsString(String fileName, boolean insertLineBreaks, boolean ignoreComments) {
-        return listToString(readFileAsLines(fileName, ignoreComments), insertLineBreaks);
+    /*
+     Reads a file and returns its lines in an arraylist
+    Ignores commented lines
+     */
+    public static ArrayList<String> readCommentsAsLines(String fileName) {
+        ArrayList<String> lines = new ArrayList<>();
+        Scanner inFile = null;
+
+        try {
+            System.out.println(new File("").getAbsolutePath());
+            System.out.println("Read: " + fileName);
+            inFile = new Scanner(new FileReader(fileName));
+        } catch (Exception e) {
+            System.out.println("Failed to open input file. Exiting.");
+            System.exit(-1);
+        }
+
+        while (inFile.hasNextLine()) {
+            String line = inFile.nextLine();
+            if (line.matches("//.*")
+                    && line.length() > 2) {
+                lines.add(line);
+            }
+        }
+
+        return lines;
+    }
+
+    public static String readFileAsString(String fileName, boolean insertLineBreaks) {
+        return listToString(readFileAsLines(fileName), insertLineBreaks);
     }
 
     public static void writeFile(String contents, String fileName) {

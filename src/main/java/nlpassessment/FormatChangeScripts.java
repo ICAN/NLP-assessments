@@ -35,7 +35,7 @@ public class FormatChangeScripts {
     //Turns a document in format used to make document the splitting test cases 
     //into a raw text format on a single line for use by machine annotators
     public static void testCaseToRaw() {
-        ArrayList<String> inputLines = Utility.readFileAsLines("corpora/splits.txt", true);
+        ArrayList<String> inputLines = Utility.readFileAsLines("corpora/splits.txt");
         System.out.println("input done");
         int i = 0;
         String output = "";

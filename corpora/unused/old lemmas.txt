@@ -1,600 +1,299 @@
-//control: uncontrollably
-
-scare story on ' uncontrolled spread’ of gmos be spread uncontrollably . 
+//control: uncontrollably un* 
 Scare stories on ‘uncontrolled spread’ of GMOs are spreading uncontrollably.
 
-
-//contribute: contributive
-
-the contributive standard allocate income base on the value of the good and service a person contribute to production . 
+//contribute: contributive *ive
 The contributive standard allocates income based on the value of the goods and services a person contributes to production.
 
-
-//normal: abnormal 
-
-generally , abnormal oral or pharyngeal swallow function be associate with high cervical dysphagia in the upper neck , whereas the abnormal esophageal motor function or obstnuctive morphology may be in the retnosternal area or low neck . 
+//norm: abnormal ab* *al
 Generally, abnormal oral or pharyngeal swallowing function is associated with high cervical dysphagia in the upper neck, whereas the abnormal esophageal motor function or obstnuctive morphology may be in the retnosternal area or lower neck.
 
-
-//product: reproducible
-
-leave aside the question of whether they be always adhere to , these quality standard be insufficient when view through the lens of " really reproducible research . " 
+//produce/product: reproducible re* *ible
 Leaving aside the question of whether they are always adhered to, these quality standards are insufficient when viewed through the lens of “really reproducible research.” 
 
-
-//5 democrat: democratically
-
-the 63-year - old be egypt ’s first democratically elect president but be force out of office by the military after violent protest break out under his leadership . 
+//democrat: democratically *ically
 The 63-year-old was Egypt’s first democratically elected president but was forced out of office by the military after violent protests broke out under his leadership.
 
-
-//develop: developed
-
-although our review focus on literature in develop country because of its predominance , we refer to literature in develop country ( primarily the united states ) to gain a deep understanding of the impact of cf . 
+//develop: developed *ed
 Although our review focuses on literature in developing countries because of its predominance, we refer to literature in developed countries (primarily the United States) to gain a deeper understanding of the impacts of CF.
 
-
-//focus: refocusing
-
-the cps after the redesign : refocus the economic lens . 
+//focus: refocusing re* *ing
 The CPS after the Redesign: Refocusing the Economic Lens.
 
-
-//indentity: identification.
-
-other government - issue photo identification card ( must be issue by us government , the commonwealth of virginia , or a political subdivision of the commonwealth ) . 
+//identify/indentity: identification *ication
 Other government-issued photo identification cards (must be issued by US Government, the Commonwealth of Virginia, or a political subdivision of the Commonwealth).
 
-
-//complete: completeness
-
-those who travel outward seek completeness in thing ; those who gaze inward find sufficiency in themselves . 
+//complete: completeness *ness
 Those who travel outward seek completeness in things; those who gaze inward find sufficiency in themselves.
 
-
-//10 realize: unrealizable
-
-ideal low - pas filter be unrealizable due to the fact that when frequency change from pas band to the stop band , the gain(reflection ) be a jump that result in a discontinuous transition . 
+//realize: unrealizable un* *able
 Ideal low-pass filters are unrealizable due to the fact that when frequencies change from pass band to the stop band, the gain(reflection) is a jump that results in a discontinuous transition.
 
-
-//religion: religiosity
-
-second , we discuss current finding on religiosity and swb from western industrialized nation . 
+//religion: religiosity *osity
 Second, we discuss current findings on religiosity and SWB from Western industrialized nations.
 
-
-//measure: mismeasured
-
-i nevertheless maintain this assumption because it be useful to isolate the effect of mb , which emerge when monetary policy respond to mismeasured variable , from the effect of mb , which would emerge when firm and household base their decision on mismeasured variable . 
+//measure: mismeasured mis* *ed
 I nevertheless maintain this assumption because it is useful to isolate the effects of MB, which emerge when monetary policy responds to mismeasured variables, from the effects of MB, which would emerge when firms and households base their decisions on mismeasured variables.
 
-
-//recognize: unrecognizably
-
-every ecosystem i study be unrecognizably different from when i start . 
+//recognize: unrecognizably un* *ably
 Every ecosystem I studied is unrecognizably different from when I started.
 
-
-//judge: judgmental
-
-! judgmental should come before the & & operator . 
+//judge: judgmental *mental
 !judgmental should come before the && operator.
 
-
-//15 tradition: traditions
-
-tradition link the present to the past , and they provide a dash of fun and spirit to the hollins experience . 
+//tradition: traditions *s
 Traditions link the present to the past, and they provide a dash of fun and spirit to the Hollins experience.
 
-
-//define: definer well-defined
-
-this guide break down the process any company can follow to develop their own well - define security policy and inlcudes sample ibm i and aix security policy template for your reference . 
+//define: well-defined well-* *d
 This guide breaks down the process any company can follow to develop their own well-defined security policy and inlcudes sample IBM i and AIX security policy templates for your reference.
 
-
-//responsible: nonresponsibility
-
-in this case , aaa protest the contracting officer 's nonresponsibility finding on several ground , include the contracting officer 's reliance on unsupported allegation that aaa have forge transportation movement request ( tmrs ) under the predecessor host nation trucking ( hnt ) contract . 
+//response: nonresponsibility non* *ibility
 In this case, AAA protested the contracting officer's nonresponsibility finding on several grounds, including the contracting officer's reliance on unsupported allegations that AAA had forged transportation movement requests (TMRs) under the predecessor Host Nation Trucking (HNT) Contract.
 
-
-//describe: indescribably
-
-there be something strange in my sensation , something indescribably new and , from its very novelty , incredibly sweet . 
+//describe: indescribably in* *ably
 There was something strange in my sensations, something indescribably new and, from its very novelty, incredibly sweet.
 
-
 //prove: unproven
-
-under the term of the health benefit plan that be offer or administer by blue cross and blue shield of illinois ( bcbsil ) , benefit for health care service will be deny if it be determined that such item be deem " medically unnecessary " or which be medically unproven , often refer to as " experimental and/or investigational . " 
 Under the terms of the health benefit plans that are offered or administered by Blue Cross and Blue Shield of Illinois (BCBSIL), benefits for health care services will be denied if it is determined that such items are deemed “medically unnecessary” or which are medically unproven, often referred to as “experimental and/or investigational." 
 
-
-//20 natural: naturally
-
-rather than use chemical for hair dyeing work , learn how to lighten hair naturally with these 6 method . 
+//natural: naturally
 Rather than using chemicals for hair dyeing works, learn how to lighten hair naturally with these 6 methods.
 
-
 //increase: increasing
-
-increase the computation period be generally consider an incentive for worker to extend their career . 
 Increasing the computation period is generally considered an incentive for workers to extend their careers.
 
-
 //involve: noninvolvement
-
-if the court determine that a health care provider name as a defendant falsely file or make false or inaccurate statement in an affidavit of noninvolvement , the court , upon motion or upon its own initiative , shall immediately reinstate the claim against that provider . 
 If the court determines that a health care provider named as a defendant falsely files or makes false or inaccurate statements in an affidavit of noninvolvement, the court, upon motion or upon its own initiative, shall immediately reinstate the claim against that provider.
 
-
 //commercial: commercially
-
-the potential of commercially available boron nitride combine with our transfer technique make high mobility graphene device more accessible . 
 The potential of commercially available boron nitride combined with our transfer technique makes high mobility graphene devices more accessible.
 
-
 //critical: uncritical
-
-in the first place he make short work of what i have call my " chronological snobbery , " the uncritical acceptance of the intellectual climate common to our own age and the assumption that whatever have go out of date be on that account discredit . 
 In the first place he made short work of what I have called my "chronological snobbery," the uncritical acceptance of the intellectual climate common to our own age and the assumption that whatever has gone out of date is on that account discredited.
 
-
-//25 demonstrate: demonstration 
-
-design to create an awareness of the cumulative environmental benefit that can be achieve through the use of native plant by provide an aesthetically pleasing demonstration garden easily adaptable to the home landscape . 
+//demonstrate: demonstration 
 Designed to create an awareness of the cumulative environmental benefits that can be achieved through the use of native plants by providing an aesthetically pleasing demonstration garden easily adaptable to the home landscape.
 
-
 //effect: effected - nearly all search results meant "affected," had to search further
-
-high sea sale can be effect any number of time without violate the rule and regulation . 
 High sea sales can be effected any number of times without violating the rules and regulations.
 
-
 //plan: replanning
-
-numerous strategy can be use for replanning , where the time requirement and the plan quality associate with each strategy depend on the environment around the original flight path . 
 Numerous strategies can be used for replanning, where the time requirements and the plan quality associated with each strategy depend on the environment around the original flight path.
 
-
 //reform: reformable
-
-with a tensile elongation of 40% , the reformable epoxy adhesive film be an incredibly tough product and have high strength and good adhesion than traditional thermoplastic adhesive system . 
 With a tensile elongation of 40%, the reformable epoxy adhesive film is an incredibly tough product and has higher strength and better adhesion than traditional thermoplastic adhesive systems.
 
-
 //success: successfully
-
-this guide highlight the key step policymakers and program provider should follow to successfully implement evidence - base intervention . 
 This guide highlights the key steps policymakers and program providers should follow to successfully implement evidence-based interventions. 
 
-
-//30 politics: apolitical   
-
-this need for an apolitical central bank be why the fed be structure as it be . 
+//politic: apolitical   
 This need for an apolitical central bank is why the Fed is structured as it is.
 
-
 //debate: debating 
-
-it include detail of workshop and competition for debate & public speaking . 
 It includes details of workshops and competitions for debating & public speaking.
 
-
 //level: levelly 
-
-technique find in the routine include " zha " ( downward thrust ) , " dian " ( point with a flick of the wrist ) , " mo " ( cut levelly or obliquely upward ) , " pi " ( chop ) , " ci " ( thrust levelly or upward ) , " tiao " ( split from bottom to top ) , " li " ( split from top to bottom ) , and " tui tuo " ( push away and lift ) . 
 Techniques found in the routine include “zha” (downward thrust), “dian” (pointing with a flick of the wrist), “mo” (cutting levelly or obliquely upward), “pi” (chop), “ci” ( thrust levelly or upward), “tiao” (split from bottom to top), “li” (split from top to bottom), and “tui tuo” (pushing away and lifting).
 
-
 //trade: untradeable
-
--PRON- ' also untradeable in your fantasy league , in case you be wonder . 
 He's also untradeable in your fantasy league, in case you were wondering.
 
-
 //nation: nationally
-
-delta cancel nearly 300 flight nationally . 
 Delta cancels nearly 300 flights nationally.
 
-
-//35 encourage: encouragement
-
-as we think about all those conversation , would we say the majority of our comment could be consider encouragement or criticism ? 
+//encourage: encouragement
 As we think about all those conversations, would we say the majority of our comments could be considered encouragement or criticism?
 
-
 //observe: observable
-
-specialized medical care cost be detailed and observable interactively . 
 Specialized medical care costs are detailed and observable interactively. 
 
-
 //reveal: revealing revelation
-
-ask these creative -- and reveal -- question and find the good talent for your team . 
 Ask these creative — and revealing — questions and find the best talent for your team.
 
-
-//strike: strikes
-
-the stricken cruise liner the norwegian star be expect to arrive in port melbourne this afternoon . 
+//strike: stricken
 The stricken cruise liner The Norwegian Star is expected to arrive in Port Melbourne this afternoon.
 
-
 //govern: governing
-
-russell ’s study of chp/dh during the pre and post war period in the uk cite the dominance of " producer interest " and a set of rule and institution govern the operation of energy industry which make it difficult for small scale generator to input into the national electricity system and to create local market for heat supply ( russell , 1993 ) . 
 Russell’s study of CHP/DH during the pre and post war periods in the UK cites the dominance of “producer interests” and a set of rules and institutions governing the operation of energy industries which made it difficult for small scale generators to input into the national electricity system and to create local markets for heat supply (Russell, 1993).
 
-
-//40 physical: physicality
-
-describe the physicality of a character in your story be exactly like make an introduction . 
+//physical: physicality
 Describing the physicality of a character in your story is exactly like making an introduction. 
 
-
 //independent: independently
-
-the energy performance of all energy star qualify window , door , and skylight must be independently test , certify , and verify . 
 The energy performance of all ENERGY STAR qualified windows, doors, and skylights must be independently tested, certified, and verified.
 
-
 //dream: dreamt
-
-include unlimited streaming of i dream i be a hammer & everything be glass via the free bandcamp app . 
 Includes unlimited streaming of I dreamt I was a hammer & everything was glass via the free Bandcamp app.
 
-
 //improve: improvement
-
-quality improvement ( qi ) be a systematic , formal approach to the analysis of practice performance and effort to improve performance . 
 Quality improvement (QI) is a systematic, formal approach to the analysis of practice performance and efforts to improve performance.
 
-
 //interest: interests
-
-a member , officer , or employee may not use his or her official position to introduce or pass legislation , when the principal purpose be to further the official ’s or an immediate family member ’s financial interest . 
 A Member, officer, or employee may not use his or her official position to introduce or pass legislation, when the principal purpose is to further the official’s or an immediate family member’s financial interests.
 
-
-//45 professor: professorial
-
-in fact , the vast majority of the world ’s good philosopher would be place in the low professorial band at university college london unless they devote significantly less time to their research and teaching ( as oppose to the review or management of teaching ) and more time to management and popularize for which they have no special aptitude . 
+//professor: professorial
 In fact, the vast majority of the world’s best philosophers would be placed in the lowest professorial band at University College London unless they devoted significantly less time to their research and teaching (as opposed to the review or management of teaching) and more time to management and popularizing for which they have no special aptitude.
 
-
 //positive: positively
-
-there be also case in which parsimony or compatibility method will be positively mislead . 
 There are also cases in which parsimony or compatibility methods will be positively misleading.
 
-
 //build: buildable
-
-notably , slope of land shall not be exclude from the calculation of the buildable lot area or the minimum lot size . 
 Notably, slope of land shall not be excluded from the calculation of the buildable lot area or the minimum lot size.
 
-
 //practice: practiced
-
-this paper describe the emerge field of practice theory as it be practice in relation to organizational phenomenon . 
 This paper describes the emerging field of practice theory as it is practiced in relation to organizational phenomena.
 
-
 //prevent: unpreventable
-
-the 3:30 syndrome be another type of pressure ulcer that be consider unpreventable . 
 The 3:30 syndrome is another type of pressure ulcer that is considered unpreventable. 
 
-
-//50 train: trainability
-
-take into consideration the long term developmental model , and the requirement to succeed in rugby , this review aim to prescribe the trainability of junior rugby player . 
+//train: trainability
 Taking into consideration the long term developmental models, and the requirements to succeed in rugby, this review aims to prescribe the trainability of junior rugby players.
 
-
 //office: unofficially
-
-however , unofficially , the assistant be now also available for galaxy s7 , galaxy s7 edge and old samsung device . 
 However, unofficially, the assistant is now also available for Galaxy S7, Galaxy S7 edge and older Samsung devices.
 
-
 //stone: stonily
-
-star stonily at beth , he give her a barely discernible nod . 
 Staring stonily at Beth, he gave her a barely discernible nod. 
 
-
 //benefit: benefitting
-
-this be a new approach for the telecom industry , benefit from big datum . 
 This is a new approach for the telecom industry, benefiting from big data.
 
-
 //social: socialization
-
-through this language socialization , child learn the behavior that be culturally appropriate in their community ( schieffelin & ochs , 1986 ) . 
 Through this language socialization, children learn the behaviors that are culturally appropriate in their community (Schieffelin & Ochs, 1986).
 
-
-//55 examine: examiner
-
-deputy examiner be attorney appoint by district court judge to perform the judicial , administrative and legal adviser duty . 
+//examine: examiner
 Deputy examiners are attorneys appointed by district court judges to perform the judicial, administrative and legal adviser duties.
 
-
 //modern: modernizing
-
-whether -PRON- 're modernize an exist center or build a brand - new one , brunswick offer every major system and type of equipment you need . 
 Whether you're modernizing an existing center or building a brand-new one, Brunswick offers every major system and type of equipment you need.
 
-
 //explain: explanation
-
-the law will also effectively create a " right to explanation , " whereby a user can ask for an explanation of an algorithmic decision that be make . 
 The law will also effectively create a "right to explanation," whereby a user can ask for an explanation of an algorithmic decision that was made.
 
-
 //subject: subjected
-
-we examine the intensity - modulate characteristic of a laser diode subject to optical injection 
 We examined the intensity-modulating characteristics of a laser diode subjected to optical injection
 
-
 //drive: driven
-
-income - drive repayment plan be a great option if your monthly payment feel high in relation to your income . 
 Income-driven repayment plans are a great option if your monthly payment feels high in relation to your income.
 
-
-//60 international: international
-
-this include ten selection investigate such topic as china ’s financial influence and naval nationalism ; unipolarity and international order ; and the danger of crisis instability in u.s.-china relation . 
+//international: international
 This includes ten selections investigating such topics as China’s financial influence and naval nationalism; unipolarity and international order; and the danger of crisis instability in U.S.-China Relations.
 
-
 //close: closer
-
-public school parent in the orono area who be look for french immersion programming will have the chance to sign up closer to home . 
 Public school parents in the Orono area who are looking for French immersion programming will have the chance to sign up closer to home.
 
-
 //introduce: introduces
-
-jiyoun kim introduce squared dryer for ideal storage space . 
 Jiyoun kim introduces squared dryers for ideal storage space.
 
-
 //travel: traveler
-
-there ' an official state department app for u.s. traveler . 
 There's an official State Department app for U.S. travelers.
 
-
 //admit:  readmitted
-
-student enrol in university of arkansas self - pace ( correspondence ) course during their absence must be readmitted . 
 Students enrolled in University of Arkansas self-paced (correspondence) courses during their absence must be readmitted.
 
-
-//65 spread: spreading
-
-by enable third - party gadget maker such as nucleus to provide a sophisticated alexa experience , amazon have a shot at spread its assistant into more part of more consumers’ life than it could ever do on its own . 
+//spread: spreading
 By enabling third-party gadget makers such as Nucleus to provide a sophisticated Alexa experience, Amazon has a shot at spreading its assistant into more parts of more consumers’ lives than it could ever do on its own.
 
-
 //culture: cultural
-
-a must - read for parent and teacher , this major bestseller reveal how cultural literacy be the hide key to effective education . 
 A must-read for parents and teachers, this major bestseller reveals how cultural literacy is the hidden key to effective education.
 
-
 //grind: ground
-
-with a variety of easy and delicious way to cook it , ground beef be what ' for lunch and dinner . 
 With a variety of easy and delicious ways to cook it, ground beef is what's for lunch and dinner.
 
-
 //maintain: maintainability
-
-we have work across many industry to apply the principle of design for serviceability ( dfs ) or design for maintainability . 
 We have worked across many industries to apply the principles of design for serviceability (DFS) or design for maintainability.
 
-
 //discuss: undiscussed
-
-ptsd become a taboo subject in germany because the last time it become a problem -- after world war ii -- the war itself go undiscussed . 
 PTSD became a taboo subject in Germany because the last time it became a problem — after World War II — the war itself went undiscussed.
 
-
-//70 average: averageness
-
-facial averageness be influence by biological , cognitive and learning factor . 
+//average: averageness
 Facial averageness is influenced by biological, cognitive and learning factors.
 
-
 //human: humanity
-
-it be an " affront to humanity " , he say . 
 It was an "affront to humanity", he said.
 
-
 //doctor: doctored
-
-this doctor up cake mix recipe be good than any from - scratch cake -PRON- have ever try . 
 This doctored up cake mix recipe is better than any from-scratch cake I've ever tried. 
 
-
 //play: plays
-
-bc play the legal long game in private health - care fight . 
 BC plays the legal long game in private health-care fight.
 
-
 //factor: factoring
-
-to solve a quadratic function by factoring , first set the equation to equal zero . 
 To solve a quadratic function by factoring, first set the equation to equal zero.
 
-
-//75 power: powerfully
-
-schneefan report that the late model be now project " a powerfully cold la niña be on the way " – one that could smash the early record set back by the la niña of the 1970 . 
+//power: powerfully
 Schneefan reports that the latest models are now projecting “a powerfully cold La Niña is on the way” – one that could smash the earlier record set back by the La Niña of the 1970s.
 
-
 //smile: unsmiling
-
-he describe the passenger as " a solemn , unsmiling , sanctimonious old iceberg that look like he be wait for a vacancy in the trinity . " 
 He described the passenger as "A solemn, unsmiling, sanctimonious old iceberg that looked like he was waiting for a vacancy in the Trinity."
 
-
 //shake: unshakeable
-
-economist on credit suisse 's global markets team attribute the unshakeable nature of the recovery to its root in strengthen domestic demand - and for the time be , that bode well for european equity . 
 Economists on Credit Suisse's Global Markets team attribute the unshakeable nature of the recovery to its roots in strengthening domestic demand - and for the time being, that bodes well for European equities.
 
-
 //refer: references
-
-a new report from a cybersecurity firm provide new insight into malware link to the cia , include an odd list of internal reference to pop culture range from carnival food to obscure video game . 
 A new report from a cybersecurity firm provides new insights into malware linked to the CIA, including an odd list of internal references to pop culture ranging from carnival foods to obscure video games.
 
-
 //associate: unassociated
-
-the atresia of the right atrial ostium of the coronary sinus be unassociated with persistence of the left superior vena cava . 
 The atresia of the right atrial ostium of the coronary sinus was unassociated with persistence of the left superior vena cava.
 
-
-//80 shape: misshapen
-
-vendor be pay , or deny payment , at the behest of obscure law or on demand from state and federal court , result in misshapen priority between the budgetary have and have - not 's . 
+//shape: misshapen
 Vendors are paid, or denied payment, at the behest of obscure laws or on demand from state and federal courts, resulting in misshapen priorities between the budgetary haves and have-not's.
 
-
 //environment: environmentally
-
-there be simple mean that we can and should adopt in order to process our “ waste " into environmentally friendly byproduct . 
 There are simple means that we can and should adopt in order to process our “waste” into environmentally friendly byproducts.
 
-
 //compare: comparable
-
-because two element in a partially order set need not be comparable , it be possible for a partially order set to have more than one maximal element . 
 Because two elements in a partially ordered set need not be comparable, it is possible for a partially ordered set to have more than one maximal element.
 
-
 //military: paramilitary
-
-after declare reservation for woman in constabulary in paramilitary force , they can now also be induct as officer in combat role in all five central armed police force . 
 After declaring reservation for women in constabulary in paramilitary forces, they can now also be inducted as officers in combat roles in all five Central Armed Police Forces.
 
-
 //personal: personable
-
-accord to the finding , be personable and straight - talk be the strong attribute associate with be a trustworthy leader , with one of the main recommendation be that leader step away from the ' uniform of leadership’ from time to time in order to reveal their personal side . 
 According to the findings, being personable and straight-talking are the strongest attributes associated with being a trustworthy leader, with one of the main recommendations being that leaders step away from the ‘uniform of leadership’ from time to time in order to reveal their personal side.
 
-
-//85 handle: unhandled
-
-an unhandled exception occur when the user click supplier bill in the integration manager . 
+//handle: unhandled
 An unhandled exception occurs when the user clicks Supplier Bills in the Integration Manager.
 
-
 //understand: understandable
-
--PRON- ' clumsy and delusional , but the author somehow make him -- not likable , exactly , but understandable . 
 He's clumsy and delusional, but the author somehow makes him — not likable, exactly, but understandable.
 
-
 //state: unstated
-
-take this rhetorical technique one step further , the writer may build up to the conclusion but leave it unstated . 
 Taking this rhetorical technique one step further, the writer may build up to the conclusion but leave it unstated.
 
-
 //express: expressly
-
-unless otherwise expressly agree in writing by the service provider in relation to services provide by it , these term and condition shall apply in their entirety , whether or not there shall be in existence any write or other express acceptance by the client , to all services provide by the service provider in respect of any managed entity . 
 Unless otherwise expressly agreed in writing by the Service Provider in relation to Services provided by it, these Terms and Conditions shall apply in their entirety, whether or not there shall be in existence any written or other express acceptance by the Client, to all Services provided by the Service Provider in respect of any Managed Entity. 
 
-
 //wild: wildly
-
-copper price zigzag wildly when almost no one be trade . 
 Copper prices zigzagged wildly when almost no one was trading.
 
-
-//90 perfect: imperfection
-
-natural elegance refer to the way website and application can function more powerfully by weave natural imperfection into their design at every level . 
+//perfect: imperfection
 Natural elegance refers to the ways websites and applications can function more powerfully by weaving natural imperfection into their design at every level.
 
-
 //pressure: pressurized
-
-the basic function of a pressurized water reactor ( pwr ) nuclear power plant be to convert the energy of nuclear fission into electricity . 
 The basic function of a pressurized water reactor (PWR) nuclear power plant is to convert the energy of nuclear fission into electricity.
 
-
 //suffer: insufferable
-
-the huffington post recently publish an article on “ 7 ways to be insufferable on facebook . " 
 The Huffington Post recently published an article on “7 Ways to be Insufferable on Facebook.”
 
-
 //break: broken
-
-england ’s housing market be break , the government have admit , with home ownership a " distant dream ” for young family , as it unveil a white paper promise a fresh wave of home building . 
 England’s housing market is broken, the government has admitted, with home ownership a “distant dream” for young families, as it unveiled a white paper promising a fresh wave of home building.
 
-
 //drink: drank
-
-he curiously prowl around his new surroundings , and come upon a stash of undiluted blackcurrant squash - which he promptly drink . 
 He curiously prowled around his new surroundings, and came upon a stash of undiluted blackcurrant squash - which he promptly drank.
 
-
-//95 buy: bought
-
-" -PRON- have , net , buy $ 12 billion of common stock since the election , " he say in an interview with charlie rose that air on friday . 
+//buy: bought
 “We’ve, net, bought $12 billion of common stocks since the election,” he said in an interview with Charlie Rose that aired on Friday.
 
-
 //change: changelessness
-
-grandma be always a symbol of changelessness for me . 
 Grandma was always a symbol of changelessness for me.
 
-
 //talk: talkative
-
-even though i have absolutely no scientific evidence , in my experience , when it come to be talkative , tortoiseshell cat have most other cat beat . 
 Even though I have absolutely no scientific evidence, in my experience, when it comes to being talkative, tortoiseshell cats have most other cats beat.
 
-
 //hear: hearing
-
-now , even with a hearing aid , she struggle to distinguish the sound of each voice . 
 Now, even with a hearing aid, she struggles to distinguish the sounds of each voice.
 
-
 //place: misplace
-
-you can lose your car key , your temper , and even your head — but please , do not misplace your modifier . 
 You can lose your car keys, your temper, and even your head—but please, don't misplace your modifiers. 
 
-
-//100 light: lit
-
-we hold our annual candle light procession from queen square to college green . 
+//1light: lit
 We held our annual candle lit procession from Queen Square to College Green.
-
-
