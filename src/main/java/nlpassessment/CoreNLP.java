@@ -50,7 +50,7 @@ public class CoreNLP {
         Tag.TOKEN,
         Tag.POS,
         Tag.LEMMA,
-        Tag.NE
+//        Tag.NE
 
     };
 
@@ -87,10 +87,11 @@ public class CoreNLP {
                 token.set(Tag.INDEX_IN_TEXT, indexInText);
                 token.set(Tag.SENT_NUMBER, sentenceNumber);
                 //TODO: Add start char & end char if feasible             
+                
                 token.set(Tag.TOKEN, word);
                 token.set(Tag.POS, posTag);
                 token.set(Tag.LEMMA, lemma);
-                token.set(Tag.NE, namedEntityTag);
+//                token.set(Tag.NE, namedEntityTag);
                 document.tokens.add(token);
 
                 indexInSentence++;
@@ -129,7 +130,7 @@ public class CoreNLP {
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 
         //Create empty Annotation
-        ArrayList<String> inputLines = Utility.readFileAsLines(infileName);
+        ArrayList<String> inputLines = Utility.readFileAsLinesIgnoreComments(infileName);
         ArrayList<String> comments = Utility.readCommentsAsLines(infileName);
         ArrayList<String> processedLines = new ArrayList<>();
 

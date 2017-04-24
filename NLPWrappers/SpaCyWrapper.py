@@ -78,8 +78,8 @@ def write_tsv(doc, out_file):
         + "\tsentenceNumber"
         + "\ttoken"
         + "\tposTag"
-        + "\tlemma"
-        + "\tneTag"
+        # + "\tlemma"
+        # + "\tneTag"
         + "\n\r"
     )
 
@@ -121,8 +121,8 @@ def write_tsv(doc, out_file):
                 #                          + "\t" + ending_sentence_starting_tokens
                 + "\t" + str(token)
                 + "\t" + token.tag_
-                + "\t" + token.lemma_
-                + "\t" + token.ent_type_
+                # + "\t" + token.lemma_
+                # + "\t" + token.ent_type_
                 + "\n\r")
             tokenInText += 1  # Count only tokens that are included in output
             tokenInSentence += 1
@@ -207,9 +207,16 @@ if __name__ == '__main__':
         ]
 
     # Run lemmas
-    in_file_name = 'corpora/' + "lemmas" + ".txt"
-    out_file_name = 'annotator_outputs/' + "lemmas" + "-spacy.txt"
-    run_annotator_stacked_sentences(in_file_name, out_file_name)
+    # in_file_name = 'corpora/' + "lemmas" + ".txt"
+    # out_file_name = 'annotator_outputs/' + "lemmas" + "-spacy.txt"
+    # run_annotator_stacked_sentences(in_file_name, out_file_name)
+
+
+    # Run POS
+    in_file_name = 'corpora/' + "pos" + ".txt"
+    out_file_name = 'annotator_outputs/' + "pos" + "-spacy.tsv"
+    run_annotator(in_file_name, utility.read_raw, out_file_name)
+
 
 
     # #Run splits

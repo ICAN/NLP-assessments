@@ -223,7 +223,7 @@ To solve a quadratic function by factoring, first set the equation to equal zero
 //power: powered
 Battery powered E-Cats would provide a lot of flexibility and portability to the technology.
 
-//smile: smiles
+//smile: smile
 Bruce Dern with that winning car salesman smile captures the joy & naiviete of a generation.
 
 //shake: shook 

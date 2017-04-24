@@ -197,6 +197,7 @@ public class Document {
         }
         System.out.println();
 
+        //Get rid of "original" and just use "this?"
         Document original = this.deepClone();
         int searchRange = baseSearchRange;
         //Iterate through other documents, restricting results to tokens for which
@@ -215,7 +216,7 @@ public class Document {
 
                 if (Utility.almostEquals(thisToken, otherToken, matchThreshold)) {
                     //Matched! Add token!
-                    intermediateResult.tokens.add(original.tokens.get(thisBaseIter));
+                    intermediateResult.tokens.add(this.tokens.get(thisBaseIter));
 
                     //Continue forward!
                     thisBaseIter++;

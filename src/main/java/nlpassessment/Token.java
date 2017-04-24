@@ -39,7 +39,7 @@ public class Token {
     public int sentenceNumber = -1; //1-indexed
     public int startingChar = -1; //inclusive, 1-indexed
     public int endingChar = -1; //exclusive, 1-indexed //TODO: Check
-    public HashMap<String, String> properties = new HashMap<>();
+    private HashMap<String, String> properties = new HashMap<>();
 
     public Token() {
         properties.put(Tag.TOKEN, "");
@@ -48,18 +48,20 @@ public class Token {
     public Token(String token) {
         properties.put(Tag.TOKEN, token);
     }
-    
+
     //Both keys and values are case sensitive
     public void set(String key, String value) {
         if (isCoreNumericField(key)) {
             set(key, Integer.parseInt(value.trim()));
+        } else if (value.isEmpty()) {
+            properties.put(key, " ");
         } else {
             properties.put(key, value);
         }
     }
 
     public void set(String key, int value) {
-        
+
         if (!isCoreNumericField(key)) {
             System.out.print("Error: attempting to set non-existent numeric field");
         } else if (key.equalsIgnoreCase(Tag.INDEX_IN_TEXT)) {
@@ -82,7 +84,7 @@ public class Token {
     //Returns core numeric fields as strings
     public String get(String key) {
         if (!isCoreNumericField(key)) {
-            return properties.getOrDefault(key, "");
+            return properties.getOrDefault(key, " ");
         } else if (key.equalsIgnoreCase("indexInText")) {
             return "" + indexInText;
         } else if (key.equalsIgnoreCase("indexInSentence")) {

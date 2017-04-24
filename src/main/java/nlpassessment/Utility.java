@@ -45,7 +45,7 @@ public class Utility {
     //If "header" is empty, then the first line of the input file is used
     //If a header is provided as an argument, it will be split on whitespace
     public static Document importTSVDocument(String fileName, String columnSeparator, String[] fields) {
-        ArrayList<String> lines = Utility.readFileAsLines(fileName);
+        ArrayList<String> lines = Utility.readFileAsLinesIgnoreComments(fileName);
         int i = 0;
         ArrayList<Token> tokens = new ArrayList<>();
 
@@ -143,7 +143,7 @@ public class Utility {
     }
 
     public static int countNonemptyLines(String fileName) {
-        ArrayList<String> lines = readFileAsLines(fileName);
+        ArrayList<String> lines = readFileAsLinesIgnoreComments(fileName);
         int lineCount = 0;
         for (String line : lines) {
             if (!line.trim().isEmpty()) {
@@ -159,12 +159,12 @@ public class Utility {
         ArrayList<String> lines = readFileAsLines(fileName);
         int lineCount = 0;
         for (String line : lines) {
-            if (!line.trim().matches(regex)) {
+            if (line.trim().matches(regex)) {
                 lineCount++;
             }
         }
-        System.out.println("Non-empty lines in " + fileName + ": " + lineCount);
-
+//        System.out.println("Non-empty lines in " + fileName + ": " + lineCount);
+        System.out.println("Lines matching " + regex + ": " + lineCount);
         return lineCount;
     }
 
@@ -210,7 +210,7 @@ public class Utility {
      Reads a file and returns its lines in an arraylist
     Ignores commented lines
      */
-    public static ArrayList<String> readFileAsLines(String fileName) {
+    public static ArrayList<String> readFileAsLinesIgnoreComments(String fileName) {
         ArrayList<String> lines = new ArrayList<>();
         Scanner inFile = null;
 
@@ -229,6 +229,31 @@ public class Utility {
                     && line.length() > 2) {
                 lines.add(line);
             }
+        }
+
+        return lines;
+    }
+
+    /*
+     Reads a file and returns its lines in an arraylist
+    Ignores commented lines
+     */
+    public static ArrayList<String> readFileAsLines(String fileName) {
+        ArrayList<String> lines = new ArrayList<>();
+        Scanner inFile = null;
+
+        try {
+            System.out.println(new File("").getAbsolutePath());
+            System.out.println("Read: " + fileName);
+            inFile = new Scanner(new FileReader(fileName));
+        } catch (Exception e) {
+            System.out.println("Failed to open input file. Exiting.");
+            System.exit(-1);
+        }
+
+        while (inFile.hasNextLine()) {
+            String line = inFile.nextLine();
+            lines.add(line);
         }
 
         return lines;
@@ -263,7 +288,7 @@ public class Utility {
     }
 
     public static String readFileAsString(String fileName, boolean insertLineBreaks) {
-        return listToString(readFileAsLines(fileName), insertLineBreaks);
+        return listToString(readFileAsLinesIgnoreComments(fileName), insertLineBreaks);
     }
 
     public static void writeFile(String contents, String fileName) {

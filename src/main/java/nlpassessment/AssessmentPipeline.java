@@ -38,7 +38,7 @@ public class AssessmentPipeline {
         //        "NewsArticle1",
         //        "NewsArticle3",
         //        "NewsArticle10",
-        "lemmas",
+        "pos",
 //        "mixed",
     };
 
@@ -187,6 +187,89 @@ public class AssessmentPipeline {
         }
 
     }
+    
+    //Phase 2: Assumes annotators have been run, include python annotators covered elsewhere
+    public static void runPreGoldPOSPipeline() {
+        double threshold = 0.1; //for fuzzy string matching
+
+        //STEP 1: Import annotated docs
+        ArrayList<Document> docs = new ArrayList<>();
+        for (String text : TEXTS) {
+            for (String annotator : PIPELINE_ANNOTATORS) {
+                docs.add(Utility.importTSVDocument(
+                        "annotator_outputs/" + text + "-" + annotator + ".tsv", "\t"));
+            }
+        }
+
+        //STEP 2: Cleanup, conversions
+        for (Document doc : docs) {
+            doc.removeNonwordChars();
+            doc.removeEmptyTokens();
+            doc.PennToSimplifiedPOSTags();
+            Utility.writeFile(doc.toTSV(BASIC_FIELDS),
+                    "clean_outputs/" + doc.name + ".tsv");
+        }
+
+        //STEP 3: Produce common token annotations
+        for (String text : TEXTS) {
+            //Get all annotators' versions of this document
+            ArrayList<Document> currentSet = new ArrayList<>();
+            for (Document doc : docs) {
+                if (doc.name.matches(text + "-.+")) {
+                    currentSet.add(doc);
+                }
+            }
+
+            //Keep working on this text until done
+            while (true) {
+                for (Document doc : currentSet) {
+                    doc.restrictToTokensInOtherDocs((ArrayList<Document>) currentSet.clone(), 2, threshold);
+                }
+
+                if (!Document.sameLength(currentSet)) {
+                    System.out.println("\n\nSome documents not the same length--beginning another pass");
+                } else if (!Document.tokensMatchAlmost(currentSet, threshold)) {
+                    System.out.println("\n\nTokens don't match sufficiently--beginning another pass");
+                } else {
+                    //Docs in set are same length and match sufficiently
+                    //Write results and stop working on text
+                    for (Document doc : currentSet) {
+                        Utility.writeFile(doc.toTSV(BASIC_FIELDS),
+                                "common_tokens/" + doc.name + ".tsv");
+                    }
+                    break;
+                }
+            }
+        }
+
+        //STEP 4: Produce machine consensus for each document on all specified fields
+        //Add sentence splits
+        for (Document doc : docs) {
+            doc.tagSentenceSplits();
+        }
+        //Specify fields for consensus-building
+        String[] consensusFields = {
+            Tag.TOKEN,
+//            Tag.SPLITTING,
+            Tag.POS, //            Tag.NE,
+        };
+
+        for (String text : TEXTS) {
+
+            //Get all annotators' versions of this document
+            ArrayList<Document> currentSet = new ArrayList<>();
+            for (Document doc : docs) {
+                if (doc.name.matches(text + "-.+")) {
+                    currentSet.add(doc);
+                }
+            }
+
+            Document consensus = Assessment.getTagConsensus(currentSet, 0.6, consensusFields);
+            Utility.writeFile(consensus.toTSV(consensusFields), "consensus/" + text + ".tsv");
+        }
+
+    }
+    
     
     //Phase 3: Assumes pre-gold std assessment pipeline has been run and that gold standards have been assembled
     public static void runPostGoldAssessmentPipeline() {

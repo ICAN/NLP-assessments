@@ -52,7 +52,7 @@ public class OpenNLP {
         Tag.SENT_NUMBER,
         Tag.TOKEN,
         Tag.POS,
-        Tag.LEMMA,
+//        Tag.LEMMA,
         };
 
     //Returns an annotated Document object

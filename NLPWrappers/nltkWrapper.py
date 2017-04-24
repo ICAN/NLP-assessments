@@ -208,12 +208,18 @@ if __name__ == '__main__':
     texts = [
         # "cleanSplits",
         # "mixed"
-        "lemmas"
+        # "lemmas"
         ]
 
-    in_file_name = 'corpora/' + "lemmas" + ".txt"
-    out_file_name = 'annotator_outputs/' + "lemmas" + "-nltk.txt"
-    run_annotator_stacked_sents_done_badly(in_file_name, out_file_name)
+    # Run lemmas
+    # in_file_name = 'corpora/' + "lemmas" + ".txt"
+    # out_file_name = 'annotator_outputs/' + "lemmas" + "-nltk.txt"
+    # run_annotator_stacked_sents_done_badly(in_file_name, out_file_name)
+
+    # Run pos
+    in_file_name = 'corpora/' + "pos" + ".txt"
+    out_file_name = 'annotator_outputs/' + "pos" + "-nltk.tsv"
+    run_annotator(in_file_name, utility.read_raw, out_file_name)
 
     #
     #

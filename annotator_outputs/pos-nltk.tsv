@@ -1,0 +1,1481 @@
+indexInText	indexInSentence	sentenceNumber	token	posTag	lemma
+1	1	1	Real	JJ	Real
+2	2	1	world	NN	world
+3	3	1	networks	NNS	network
+4	4	1	are	VBP	be
+5	5	1	often	RB	often
+6	6	1	large—	JJ	large—
+7	7	1	there	EX	there
+8	8	1	are	VBP	be
+9	9	1	tens	NNS	ten
+10	10	1	of	IN	of
+11	11	1	thousands	NNS	thousand
+12	12	1	of	IN	of
+13	13	1	human	JJ	human
+14	14	1	genes	NNS	gene
+15	15	1	and	CC	and
+16	16	1	trillions	NNS	trillion
+17	17	1	of	IN	of
+18	18	1	connections	NNS	connection
+19	19	1	in	IN	in
+20	20	1	the	DT	the
+21	21	1	human	JJ	human
+22	22	1	brain	NN	brain
+23	23	1	.	.	.
+24	1	2	Such	JJ	Such
+25	2	2	scales	NNS	scale
+26	3	2	make	VBP	make
+27	4	2	human	JJ	human
+28	5	2	visual	JJ	visual
+29	6	2	processing	NN	processing
+30	7	2	of	IN	of
+31	8	2	and	CC	and
+32	9	2	decision	NN	decision
+33	10	2	making	NN	making
+34	11	2	with	IN	with
+35	12	2	the	DT	the
+36	13	2	whole	JJ	whole
+37	14	2	network	NN	network
+38	15	2	prohibitive	NN	prohibitive
+39	16	2	.	.	.
+40	1	3	This	DT	This
+41	2	3	paper	NN	paper
+42	3	3	investigates	VBZ	investigate
+43	4	3	algorithms	IN	algorithm
+44	5	3	to	TO	to
+45	6	3	identify	VB	identify
+46	7	3	provably	RB	provably
+47	8	3	good	JJ	good
+48	9	3	approximations	NNS	approximation
+49	10	3	of	IN	of
+50	11	3	the	DT	the
+51	12	3	network	NN	network
+52	13	3	topology	NN	topology
+53	14	3	,	,	,
+54	15	3	which	WDT	which
+55	16	3	capture	VBP	capture
+56	17	3	important	JJ	important
+57	18	3	system	NN	system
+58	19	3	dynamics	NNS	dynamic
+59	20	3	while	IN	while
+60	21	3	significantly	RB	significantly
+61	22	3	reducing	VBG	reduce
+62	23	3	the	DT	the
+63	24	3	number	NN	number
+64	25	3	of	IN	of
+65	26	3	edges	NNS	edge
+66	27	3	to	TO	to
+67	28	3	enable	VB	enable
+68	29	3	tractable	JJ	tractable
+69	30	3	analysis	NN	analysis
+70	31	3	.	.	.
+71	1	4	1	CD	1
+72	2	4	arXiv:1506.04767v1	JJ	arXiv:1506.04767v1
+73	3	4	[	NNP	[
+74	4	4	cs.IT	NN	cs.IT
+75	5	4	]	VBD	]
+76	6	4	15	CD	15
+77	7	4	Jun	NNP	Jun
+78	8	4	2015	CD	2015
+79	9	4	Quinn	NNP	Quinn
+80	10	4	,	,	,
+81	11	4	Pinar	NNP	Pinar
+82	12	4	,	,	,
+83	13	4	and	CC	and
+84	14	4	Kiyavash	NNP	Kiyavash
+85	15	4	Across	NNP	Across
+86	16	4	different	JJ	different
+87	17	4	domains	NNS	domain
+88	18	4	,	,	,
+89	19	4	edges	NNS	edge
+90	20	4	are	VBP	be
+91	21	4	used	VBN	use
+92	22	4	to	TO	to
+93	23	4	model	VB	model
+94	24	4	various	JJ	various
+95	25	4	kinds	NNS	kind
+96	26	4	of	IN	of
+97	27	4	ties	NNS	tie
+98	28	4	such	JJ	such
+99	29	4	as	IN	a
+100	30	4	physical	JJ	physical
+101	31	4	connections	NNS	connection
+102	32	4	or	CC	or
+103	33	4	dynamic	JJ	dynamic
+104	34	4	relationships	NNS	relationship
+105	35	4	.	.	.
+106	1	5	For	IN	For
+107	2	5	instance	NN	instance
+108	3	5	,	,	,
+109	4	5	in	IN	in
+110	5	5	depicting	VBG	depict
+111	6	5	a	DT	a
+112	7	5	computer	NN	computer
+113	8	5	network	NN	network
+114	9	5	,	,	,
+115	10	5	an	DT	an
+116	11	5	edge	NN	edge
+117	12	5	might	MD	might
+118	13	5	correspond	VB	correspond
+119	14	5	to	TO	to
+120	15	5	a	DT	a
+121	16	5	physical	JJ	physical
+122	17	5	wire	NN	wire
+123	18	5	or	CC	or
+124	19	5	a	DT	a
+125	20	5	packet	JJ	packet
+126	21	5	exchange	NN	exchange
+127	22	5	between	IN	between
+128	23	5	a	DT	a
+129	24	5	sender	NN	sender
+130	25	5	and	CC	and
+131	26	5	a	DT	a
+132	27	5	receiver	NN	receiver
+133	28	5	.	.	.
+134	1	6	For	IN	For
+135	2	6	the	DT	the
+136	3	6	human	JJ	human
+137	4	6	brain	NN	brain
+138	5	6	,	,	,
+139	6	6	edges	NNS	edge
+140	7	6	could	MD	could
+141	8	6	correspond	VB	correspond
+142	9	6	to	TO	to
+143	10	6	information	NN	information
+144	11	6	flow	NN	flow
+145	12	6	between	IN	between
+146	13	6	different	JJ	different
+147	14	6	cells	NNS	cell
+148	15	6	or	CC	or
+149	16	6	brain	NN	brain
+150	17	6	regions	NNS	region
+151	18	6	(	(	(
+152	19	6	Takahashi	NNP	Takahashi
+153	20	6	et	VBZ	et
+154	21	6	al.	RB	al.
+155	22	6	,	,	,
+156	23	6	2015	CD	2015
+157	24	6	;	:	;
+158	25	6	Kim	NNP	Kim
+159	26	6	et	FW	et
+160	27	6	al.	NN	al.
+161	28	6	,	,	,
+162	29	6	2014	CD	2014
+163	30	6	)	)	)
+164	31	6	.	.	.
+165	1	7	For	IN	For
+166	2	7	online	JJ	online
+167	3	7	social	JJ	social
+168	4	7	networks	NNS	network
+169	5	7	,	,	,
+170	6	7	edges	NNS	edge
+171	7	7	might	MD	might
+172	8	7	represent	VB	represent
+173	9	7	user-defined	JJ	user-defined
+174	10	7	relationships	NNS	relationship
+175	11	7	or	CC	or
+176	12	7	pairs	NNS	pair
+177	13	7	of	IN	of
+178	14	7	users	NNS	user
+179	15	7	that	WDT	that
+180	16	7	frequently	RB	frequently
+181	17	7	message	VBP	message
+182	18	7	each	DT	each
+183	19	7	other	JJ	other
+184	20	7	(	(	(
+185	21	7	Ver	NNP	Ver
+186	22	7	Steeg	NNP	Steeg
+187	23	7	and	CC	and
+188	24	7	Galstyan	NNP	Galstyan
+189	25	7	,	,	,
+190	26	7	2012	CD	2012
+191	27	7	,	,	,
+192	28	7	2013	CD	2013
+193	29	7	)	)	)
+194	30	7	.	.	.
+195	1	8	Edges	NNS	Edges
+196	2	8	that	WDT	that
+197	3	8	represent	VBP	represent
+198	4	8	dynamics	NNS	dynamic
+199	5	8	often	RB	often
+200	6	8	must	MD	must
+201	7	8	be	VB	be
+202	8	8	inferred	VBN	infer
+203	9	8	from	IN	from
+204	10	8	activity	NN	activity
+205	11	8	,	,	,
+206	12	8	in	IN	in
+207	13	8	some	DT	some
+208	14	8	cases	NNS	case
+209	15	8	statistically	RB	statistically
+210	16	8	.	.	.
+211	1	9	There	EX	There
+212	2	9	is	VBZ	be
+213	3	9	a	DT	a
+214	4	9	large	JJ	large
+215	5	9	literature	NN	literature
+216	6	9	on	IN	on
+217	7	9	graphs	NN	graph
+218	8	9	whose	WP$	whose
+219	9	9	edges	NNS	edge
+220	10	9	depict	VBP	depict
+221	11	9	statistical	JJ	statistical
+222	12	9	relationships	NNS	relationship
+223	13	9	.	.	.
+224	1	10	Markov	NNP	Markov
+225	2	10	and	CC	and
+226	3	10	Bayesian	NNP	Bayesian
+227	4	10	networks	NNS	network
+228	5	10	are	VBP	be
+229	6	10	well-known	JJ	well-known
+230	7	10	probabilistic	JJ	probabilistic
+231	8	10	graphical	JJ	graphical
+232	9	10	models	NNS	model
+233	10	10	whose	WP$	whose
+234	11	10	edges	NNS	edge
+235	12	10	represent	VBP	represent
+236	13	10	correlation	NN	correlation
+237	14	10	.	.	.
+238	1	11	Many	JJ	Many
+239	2	11	methods	NNS	method
+240	3	11	have	VBP	have
+241	4	11	been	VBN	be
+242	5	11	proposed	VBN	propose
+243	6	11	to	TO	to
+244	7	11	infer	VB	infer
+245	8	11	and	CC	and
+246	9	11	approximate	VB	approximate
+247	10	11	the	DT	the
+248	11	11	networks	NNS	network
+249	12	11	from	IN	from
+250	13	11	i.i.d	NN	i.i.d
+251	14	11	.	.	.
+252	1	12	data	NNS	data
+253	2	12	,	,	,
+254	3	12	often	RB	often
+255	4	12	relying	VBG	rely
+256	5	12	on	IN	on
+257	6	12	heuristics	NNS	heuristic
+258	7	12	.	.	.
+259	1	13	Pretty	RB	Pretty
+260	2	13	soon	RB	soon
+261	3	13	I	PRP	I
+262	4	13	wanted	VBD	want
+263	5	13	to	TO	to
+264	6	13	smoke	VB	smoke
+265	7	13	,	,	,
+266	8	13	and	CC	and
+267	9	13	asked	VBD	ask
+268	10	13	the	DT	the
+269	11	13	widow	NN	widow
+270	12	13	to	TO	to
+271	13	13	let	VB	let
+272	14	13	me	PRP	me
+273	15	13	.	.	.
+274	1	14	But	CC	But
+275	2	14	she	PRP	she
+276	3	14	would	MD	would
+277	4	14	n't	RB	n't
+278	5	14	.	.	.
+279	1	15	She	PRP	She
+280	2	15	said	VBD	say
+281	3	15	it	PRP	it
+282	4	15	was	VBD	be
+283	5	15	a	DT	a
+284	6	15	mean	JJ	mean
+285	7	15	practice	NN	practice
+286	8	15	and	CC	and
+287	9	15	was	VBD	be
+288	10	15	n't	RB	n't
+289	11	15	clean	JJ	clean
+290	12	15	,	,	,
+291	13	15	and	CC	and
+292	14	15	I	PRP	I
+293	15	15	must	MD	must
+294	16	15	try	VB	try
+295	17	15	to	TO	to
+296	18	15	not	RB	not
+297	19	15	do	VB	do
+298	20	15	it	PRP	it
+299	21	15	any	DT	any
+300	22	15	more	RBR	more
+301	23	15	.	.	.
+302	1	16	That	DT	That
+303	2	16	is	VBZ	be
+304	3	16	just	RB	just
+305	4	16	the	DT	the
+306	5	16	way	NN	way
+307	6	16	with	IN	with
+308	7	16	some	DT	some
+309	8	16	people	NNS	people
+310	9	16	.	.	.
+311	1	17	They	PRP	They
+312	2	17	get	VBP	get
+313	3	17	down	RP	down
+314	4	17	on	IN	on
+315	5	17	a	DT	a
+316	6	17	thing	NN	thing
+317	7	17	when	WRB	when
+318	8	17	they	PRP	they
+319	9	17	do	VBP	do
+320	10	17	n't	RB	n't
+321	11	17	know	VB	know
+322	12	17	nothing	NN	nothing
+323	13	17	about	IN	about
+324	14	17	it	PRP	it
+325	15	17	.	.	.
+326	1	18	Here	RB	Here
+327	2	18	she	PRP	she
+328	3	18	was	VBD	be
+329	4	18	a-bothering	VBG	a-bothering
+330	5	18	about	IN	about
+331	6	18	Moses	NNP	Moses
+332	7	18	,	,	,
+333	8	18	which	WDT	which
+334	9	18	was	VBD	be
+335	10	18	no	DT	no
+336	11	18	kin	NN	kin
+337	12	18	to	TO	to
+338	13	18	her	PRP$	her
+339	14	18	,	,	,
+340	15	18	and	CC	and
+341	16	18	no	DT	no
+342	17	18	use	NN	use
+343	18	18	to	TO	to
+344	19	18	anybody	NN	anybody
+345	20	18	,	,	,
+346	21	18	being	VBG	be
+347	22	18	gone	VBN	go
+348	23	18	,	,	,
+349	24	18	you	PRP	you
+350	25	18	see	VBP	see
+351	26	18	,	,	,
+352	27	18	yet	RB	yet
+353	28	18	finding	VBG	find
+354	29	18	a	DT	a
+355	30	18	power	NN	power
+356	31	18	of	IN	of
+357	32	18	fault	NN	fault
+358	33	18	with	IN	with
+359	34	18	me	PRP	me
+360	35	18	for	IN	for
+361	36	18	doing	VBG	do
+362	37	18	a	DT	a
+363	38	18	thing	NN	thing
+364	39	18	that	WDT	that
+365	40	18	had	VBD	have
+366	41	18	some	DT	some
+367	42	18	good	JJ	good
+368	43	18	in	IN	in
+369	44	18	it	PRP	it
+370	45	18	.	.	.
+371	1	19	And	CC	And
+372	2	19	she	PRP	she
+373	3	19	took	VBD	take
+374	4	19	snuff	NN	snuff
+375	5	19	,	,	,
+376	6	19	too	RB	too
+377	7	19	;	:	;
+378	8	19	of	IN	of
+379	9	19	course	NN	course
+380	10	19	that	WDT	that
+381	11	19	was	VBD	be
+382	12	19	all	DT	all
+383	13	19	right	NN	right
+384	14	19	,	,	,
+385	15	19	because	IN	because
+386	16	19	she	PRP	she
+387	17	19	done	VBN	do
+388	18	19	it	PRP	it
+389	19	19	herself	PRP	herself
+390	20	19	.	.	.
+391	1	20	Her	PRP$	Her
+392	2	20	sister	NN	sister
+393	3	20	,	,	,
+394	4	20	Miss	NNP	Miss
+395	5	20	Watson	NNP	Watson
+396	6	20	,	,	,
+397	7	20	a	DT	a
+398	8	20	tolerable	JJ	tolerable
+399	9	20	slim	JJ	slim
+400	10	20	old	JJ	old
+401	11	20	maid	NN	maid
+402	12	20	,	,	,
+403	13	20	with	IN	with
+404	14	20	goggles	NNS	goggles
+405	15	20	on	IN	on
+406	16	20	,	,	,
+407	17	20	had	VBD	have
+408	18	20	just	RB	just
+409	19	20	come	VBN	come
+410	20	20	to	TO	to
+411	21	20	live	VB	live
+412	22	20	with	IN	with
+413	23	20	her	PRP	her
+414	24	20	,	,	,
+415	25	20	and	CC	and
+416	26	20	took	VBD	take
+417	27	20	a	DT	a
+418	28	20	set	NN	set
+419	29	20	at	IN	at
+420	30	20	me	PRP	me
+421	31	20	now	RB	now
+422	32	20	with	IN	with
+423	33	20	a	DT	a
+424	34	20	spelling-book	NN	spelling-book
+425	35	20	.	.	.
+426	1	21	She	PRP	She
+427	2	21	worked	VBD	work
+428	3	21	me	PRP	me
+429	4	21	middling	VBG	middle
+430	5	21	hard	JJ	hard
+431	6	21	for	IN	for
+432	7	21	about	IN	about
+433	8	21	an	DT	an
+434	9	21	hour	NN	hour
+435	10	21	,	,	,
+436	11	21	and	CC	and
+437	12	21	then	RB	then
+438	13	21	the	DT	the
+439	14	21	widow	NN	widow
+440	15	21	made	VBD	make
+441	16	21	her	PRP$	her
+442	17	21	ease	NN	ease
+443	18	21	up	RP	up
+444	19	21	.	.	.
+445	1	22	I	PRP	I
+446	2	22	could	MD	could
+447	3	22	n't	RB	n't
+448	4	22	stood	VB	stand
+449	5	22	it	PRP	it
+450	6	22	much	RB	much
+451	7	22	longer	RBR	longer
+452	8	22	.	.	.
+453	1	23	Then	RB	Then
+454	2	23	for	IN	for
+455	3	23	an	DT	an
+456	4	23	hour	NN	hour
+457	5	23	it	PRP	it
+458	6	23	was	VBD	be
+459	7	23	deadly	RB	deadly
+460	8	23	dull	JJ	dull
+461	9	23	,	,	,
+462	10	23	and	CC	and
+463	11	23	I	PRP	I
+464	12	23	was	VBD	be
+465	13	23	fidgety	NN	fidgety
+466	14	23	.	.	.
+467	1	24	Miss	NNP	Miss
+468	2	24	Watson	NNP	Watson
+469	3	24	would	MD	would
+470	4	24	say	VB	say
+471	5	24	,	,	,
+472	6	24	``	``	``
+473	7	24	Do	VBP	Do
+474	8	24	n't	RB	n't
+475	9	24	put	VB	put
+476	10	24	your	PRP$	your
+477	11	24	feet	NNS	foot
+478	12	24	up	IN	up
+479	13	24	there	RB	there
+480	14	24	,	,	,
+481	15	24	Huckleberry	NNP	Huckleberry
+482	16	24	;	:	;
+483	17	24	''	''	''
+484	18	24	and	CC	and
+485	19	24	``	``	``
+486	20	24	Do	VBP	Do
+487	21	24	n't	RB	n't
+488	22	24	scrunch	VB	scrunch
+489	23	24	up	RP	up
+490	24	24	like	IN	like
+491	25	24	that	DT	that
+492	26	24	,	,	,
+493	27	24	Huckleberry	NNP	Huckleberry
+494	28	24	--	:	--
+495	29	24	set	VBD	set
+496	30	24	up	RP	up
+497	31	24	straight	NN	straight
+498	32	24	;	:	;
+499	33	24	''	''	''
+500	34	24	and	CC	and
+501	35	24	pretty	RB	pretty
+502	36	24	soon	RB	soon
+503	37	24	she	PRP	she
+504	38	24	would	MD	would
+505	39	24	say	VB	say
+506	40	24	,	,	,
+507	41	24	``	``	``
+508	42	24	Do	VBP	Do
+509	43	24	n't	RB	n't
+510	44	24	gap	VB	gap
+511	45	24	and	CC	and
+512	46	24	stretch	VB	stretch
+513	47	24	like	IN	like
+514	48	24	that	DT	that
+515	49	24	,	,	,
+516	50	24	Huckleberry	NNP	Huckleberry
+517	51	24	--	:	--
+518	52	24	why	WRB	why
+519	53	24	do	VBP	do
+520	54	24	n't	RB	n't
+521	55	24	you	PRP	you
+522	56	24	try	VB	try
+523	57	24	to	TO	to
+524	58	24	behave	VB	behave
+525	59	24	?	.	?
+526	60	24	''	''	''
+527	1	25	Brahinsky	NNP	Brahinsky
+528	2	25	said	VBD	say
+529	3	25	that	IN	that
+530	4	25	the	DT	the
+531	5	25	University	NNP	University
+532	6	25	of	IN	of
+533	7	25	California	NNP	California
+534	8	25	has	VBZ	have
+535	9	25	,	,	,
+536	10	25	``	``	``
+537	11	25	made	VBD	make
+538	12	25	a	DT	a
+539	13	25	priority	NN	priority
+540	14	25	out	IN	out
+541	15	25	of	IN	of
+542	16	25	administrative	JJ	administrative
+543	17	25	spending	NN	spending
+544	18	25	,	,	,
+545	19	25	''	''	''
+546	20	25	noting	VBG	note
+547	21	25	that	IN	that
+548	22	25	it	PRP	it
+549	23	25	has	VBZ	have
+550	24	25	increased	VBN	increase
+551	25	25	by	IN	by
+552	26	25	over	IN	over
+553	27	25	250	CD	250
+554	28	25	%	NN	%
+555	29	25	in	IN	in
+556	30	25	the	DT	the
+557	31	25	last	JJ	last
+558	32	25	20	CD	20
+559	33	25	years	NNS	year
+560	34	25	.	.	.
+561	1	26	The	DT	The
+562	2	26	growth	NN	growth
+563	3	26	of	IN	of
+564	4	26	faculty	NN	faculty
+565	5	26	spending	NN	spending
+566	6	26	over	IN	over
+567	7	26	the	DT	the
+568	8	26	same	JJ	same
+569	9	26	time	NN	time
+570	10	26	period	NN	period
+571	11	26	has	VBZ	have
+572	12	26	only	RB	only
+573	13	26	increased	VBN	increase
+574	14	26	by	IN	by
+575	15	26	50	CD	50
+576	16	26	%	NN	%
+577	17	26	,	,	,
+578	18	26	he	PRP	he
+579	19	26	said	VBD	say
+580	20	26	,	,	,
+581	21	26	adding	VBG	add
+582	22	26	that	IN	that
+583	23	26	20	CD	20
+584	24	26	years	NNS	year
+585	25	26	ago	RB	ago
+586	26	26	there	EX	there
+587	27	26	were	VBD	be
+588	28	26	five	CD	five
+589	29	26	faculty	NN	faculty
+590	30	26	members	NNS	member
+591	31	26	for	IN	for
+592	32	26	every	DT	every
+593	33	26	two	CD	two
+594	34	26	administrators	NNS	administrator
+595	35	26	,	,	,
+596	36	26	but	CC	but
+597	37	26	the	DT	the
+598	38	26	figure	NN	figure
+599	39	26	has	VBZ	have
+600	40	26	shifted	VBN	shift
+601	41	26	dramatically	RB	dramatically
+602	42	26	,	,	,
+603	43	26	and	CC	and
+604	44	26	presently	RB	presently
+605	45	26	there	EX	there
+606	46	26	are	VBP	be
+607	47	26	only	RB	only
+608	48	26	five	CD	five
+609	49	26	faculty	NN	faculty
+610	50	26	members	NNS	member
+611	51	26	for	IN	for
+612	52	26	every	DT	every
+613	53	26	six	CD	six
+614	54	26	administrators	NNS	administrator
+615	55	26	,	,	,
+616	56	26	on	IN	on
+617	57	26	average	NN	average
+618	58	26	.	.	.
+619	1	27	``	``	``
+620	2	27	The	DT	The
+621	3	27	administration	NN	administration
+622	4	27	is	VBZ	be
+623	5	27	growing	VBG	grow
+624	6	27	and	CC	and
+625	7	27	has	VBZ	have
+626	8	27	surpassed	VBN	surpass
+627	9	27	the	DT	the
+628	10	27	faculty	NN	faculty
+629	11	27	,	,	,
+630	12	27	''	''	''
+631	13	27	he	PRP	he
+632	14	27	said	VBD	say
+633	15	27	.	.	.
+634	1	28	``	``	``
+635	2	28	The	DT	The
+636	3	28	priorities	NNS	priority
+637	4	28	of	IN	of
+638	5	28	the	DT	the
+639	6	28	UC	NNP	UC
+640	7	28	are	VBP	be
+641	8	28	something	NN	something
+642	9	28	that	WDT	that
+643	10	28	ought	MD	ought
+644	11	28	to	TO	to
+645	12	28	be	VB	be
+646	13	28	democratic	JJ	democratic
+647	14	28	,	,	,
+648	15	28	''	''	''
+649	16	28	Brahinsky	NNP	Brahinsky
+650	17	28	said	VBD	say
+651	18	28	.	.	.
+652	1	29	``	``	``
+653	2	29	We	PRP	We
+654	3	29	can	MD	can
+655	4	29	have	VB	have
+656	5	29	a	DT	a
+657	6	29	say	NN	say
+658	7	29	in	IN	in
+659	8	29	that	DT	that
+660	9	29	,	,	,
+661	10	29	and	CC	and
+662	11	29	so	RB	so
+663	12	29	we	PRP	we
+664	13	29	should	MD	should
+665	14	29	.	.	.
+666	15	29	''	''	''
+667	1	30	To	TO	To
+668	2	30	learn	VB	learn
+669	3	30	more	JJR	more
+670	4	30	about	IN	about
+671	5	30	the	DT	the
+672	6	30	University	NNP	University
+673	7	30	of	IN	of
+674	8	30	California	NNP	California
+675	9	30	's	POS	's
+676	10	30	budget	NN	budget
+677	11	30	,	,	,
+678	12	30	Brahinsky	NNP	Brahinsky
+679	13	30	recommended	VBD	recommend
+680	14	30	attendance	NN	attendance
+681	15	30	at	IN	at
+682	16	30	a	DT	a
+683	17	30	workshop	NN	workshop
+684	18	30	to	TO	to
+685	19	30	be	VB	be
+686	20	30	held	VBN	hold
+687	21	30	by	IN	by
+688	22	30	Autonomous	JJ	Autonomous
+689	23	30	Students	NNS	Students
+690	24	30	UCSC	NNP	UCSC
+691	25	30	,	,	,
+692	26	30	a	DT	a
+693	27	30	student	NN	student
+694	28	30	organization	NN	organization
+695	29	30	that	WDT	that
+696	30	30	was	VBD	be
+697	31	30	tabling	VBG	table
+698	32	30	at	IN	at
+699	33	30	the	DT	the
+700	34	30	picnic	NN	picnic
+701	35	30	.	.	.
+702	1	31	AFT	NNP	AFT
+703	2	31	Local	NNP	Local
+704	3	31	2199	CD	2199
+705	4	31	President	NNP	President
+706	5	31	Roxi	NNP	Roxi
+707	6	31	Power	NNP	Power
+708	7	31	also	RB	also
+709	8	31	spoke	VBD	speak
+710	9	31	at	IN	at
+711	10	31	the	DT	the
+712	11	31	mid-day	JJ	mid-day
+713	12	31	rally	NN	rally
+714	13	31	,	,	,
+715	14	31	as	IN	a
+716	15	31	did	VBD	do
+717	16	31	Mike	NNP	Mike
+718	17	31	Rotkin	NNP	Rotkin
+719	18	31	,	,	,
+720	19	31	AFT	NNP	AFT
+721	20	31	's	POS	's
+722	21	31	longest	JJS	longest
+723	22	31	running	VBG	run
+724	23	31	President	NNP	President
+725	24	31	at	IN	at
+726	25	31	UC	NNP	UC
+727	26	31	Santa	NNP	Santa
+728	27	31	Cruz	NNP	Cruz
+729	28	31	.	.	.
+730	1	32	After	IN	After
+731	2	32	the	DT	the
+732	3	32	speakers	NNS	speaker
+733	4	32	were	VBD	be
+734	5	32	heard	RB	heard
+735	6	32	,	,	,
+736	7	32	a	DT	a
+737	8	32	street	NN	street
+738	9	32	theater	NN	theater
+739	10	32	segment	NN	segment
+740	11	32	was	VBD	be
+741	12	32	performed	VBN	perform
+742	13	32	with	IN	with
+743	14	32	UC	NNP	UC
+744	15	32	administrators	NNS	administrator
+745	16	32	portrayed	VBD	portray
+746	17	32	as	IN	a
+747	18	32	top-hat	JJ	top-hat
+748	19	32	wearing	VBG	wear
+749	20	32	characters	NNS	character
+750	21	32	from	IN	from
+751	22	32	the	DT	the
+752	23	32	Monopoly	NNP	Monopoly
+753	24	32	board	NN	board
+754	25	32	game	NN	game
+755	26	32	.	.	.
+756	1	33	Many	JJ	Many
+757	2	33	participants	NNS	participant
+758	3	33	were	VBD	be
+759	4	33	dressed	VBN	dress
+760	5	33	in	IN	in
+761	6	33	graduation	NN	graduation
+762	7	33	gowns	NNS	gown
+763	8	33	,	,	,
+764	9	33	and	CC	and
+765	10	33	union	NN	union
+766	11	33	members	NNS	member
+767	12	33	distributed	VBD	distribute
+768	13	33	the	DT	the
+769	14	33	lyrics	NNS	lyric
+770	15	33	to	TO	to
+771	16	33	a	DT	a
+772	17	33	variety	NN	variety
+773	18	33	of	IN	of
+774	19	33	songs	NNS	song
+775	20	33	to	TO	to
+776	21	33	those	DT	those
+777	22	33	in	IN	in
+778	23	33	attendance	NN	attendance
+779	24	33	so	RB	so
+780	25	33	that	IN	that
+781	26	33	the	DT	the
+782	27	33	group	NN	group
+783	28	33	could	MD	could
+784	29	33	serve	VB	serve
+785	30	33	as	IN	a
+786	31	33	the	DT	the
+787	32	33	musical	JJ	musical
+788	33	33	chorus	NN	chorus
+789	34	33	in	IN	in
+790	35	33	the	DT	the
+791	36	33	skit	NN	skit
+792	37	33	.	.	.
+793	1	34	﻿Another	RB	﻿Another
+794	2	34	popular	JJ	popular
+795	3	34	approach	NN	approach
+796	4	34	is	VBZ	be
+797	5	34	inspired	VBN	inspire
+798	6	34	by	IN	by
+799	7	34	the	DT	the
+800	8	34	theory	NN	theory
+801	9	34	of	IN	of
+802	10	34	intervening	VBG	intervene
+803	11	34	opportunities	NNS	opportunity
+804	12	34	and	CC	and
+805	13	34	it	PRP	it
+806	14	34	has	VBZ	have
+807	15	34	been	VBN	be
+808	16	34	concreted	VBN	concrete
+809	17	34	into	IN	into
+810	18	34	the	DT	the
+811	19	34	so-called	JJ	so-called
+812	20	34	radiation	NN	radiation
+813	21	34	models	NNS	model
+814	22	34	.	.	.
+815	1	35	Individuals	NNS	Individuals
+816	2	35	are	VBP	be
+817	3	35	supposed	VBN	suppose
+818	4	35	to	TO	to
+819	5	35	travel	VB	travel
+820	6	35	until	IN	until
+821	7	35	they	PRP	they
+822	8	35	find	VBP	find
+823	9	35	a	DT	a
+824	10	35	job	NN	job
+825	11	35	opportunity	NN	opportunity
+826	12	35	,	,	,
+827	13	35	so	IN	so
+828	14	35	the	DT	the
+829	15	35	population	NN	population
+830	16	35	and	CC	and
+831	17	35	jobs	NNS	job
+832	18	35	spatial	JJ	spatial
+833	19	35	distributions	NNS	distribution
+834	20	35	naturally	RB	naturally
+835	21	35	lead	VBP	lead
+836	22	35	to	TO	to
+837	23	35	a	DT	a
+838	24	35	trip	NN	trip
+839	25	35	flow	NN	flow
+840	26	35	network	NN	network
+841	27	35	.	.	.
+842	1	36	In	IN	In
+843	2	36	this	DT	this
+844	3	36	paper	NN	paper
+845	4	36	,	,	,
+846	5	36	we	PRP	we
+847	6	36	perform	VBP	perform
+848	7	36	a	DT	a
+849	8	36	thorough	JJ	thorough
+850	9	36	comparison	NN	comparison
+851	10	36	between	IN	between
+852	11	36	the	DT	the
+853	12	36	gravity	NN	gravity
+854	13	36	and	CC	and
+855	14	36	the	DT	the
+856	15	36	radiation	NN	radiation
+857	16	36	approaches	NNS	approach
+858	17	36	in	IN	in
+859	18	36	their	PRP$	their
+860	19	36	ability	NN	ability
+861	20	36	at	IN	at
+862	21	36	estimating	VBG	estimate
+863	22	36	commuting	VBG	commute
+864	23	36	flows	NNS	flow
+865	24	36	.	.	.
+866	1	37	We	PRP	We
+867	2	37	test	VBP	test
+868	3	37	the	DT	the
+869	4	37	gravity	NN	gravity
+870	5	37	and	CC	and
+871	6	37	the	DT	the
+872	7	37	radiation	NN	radiation
+873	8	37	laws	NNS	law
+874	9	37	against	IN	against
+875	10	37	empirical	JJ	empirical
+876	11	37	trip	NN	trip
+877	12	37	data	NNS	data
+878	13	37	at	IN	at
+879	14	37	different	JJ	different
+880	15	37	scales	NNS	scale
+881	16	37	and	CC	and
+882	17	37	coming	VBG	come
+883	18	37	from	IN	from
+884	19	37	different	JJ	different
+885	20	37	countries	NNS	country
+886	21	37	.	.	.
+887	1	38	Different	JJ	Different
+888	2	38	versions	NNS	version
+889	3	38	of	IN	of
+890	4	38	the	DT	the
+891	5	38	gravity	NN	gravity
+892	6	38	and	CC	and
+893	7	38	the	DT	the
+894	8	38	radiation	NN	radiation
+895	9	38	laws	NNS	law
+896	10	38	are	VBP	be
+897	11	38	used	VBN	use
+898	12	38	to	TO	to
+899	13	38	estimate	VB	estimate
+900	14	38	the	DT	the
+901	15	38	probability	NN	probability
+902	16	38	that	IN	that
+903	17	38	an	DT	an
+904	18	38	individual	NN	individual
+905	19	38	has	VBZ	have
+906	20	38	to	TO	to
+907	21	38	commute	VB	commute
+908	22	38	from	IN	from
+909	23	38	one	CD	one
+910	24	38	unit	NN	unit
+911	25	38	to	TO	to
+912	26	38	another	DT	another
+913	27	38	,	,	,
+914	28	38	called	VBN	call
+915	29	38	trip	NN	trip
+916	30	38	distribution	NN	distribution
+917	31	38	law	NN	law
+918	32	38	.	.	.
+919	1	39	Based	VBN	Based
+920	2	39	on	IN	on
+921	3	39	these	DT	these
+922	4	39	probability	NN	probability
+923	5	39	distribution	NN	distribution
+924	6	39	the	DT	the
+925	7	39	commuting	NN	commuting
+926	8	39	networks	NNS	network
+927	9	39	are	VBP	be
+928	10	39	simulated	VBN	simulate
+929	11	39	with	IN	with
+930	12	39	different	JJ	different
+931	13	39	trip	NN	trip
+932	14	39	distribution	NN	distribution
+933	15	39	models	NNS	model
+934	16	39	.	.	.
+935	1	40	We	PRP	We
+936	2	40	show	VBP	show
+937	3	40	that	IN	that
+938	4	40	the	DT	the
+939	5	40	gravity	NN	gravity
+940	6	40	law	NN	law
+941	7	40	performs	VBZ	perform
+942	8	40	better	JJR	better
+943	9	40	than	IN	than
+944	10	40	the	DT	the
+945	11	40	radiation	NN	radiation
+946	12	40	law	NN	law
+947	13	40	to	TO	to
+948	14	40	estimate	VB	estimate
+949	15	40	the	DT	the
+950	16	40	commuting	NN	commuting
+951	17	40	flows	VBZ	flow
+952	18	40	,	,	,
+953	19	40	to	TO	to
+954	20	40	preserve	VB	preserve
+955	21	40	the	DT	the
+956	22	40	structure	NN	structure
+957	23	40	of	IN	of
+958	24	40	the	DT	the
+959	25	40	network	NN	network
+960	26	40	and	CC	and
+961	27	40	to	TO	to
+962	28	40	fit	VB	fit
+963	29	40	the	DT	the
+964	30	40	commuting	NN	commuting
+965	31	40	distance	NN	distance
+966	32	40	distribution	NN	distribution
+967	33	40	although	IN	although
+968	34	40	it	PRP	it
+969	35	40	fails	VBZ	fail
+970	36	40	at	IN	at
+971	37	40	predicting	VBG	predict
+972	38	40	commuting	VBG	commute
+973	39	40	flows	NNS	flow
+974	40	40	at	IN	at
+975	41	40	large	JJ	large
+976	42	40	distances	NNS	distance
+977	43	40	.	.	.
+978	1	41	Finally	RB	Finally
+979	2	41	,	,	,
+980	3	41	we	PRP	we
+981	4	41	show	VBP	show
+982	5	41	that	IN	that
+983	6	41	both	DT	both
+984	7	41	approaches	NNS	approach
+985	8	41	can	MD	can
+986	9	41	be	VB	be
+987	10	41	used	VBN	use
+988	11	41	in	IN	in
+989	12	41	absence	NN	absence
+990	13	41	of	IN	of
+991	14	41	detailed	JJ	detailed
+992	15	41	data	NNS	data
+993	16	41	for	IN	for
+994	17	41	calibration	NN	calibration
+995	18	41	since	IN	since
+996	19	41	the	DT	the
+997	20	41	only	JJ	only
+998	21	41	parameter	NN	parameter
+999	22	41	of	IN	of
+1000	23	41	both	CC	both
+1001	24	41	the	DT	the
+1002	25	41	gravity	NN	gravity
+1003	26	41	and	CC	and
+1004	27	41	the	DT	the
+1005	28	41	radiation	NN	radiation
+1006	29	41	laws	NNS	law
+1007	30	41	depends	VBZ	depend
+1008	31	41	only	RB	only
+1009	32	41	on	IN	on
+1010	33	41	the	DT	the
+1011	34	41	scale	NN	scale
+1012	35	41	of	IN	of
+1013	36	41	the	DT	the
+1014	37	41	geographic	JJ	geographic
+1015	38	41	unit	NN	unit
+1016	39	41	.	.	.
+1017	1	42	The	DT	The
+1018	2	42	dominant	JJ	dominant
+1019	3	42	spirit	NN	spirit
+1020	4	42	,	,	,
+1021	5	42	however	RB	however
+1022	6	42	,	,	,
+1023	7	42	that	IN	that
+1024	8	42	haunts	VBZ	haunt
+1025	9	42	this	DT	this
+1026	10	42	enchanted	JJ	enchanted
+1027	11	42	region	NN	region
+1028	12	42	,	,	,
+1029	13	42	and	CC	and
+1030	14	42	seems	VBZ	seem
+1031	15	42	to	TO	to
+1032	16	42	be	VB	be
+1033	17	42	commander-in-chief	JJ	commander-in-chief
+1034	18	42	of	IN	of
+1035	19	42	all	PDT	all
+1036	20	42	the	DT	the
+1037	21	42	powers	NNS	power
+1038	22	42	of	IN	of
+1039	23	42	the	DT	the
+1040	24	42	air	NN	air
+1041	25	42	,	,	,
+1042	26	42	is	VBZ	be
+1043	27	42	the	DT	the
+1044	28	42	apparition	NN	apparition
+1045	29	42	of	IN	of
+1046	30	42	a	DT	a
+1047	31	42	figure	NN	figure
+1048	32	42	on	IN	on
+1049	33	42	horseback	NN	horseback
+1050	34	42	,	,	,
+1051	35	42	without	IN	without
+1052	36	42	a	DT	a
+1053	37	42	head	NN	head
+1054	38	42	.	.	.
+1055	1	43	It	PRP	It
+1056	2	43	is	VBZ	be
+1057	3	43	said	VBD	say
+1058	4	43	by	IN	by
+1059	5	43	some	DT	some
+1060	6	43	to	TO	to
+1061	7	43	be	VB	be
+1062	8	43	the	DT	the
+1063	9	43	ghost	NN	ghost
+1064	10	43	of	IN	of
+1065	11	43	a	DT	a
+1066	12	43	Hessian	JJ	Hessian
+1067	13	43	trooper	NN	trooper
+1068	14	43	,	,	,
+1069	15	43	whose	WP$	whose
+1070	16	43	head	NN	head
+1071	17	43	had	VBD	have
+1072	18	43	been	VBN	be
+1073	19	43	carried	VBN	carry
+1074	20	43	away	RB	away
+1075	21	43	by	IN	by
+1076	22	43	a	DT	a
+1077	23	43	cannon-ball	NN	cannon-ball
+1078	24	43	,	,	,
+1079	25	43	in	IN	in
+1080	26	43	some	DT	some
+1081	27	43	nameless	JJ	nameless
+1082	28	43	battle	NN	battle
+1083	29	43	during	IN	during
+1084	30	43	the	DT	the
+1085	31	43	Revolutionary	NNP	Revolutionary
+1086	32	43	War	NNP	War
+1087	33	43	,	,	,
+1088	34	43	and	CC	and
+1089	35	43	who	WP	who
+1090	36	43	is	VBZ	be
+1091	37	43	ever	RB	ever
+1092	38	43	and	CC	and
+1093	39	43	anon	VB	anon
+1094	40	43	seen	VBN	see
+1095	41	43	by	IN	by
+1096	42	43	the	DT	the
+1097	43	43	country	NN	country
+1098	44	43	folk	NN	folk
+1099	45	43	hurrying	VBG	hurry
+1100	46	43	along	RB	along
+1101	47	43	in	IN	in
+1102	48	43	the	DT	the
+1103	49	43	gloom	NN	gloom
+1104	50	43	of	IN	of
+1105	51	43	night	NN	night
+1106	52	43	,	,	,
+1107	53	43	as	IN	a
+1108	54	43	if	IN	if
+1109	55	43	on	IN	on
+1110	56	43	the	DT	the
+1111	57	43	wings	NNS	wing
+1112	58	43	of	IN	of
+1113	59	43	the	DT	the
+1114	60	43	wind	NN	wind
+1115	61	43	.	.	.
+1116	1	44	His	PRP$	His
+1117	2	44	haunts	NNS	haunt
+1118	3	44	are	VBP	be
+1119	4	44	not	RB	not
+1120	5	44	confined	VBN	confine
+1121	6	44	to	TO	to
+1122	7	44	the	DT	the
+1123	8	44	valley	NN	valley
+1124	9	44	,	,	,
+1125	10	44	but	CC	but
+1126	11	44	extend	VBP	extend
+1127	12	44	at	IN	at
+1128	13	44	times	NNS	time
+1129	14	44	to	TO	to
+1130	15	44	the	DT	the
+1131	16	44	adjacent	JJ	adjacent
+1132	17	44	roads	NNS	road
+1133	18	44	,	,	,
+1134	19	44	and	CC	and
+1135	20	44	especially	RB	especially
+1136	21	44	to	TO	to
+1137	22	44	the	DT	the
+1138	23	44	vicinity	NN	vicinity
+1139	24	44	of	IN	of
+1140	25	44	a	DT	a
+1141	26	44	church	NN	church
+1142	27	44	at	IN	at
+1143	28	44	no	DT	no
+1144	29	44	great	JJ	great
+1145	30	44	distance	NN	distance
+1146	31	44	.	.	.
+1147	1	45	Indeed	RB	Indeed
+1148	2	45	,	,	,
+1149	3	45	certain	JJ	certain
+1150	4	45	of	IN	of
+1151	5	45	the	DT	the
+1152	6	45	most	RBS	most
+1153	7	45	authentic	JJ	authentic
+1154	8	45	historians	NNS	historian
+1155	9	45	of	IN	of
+1156	10	45	those	DT	those
+1157	11	45	parts	NNS	part
+1158	12	45	,	,	,
+1159	13	45	who	WP	who
+1160	14	45	have	VBP	have
+1161	15	45	been	VBN	be
+1162	16	45	careful	JJ	careful
+1163	17	45	in	IN	in
+1164	18	45	collecting	VBG	collect
+1165	19	45	and	CC	and
+1166	20	45	collating	VBG	collate
+1167	21	45	the	DT	the
+1168	22	45	floating	VBG	float
+1169	23	45	facts	NNS	fact
+1170	24	45	concerning	VBG	concern
+1171	25	45	this	DT	this
+1172	26	45	spectre	NN	spectre
+1173	27	45	,	,	,
+1174	28	45	allege	VBP	allege
+1175	29	45	that	IN	that
+1176	30	45	the	DT	the
+1177	31	45	body	NN	body
+1178	32	45	of	IN	of
+1179	33	45	the	DT	the
+1180	34	45	trooper	NN	trooper
+1181	35	45	having	VBG	have
+1182	36	45	been	VBN	be
+1183	37	45	buried	VBN	bury
+1184	38	45	in	IN	in
+1185	39	45	the	DT	the
+1186	40	45	churchyard	NN	churchyard
+1187	41	45	,	,	,
+1188	42	45	the	DT	the
+1189	43	45	ghost	NN	ghost
+1190	44	45	rides	VBZ	rid
+1191	45	45	forth	NN	forth
+1192	46	45	to	TO	to
+1193	47	45	the	DT	the
+1194	48	45	scene	NN	scene
+1195	49	45	of	IN	of
+1196	50	45	battle	NN	battle
+1197	51	45	in	IN	in
+1198	52	45	nightly	RB	nightly
+1199	53	45	quest	JJS	quest
+1200	54	45	of	IN	of
+1201	55	45	his	PRP$	his
+1202	56	45	head	NN	head
+1203	57	45	,	,	,
+1204	58	45	and	CC	and
+1205	59	45	that	IN	that
+1206	60	45	the	DT	the
+1207	61	45	rushing	VBG	rush
+1208	62	45	speed	NN	speed
+1209	63	45	with	IN	with
+1210	64	45	which	WDT	which
+1211	65	45	he	PRP	he
+1212	66	45	sometimes	VBZ	sometimes
+1213	67	45	passes	NNS	pass
+1214	68	45	along	IN	along
+1215	69	45	the	DT	the
+1216	70	45	Hollow	NNP	Hollow
+1217	71	45	,	,	,
+1218	72	45	like	IN	like
+1219	73	45	a	DT	a
+1220	74	45	midnight	NN	midnight
+1221	75	45	blast	NN	blast
+1222	76	45	,	,	,
+1223	77	45	is	VBZ	be
+1224	78	45	owing	VBG	owe
+1225	79	45	to	TO	to
+1226	80	45	his	PRP$	his
+1227	81	45	being	VBG	be
+1228	82	45	belated	VBN	belated
+1229	83	45	,	,	,
+1230	84	45	and	CC	and
+1231	85	45	in	IN	in
+1232	86	45	a	DT	a
+1233	87	45	hurry	NN	hurry
+1234	88	45	to	TO	to
+1235	89	45	get	VB	get
+1236	90	45	back	RB	back
+1237	91	45	to	TO	to
+1238	92	45	the	DT	the
+1239	93	45	churchyard	NN	churchyard
+1240	94	45	before	IN	before
+1241	95	45	daybreak	NN	daybreak
+1242	96	45	.	.	.
+1243	1	46	“If	NNS	“If
+1244	2	46	you’re	MD	you’re
+1245	3	46	not	RB	not
+1246	4	46	willing	JJ	willing
+1247	5	46	to	TO	to
+1248	6	46	go	VB	go
+1249	7	46	outside	IN	outside
+1250	8	46	the	DT	the
+1251	9	46	parameters	NNS	parameter
+1252	10	46	set	VBN	set
+1253	11	46	by	IN	by
+1254	12	46	conglomerates	NNS	conglomerate
+1255	13	46	,	,	,
+1256	14	46	that	IN	that
+1257	15	46	safety	NN	safety
+1258	16	46	net	NN	net
+1259	17	46	of	IN	of
+1260	18	46	success	NN	success
+1261	19	46	,	,	,
+1262	20	46	there’s	VBZ	there’s
+1263	21	46	no	DT	no
+1264	22	46	point	NN	point
+1265	23	46	venturing	VBG	venture
+1266	24	46	out	RP	out
+1267	25	46	on	IN	on
+1268	26	46	your	PRP$	your
+1269	27	46	own	JJ	own
+1270	28	46	,	,	,
+1271	29	46	”	JJ	”
+1272	30	46	Lee	NNP	Lee
+1273	31	46	assures	NNS	assures
+1274	32	46	.	.	.
+1275	1	47	“Many	JJ	“Many
+1276	2	47	young	JJ	young
+1277	3	47	entrepreneurs	NNS	entrepreneur
+1278	4	47	seem	VBP	seem
+1279	5	47	to	TO	to
+1280	6	47	be	VB	be
+1281	7	47	jumping	VBG	jump
+1282	8	47	on	IN	on
+1283	9	47	the	DT	the
+1284	10	47	bandwagon	NN	bandwagon
+1285	11	47	,	,	,
+1286	12	47	approaching	VBG	approach
+1287	13	47	the	DT	the
+1288	14	47	startup	NN	startup
+1289	15	47	game	NN	game
+1290	16	47	for	IN	for
+1291	17	47	the	DT	the
+1292	18	47	wrong	JJ	wrong
+1293	19	47	reasons	NNS	reason
+1294	20	47	,	,	,
+1295	21	47	without	IN	without
+1296	22	47	any	DT	any
+1297	23	47	clear	JJ	clear
+1298	24	47	strategy	NN	strategy
+1299	25	47	in	IN	in
+1300	26	47	mind	NN	mind
+1301	27	47	,	,	,
+1302	28	47	”	JJ	”
+1303	29	47	Lee	NNP	Lee
+1304	30	47	notes	NNS	note
+1305	31	47	.	.	.
+1306	1	48	“If	NNS	“If
+1307	2	48	you’re	MD	you’re
+1308	3	48	not	RB	not
+1309	4	48	hungry	VB	hungry
+1310	5	48	enough	RB	enough
+1311	6	48	,	,	,
+1312	7	48	if	IN	if
+1313	8	48	you’re	VBN	you’re
+1314	9	48	not	RB	not
+1315	10	48	ready	JJ	ready
+1316	11	48	to	TO	to
+1317	12	48	startup	VB	startup
+1318	13	48	a	DT	a
+1319	14	48	new	JJ	new
+1320	15	48	company	NN	company
+1321	16	48	,	,	,
+1322	17	48	then	RB	then
+1323	18	48	it’s	VB	it’s
+1324	19	48	better	JJR	better
+1325	20	48	to	TO	to
+1326	21	48	jump	VB	jump
+1327	22	48	ship.”	JJ	ship.”
+1328	23	48	President	NNP	President
+1329	24	48	Park	NNP	Park
+1330	25	48	Geun-hye	NNP	Geun-hye
+1331	26	48	has	VBZ	have
+1332	27	48	vowed	VBN	vow
+1333	28	48	to	TO	to
+1334	29	48	cut	VB	cut
+1335	30	48	through	IN	through
+1336	31	48	red	JJ	red
+1337	32	48	tap	NN	tap
+1338	33	48	and	CC	and
+1339	34	48	provide	VB	provide
+1340	35	48	financial	JJ	financial
+1341	36	48	incentive	NN	incentive
+1342	37	48	for	IN	for
+1343	38	48	entrepreneurs	NNS	entrepreneur
+1344	39	48	,	,	,
+1345	40	48	earmarking	VBG	earmark
+1346	41	48	$	$	$
+1347	42	48	92	CD	92
+1348	43	48	billion	CD	billion
+1349	44	48	to	TO	to
+1350	45	48	support	VB	support
+1351	46	48	small	JJ	small
+1352	47	48	and	CC	and
+1353	48	48	mid-sized	JJ	mid-sized
+1354	49	48	businesses	NNS	business
+1355	50	48	,	,	,
+1356	51	48	which	WDT	which
+1357	52	48	also	RB	also
+1358	53	48	encompasses	VBZ	encompass
+1359	54	48	startups	NNS	startup
+1360	55	48	.	.	.
+1361	1	49	But	CC	But
+1362	2	49	getting	VBG	get
+1363	3	49	startups	NNS	startup
+1364	4	49	off	IN	off
+1365	5	49	the	DT	the
+1366	6	49	ground	NN	ground
+1367	7	49	is	VBZ	be
+1368	8	49	one	CD	one
+1369	9	49	thing	NN	thing
+1370	10	49	,	,	,
+1371	11	49	turning	VBG	turn
+1372	12	49	them	PRP	them
+1373	13	49	into	IN	into
+1374	14	49	sustainable	JJ	sustainable
+1375	15	49	businesses	NNS	business
+1376	16	49	is	VBZ	be
+1377	17	49	another	DT	another
+1378	18	49	.	.	.
+1379	1	50	It	PRP	It
+1380	2	50	seems	VBZ	seem
+1381	3	50	only	RB	only
+1382	4	50	a	DT	a
+1383	5	50	matter	NN	matter
+1384	6	50	of	IN	of
+1385	7	50	time	NN	time
+1386	8	50	before	IN	before
+1387	9	50	such	JJ	such
+1388	10	50	inflated	JJ	inflated
+1389	11	50	expectations	NNS	expectation
+1390	12	50	burst	RB	burst
+1391	13	50	,	,	,
+1392	14	50	if	IN	if
+1393	15	50	entrepreneurs	NNS	entrepreneur
+1394	16	50	don’t	VBP	don’t
+1395	17	50	keep	VB	keep
+1396	18	50	at	IN	at
+1397	19	50	it	PRP	it
+1398	20	50	for	IN	for
+1399	21	50	the	DT	the
+1400	22	50	right	JJ	right
+1401	23	50	reasons	NNS	reason
+1402	24	50	.	.	.
+1403	1	51	Another	DT	Another
+1404	2	51	obstacle	NN	obstacle
+1405	3	51	for	IN	for
+1406	4	51	many	JJ	many
+1407	5	51	entrepreneurs	NNS	entrepreneur
+1408	6	51	is	VBZ	be
+1409	7	51	the	DT	the
+1410	8	51	apparent	JJ	apparent
+1411	9	51	lack	NN	lack
+1412	10	51	of	IN	of
+1413	11	51	corporate	JJ	corporate
+1414	12	51	culture	NN	culture
+1415	13	51	that	WDT	that
+1416	14	51	actively	RB	actively
+1417	15	51	embraces	VBZ	embrace
+1418	16	51	M	NNP	M
+1419	17	51	&	CC	&
+1420	18	51	A	NNP	A
+1421	19	51	deals	NNS	deal
+1422	20	51	,	,	,
+1423	21	51	which	WDT	which
+1424	22	51	,	,	,
+1425	23	51	in	IN	in
+1426	24	51	turn	NN	turn
+1427	25	51	,	,	,
+1428	26	51	rewards	NNS	reward
+1429	27	51	founders	NNS	founder
+1430	28	51	with	IN	with
+1431	29	51	attractive	JJ	attractive
+1432	30	51	valuations	NNS	valuation
+1433	31	51	.	.	.
+1434	1	52	According	VBG	According
+1435	2	52	to	TO	to
+1436	3	52	Go	NNP	Go
+1437	4	52	Young-ha	NNP	Young-ha
+1438	5	52	,	,	,
+1439	6	52	chairman	NN	chairman
+1440	7	52	of	IN	of
+1441	8	52	The	DT	The
+1442	9	52	Korean	NNP	Korean
+1443	10	52	Business	NNP	Business
+1444	11	52	Angels	NNPS	Angels
+1445	12	52	Association	NNP	Association
+1446	13	52	,	,	,
+1447	14	52	the	DT	the
+1448	15	52	government	NN	government
+1449	16	52	remains	VBZ	remain
+1450	17	52	slow	JJ	slow
+1451	18	52	at	IN	at
+1452	19	52	harnessing	VBG	harness
+1453	20	52	the	DT	the
+1454	21	52	potential	NN	potential
+1455	22	52	of	IN	of
+1456	23	52	younger	JJR	younger
+1457	24	52	entrepreneurs	NNS	entrepreneur
+1458	25	52	,	,	,
+1459	26	52	many	JJ	many
+1460	27	52	of	IN	of
+1461	28	52	whom	WP	whom
+1462	29	52	are	VBP	be
+1463	30	52	still	RB	still
+1464	31	52	under	IN	under
+1465	32	52	the	DT	the
+1466	33	52	spell	NN	spell
+1467	34	52	of	IN	of
+1468	35	52	larger	JJR	larger
+1469	36	52	conglomerates	NNS	conglomerate
+1470	37	52	that	WDT	that
+1471	38	52	hold	VBP	hold
+1472	39	52	a	DT	a
+1473	40	52	monopoly	NN	monopoly
+1474	41	52	on	IN	on
+1475	42	52	the	DT	the
+1476	43	52	country’s	NN	country’s
+1477	44	52	tech	NN	tech
+1478	45	52	industries	NNS	industry
+1479	46	52	.	.	.
+

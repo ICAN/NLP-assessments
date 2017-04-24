@@ -36,22 +36,28 @@ public class Main {
      */
     public static void main(String[] args) {
 //
-//        AnnotatorScripts.convertSplits();
+
+
 //        AssessmentPipeline.runJavaAnnotators();
-        
-        CoreNLP.runAnnotatorStackedLines("corpora/lemmas.txt", "annotator_outputs/lemmas-core.txt");
-        
+        AssessmentPipeline.runPreGoldPOSPipeline();
 
 
-//        AnnotatorScripts.runPreGoldAssessmentPipeline();
+        //Lemma stuff
+//        CoreNLP.runAnnotatorStackedLines("corpora/lemmas.txt", "annotator_outputs/lemmas-core.txt");
+//        Utility.countLinesMatching("results_workspace/lemmas/" + "lemmas-spacy" + ".txt", "//\\+");     
 
 
 
-        //STEMMING BRANCH
+
+
+
+        //Stemming stuff
 //        Stemming.runStemmerTests();
 
-
-        //SENTENCE SPLITTING BRANCH
+        
+        //Splitting stuff
+//        AnnotatorScripts.convertSplits();
+//        AssessmentPipeline.runJavaAnnotators();
 //        AssessmentPipelineScripts.prettySplittingOutput();
 //        AssessmentPipeline.countSplittingErrors();
     }
