@@ -93,7 +93,7 @@ public class Document {
         }
     }
 
-    //Doesn't affect annotations, just the tokens themselves
+    //Doesn't affect annotation structure, just the tokens themselves
     public void removeNonwordChars() {
         this.replaceAll("\\W+", "", Tag.TOKEN);
     }
@@ -101,7 +101,7 @@ public class Document {
     public void removeEmptyTokens() {
         ArrayList<Token> replacement = new ArrayList<>();
         for (Token token : this.tokens) {
-            if (!token.get(Tag.TOKEN).isEmpty()) {
+            if (!token.get(Tag.TOKEN).trim().isEmpty()) {
                 replacement.add(token);
             }
         }
@@ -198,7 +198,8 @@ public class Document {
         System.out.println();
 
         //Get rid of "original" and just use "this?"
-        Document original = this.deepClone();
+//        Document original = this.deepClone();
+        
         int searchRange = baseSearchRange;
         //Iterate through other documents, restricting results to tokens for which
         //matches are found in the other lists
@@ -227,14 +228,14 @@ public class Document {
                     int thisOffset = 0;
                     while (!match
                             && thisOffset <= searchRange
-                            && thisBaseIter + thisOffset < original.tokens.size()) {
+                            && thisBaseIter + thisOffset < this.tokens.size()) {
                         int otherOffset = Math.max(otherBaseIter + thisOffset * -1 + 1, otherBaseIter) - otherBaseIter;
                         while (!match
                                 && otherOffset <= searchRange
                                 && otherBaseIter + otherOffset < other.tokens.size()) {
                             //If a match is found at this offset...                                                       
                             if (Utility.almostEquals(
-                                    original.tokens.get(thisBaseIter + thisOffset).get(Tag.TOKEN),
+                                    this.tokens.get(thisBaseIter + thisOffset).get(Tag.TOKEN),
                                     other.tokens.get(otherBaseIter + otherOffset).get(Tag.TOKEN),
                                     matchThreshold)) {
                                 //Move base iterators to this position and continue loop
@@ -251,7 +252,7 @@ public class Document {
                         searchRange++;
                     } else if (!match && searchRange > 3 * baseSearchRange) {
                         System.out.println("Error: match not found in range! Discarded "
-                                + original.tokens.get(thisBaseIter).get(Tag.TOKEN) + " and "
+                                + this.tokens.get(thisBaseIter).get(Tag.TOKEN) + " and "
                                 + other.tokens.get(otherBaseIter).get(Tag.TOKEN) + " at "
                                 + "this: " + thisBaseIter + " and " + otherBaseIter);
                         discarded++;
@@ -263,10 +264,9 @@ public class Document {
                     }
                 }
             }
-            original.tokens = intermediateResult.tokens;
+            this.tokens = intermediateResult.tokens;
             System.out.println("Discarded " + discarded + " pairs of tokens due to matching failure.");
         }
-        this.tokens = original.tokens;
         System.out.print("\nOutput length: " + this.tokens.size());
     }
 

@@ -132,7 +132,7 @@ public class Assessment {
                 }
                 
                 //Determine & set majority tag
-                String majorityTag = Tag.NO_MAJORITY;
+                String majorityTag = Tag.NO_CONSENSUS;
                 for(String tag : tagCount.keySet()) {
                     if (tagCount.get(tag) > threshold * tagCount.keySet().size()) {
                         majorityTag = tag;

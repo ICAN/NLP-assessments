@@ -28,6 +28,11 @@ public class Tag {
     //General
     public static final String TAG_SEP = ","; //Intertag separator
 
+    //Grading
+    public static final String CORRECTNESS = "correct?";
+    public static final String WAS_CORRECT = "YES";
+    public static final String WAS_INCORRECT = "NO"; 
+    
     //Properties
     public static final String INDEX_IN_TEXT = "indexInText";
     public static final String INDEX_IN_SENT = "indexInSentence";
@@ -35,11 +40,13 @@ public class Tag {
     public static final String START_CHAR = "startingChar";
     public static final String END_CHAR = "endingChar"; 
     public static final String POS = "posTag";
+    public static final String APOS = "taggerPOS";
+    public static final String GPOS = "goldPOS";
     public static final String TOKEN = "token";
     public static final String NE = "nerTag";
     public static final String LEMMA = "lemma";
     public static final String SPLITTING = "ssplit";
-
+    
     //Simplified POS tags (small set)
     public static final String POS_NOUN = "NN";
     public static final String POS_VERB = "VB";
@@ -66,10 +73,9 @@ public class Tag {
     public static final String NE_GPE = "GPE";
     
     //Machine voting tags
-    public static final String NO_MAJORITY = "??"; 
+    public static final String NO_CONSENSUS = "??"; 
     
     //Sentence splitting tags
     public static final String SS_END_OF_SENT = "SPLIT";
-    public static final String SS_NONSPLIT = "--";  
-    
+    public static final String SS_NONSPLIT = "--";
 }

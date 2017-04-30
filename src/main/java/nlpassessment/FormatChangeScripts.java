@@ -50,6 +50,34 @@ public class FormatChangeScripts {
         System.out.println("Wrote " + i + " lines");
         Utility.writeFile(output, "corpora/cleanSplits.txt");
     }
+
+    //TODO: move this?
+    public static void convertCsvToSentences() {
+        for (String annotator : AssessmentPipeline.PIPELINE_ANNOTATORS) {
+            Document doc = Utility.importTSVDocument("annotator_outputs/splits-" + annotator + ".tsv", "\t");
+            ArrayList<ArrayList<Token>> sentences = doc.toSentenceListsOfTokens();
+            if (sentences != null) {
+                System.out.println("Got doc as sentences");
+            } else {
+                System.out.println("Failed to get doc as sentences");
+            }
+            ArrayList<String> collapsedSents = new ArrayList<>();
+            for (ArrayList<Token> sent : sentences) {
+                String s = "";
+                for (Token token : sent) {
+                    s += token.get(Tag.TOKEN) + " ";
+                }
+                collapsedSents.add(s);
+            }
+            String output = "";
+            int i = 0;
+            for (String sent : collapsedSents) {
+                i++;
+                output += i + ">\t " + sent + "\n";
+            }
+            Utility.writeFile(output, "annotator_outputs/splitsReadable-" + annotator + ".txt");
+        }
+    }
     
     
     

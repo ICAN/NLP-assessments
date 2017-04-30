@@ -133,6 +133,7 @@ def write_tsv(doc, out_file):
 def run_annotator(in_file_name, file_read_method, out_file_name):
 
     input_string = file_read_method(in_file_name)
+    print("read " + str(len(input_string)) + " chars")
     out_file = open(out_file_name, "w")
 
     # Loads the nlp pipeline

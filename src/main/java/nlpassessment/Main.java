@@ -39,16 +39,12 @@ public class Main {
 
 
 //        AssessmentPipeline.runJavaAnnotators();
-        AssessmentPipeline.runPreGoldPOSPipeline();
-
+//        AssessmentPipeline.runPreGoldPOSPipeline();
+        AssessmentPipeline.runPostGoldPOSPipeline();
 
         //Lemma stuff
 //        CoreNLP.runAnnotatorStackedLines("corpora/lemmas.txt", "annotator_outputs/lemmas-core.txt");
 //        Utility.countLinesMatching("results_workspace/lemmas/" + "lemmas-spacy" + ".txt", "//\\+");     
-
-
-
-
 
 
         //Stemming stuff
