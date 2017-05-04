@@ -167,7 +167,7 @@ public class AssessmentPipeline {
                 }
             }
 
-            Document consensus = Assessment.getTagConsensus(currentSet, 0.6, consensusFields);
+            Document consensus = Assessment.getTagConsensus(currentSet, 0.9, consensusFields);
             Utility.writeFile(consensus.toTSV(consensusFields), "consensus/" + text + ".tsv");
         }
 
@@ -285,7 +285,8 @@ public class AssessmentPipeline {
         for (String annotator : PIPELINE_ANNOTATORS) {
             commonTokenOutputs.add(Utility.importTSVDocument("common_tokens/pos-" + annotator + ".tsv", "\t"));
         }
-        //STEP 2: Run assessments
+        
+        //STEP 2: Run assessments, produce graded outputs
         for (Document doc : commonTokenOutputs) {
             for (int i = 0; i < doc.tokens.size(); i++) {
                 Token token = doc.tokens.get(i);
@@ -309,9 +310,12 @@ public class AssessmentPipeline {
                 int falsePos = 0;
                 int trueNeg = 0;
                 int falseNeg = 0;
+                int excluded = 0;
 
                 for (Token token : doc.tokens) {
-                    if (token.get(Tag.APOS).equalsIgnoreCase(tag)) {
+                    if(token.get(Tag.GPOS).equalsIgnoreCase(Tag.NO_CONSENSUS)) {
+                        excluded++;
+                    } else if (token.get(Tag.APOS).equalsIgnoreCase(tag)) {
                         if (token.get(Tag.GPOS).equalsIgnoreCase(tag)) {
                             truePos++;
                         } else {
@@ -329,7 +333,7 @@ public class AssessmentPipeline {
                 if (truePos + falsePos + trueNeg + falseNeg != doc.tokens.size()) {
                     System.out.println("Error counting errors in " + doc.name);
                 }
-                results.add(tag + "\t" + truePos + "\t" + falsePos + "\t" + trueNeg + "\t" + falseNeg);
+                results.add(tag + "\t" + truePos + "\t" + falsePos + "\t" + trueNeg + "\t" + falseNeg + "\t" + excluded);
 //                System.out.println("Errors in " + doc.name + ", " + tag);
 //                System.out.println("TruePos = " + truePos);
 //                System.out.println("FalsePos = " + falsePos);

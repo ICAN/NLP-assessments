@@ -25,7 +25,6 @@ package nlpassessment;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import org.apache.commons.lang3.StringUtils;
 
 public class Assessment {
 
@@ -33,69 +32,69 @@ public class Assessment {
     //NOTE: list lengths and all contained tokens MUST match
     //TODO: Distinguish between major and minor token mismatches 
     //using StringUtils.getLevenshteinDistance(String s, String t) 
-    public static String compareTags(ArrayList<Token> results, ArrayList<Token> goldStandard, String tagValue, String tagKey) {
-
-        if (results.size() != goldStandard.size()) {
-            System.out.println("Tokens list lengths differ");
-        }
-
-        System.out.println("\n\n\nSTARTING COMPARISON"
-                + "\n");
-
-        int trueNegatives = 0;
-        int falseNegatives = 0;
-        int truePositives = 0;
-        int falsePositives = 0;
-        int tokenMinorMismatches = 0;
-        int tokenMajorMismatches = 0;
-
-        //Detect mismatches on tokens which differ between results and standard
-        //Unless both are tagged "other"
-        //TODO: Why not *always* detect token mismatches?
-        for (int i = 0; i < results.size(); i++) {
-            if (!results.get(i).get("token").equalsIgnoreCase(goldStandard.get(i).get("token"))) {
-                tokenMajorMismatches++;
-                System.out.println("Mismatch: " + results.get(i).toString() + " \t\t " + goldStandard.get(i).toString());
-            }
-
-            if (results.get(i).get(tagKey).equalsIgnoreCase(tagValue)
-                    && goldStandard.get(i).get(tagKey).equalsIgnoreCase(tagValue)) {
-
-                truePositives++;
-
-            } else if (goldStandard.get(i).get(tagKey).equalsIgnoreCase(tagValue)
-                    && !results.get(i).get(tagKey).equalsIgnoreCase(tagValue)) {
-
-                falseNegatives++;
-
-            } else if (results.get(i).get(tagKey).equalsIgnoreCase(tagValue)
-                    && !goldStandard.get(i).get(tagKey).equalsIgnoreCase(tagValue)) {
-                falsePositives++;
-
-            } else {
-                trueNegatives++;
-            }
-
-        }
-
-        assert results.size() == (trueNegatives + truePositives + falseNegatives + falsePositives);
-
-        double sensitivity = truePositives / ((double) (falseNegatives + truePositives));
-        double specificity = trueNegatives / ((double) (falsePositives + trueNegatives));
-
-        String report = tagValue;
-        report += "\tSampleSize=" + results.size();
-        report += "\tTagTruePos=" + truePositives;
-        report += "\tTagFalseNeg=" + falseNegatives;
-        report += "\tTagFalsePos=" + falsePositives;
-        report += "\tTagSensitivity=" + sensitivity;
-        report += "\tTagSpecificity=" + specificity;
-        report += "\tMinorTokenMismatches=" + tokenMinorMismatches;
-        report += "\tMajorTokenMistmatches" + tokenMajorMismatches;
-
-        return report;
-
-    }
+//    public static String compareTags(ArrayList<Token> results, ArrayList<Token> goldStandard, String tagValue, String tagKey) {
+//
+//        if (results.size() != goldStandard.size()) {
+//            System.out.println("Tokens list lengths differ");
+//        }
+//
+//        System.out.println("\n\n\nSTARTING COMPARISON"
+//                + "\n");
+//
+//        int trueNegatives = 0;
+//        int falseNegatives = 0;
+//        int truePositives = 0;
+//        int falsePositives = 0;
+//        int tokenMinorMismatches = 0;
+//        int tokenMajorMismatches = 0;
+//
+//        //Detect mismatches on tokens which differ between results and standard
+//        //Unless both are tagged "other"
+//        //TODO: Why not *always* detect token mismatches?
+//        for (int i = 0; i < results.size(); i++) {
+//            if (!results.get(i).get("token").equalsIgnoreCase(goldStandard.get(i).get("token"))) {
+//                tokenMajorMismatches++;
+//                System.out.println("Mismatch: " + results.get(i).toString() + " \t\t " + goldStandard.get(i).toString());
+//            }
+//
+//            if (results.get(i).get(tagKey).equalsIgnoreCase(tagValue)
+//                    && goldStandard.get(i).get(tagKey).equalsIgnoreCase(tagValue)) {
+//
+//                truePositives++;
+//
+//            } else if (goldStandard.get(i).get(tagKey).equalsIgnoreCase(tagValue)
+//                    && !results.get(i).get(tagKey).equalsIgnoreCase(tagValue)) {
+//
+//                falseNegatives++;
+//
+//            } else if (results.get(i).get(tagKey).equalsIgnoreCase(tagValue)
+//                    && !goldStandard.get(i).get(tagKey).equalsIgnoreCase(tagValue)) {
+//                falsePositives++;
+//
+//            } else {
+//                trueNegatives++;
+//            }
+//
+//        }
+//
+//        assert results.size() == (trueNegatives + truePositives + falseNegatives + falsePositives);
+//
+//        double sensitivity = truePositives / ((double) (falseNegatives + truePositives));
+//        double specificity = trueNegatives / ((double) (falsePositives + trueNegatives));
+//
+//        String report = tagValue;
+//        report += "\tSampleSize=" + results.size();
+//        report += "\tTagTruePos=" + truePositives;
+//        report += "\tTagFalseNeg=" + falseNegatives;
+//        report += "\tTagFalsePos=" + falsePositives;
+//        report += "\tTagSensitivity=" + sensitivity;
+//        report += "\tTagSpecificity=" + specificity;
+//        report += "\tMinorTokenMismatches=" + tokenMinorMismatches;
+//        report += "\tMajorTokenMistmatches" + tokenMajorMismatches;
+//
+//        return report;
+//
+//    }
 
     //Returns the consensus of the input token lists
     //Inputs must already be standardized and restricted to common tokens 
@@ -132,15 +131,14 @@ public class Assessment {
                 }
                 
                 //Determine & set majority tag
-                String majorityTag = Tag.NO_CONSENSUS;
+                String consensusTag = Tag.NO_CONSENSUS;
                 for(String tag : tagCount.keySet()) {
-                    if (tagCount.get(tag) > threshold * tagCount.keySet().size()) {
-                        majorityTag = tag;
-                        
+                    if (tagCount.get(tag) > threshold * inputs.size()) {
+                        consensusTag = tag;
                     }
                 }
                                 
-                token.set(field, majorityTag);
+                token.set(field, consensusTag);
             }
         }
 

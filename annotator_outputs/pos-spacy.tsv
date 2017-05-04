@@ -1,1519 +1,7130 @@
 indexInText	indexInSentence	sentenceNumber	token	posTag
-1	1	2	Real	JJ
-2	2	2	world	NN
-3	3	2	networks	NNS
-4	4	2	are	VBP
-5	5	2	often	RB
-6	6	2	large—	JJ
-7	7	2	there	EX
-8	8	2	are	VBP
-9	9	2	tens	NNS
-10	10	2	of	IN
-11	11	2	thousands	NNS
+1	1	2	﻿The	JJ
+2	2	2	European	JJ
+3	3	2	insurance	NN
+4	4	2	sector	NN
+5	5	2	will	MD
+6	6	2	soon	RB
+7	7	2	be	VB
+8	8	2	faced	VBN
+9	9	2	with	IN
+10	10	2	the	DT
+11	11	2	application	NN
 12	12	2	of	IN
-13	13	2	human	JJ
-14	14	2	genes	NNS
-15	15	2	and	CC
-16	16	2	trillions	NNS
-17	17	2	of	IN
-18	18	2	connections	NNS
-19	19	2	in	IN
-20	20	2	the	DT
-21	21	2	human	JJ
-22	22	2	brain	NN
-23	23	2	.	.
-24	1	3	Such	JJ
-25	2	3	scales	NNS
-26	3	3	make	VBP
-27	4	3	human	JJ
-28	5	3	visual	JJ
-29	6	3	processing	NN
-30	7	3	of	IN
-31	8	3	and	CC
-32	9	3	decision	NN
-33	10	3	making	VBG
-34	11	3	with	IN
-35	12	3	the	DT
-36	13	3	whole	JJ
-37	14	3	network	NN
-38	15	3	prohibitive	JJ
-39	16	3	.	.
-40	1	4	This	DT
-41	2	4	paper	NN
-42	3	4	investigates	VBZ
-43	4	4	algorithms	NNS
-44	5	4	to	TO
-45	6	4	identify	VB
-46	7	4	provably	RB
-47	8	4	good	JJ
-48	9	4	approximations	NNS
-49	10	4	of	IN
-50	11	4	the	DT
-51	12	4	network	NN
-52	13	4	topology	NN
-53	14	4	,	,
-54	15	4	which	WDT
-55	16	4	capture	VBP
-56	17	4	important	JJ
-57	18	4	system	NN
-58	19	4	dynamics	NNS
-59	20	4	while	IN
-60	21	4	significantly	RB
-61	22	4	reducing	VBG
-62	23	4	the	DT
-63	24	4	number	NN
-64	25	4	of	IN
-65	26	4	edges	NNS
-66	27	4	to	TO
-67	28	4	enable	VB
-68	29	4	tractable	JJ
-69	30	4	analysis	NN
-70	31	4	.	.
-71	32	4	1	CD
-72	33	4	arXiv:1506.04767v1	NN
-73	34	4	[	-LRB-
-74	35	4	cs	NN
-75	36	4	.	.
-76	1	5	IT	NN
-77	2	5	]	-RRB-
-78	3	5	15	CD
-79	4	5	Jun	NNP
-80	5	5	2015	CD
-81	6	5	Quinn	NNP
-82	7	5	,	,
-83	8	5	Pinar	NNP
-84	9	5	,	,
-85	10	5	and	CC
-86	11	5	Kiyavash	NNP
-87	1	6	Across	IN
-88	2	6	different	JJ
-89	3	6	domains	NNS
-90	4	6	,	,
-91	5	6	edges	NNS
-92	6	6	are	VBP
-93	7	6	used	VBN
-94	8	6	to	IN
-95	9	6	model	VB
-96	10	6	various	JJ
-97	11	6	kinds	NNS
-98	12	6	of	IN
-99	13	6	ties	NNS
-100	14	6	such	JJ
-101	15	6	as	IN
-102	16	6	physical	JJ
-103	17	6	connections	NNS
-104	18	6	or	CC
-105	19	6	dynamic	JJ
-106	20	6	relationships	NNS
-107	21	6	.	.
-108	1	7	For	IN
-109	2	7	instance	NN
-110	3	7	,	,
-111	4	7	in	IN
-112	5	7	depicting	VBG
-113	6	7	a	DT
-114	7	7	computer	NN
-115	8	7	network	NN
-116	9	7	,	,
-117	10	7	an	DT
-118	11	7	edge	NN
-119	12	7	might	MD
-120	13	7	correspond	VB
-121	14	7	to	IN
-122	15	7	a	DT
-123	16	7	physical	JJ
-124	17	7	wire	NN
-125	18	7	or	CC
-126	19	7	a	DT
-127	20	7	packet	NN
-128	21	7	exchange	NN
-129	22	7	between	IN
-130	23	7	a	DT
-131	24	7	sender	NN
-132	25	7	and	CC
-133	26	7	a	DT
-134	27	7	receiver	NN
-135	28	7	.	.
-136	1	8	For	IN
-137	2	8	the	DT
-138	3	8	human	JJ
-139	4	8	brain	NN
-140	5	8	,	,
-141	6	8	edges	NNS
-142	7	8	could	MD
-143	8	8	correspond	VB
-144	9	8	to	IN
-145	10	8	information	NN
-146	11	8	flow	NN
-147	12	8	between	IN
-148	13	8	different	JJ
-149	14	8	cells	NNS
-150	15	8	or	CC
-151	16	8	brain	NN
-152	17	8	regions	NNS
-153	18	8	(	-LRB-
-154	19	8	Takahashi	NNP
-155	20	8	et	NNP
-156	21	8	al	NNP
-157	22	8	.	.
-158	1	9	,	,
-159	2	9	2015	CD
-160	3	9	;	:
-161	1	10	Kim	NNP
-162	2	10	et	NNP
-163	3	10	al	NNP
-164	4	10	.	.
-165	5	10	,	,
-166	6	10	2014	CD
-167	7	10	)	-RRB-
-168	8	10	.	.
-169	1	11	For	IN
-170	2	11	online	JJ
-171	3	11	social	JJ
-172	4	11	networks	NNS
-173	5	11	,	,
-174	6	11	edges	NNS
-175	7	11	might	MD
-176	8	11	represent	VB
-177	9	11	user	RB
-178	10	11	-	HYPH
-179	11	11	defined	VBN
-180	12	11	relationships	NNS
-181	13	11	or	CC
-182	14	11	pairs	NNS
-183	15	11	of	IN
-184	16	11	users	NNS
-185	17	11	that	WDT
-186	18	11	frequently	RB
-187	19	11	message	VBP
-188	20	11	each	DT
-189	21	11	other	JJ
-190	22	11	(	-LRB-
-191	23	11	Ver	NNP
-192	24	11	Steeg	NNP
-193	25	11	and	CC
-194	26	11	Galstyan	NNP
-195	27	11	,	,
-196	28	11	2012	CD
-197	29	11	,	,
-198	30	11	2013	CD
-199	31	11	)	-RRB-
-200	32	11	.	.
-201	1	12	Edges	NNS
-202	2	12	that	WDT
-203	3	12	represent	VBP
-204	4	12	dynamics	NNS
-205	5	12	often	RB
-206	6	12	must	MD
-207	7	12	be	VB
-208	8	12	inferred	VBN
-209	9	12	from	IN
-210	10	12	activity	NN
-211	11	12	,	,
-212	12	12	in	IN
-213	13	12	some	DT
-214	14	12	cases	NNS
-215	15	12	statistically	RB
-216	16	12	.	.
-217	1	13	There	EX
-218	2	13	is	VBZ
-219	3	13	a	DT
-220	4	13	large	JJ
-221	5	13	literature	NN
-222	6	13	on	IN
-223	7	13	graphs	NNS
-224	8	13	whose	WP$
-225	9	13	edges	NNS
-226	10	13	depict	VBP
-227	11	13	statistical	JJ
-228	12	13	relationships	NNS
-229	13	13	.	.
-230	1	14	Markov	NNP
-231	2	14	and	CC
-232	3	14	Bayesian	NNP
-233	4	14	networks	NNS
-234	5	14	are	VBP
-235	6	14	well	RB
-236	7	14	-	HYPH
-237	8	14	known	VBN
-238	9	14	probabilistic	JJ
-239	10	14	graphical	JJ
-240	11	14	models	NNS
-241	12	14	whose	WP$
-242	13	14	edges	NNS
-243	14	14	represent	VBP
-244	15	14	correlation	NN
-245	16	14	.	.
-246	1	15	Many	JJ
-247	2	15	methods	NNS
-248	3	15	have	VBP
-249	4	15	been	VBN
-250	5	15	proposed	VBN
-251	6	15	to	TO
-252	7	15	infer	VB
-253	8	15	and	CC
-254	9	15	approximate	VB
-255	10	15	the	DT
-256	11	15	networks	NNS
-257	12	15	from	IN
-258	13	15	i.i.d	NN
-259	14	15	.	.
-260	1	16	data	NNS
-261	2	16	,	,
-262	3	16	often	RB
-263	4	16	relying	VBG
-264	5	16	on	IN
-265	6	16	heuristics	NNS
-266	7	16	.	.
-267	1	17	Pretty	RB
-268	2	17	soon	RB
-269	3	17	I	PRP
-270	4	17	wanted	VBD
-271	5	17	to	TO
-272	6	17	smoke	VB
-273	7	17	,	,
-274	8	17	and	CC
-275	9	17	asked	VBD
-276	10	17	the	DT
-277	11	17	widow	NN
-278	12	17	to	TO
-279	13	17	let	VB
-280	14	17	me	PRP
-281	15	17	.	.
-282	1	18	But	CC
-283	2	18	she	PRP
-284	3	18	would	MD
-285	4	18	n't	RB
-286	5	18	.	.
-287	1	19	She	PRP
-288	2	19	said	VBD
-289	3	19	it	PRP
-290	4	19	was	VBD
-291	5	19	a	DT
-292	6	19	mean	JJ
-293	7	19	practice	NN
-294	8	19	and	CC
-295	9	19	was	VBD
-296	10	19	n't	RB
-297	11	19	clean	JJ
-298	12	19	,	,
-299	13	19	and	CC
-300	14	19	I	PRP
-301	15	19	must	MD
-302	16	19	try	VB
-303	17	19	to	TO
-304	18	19	not	RB
-305	19	19	do	VB
-306	20	19	it	PRP
-307	21	19	any	DT
-308	22	19	more	RBR
-309	23	19	.	.
-310	1	20	That	DT
-311	2	20	is	VBZ
-312	3	20	just	RB
-313	4	20	the	DT
-314	5	20	way	NN
-315	6	20	with	IN
-316	7	20	some	DT
-317	8	20	people	NNS
-318	9	20	.	.
-319	1	21	They	PRP
-320	2	21	get	VBP
-321	3	21	down	RP
-322	4	21	on	IN
-323	5	21	a	DT
-324	6	21	thing	NN
-325	7	21	when	WRB
-326	8	21	they	PRP
-327	9	21	do	VBP
-328	10	21	n't	RB
-329	11	21	know	VB
-330	12	21	nothing	NN
-331	13	21	about	IN
-332	14	21	it	PRP
-333	15	21	.	.
-334	1	22	Here	RB
-335	2	22	she	PRP
-336	3	22	was	VBD
-337	4	22	a	DT
-338	5	22	-	HYPH
-339	6	22	bothering	VBG
-340	7	22	about	IN
-341	8	22	Moses	NNP
-342	9	22	,	,
-343	10	22	which	WDT
-344	11	22	was	VBD
-345	12	22	no	DT
-346	13	22	kin	NN
-347	14	22	to	IN
-348	15	22	her	PRP
-349	16	22	,	,
-350	17	22	and	CC
-351	18	22	no	DT
-352	19	22	use	NN
-353	20	22	to	IN
-354	21	22	anybody	NN
-355	22	22	,	,
-356	23	22	being	VBG
-357	24	22	gone	VBN
-358	25	22	,	,
-359	26	22	you	PRP
-360	27	22	see	VBP
-361	28	22	,	,
-362	29	22	yet	CC
-363	30	22	finding	VBG
-364	31	22	a	DT
-365	32	22	power	NN
-366	33	22	of	IN
-367	34	22	fault	NN
-368	35	22	with	IN
-369	36	22	me	PRP
-370	37	22	for	IN
-371	38	22	doing	VBG
-372	39	22	a	DT
-373	40	22	thing	NN
-374	41	22	that	WDT
-375	42	22	had	VBD
-376	43	22	some	DT
-377	44	22	good	JJ
-378	45	22	in	IN
-379	46	22	it	PRP
-380	47	22	.	.
-381	1	23	And	CC
-382	2	23	she	PRP
-383	3	23	took	VBD
-384	4	23	snuff	NN
-385	5	23	,	,
-386	6	23	too	RB
-387	7	23	;	:
-388	8	23	of	IN
-389	9	23	course	NN
-390	10	23	that	WDT
-391	11	23	was	VBD
-392	12	23	all	RB
-393	13	23	right	JJ
-394	14	23	,	,
-395	15	23	because	IN
-396	16	23	she	PRP
-397	17	23	done	VBD
-398	18	23	it	PRP
-399	19	23	herself	PRP
-400	20	23	.	.
-401	1	24	Her	PRP$
-402	2	24	sister	NN
-403	3	24	,	,
-404	4	24	Miss	NNP
-405	5	24	Watson	NNP
-406	6	24	,	,
-407	7	24	a	DT
-408	8	24	tolerable	JJ
-409	9	24	slim	JJ
-410	10	24	old	JJ
-411	11	24	maid	NN
-412	12	24	,	,
-413	13	24	with	IN
-414	14	24	goggles	NNS
-415	15	24	on	IN
-416	16	24	,	,
-417	17	24	had	VBD
-418	18	24	just	RB
-419	19	24	come	VBN
-420	20	24	to	TO
-421	21	24	live	VB
-422	22	24	with	IN
-423	23	24	her	PRP
-424	24	24	,	,
-425	25	24	and	CC
-426	26	24	took	VBD
-427	27	24	a	DT
-428	28	24	set	NN
-429	29	24	at	IN
-430	30	24	me	PRP
-431	31	24	now	RB
-432	32	24	with	IN
-433	33	24	a	DT
-434	34	24	spelling	NN
-435	35	24	-	HYPH
-436	36	24	book	NN
-437	37	24	.	.
-438	1	25	She	PRP
-439	2	25	worked	VBD
-440	3	25	me	PRP
-441	4	25	middling	VBG
-442	5	25	hard	RB
-443	6	25	for	IN
-444	7	25	about	RB
-445	8	25	an	DT
-446	9	25	hour	NN
-447	10	25	,	,
-448	11	25	and	CC
-449	12	25	then	RB
-450	13	25	the	DT
-451	14	25	widow	NN
-452	15	25	made	VBD
-453	16	25	her	PRP$
-454	17	25	ease	NN
-455	18	25	up	RP
-456	19	25	.	.
-457	1	26	I	PRP
-458	2	26	could	MD
-459	3	26	n't	RB
-460	4	26	stood	VBD
-461	5	26	it	PRP
-462	6	26	much	RB
-463	7	26	longer	RBR
-464	8	26	.	.
-465	1	27	Then	RB
-466	2	27	for	IN
-467	3	27	an	DT
-468	4	27	hour	NN
-469	5	27	it	PRP
-470	6	27	was	VBD
-471	7	27	deadly	JJ
-472	8	27	dull	JJ
-473	9	27	,	,
-474	10	27	and	CC
-475	11	27	I	PRP
-476	12	27	was	VBD
-477	13	27	fidgety	JJ
-478	14	27	.	.
-479	1	28	Miss	NNP
-480	2	28	Watson	NNP
-481	3	28	would	MD
-482	4	28	say	VB
-483	5	28	,	,
-484	6	28	"	``
-485	7	28	Do	VBP
-486	8	28	n't	RB
-487	9	28	put	VB
-488	10	28	your	PRP$
-489	11	28	feet	NNS
-490	12	28	up	RB
-491	13	28	there	RB
-492	14	28	,	,
-493	15	28	Huckleberry	NNP
-494	16	28	;	:
-495	17	28	"	``
-496	18	28	and	CC
-497	19	28	"	``
-498	20	28	Do	VB
-499	21	28	n't	RB
-500	22	28	scrunch	VB
-501	23	28	up	RP
-502	24	28	like	IN
-503	25	28	that	DT
-504	26	28	,	,
-505	27	28	Huckleberry	UH
-506	28	28	--	:
-507	29	28	set	VBD
-508	30	28	up	RP
-509	31	28	straight	RB
-510	32	28	;	:
-511	33	28	"	''
-512	34	28	and	CC
-513	35	28	pretty	RB
-514	36	28	soon	RB
-515	37	28	she	PRP
-516	38	28	would	MD
-517	39	28	say	VB
-518	40	28	,	,
-519	41	28	"	``
-520	42	28	Do	VBP
-521	43	28	n't	RB
-522	44	28	gap	VB
-523	45	28	and	CC
-524	46	28	stretch	VB
-525	47	28	like	IN
-526	48	28	that	DT
-527	49	28	,	,
-528	50	28	Huckleberry	NNP
-529	51	28	--	:
-530	52	28	why	WRB
-531	53	28	do	VBP
-532	54	28	n't	RB
-533	55	28	you	PRP
-534	56	28	try	VB
-535	57	28	to	TO
-536	58	28	behave	VB
-537	59	28	?	.
-538	60	28	"	''
-539	1	29	Brahinsky	NNP
-540	2	29	said	VBD
-541	3	29	that	IN
-542	4	29	the	DT
-543	5	29	University	NNP
-544	6	29	of	IN
-545	7	29	California	NNP
-546	8	29	has	VBZ
-547	9	29	,	,
-548	10	29	"	``
-549	11	29	made	VBD
-550	12	29	a	DT
-551	13	29	priority	NN
-552	14	29	out	IN
-553	15	29	of	IN
-554	16	29	administrative	JJ
-555	17	29	spending	NN
-556	18	29	,	,
-557	19	29	"	''
-558	20	29	noting	VBG
-559	21	29	that	IN
-560	22	29	it	PRP
-561	23	29	has	VBZ
-562	24	29	increased	VBN
-563	25	29	by	IN
-564	26	29	over	IN
-565	27	29	250%	CD
-566	28	29	in	IN
-567	29	29	the	DT
-568	30	29	last	JJ
-569	31	29	20	CD
-570	32	29	years	NNS
-571	33	29	.	.
-572	1	30	The	DT
-573	2	30	growth	NN
-574	3	30	of	IN
-575	4	30	faculty	NN
-576	5	30	spending	NN
-577	6	30	over	IN
-578	7	30	the	DT
-579	8	30	same	JJ
-580	9	30	time	NN
-581	10	30	period	NN
-582	11	30	has	VBZ
-583	12	30	only	RB
-584	13	30	increased	VBN
-585	14	30	by	IN
-586	15	30	50%	CD
-587	16	30	,	,
-588	17	30	he	PRP
-589	18	30	said	VBD
-590	19	30	,	,
-591	20	30	adding	VBG
-592	21	30	that	IN
-593	22	30	20	CD
-594	23	30	years	NNS
-595	24	30	ago	RB
-596	25	30	there	EX
-597	26	30	were	VBD
-598	27	30	five	CD
-599	28	30	faculty	NN
-600	29	30	members	NNS
-601	30	30	for	IN
-602	31	30	every	DT
-603	32	30	two	CD
-604	33	30	administrators	NNS
-605	34	30	,	,
-606	35	30	but	CC
-607	36	30	the	DT
-608	37	30	figure	NN
-609	38	30	has	VBZ
-610	39	30	shifted	VBN
-611	40	30	dramatically	RB
-612	41	30	,	,
-613	42	30	and	CC
-614	43	30	presently	RB
-615	44	30	there	EX
-616	45	30	are	VBP
-617	46	30	only	RB
-618	47	30	five	CD
-619	48	30	faculty	NN
-620	49	30	members	NNS
-621	50	30	for	IN
-622	51	30	every	DT
-623	52	30	six	CD
-624	53	30	administrators	NNS
-625	54	30	,	,
-626	55	30	on	IN
-627	56	30	average	JJ
-628	57	30	.	.
-629	1	31	"	``
-630	2	31	The	DT
-631	3	31	administration	NN
-632	4	31	is	VBZ
-633	5	31	growing	VBG
-634	6	31	and	CC
-635	7	31	has	VBZ
-636	8	31	surpassed	VBN
-637	9	31	the	DT
-638	10	31	faculty	NN
-639	11	31	,	,
-640	12	31	"	''
-641	13	31	he	PRP
-642	14	31	said	VBD
-643	15	31	.	.
-644	1	32	"	``
-645	2	32	The	DT
-646	3	32	priorities	NNS
-647	4	32	of	IN
-648	5	32	the	DT
-649	6	32	UC	NNP
-650	7	32	are	VBP
-651	8	32	something	NN
-652	9	32	that	WDT
-653	10	32	ought	MD
-654	11	32	to	TO
-655	12	32	be	VB
-656	13	32	democratic	JJ
-657	14	32	,	,
-658	15	32	"	''
-659	16	32	Brahinsky	NNP
-660	17	32	said	VBD
-661	18	32	.	.
-662	1	33	"	``
-663	2	33	We	PRP
-664	3	33	can	MD
-665	4	33	have	VB
-666	5	33	a	DT
-667	6	33	say	NN
-668	7	33	in	IN
-669	8	33	that	DT
-670	9	33	,	,
-671	10	33	and	CC
-672	11	33	so	RB
-673	12	33	we	PRP
-674	13	33	should	MD
-675	14	33	.	.
-676	1	34	"	''
-677	2	34	To	TO
-678	3	34	learn	VB
-679	4	34	more	JJR
-680	5	34	about	IN
-681	6	34	the	DT
-682	7	34	University	NNP
-683	8	34	of	IN
-684	9	34	California	NNP
-685	10	34	's	POS
-686	11	34	budget	NN
-687	12	34	,	,
-688	13	34	Brahinsky	NNP
-689	14	34	recommended	VBD
-690	15	34	attendance	NN
-691	16	34	at	IN
-692	17	34	a	DT
-693	18	34	workshop	NN
-694	19	34	to	TO
-695	20	34	be	VB
-696	21	34	held	VBN
-697	22	34	by	IN
-698	23	34	Autonomous	NNP
-699	24	34	Students	NNP
-700	25	34	UCSC	NNP
-701	26	34	,	,
-702	27	34	a	DT
-703	28	34	student	NN
-704	29	34	organization	NN
-705	30	34	that	WDT
-706	31	34	was	VBD
-707	32	34	tabling	VBG
-708	33	34	at	IN
-709	34	34	the	DT
-710	35	34	picnic	NN
-711	36	34	.	.
-712	1	35	AFT	NNP
-713	2	35	Local	JJ
-714	3	35	2199	CD
-715	4	35	President	NNP
-716	5	35	Roxi	NNP
-717	6	35	Power	NNP
-718	7	35	also	RB
-719	8	35	spoke	VBD
-720	9	35	at	IN
-721	10	35	the	DT
-722	11	35	mid	JJ
-723	12	35	-	HYPH
-724	13	35	day	NN
-725	14	35	rally	NN
-726	15	35	,	,
-727	16	35	as	IN
-728	17	35	did	VBD
-729	18	35	Mike	NNP
-730	19	35	Rotkin	NNP
-731	20	35	,	,
-732	21	35	AFT	NNP
-733	22	35	's	POS
-734	23	35	longest	JJS
-735	24	35	running	VBG
-736	25	35	President	NNP
-737	26	35	at	IN
-738	27	35	UC	NNP
-739	28	35	Santa	NNP
-740	29	35	Cruz	NNP
-741	30	35	.	.
-742	1	36	After	IN
-743	2	36	the	DT
-744	3	36	speakers	NNS
-745	4	36	were	VBD
-746	5	36	heard	VBN
-747	6	36	,	,
-748	7	36	a	DT
-749	8	36	street	NN
-750	9	36	theater	NN
-751	10	36	segment	NN
-752	11	36	was	VBD
-753	12	36	performed	VBN
-754	13	36	with	IN
-755	14	36	UC	NNP
-756	15	36	administrators	NNS
-757	16	36	portrayed	VBD
-758	17	36	as	IN
-759	18	36	top	JJ
-760	19	36	-	HYPH
-761	20	36	hat	NN
-762	21	36	wearing	VBG
-763	22	36	characters	NNS
-764	23	36	from	IN
-765	24	36	the	DT
-766	25	36	Monopoly	NNP
-767	26	36	board	NN
-768	27	36	game	NN
-769	28	36	.	.
-770	1	37	Many	JJ
-771	2	37	participants	NNS
-772	3	37	were	VBD
-773	4	37	dressed	VBN
-774	5	37	in	IN
-775	6	37	graduation	NN
-776	7	37	gowns	NNS
-777	8	37	,	,
-778	9	37	and	CC
-779	10	37	union	NN
-780	11	37	members	NNS
-781	12	37	distributed	VBD
-782	13	37	the	DT
-783	14	37	lyrics	NNS
-784	15	37	to	IN
-785	16	37	a	DT
-786	17	37	variety	NN
-787	18	37	of	IN
-788	19	37	songs	NNS
-789	20	37	to	IN
-790	21	37	those	DT
-791	22	37	in	IN
-792	23	37	attendance	NN
-793	24	37	so	IN
-794	25	37	that	IN
-795	26	37	the	DT
-796	27	37	group	NN
-797	28	37	could	MD
-798	29	37	serve	VB
-799	30	37	as	IN
-800	31	37	the	DT
-801	32	37	musical	JJ
-802	33	37	chorus	NN
-803	34	37	in	IN
-804	35	37	the	DT
-805	36	37	skit	NN
-806	37	37	.	.
-807	1	38	﻿Another	RB
-808	2	38	popular	JJ
-809	3	38	approach	NN
-810	4	38	is	VBZ
-811	5	38	inspired	VBN
-812	6	38	by	IN
-813	7	38	the	DT
-814	8	38	theory	NN
-815	9	38	of	IN
-816	10	38	intervening	VBG
-817	11	38	opportunities	NNS
-818	12	38	and	CC
-819	13	38	it	PRP
-820	14	38	has	VBZ
-821	15	38	been	VBN
-822	16	38	concreted	VBN
-823	17	38	into	IN
-824	18	38	the	DT
-825	19	38	so	RB
-826	20	38	-	HYPH
-827	21	38	called	VBN
-828	22	38	radiation	NN
-829	23	38	models	NNS
-830	24	38	.	.
-831	1	39	Individuals	NNS
-832	2	39	are	VBP
-833	3	39	supposed	VBN
-834	4	39	to	TO
-835	5	39	travel	VB
-836	6	39	until	IN
-837	7	39	they	PRP
-838	8	39	find	VBP
-839	9	39	a	DT
-840	10	39	job	NN
-841	11	39	opportunity	NN
-842	12	39	,	,
-843	13	39	so	IN
-844	14	39	the	DT
-845	15	39	population	NN
-846	16	39	and	CC
-847	17	39	jobs	NNS
-848	18	39	spatial	JJ
-849	19	39	distributions	NNS
-850	20	39	naturally	RB
-851	21	39	lead	VBP
-852	22	39	to	IN
-853	23	39	a	DT
-854	24	39	trip	NN
-855	25	39	flow	NN
-856	26	39	network	NN
-857	27	39	.	.
-858	1	40	In	IN
-859	2	40	this	DT
-860	3	40	paper	NN
-861	4	40	,	,
-862	5	40	we	PRP
-863	6	40	perform	VBP
-864	7	40	a	DT
-865	8	40	thorough	JJ
-866	9	40	comparison	NN
-867	10	40	between	IN
-868	11	40	the	DT
-869	12	40	gravity	NN
-870	13	40	and	CC
-871	14	40	the	DT
-872	15	40	radiation	NN
-873	16	40	approaches	NNS
-874	17	40	in	IN
-875	18	40	their	PRP$
-876	19	40	ability	NN
-877	20	40	at	IN
-878	21	40	estimating	VBG
-879	22	40	commuting	VBG
-880	23	40	flows	NNS
-881	24	40	.	.
-882	1	41	We	PRP
-883	2	41	test	VBP
-884	3	41	the	DT
-885	4	41	gravity	NN
-886	5	41	and	CC
-887	6	41	the	DT
-888	7	41	radiation	NN
-889	8	41	laws	NNS
-890	9	41	against	IN
-891	10	41	empirical	JJ
-892	11	41	trip	NN
-893	12	41	data	NNS
-894	13	41	at	IN
-895	14	41	different	JJ
-896	15	41	scales	NNS
-897	16	41	and	CC
-898	17	41	coming	VBG
-899	18	41	from	IN
-900	19	41	different	JJ
-901	20	41	countries	NNS
-902	21	41	.	.
-903	1	42	Different	JJ
-904	2	42	versions	NNS
-905	3	42	of	IN
-906	4	42	the	DT
-907	5	42	gravity	NN
-908	6	42	and	CC
-909	7	42	the	DT
-910	8	42	radiation	NN
-911	9	42	laws	NNS
-912	10	42	are	VBP
-913	11	42	used	VBN
-914	12	42	to	TO
-915	13	42	estimate	VB
-916	14	42	the	DT
-917	15	42	probability	NN
-918	16	42	that	IN
-919	17	42	an	DT
-920	18	42	individual	NN
-921	19	42	has	VBZ
-922	20	42	to	TO
-923	21	42	commute	VB
-924	22	42	from	IN
-925	23	42	one	CD
-926	24	42	unit	NN
-927	25	42	to	IN
-928	26	42	another	DT
-929	27	42	,	,
-930	28	42	called	VBN
-931	29	42	trip	NN
-932	30	42	distribution	NN
-933	31	42	law	NN
-934	32	42	.	.
-935	1	43	Based	VBN
-936	2	43	on	IN
-937	3	43	these	DT
-938	4	43	probability	NN
-939	5	43	distribution	NN
-940	6	43	the	DT
-941	7	43	commuting	NN
-942	8	43	networks	NNS
-943	9	43	are	VBP
-944	10	43	simulated	VBN
-945	11	43	with	IN
-946	12	43	different	JJ
-947	13	43	trip	NN
-948	14	43	distribution	NN
-949	15	43	models	NNS
-950	16	43	.	.
-951	1	44	We	PRP
-952	2	44	show	VBP
-953	3	44	that	IN
-954	4	44	the	DT
-955	5	44	gravity	NN
-956	6	44	law	NN
-957	7	44	performs	VBZ
-958	8	44	better	JJR
-959	9	44	than	IN
-960	10	44	the	DT
-961	11	44	radiation	NN
-962	12	44	law	NN
-963	13	44	to	TO
-964	14	44	estimate	VB
-965	15	44	the	DT
-966	16	44	commuting	NN
-967	17	44	flows	NNS
-968	18	44	,	,
-969	19	44	to	TO
-970	20	44	preserve	VB
-971	21	44	the	DT
-972	22	44	structure	NN
-973	23	44	of	IN
-974	24	44	the	DT
-975	25	44	network	NN
-976	26	44	and	CC
-977	27	44	to	TO
-978	28	44	fit	VB
-979	29	44	the	DT
-980	30	44	commuting	NN
-981	31	44	distance	NN
-982	32	44	distribution	NN
-983	33	44	although	IN
-984	34	44	it	PRP
-985	35	44	fails	VBZ
-986	36	44	at	IN
-987	37	44	predicting	VBG
-988	38	44	commuting	VBG
-989	39	44	flows	NNS
-990	40	44	at	IN
-991	41	44	large	JJ
-992	42	44	distances	NNS
-993	43	44	.	.
-994	1	45	Finally	RB
-995	2	45	,	,
-996	3	45	we	PRP
-997	4	45	show	VBP
-998	5	45	that	IN
-999	6	45	both	DT
-1000	7	45	approaches	NNS
-1001	8	45	can	MD
-1002	9	45	be	VB
-1003	10	45	used	VBN
-1004	11	45	in	IN
-1005	12	45	absence	NN
-1006	13	45	of	IN
-1007	14	45	detailed	JJ
-1008	15	45	data	NNS
-1009	16	45	for	IN
-1010	17	45	calibration	NN
-1011	18	45	since	IN
-1012	19	45	the	DT
-1013	20	45	only	JJ
-1014	21	45	parameter	NN
-1015	22	45	of	IN
-1016	23	45	both	CC
-1017	24	45	the	DT
-1018	25	45	gravity	NN
-1019	26	45	and	CC
-1020	27	45	the	DT
-1021	28	45	radiation	NN
-1022	29	45	laws	NNS
-1023	30	45	depends	VBZ
-1024	31	45	only	RB
-1025	32	45	on	IN
-1026	33	45	the	DT
-1027	34	45	scale	NN
-1028	35	45	of	IN
-1029	36	45	the	DT
-1030	37	45	geographic	JJ
-1031	38	45	unit	NN
-1032	39	45	.	.
-1033	1	46	The	DT
-1034	2	46	dominant	JJ
-1035	3	46	spirit	NN
-1036	4	46	,	,
-1037	5	46	however	RB
-1038	6	46	,	,
-1039	7	46	that	IN
-1040	8	46	haunts	VBZ
-1041	9	46	this	DT
-1042	10	46	enchanted	JJ
-1043	11	46	region	NN
-1044	12	46	,	,
-1045	13	46	and	CC
-1046	14	46	seems	VBZ
-1047	15	46	to	TO
-1048	16	46	be	VB
-1049	17	46	commander	NN
-1050	18	46	-	HYPH
-1051	19	46	in	IN
-1052	20	46	-	HYPH
-1053	21	46	chief	NN
-1054	22	46	of	IN
-1055	23	46	all	PDT
-1056	24	46	the	DT
-1057	25	46	powers	NNS
-1058	26	46	of	IN
-1059	27	46	the	DT
-1060	28	46	air	NN
-1061	29	46	,	,
-1062	30	46	is	VBZ
-1063	31	46	the	DT
-1064	32	46	apparition	NN
-1065	33	46	of	IN
-1066	34	46	a	DT
-1067	35	46	figure	NN
-1068	36	46	on	IN
-1069	37	46	horseback	NN
-1070	38	46	,	,
-1071	39	46	without	IN
-1072	40	46	a	DT
-1073	41	46	head	NN
-1074	42	46	.	.
-1075	1	47	It	PRP
-1076	2	47	is	VBZ
-1077	3	47	said	VBN
-1078	4	47	by	IN
-1079	5	47	some	DT
-1080	6	47	to	TO
-1081	7	47	be	VB
-1082	8	47	the	DT
-1083	9	47	ghost	NN
-1084	10	47	of	IN
-1085	11	47	a	DT
-1086	12	47	Hessian	JJ
-1087	13	47	trooper	NN
-1088	14	47	,	,
-1089	15	47	whose	WP$
-1090	16	47	head	NN
-1091	17	47	had	VBD
-1092	18	47	been	VBN
-1093	19	47	carried	VBN
-1094	20	47	away	RB
-1095	21	47	by	IN
-1096	22	47	a	DT
-1097	23	47	cannon	NN
-1098	24	47	-	HYPH
-1099	25	47	ball	NN
-1100	26	47	,	,
-1101	27	47	in	IN
-1102	28	47	some	DT
-1103	29	47	nameless	JJ
-1104	30	47	battle	NN
-1105	31	47	during	IN
-1106	32	47	the	DT
-1107	33	47	Revolutionary	NNP
-1108	34	47	War	NNP
-1109	35	47	,	,
-1110	36	47	and	CC
-1111	37	47	who	WP
-1112	38	47	is	VBZ
-1113	39	47	ever	RB
-1114	40	47	and	CC
-1115	41	47	anon	RB
-1116	42	47	seen	VBN
-1117	43	47	by	IN
-1118	44	47	the	DT
-1119	45	47	country	NN
-1120	46	47	folk	NN
-1121	47	47	hurrying	VBG
-1122	48	47	along	RB
-1123	49	47	in	IN
-1124	50	47	the	DT
-1125	51	47	gloom	NN
-1126	52	47	of	IN
-1127	53	47	night	NN
-1128	54	47	,	,
-1129	55	47	as	IN
-1130	56	47	if	IN
-1131	57	47	on	IN
-1132	58	47	the	DT
-1133	59	47	wings	NNS
-1134	60	47	of	IN
-1135	61	47	the	DT
-1136	62	47	wind	NN
-1137	63	47	.	.
-1138	1	48	His	PRP$
-1139	2	48	haunts	NNS
-1140	3	48	are	VBP
-1141	4	48	not	RB
-1142	5	48	confined	VBN
-1143	6	48	to	IN
-1144	7	48	the	DT
-1145	8	48	valley	NN
-1146	9	48	,	,
-1147	10	48	but	CC
-1148	11	48	extend	VB
-1149	12	48	at	IN
-1150	13	48	times	NNS
-1151	14	48	to	IN
-1152	15	48	the	DT
-1153	16	48	adjacent	JJ
-1154	17	48	roads	NNS
-1155	18	48	,	,
-1156	19	48	and	CC
-1157	20	48	especially	RB
-1158	21	48	to	IN
-1159	22	48	the	DT
-1160	23	48	vicinity	NN
-1161	24	48	of	IN
-1162	25	48	a	DT
-1163	26	48	church	NN
-1164	27	48	at	IN
-1165	28	48	no	DT
-1166	29	48	great	JJ
-1167	30	48	distance	NN
-1168	31	48	.	.
-1169	1	49	Indeed	RB
-1170	2	49	,	,
-1171	3	49	certain	JJ
-1172	4	49	of	IN
-1173	5	49	the	DT
-1174	6	49	most	RBS
-1175	7	49	authentic	JJ
-1176	8	49	historians	NNS
-1177	9	49	of	IN
-1178	10	49	those	DT
-1179	11	49	parts	NNS
-1180	12	49	,	,
-1181	13	49	who	WP
-1182	14	49	have	VBP
-1183	15	49	been	VBN
-1184	16	49	careful	JJ
-1185	17	49	in	IN
-1186	18	49	collecting	VBG
-1187	19	49	and	CC
-1188	20	49	collating	VBG
-1189	21	49	the	DT
-1190	22	49	floating	VBG
-1191	23	49	facts	NNS
-1192	24	49	concerning	VBG
-1193	25	49	this	DT
-1194	26	49	spectre	NN
-1195	27	49	,	,
-1196	28	49	allege	VBP
-1197	29	49	that	IN
-1198	30	49	the	DT
-1199	31	49	body	NN
-1200	32	49	of	IN
-1201	33	49	the	DT
-1202	34	49	trooper	NN
-1203	35	49	having	VBG
-1204	36	49	been	VBN
-1205	37	49	buried	VBN
-1206	38	49	in	IN
-1207	39	49	the	DT
-1208	40	49	churchyard	NN
-1209	41	49	,	,
-1210	42	49	the	DT
-1211	43	49	ghost	NN
-1212	44	49	rides	VBZ
-1213	45	49	forth	RB
-1214	46	49	to	IN
-1215	47	49	the	DT
-1216	48	49	scene	NN
-1217	49	49	of	IN
-1218	50	49	battle	NN
-1219	51	49	in	IN
-1220	52	49	nightly	JJ
-1221	53	49	quest	NN
-1222	54	49	of	IN
-1223	55	49	his	PRP$
-1224	56	49	head	NN
-1225	57	49	,	,
-1226	58	49	and	CC
-1227	59	49	that	IN
-1228	60	49	the	DT
-1229	61	49	rushing	VBG
-1230	62	49	speed	NN
-1231	63	49	with	IN
-1232	64	49	which	WDT
-1233	65	49	he	PRP
-1234	66	49	sometimes	RB
-1235	67	49	passes	VBZ
-1236	68	49	along	IN
-1237	69	49	the	DT
-1238	70	49	Hollow	NNP
-1239	71	49	,	,
-1240	72	49	like	IN
-1241	73	49	a	DT
-1242	74	49	midnight	NN
-1243	75	49	blast	NN
-1244	76	49	,	,
-1245	77	49	is	VBZ
-1246	78	49	owing	VBG
-1247	79	49	to	IN
-1248	80	49	his	PRP$
-1249	81	49	being	VBG
-1250	82	49	belated	JJ
-1251	83	49	,	,
-1252	84	49	and	CC
-1253	85	49	in	IN
-1254	86	49	a	DT
-1255	87	49	hurry	NN
-1256	88	49	to	TO
-1257	89	49	get	VB
-1258	90	49	back	RB
-1259	91	49	to	IN
-1260	92	49	the	DT
-1261	93	49	churchyard	NN
-1262	94	49	before	IN
-1263	95	49	daybreak	NN
-1264	96	49	.	.
-1265	1	50	“	.
-1266	1	51	If	IN
-1267	2	51	you	PRP
-1268	3	51	’re	VBP
-1269	4	51	not	RB
-1270	5	51	willing	JJ
-1271	6	51	to	TO
-1272	7	51	go	VB
-1273	8	51	outside	IN
-1274	9	51	the	DT
-1275	10	51	parameters	NNS
-1276	11	51	set	VBN
-1277	12	51	by	IN
-1278	13	51	conglomerates	NNS
-1279	14	51	,	,
-1280	15	51	that	IN
-1281	16	51	safety	NN
-1282	17	51	net	NN
-1283	18	51	of	IN
-1284	19	51	success	NN
-1285	20	51	,	,
-1286	21	51	there	EX
-1287	22	51	’s	UH
-1288	23	51	no	DT
-1289	24	51	point	NN
-1290	25	51	venturing	VBG
-1291	26	51	out	RP
-1292	27	51	on	IN
-1293	28	51	your	PRP$
-1294	29	51	own	JJ
-1295	30	51	,	,
-1296	31	51	”	-LRB-
-1297	32	51	Lee	NNP
-1298	33	51	assures	VBZ
-1299	34	51	.	.
-1300	35	51	“	.
-1301	1	52	Many	JJ
-1302	2	52	young	JJ
-1303	3	52	entrepreneurs	NNS
-1304	4	52	seem	VBP
-1305	5	52	to	TO
-1306	6	52	be	VB
-1307	7	52	jumping	VBG
-1308	8	52	on	IN
-1309	9	52	the	DT
-1310	10	52	bandwagon	NN
-1311	11	52	,	,
-1312	12	52	approaching	VBG
-1313	13	52	the	DT
-1314	14	52	startup	NN
-1315	15	52	game	NN
-1316	16	52	for	IN
-1317	17	52	the	DT
-1318	18	52	wrong	JJ
-1319	19	52	reasons	NNS
-1320	20	52	,	,
-1321	21	52	without	IN
-1322	22	52	any	DT
-1323	23	52	clear	JJ
-1324	24	52	strategy	NN
-1325	25	52	in	IN
-1326	26	52	mind	NN
-1327	27	52	,	,
-1328	28	52	”	''
-1329	29	52	Lee	NNP
-1330	30	52	notes	NNS
-1331	31	52	.	.
-1332	1	53	“	NFP
-1333	1	54	If	IN
-1334	2	54	you	PRP
-1335	3	54	’re	VBP
-1336	4	54	not	RB
-1337	5	54	hungry	JJ
-1338	6	54	enough	RB
-1339	7	54	,	,
-1340	8	54	if	IN
-1341	9	54	you	PRP
-1342	10	54	’re	VBZ
-1343	11	54	not	RB
-1344	12	54	ready	JJ
-1345	13	54	to	TO
-1346	14	54	startup	VB
-1347	15	54	a	DT
-1348	16	54	new	JJ
-1349	17	54	company	NN
-1350	18	54	,	,
-1351	19	54	then	RB
-1352	20	54	it	PRP
-1353	21	54	’s	VBZ
-1354	22	54	better	JJR
-1355	23	54	to	TO
-1356	24	54	jump	VB
-1357	25	54	ship	NN
-1358	26	54	.	.
-1359	27	54	”	''
-1360	1	55	President	NNP
-1361	2	55	Park	NNP
-1362	3	55	Geun	NNP
-1363	4	55	-	HYPH
-1364	5	55	hye	NNP
-1365	6	55	has	VBZ
-1366	7	55	vowed	VBN
-1367	8	55	to	TO
-1368	9	55	cut	VB
-1369	10	55	through	RP
-1370	11	55	red	JJ
-1371	12	55	tap	NN
-1372	13	55	and	CC
-1373	14	55	provide	VB
-1374	15	55	financial	JJ
-1375	16	55	incentive	NN
-1376	17	55	for	IN
-1377	18	55	entrepreneurs	NNS
-1378	19	55	,	,
-1379	20	55	earmarking	VBG
-1380	21	55	$	$
-1381	22	55	92	CD
-1382	23	55	billion	CD
-1383	24	55	to	TO
-1384	25	55	support	VB
-1385	26	55	small	JJ
-1386	27	55	and	CC
-1387	28	55	mid	JJ
-1388	29	55	-	HYPH
-1389	30	55	sized	JJ
-1390	31	55	businesses	NNS
-1391	32	55	,	,
-1392	33	55	which	WDT
-1393	34	55	also	RB
-1394	35	55	encompasses	VBZ
-1395	36	55	startups	NNS
-1396	37	55	.	.
-1397	1	56	But	CC
-1398	2	56	getting	VBG
-1399	3	56	startups	NNS
-1400	4	56	off	IN
-1401	5	56	the	DT
-1402	6	56	ground	NN
-1403	7	56	is	VBZ
-1404	8	56	one	CD
-1405	9	56	thing	NN
-1406	10	56	,	,
-1407	11	56	turning	VBG
-1408	12	56	them	PRP
-1409	13	56	into	IN
-1410	14	56	sustainable	JJ
-1411	15	56	businesses	NNS
-1412	16	56	is	VBZ
-1413	17	56	another	DT
-1414	18	56	.	.
-1415	1	57	It	PRP
-1416	2	57	seems	VBZ
-1417	3	57	only	RB
-1418	4	57	a	DT
-1419	5	57	matter	NN
-1420	6	57	of	IN
-1421	7	57	time	NN
-1422	8	57	before	IN
-1423	9	57	such	JJ
-1424	10	57	inflated	JJ
-1425	11	57	expectations	NNS
-1426	12	57	burst	VBP
-1427	13	57	,	,
-1428	14	57	if	IN
-1429	15	57	entrepreneurs	NNS
-1430	16	57	do	VBP
-1431	17	57	n’t	RB
-1432	18	57	keep	VB
-1433	19	57	at	IN
-1434	20	57	it	PRP
-1435	21	57	for	IN
-1436	22	57	the	DT
-1437	23	57	right	JJ
-1438	24	57	reasons	NNS
-1439	25	57	.	.
-1440	1	58	Another	DT
-1441	2	58	obstacle	NN
-1442	3	58	for	IN
-1443	4	58	many	JJ
-1444	5	58	entrepreneurs	NNS
-1445	6	58	is	VBZ
-1446	7	58	the	DT
-1447	8	58	apparent	JJ
-1448	9	58	lack	NN
-1449	10	58	of	IN
-1450	11	58	corporate	JJ
-1451	12	58	culture	NN
-1452	13	58	that	WDT
-1453	14	58	actively	RB
-1454	15	58	embraces	VBZ
-1455	16	58	M&A	NNP
-1456	17	58	deals	NNS
-1457	18	58	,	,
-1458	19	58	which	WDT
-1459	20	58	,	,
-1460	21	58	in	IN
-1461	22	58	turn	NN
-1462	23	58	,	,
-1463	24	58	rewards	NNS
-1464	25	58	founders	NNS
-1465	26	58	with	IN
-1466	27	58	attractive	JJ
-1467	28	58	valuations	NNS
-1468	29	58	.	.
-1469	1	59	According	VBG
-1470	2	59	to	IN
-1471	3	59	Go	VB
-1472	4	59	Young	NNP
-1473	5	59	-	HYPH
-1474	6	59	ha	NNP
-1475	7	59	,	,
-1476	8	59	chairman	NN
-1477	9	59	of	IN
-1478	10	59	The	DT
-1479	11	59	Korean	NNP
-1480	12	59	Business	NNP
-1481	13	59	Angels	NNPS
-1482	14	59	Association	NNP
-1483	15	59	,	,
-1484	16	59	the	DT
-1485	17	59	government	NN
-1486	18	59	remains	VBZ
-1487	19	59	slow	RB
-1488	20	59	at	IN
-1489	21	59	harnessing	VBG
-1490	22	59	the	DT
-1491	23	59	potential	NN
-1492	24	59	of	IN
-1493	25	59	younger	JJR
-1494	26	59	entrepreneurs	NNS
-1495	27	59	,	,
-1496	28	59	many	DT
-1497	29	59	of	IN
-1498	30	59	whom	WP
-1499	31	59	are	VBP
-1500	32	59	still	RB
-1501	33	59	under	IN
-1502	34	59	the	DT
-1503	35	59	spell	NN
-1504	36	59	of	IN
-1505	37	59	larger	JJR
-1506	38	59	conglomerates	NNS
-1507	39	59	that	WDT
-1508	40	59	hold	VBP
-1509	41	59	a	DT
-1510	42	59	monopoly	NN
-1511	43	59	on	IN
-1512	44	59	the	DT
-1513	45	59	country	NN
-1514	46	59	’s	XX
-1515	47	59	tech	NN
-1516	48	59	industries	NNS
-1517	49	59	.	.
+13	13	2	Solvency	NN
+14	14	2	2	CD
+15	15	2	regulation	NN
+16	16	2	norms	NNS
+17	17	2	.	.
+18	1	3	It	PRP
+19	2	3	will	MD
+20	3	3	create	VB
+21	4	3	a	DT
+22	5	3	real	JJ
+23	6	3	change	NN
+24	7	3	in	IN
+25	8	3	risk	NN
+26	9	3	management	NN
+27	10	3	practices	NNS
+28	11	3	.	.
+29	1	4	The	DT
+30	2	4	ORSA	NNP
+31	3	4	approach	NN
+32	4	4	of	IN
+33	5	4	the	DT
+34	6	4	second	JJ
+35	7	4	pillar	NN
+36	8	4	makes	VBZ
+37	9	4	the	DT
+38	10	4	capital	NN
+39	11	4	allocation	NN
+40	12	4	an	DT
+41	13	4	important	JJ
+42	14	4	exercise	NN
+43	15	4	for	IN
+44	16	4	all	DT
+45	17	4	insurers	NNS
+46	18	4	and	CC
+47	19	4	specially	RB
+48	20	4	for	IN
+49	21	4	groups	NNS
+50	22	4	.	.
+51	1	5	Considering	VBG
+52	2	5	multi	JJ
+53	3	5	-	HYPH
+54	4	5	branches	NNS
+55	5	5	firms	NNS
+56	6	5	,	,
+57	7	5	capital	NN
+58	8	5	allocation	NN
+59	9	5	has	VBZ
+60	10	5	to	TO
+61	11	5	be	VB
+62	12	5	based	VBN
+63	13	5	on	IN
+64	14	5	a	DT
+65	15	5	multivariate	NN
+66	16	5	risk	NN
+67	17	5	modeling	NN
+68	18	5	.	.
+69	1	6	Several	JJ
+70	2	6	allocation	NN
+71	3	6	methods	NNS
+72	4	6	are	VBP
+73	5	6	present	JJ
+74	6	6	in	IN
+75	7	6	the	DT
+76	8	6	literature	NN
+77	9	6	and	CC
+78	10	6	insurers	NNS
+79	11	6	practices	NNS
+80	12	6	.	.
+81	1	7	In	IN
+82	2	7	this	DT
+83	3	7	paper	NN
+84	4	7	,	,
+85	5	7	we	PRP
+86	6	7	present	VBP
+87	7	7	a	DT
+88	8	7	new	JJ
+89	9	7	risk	NN
+90	10	7	allocation	NN
+91	11	7	method	NN
+92	12	7	,	,
+93	13	7	we	PRP
+94	14	7	study	VB
+95	15	7	its	PRP$
+96	16	7	coherence	NN
+97	17	7	using	VBG
+98	18	7	an	DT
+99	19	7	axiomatic	JJ
+100	20	7	approach	NN
+101	21	7	,	,
+102	22	7	and	CC
+103	23	7	we	PRP
+104	24	7	try	VBP
+105	25	7	to	TO
+106	26	7	define	VB
+107	27	7	what	WP
+108	28	7	the	DT
+109	29	7	best	JJS
+110	30	7	allocation	NN
+111	31	7	choice	NN
+112	32	7	for	IN
+113	33	7	an	DT
+114	34	7	insurance	NN
+115	35	7	group	NN
+116	36	7	is	VBZ
+117	37	7	.	.
+118	1	8	Introduction	NN
+119	2	8	Solvency	NN
+120	3	8	2	CD
+121	4	8	standards	NNS
+122	5	8	will	MD
+123	6	8	make	VB
+124	7	8	a	DT
+125	8	8	radical	JJ
+126	9	8	change	NN
+127	10	8	in	IN
+128	11	8	risk	NN
+129	12	8	management	NN
+130	13	8	practices	NNS
+131	14	8	in	IN
+132	15	8	the	DT
+133	16	8	actuarial	JJ
+134	17	8	sector	NN
+135	18	8	.	.
+136	1	9	They	PRP
+137	2	9	are	VBP
+138	3	9	based	VBN
+139	4	9	on	IN
+140	5	9	a	DT
+141	6	9	strengthening	NN
+142	7	9	of	IN
+143	8	9	risk	NN
+144	9	9	control	NN
+145	10	9	and	CC
+146	11	9	minimization	NN
+147	12	9	of	IN
+148	13	9	a	DT
+149	14	9	ruin	NN
+150	15	9	probability	NN
+151	16	9	.	.
+152	1	10	The	DT
+153	2	10	determination	NN
+154	3	10	of	IN
+155	4	10	the	DT
+156	5	10	economic	JJ
+157	6	10	regulatory	JJ
+158	7	10	capital	NN
+159	8	10	will	MD
+160	9	10	be	VB
+161	10	10	faced	VBN
+162	11	10	under	IN
+163	12	10	this	DT
+164	13	10	prudential	JJ
+165	14	10	mechanism	NN
+166	15	10	with	IN
+167	16	10	a	DT
+168	17	10	kind	NN
+169	18	10	of	IN
+170	19	10	methodological	JJ
+171	20	10	revolution	NN
+172	21	10	.	.
+173	1	11	A	DT
+174	2	11	choices	NNS
+175	3	11	of	IN
+176	4	11	a	DT
+177	5	11	dependence	NN
+178	6	11	model	NN
+179	7	11	between	IN
+180	8	11	different	JJ
+181	9	11	risks	NNS
+182	10	11	and	CC
+183	11	11	of	IN
+184	12	11	an	DT
+185	13	11	aggregation	NN
+186	14	11	methodology	NN
+187	15	11	are	VBP
+188	16	11	both	DT
+189	17	11	required	VBN
+190	18	11	.	.
+191	1	12	In	IN
+192	2	12	the	DT
+193	3	12	prescribed	JJ
+194	4	12	Standard	NNP
+195	5	12	Formula	NNP
+196	6	12	,	,
+197	7	12	risks	NNS
+198	8	12	aggregation	NN
+199	9	12	is	VBZ
+200	10	12	done	VBN
+201	11	12	using	VBG
+202	12	12	correlation	NN
+203	13	12	matrices	NNS
+204	14	12	that	WDT
+205	15	12	connect	VBP
+206	16	12	families	NNS
+207	17	12	and	CC
+208	18	12	subfamilies	NNS
+209	19	12	of	IN
+210	20	12	risks	NNS
+211	21	12	.	.
+212	1	13	﻿Recently	RB
+213	2	13	the	DT
+214	3	13	proof	NN
+215	4	13	of	IN
+216	5	13	factorization	NN
+217	6	13	in	IN
+218	7	13	heavy	JJ
+219	8	13	quarkonium	NN
+220	9	13	production	NN
+221	10	13	in	IN
+222	11	13	NRQCD	NNP
+223	12	13	color	NN
+224	13	13	octet	NN
+225	14	13	mechanism	NN
+226	15	13	is	VBZ
+227	16	13	given	VBN
+228	17	13	at	IN
+229	18	13	next	RB
+230	19	13	-	HYPH
+231	20	13	to	IN
+232	21	13	-	HYPH
+233	22	13	next	RB
+234	23	13	-	HYPH
+235	24	13	to	IN
+236	25	13	-	HYPH
+237	26	13	leading	VBG
+238	27	13	order	NN
+239	28	13	(	-LRB-
+240	29	13	NNLO	NNP
+241	30	13	)	-RRB-
+242	31	13	in	IN
+243	32	13	coupling	VBG
+244	33	13	constant	JJ
+245	34	13	by	IN
+246	35	13	using	VBG
+247	36	13	diagrammatic	JJ
+248	37	13	method	NN
+249	38	13	of	IN
+250	39	13	QCD	NNP
+251	40	13	.	.
+252	1	14	In	IN
+253	2	14	this	DT
+254	3	14	paper	NN
+255	4	14	we	PRP
+256	5	14	prove	VBP
+257	6	14	factorization	NN
+258	7	14	in	IN
+259	8	14	heavy	JJ
+260	9	14	quarkonium	NN
+261	10	14	production	NN
+262	11	14	in	IN
+263	12	14	NRQCD	NNP
+264	13	14	color	NN
+265	14	14	octet	NN
+266	15	14	mechanism	NN
+267	16	14	at	IN
+268	17	14	all	DT
+269	18	14	order	NN
+270	19	14	in	IN
+271	20	14	coupling	VBG
+272	21	14	constant	JJ
+273	22	14	by	IN
+274	23	14	using	VBG
+275	24	14	path	NN
+276	25	14	integral	JJ
+277	26	14	method	NN
+278	27	14	of	IN
+279	28	14	QCD	NNP
+280	29	14	.	.
+281	1	15	Our	PRP$
+282	2	15	proof	NN
+283	3	15	is	VBZ
+284	4	15	valid	JJ
+285	5	15	to	IN
+286	6	15	all	DT
+287	7	15	powers	NNS
+288	8	15	in	IN
+289	9	15	the	DT
+290	10	15	heavy	JJ
+291	11	15	quark	NN
+292	12	15	relative	JJ
+293	13	15	velocity	NN
+294	14	15	.	.
+295	1	16	We	PRP
+296	2	16	find	VBP
+297	3	16	that	IN
+298	4	16	the	DT
+299	5	16	gauge	NN
+300	6	16	invariance	NN
+301	7	16	and	CC
+302	8	16	the	DT
+303	9	16	factorization	NN
+304	10	16	at	IN
+305	11	16	all	DT
+306	12	16	order	NN
+307	13	16	in	IN
+308	14	16	coupling	VBG
+309	15	16	constant	JJ
+310	16	16	require	VBP
+311	17	16	gauge	NN
+312	18	16	-	HYPH
+313	19	16	completed	VBN
+314	20	16	non	JJ
+315	21	16	-	HYPH
+316	22	16	perturbative	JJ
+317	23	16	NRQCD	NNP
+318	24	16	matrix	NN
+319	25	16	elements	NNS
+320	26	16	that	WDT
+321	27	16	were	VBD
+322	28	16	introduced	VBN
+323	29	16	previously	RB
+324	30	16	to	TO
+325	31	16	prove	VB
+326	32	16	factorization	NN
+327	33	16	at	IN
+328	34	16	NNLO	NNP
+329	35	16	.	.
+330	1	17	INTRODUCTION	NN
+331	2	17	In	IN
+332	3	17	the	DT
+333	4	17	last	JJ
+334	5	17	two	CD
+335	6	17	decades	NNS
+336	7	17	,	,
+337	8	17	the	DT
+338	9	17	NRQCD	NNP
+339	10	17	color	NN
+340	11	17	octet	NN
+341	12	17	mechanism	NN
+342	13	17	[	-LRB-
+343	14	17	1	CD
+344	15	17	]	-RRB-
+345	16	17	for	IN
+346	17	17	heavy	JJ
+347	18	17	quarkonium	NN
+348	19	17	production	NN
+349	20	17	has	VBZ
+350	21	17	been	VBN
+351	22	17	very	RB
+352	23	17	successful	JJ
+353	24	17	in	IN
+354	25	17	explaining	VBG
+355	26	17	experimental	JJ
+356	27	17	data	NNS
+357	28	17	at	IN
+358	29	17	high	JJ
+359	30	17	energy	NN
+360	31	17	colliders	NNS
+361	32	17	such	JJ
+362	33	17	as	IN
+363	34	17	at	IN
+364	35	17	Tevatron	NNP
+365	36	17	[	-LRB-
+366	37	17	2	CD
+367	38	17	]	-RRB-
+368	39	17	and	CC
+369	40	17	at	IN
+370	41	17	LHC	NNP
+371	42	17	[	-LRB-
+372	43	17	3	CD
+373	44	17	]	-RRB-
+374	45	17	.	.
+375	1	18	In	IN
+376	2	18	its	PRP$
+377	3	18	original	JJ
+378	4	18	formulation	NN
+379	5	18	[	-LRB-
+380	6	18	1	CD
+381	7	18	]	-RRB-
+382	8	18	the	DT
+383	9	18	proof	NN
+384	10	18	of	IN
+385	11	18	factorization	NN
+386	12	18	in	IN
+387	13	18	heavy	JJ
+388	14	18	quarkonium	NN
+389	15	18	production	NN
+390	16	18	in	IN
+391	17	18	NRQCD	NNP
+392	18	18	color	NN
+393	19	18	octet	NN
+394	20	18	mechanism	NN
+395	21	18	was	VBD
+396	22	18	lacking	VBG
+397	23	18	.	.
+398	1	19	The	DT
+399	2	19	proof	NN
+400	3	19	of	IN
+401	4	19	factorization	NN
+402	5	19	is	VBZ
+403	6	19	an	DT
+404	7	19	essential	JJ
+405	8	19	requirement	NN
+406	9	19	to	TO
+407	10	19	study	VB
+408	11	19	heavy	JJ
+409	12	19	quarkonium	NN
+410	13	19	production	NN
+411	14	19	at	IN
+412	15	19	high	JJ
+413	16	19	energy	NN
+414	17	19	colliders	NNS
+415	18	19	.	.
+416	1	20	Factorization	NN
+417	2	20	refers	VBZ
+418	3	20	to	IN
+419	4	20	separation	NN
+420	5	20	of	IN
+421	6	20	short	JJ
+422	7	20	-	HYPH
+423	8	20	distance	NN
+424	9	20	effects	NNS
+425	10	20	from	IN
+426	11	20	long	JJ
+427	12	20	-	HYPH
+428	13	20	distance	NN
+429	14	20	effects	NNS
+430	15	20	in	IN
+431	16	20	quantum	JJ
+432	17	20	field	NN
+433	18	20	theory	NN
+434	19	20	.	.
+435	1	21	﻿We	CD
+436	2	21	propose	VB
+437	3	21	algorithms	NNS
+438	4	21	to	TO
+439	5	21	approximate	VB
+440	6	21	directed	VBN
+441	7	21	information	NN
+442	8	21	graphs	NNS
+443	9	21	.	.
+444	1	22	Directed	JJ
+445	2	22	information	NN
+446	3	22	graphs	NNS
+447	4	22	are	VBP
+448	5	22	probabilistic	JJ
+449	6	22	graphical	JJ
+450	7	22	models	NNS
+451	8	22	that	WDT
+452	9	22	depict	VBP
+453	10	22	causal	JJ
+454	11	22	dependencies	NNS
+455	12	22	between	IN
+456	13	22	stochastic	NN
+457	14	22	processes	NNS
+458	15	22	in	IN
+459	16	22	a	DT
+460	17	22	network	NN
+461	18	22	.	.
+462	1	23	The	DT
+463	2	23	proposed	VBN
+464	3	23	algorithms	NN
+465	4	23	identify	VBP
+466	5	23	optimal	JJ
+467	6	23	and	CC
+468	7	23	near	IN
+469	8	23	-	HYPH
+470	9	23	optimal	JJ
+471	10	23	approximations	NNS
+472	11	23	in	IN
+473	12	23	terms	NNS
+474	13	23	of	IN
+475	14	23	Kullback	NNP
+476	15	23	-	HYPH
+477	16	23	Leibler	NNP
+478	17	23	divergence	NN
+479	18	23	.	.
+480	1	24	The	DT
+481	2	24	user	NN
+482	3	24	-	HYPH
+483	4	24	chosen	VBN
+484	5	24	sparsity	NN
+485	6	24	trades	NNS
+486	7	24	off	RP
+487	8	24	the	DT
+488	9	24	quality	NN
+489	10	24	of	IN
+490	11	24	the	DT
+491	12	24	approximation	NN
+492	13	24	against	IN
+493	14	24	visual	JJ
+494	15	24	conciseness	NN
+495	16	24	and	CC
+496	17	24	computational	JJ
+497	18	24	tractability	NN
+498	19	24	.	.
+499	1	25	One	CD
+500	2	25	class	NN
+501	3	25	of	IN
+502	4	25	approximations	NNS
+503	5	25	contains	VBZ
+504	6	25	graphs	NNS
+505	7	25	with	IN
+506	8	25	specified	VBN
+507	9	25	in	IN
+508	10	25	-	HYPH
+509	11	25	degrees	NNS
+510	12	25	.	.
+511	1	26	Another	DT
+512	2	26	class	NN
+513	3	26	additionally	RB
+514	4	26	requires	VBZ
+515	5	26	that	IN
+516	6	26	the	DT
+517	7	26	graph	NN
+518	8	26	is	VBZ
+519	9	26	connected	VBN
+520	10	26	.	.
+521	1	27	For	IN
+522	2	27	both	DT
+523	3	27	classes	NNS
+524	4	27	,	,
+525	5	27	we	PRP
+526	6	27	propose	VBP
+527	7	27	algorithms	NNS
+528	8	27	to	TO
+529	9	27	identify	VB
+530	10	27	the	DT
+531	11	27	optimal	JJ
+532	12	27	approximations	NNS
+533	13	27	and	CC
+534	14	27	also	RB
+535	15	27	near	RB
+536	16	27	-	HYPH
+537	17	27	optimal	JJ
+538	18	27	approximations	NNS
+539	19	27	,	,
+540	20	27	using	VBG
+541	21	27	a	DT
+542	22	27	novel	JJ
+543	23	27	relaxation	NN
+544	24	27	of	IN
+545	25	27	submodularity	NN
+546	26	27	.	.
+547	1	28	We	PRP
+548	2	28	also	RB
+549	3	28	propose	VBP
+550	4	28	algorithms	NNS
+551	5	28	to	TO
+552	6	28	identify	VB
+553	7	28	the	DT
+554	8	28	r	NN
+555	9	28	-	HYPH
+556	10	28	best	JJS
+557	11	28	approximations	NNS
+558	12	28	among	IN
+559	13	28	these	DT
+560	14	28	classes	NNS
+561	15	28	,	,
+562	16	28	enabling	VBG
+563	17	28	robust	JJ
+564	18	28	decision	NN
+565	19	28	making	NN
+566	20	28	.	.
+567	1	29	Keywords	NNS
+568	2	29	:	:
+569	3	29	probabilistic	JJ
+570	4	29	graphical	JJ
+571	5	29	models	NNS
+572	6	29	,	,
+573	7	29	network	NN
+574	8	29	inference	NN
+575	9	29	,	,
+576	10	29	causality	NN
+577	11	29	,	,
+578	12	29	submodularity	NN
+579	13	29	,	,
+580	14	29	approximation	NN
+581	15	29	algorithms	NNS
+582	16	29	1	CD
+583	17	29	.	.
+584	1	30	Introduction	NN
+585	2	30	Many	JJ
+586	3	30	fields	NNS
+587	4	30	of	IN
+588	5	30	the	DT
+589	6	30	sciences	NNS
+590	7	30	and	CC
+591	8	30	engineering	NN
+592	9	30	require	VB
+593	10	30	analysis	NN
+594	11	30	,	,
+595	12	30	modeling	NN
+596	13	30	,	,
+597	14	30	and	CC
+598	15	30	decision	NN
+599	16	30	making	NN
+600	17	30	using	VBG
+601	18	30	networks	NNS
+602	19	30	,	,
+603	20	30	typically	RB
+604	21	30	represented	VBN
+605	22	30	by	IN
+606	23	30	graphs	NNS
+607	24	30	.	.
+608	1	31	Social	JJ
+609	2	31	networks	NNS
+610	3	31	,	,
+611	4	31	financial	JJ
+612	5	31	networks	NNS
+613	6	31	,	,
+614	7	31	and	CC
+615	8	31	biological	JJ
+616	9	31	networks	NNS
+617	10	31	are	VBP
+618	11	31	a	DT
+619	12	31	few	JJ
+620	13	31	categories	NNS
+621	14	31	that	WDT
+622	15	31	are	VBP
+623	16	31	relevant	JJ
+624	17	31	not	RB
+625	18	31	only	RB
+626	19	31	academically	RB
+627	20	31	but	CC
+628	21	31	also	RB
+629	22	31	in	IN
+630	23	31	daily	JJ
+631	24	31	life	NN
+632	25	31	.	.
+633	1	32	A	DT
+634	2	32	major	JJ
+635	3	32	challenge	NN
+636	4	32	for	IN
+637	5	32	studying	VBG
+638	6	32	networks	NNS
+639	7	32	is	VBZ
+640	8	32	identifying	VBG
+641	9	32	a	DT
+642	10	32	concise	JJ
+643	11	32	topology	NN
+644	12	32	,	,
+645	13	32	such	JJ
+646	14	32	as	IN
+647	15	32	who	WP
+648	16	32	strongly	RB
+649	17	32	influences	VBZ
+650	18	32	whom	WP
+651	19	32	in	IN
+652	20	32	a	DT
+653	21	32	social	JJ
+654	22	32	network	NN
+655	23	32	.	.
+656	1	33	Real	JJ
+657	2	33	world	NN
+658	3	33	networks	NNS
+659	4	33	are	VBP
+660	5	33	often	RB
+661	6	33	large—	JJ
+662	7	33	there	EX
+663	8	33	are	VBP
+664	9	33	tens	NNS
+665	10	33	of	IN
+666	11	33	thousands	NNS
+667	12	33	of	IN
+668	13	33	human	JJ
+669	14	33	genes	NNS
+670	15	33	and	CC
+671	16	33	trillions	NNS
+672	17	33	of	IN
+673	18	33	connections	NNS
+674	19	33	in	IN
+675	20	33	the	DT
+676	21	33	human	JJ
+677	22	33	brain	NN
+678	23	33	.	.
+679	1	34	﻿Based	VBN
+680	2	34	on	IN
+681	3	34	the	DT
+682	4	34	concept	NN
+683	5	34	of	IN
+684	6	34	DNA	NN
+685	7	34	strand	NN
+686	8	34	displacement	NN
+687	9	34	and	CC
+688	10	34	DNA	NN
+689	11	34	strand	NN
+690	12	34	algebra	NN
+691	13	34	we	PRP
+692	14	34	have	VBP
+693	15	34	developed	VBN
+694	16	34	a	DT
+695	17	34	method	NN
+696	18	34	for	IN
+697	19	34	logical	JJ
+698	20	34	inference	NN
+699	21	34	which	WDT
+700	22	34	is	VBZ
+701	23	34	not	RB
+702	24	34	based	VBN
+703	25	34	on	IN
+704	26	34	silicon	NN
+705	27	34	based	VBN
+706	28	34	computing	NN
+707	29	34	.	.
+708	1	35	Essentially	RB
+709	2	35	,	,
+710	3	35	it	PRP
+711	4	35	is	VBZ
+712	5	35	a	DT
+713	6	35	paradigm	NN
+714	7	35	shift	NN
+715	8	35	from	IN
+716	9	35	silicon	NN
+717	10	35	to	IN
+718	11	35	carbon	NN
+719	12	35	.	.
+720	1	36	In	IN
+721	2	36	this	DT
+722	3	36	paper	NN
+723	4	36	we	PRP
+724	5	36	have	VBP
+725	6	36	considered	VBN
+726	7	36	the	DT
+727	8	36	inference	NN
+728	9	36	mechanism	NN
+729	10	36	,	,
+730	11	36	viz	NN
+731	12	36	.	.
+732	1	37	modus	NN
+733	2	37	ponens	NNS
+734	3	37	,	,
+735	4	37	to	TO
+736	5	37	draw	VB
+737	6	37	conclusion	NN
+738	7	37	from	IN
+739	8	37	any	DT
+740	9	37	observed	JJ
+741	10	37	fact	NN
+742	11	37	.	.
+743	1	38	Thus	RB
+744	2	38	,	,
+745	3	38	the	DT
+746	4	38	present	JJ
+747	5	38	approach	NN
+748	6	38	to	IN
+749	7	38	logical	JJ
+750	8	38	inference	NN
+751	9	38	based	VBN
+752	10	38	on	IN
+753	11	38	DNA	NNP
+754	12	38	strand	NN
+755	13	38	algebra	NN
+756	14	38	is	VBZ
+757	15	38	basically	RB
+758	16	38	an	DT
+759	17	38	attempt	NN
+760	18	38	to	TO
+761	19	38	develop	VB
+762	20	38	expert	NN
+763	21	38	system	NN
+764	22	38	design	NN
+765	23	38	in	IN
+766	24	38	the	DT
+767	25	38	domain	NN
+768	26	38	of	IN
+769	27	38	DNA	NN
+770	28	38	computing	NN
+771	29	38	.	.
+772	1	39	We	PRP
+773	2	39	have	VBP
+774	3	39	illustrated	VBN
+775	4	39	our	PRP$
+776	5	39	methodology	NN
+777	6	39	with	IN
+778	7	39	respect	NN
+779	8	39	to	IN
+780	9	39	worked	VB
+781	10	39	out	RP
+782	11	39	example	NN
+783	12	39	.	.
+784	1	40	Our	PRP$
+785	2	40	methodology	NN
+786	3	40	is	VBZ
+787	4	40	very	RB
+788	5	40	flexible	JJ
+789	6	40	for	IN
+790	7	40	implementation	NN
+791	8	40	of	IN
+792	9	40	different	JJ
+793	10	40	expert	NN
+794	11	40	system	NN
+795	12	40	applications	NNS
+796	13	40	.	.
+797	1	41	Keywords	NNPS
+798	2	41	:	:
+799	3	41	logical	JJ
+800	4	41	inference	NN
+801	5	41	,	,
+802	6	41	DNA	NNP
+803	7	41	strand	NN
+804	8	41	algebra	NN
+805	9	41	;	:
+806	10	41	DNA	NNP
+807	11	41	gate	NN
+808	12	41	;	:
+809	13	41	DNA	NNP
+810	14	41	signal	NN
+811	15	41	;	:
+812	16	41	process	NN
+813	17	41	algebra	NN
+814	18	41	;	:
+815	19	41	DNA	NN
+816	20	41	computing	NN
+817	21	41	;	:
+818	22	41	modus	NN
+819	23	41	ponens	NNS
+820	24	41	;	:
+821	25	41	strand	NN
+822	26	41	displacement	NN
+823	27	41	;	:
+824	28	41	molecular	JJ
+825	29	41	computing	NN
+826	30	41	;	:
+827	31	41	expert	JJ
+828	32	41	system	NN
+829	33	41	approach	NN
+830	34	41	.	.
+831	1	42	1	LS
+832	2	42	.	.
+833	3	42	Introduction	VB
+834	4	42	Conventional	JJ
+835	5	42	silicon	NN
+836	6	42	based	VBN
+837	7	42	computing	NN
+838	8	42	has	VBZ
+839	9	42	been	VBN
+840	10	42	successful	JJ
+841	11	42	over	IN
+842	12	42	the	DT
+843	13	42	past	JJ
+844	14	42	several	JJ
+845	15	42	decades	NNS
+846	16	42	.	.
+847	1	43	It	PRP
+848	2	43	is	VBZ
+849	3	43	fast	JJ
+850	4	43	,	,
+851	5	43	flexible	JJ
+852	6	43	,	,
+853	7	43	and	CC
+854	8	43	well	RB
+855	9	43	understood	VBN
+856	10	43	.	.
+857	1	44	But	CC
+858	2	44	it	PRP
+859	3	44	has	VBZ
+860	4	44	reached	VBN
+861	5	44	its	PRP$
+862	6	44	limitations	NNS
+863	7	44	of	IN
+864	8	44	design	NN
+865	9	44	complexity	NN
+866	10	44	,	,
+867	11	44	processing	NN
+868	12	44	power	NN
+869	13	44	,	,
+870	14	44	memory	NN
+871	15	44	,	,
+872	16	44	energy	NN
+873	17	44	consumption	NN
+874	18	44	,	,
+875	19	44	density	NN
+876	20	44	and	CC
+877	21	44	heat	NN
+878	22	44	dissipation	NN
+879	23	44	.	.
+880	1	45	Alternatives	NNS
+881	2	45	to	IN
+882	3	45	these	DT
+883	4	45	traditional	JJ
+884	5	45	methods	NNS
+885	6	45	of	IN
+886	7	45	building	VBG
+887	8	45	computers	NNS
+888	9	45	have	VBP
+889	10	45	been	VBN
+890	11	45	proposed	VBN
+891	12	45	and	CC
+892	13	45	in	IN
+893	14	45	recent	JJ
+894	15	45	past	IN
+895	16	45	molecular	JJ
+896	17	45	computing	NN
+897	18	45	has	VBZ
+898	19	45	gained	VBN
+899	20	45	considerable	JJ
+900	21	45	attention	NN
+901	22	45	for	IN
+902	23	45	non	AFX
+903	24	45	-	HYPH
+904	25	45	silicon	NN
+905	26	45	based	VBN
+906	27	45	computing	NN
+907	28	45	which	WDT
+908	29	45	can	MD
+909	30	45	overcome	VB
+910	31	45	conventional	JJ
+911	32	45	computation	NN
+912	33	45	problems	NNS
+913	34	45	.	.
+914	1	46	The	DT
+915	2	46	Watson	NNP
+916	3	46	-	HYPH
+917	4	46	Crick	NNP
+918	5	46	base	NN
+919	6	46	pairing	NN
+920	7	46	makes	VBZ
+921	8	46	DNA	NNP
+922	9	46	a	DT
+923	10	46	powerful	JJ
+924	11	46	tool	NN
+925	12	46	for	IN
+926	13	46	engineering	NN
+927	14	46	at	IN
+928	15	46	nano	NN
+929	16	46	-	HYPH
+930	17	46	scale	NN
+931	18	46	.	.
+932	1	47	﻿Trip	JJ
+933	2	47	distribution	NN
+934	3	47	laws	NNS
+935	4	47	are	VBP
+936	5	47	basic	JJ
+937	6	47	for	IN
+938	7	47	the	DT
+939	8	47	travel	NN
+940	9	47	demand	NN
+941	10	47	characterization	NN
+942	11	47	needed	VBN
+943	12	47	in	IN
+944	13	47	transport	NN
+945	14	47	and	CC
+946	15	47	urban	JJ
+947	16	47	planning	NN
+948	17	47	.	.
+949	1	48	Several	JJ
+950	2	48	approaches	NNS
+951	3	48	have	VBP
+952	4	48	been	VBN
+953	5	48	considered	VBN
+954	6	48	in	IN
+955	7	48	the	DT
+956	8	48	last	JJ
+957	9	48	years	NNS
+958	10	48	.	.
+959	1	49	One	CD
+960	2	49	of	IN
+961	3	49	them	PRP
+962	4	49	is	VBZ
+963	5	49	the	DT
+964	6	49	so	RB
+965	7	49	-	HYPH
+966	8	49	called	VBN
+967	9	49	gravity	NN
+968	10	49	law	NN
+969	11	49	,	,
+970	12	49	in	IN
+971	13	49	which	WDT
+972	14	49	the	DT
+973	15	49	number	NN
+974	16	49	of	IN
+975	17	49	trips	NNS
+976	18	49	is	VBZ
+977	19	49	assumed	VBN
+978	20	49	to	TO
+979	21	49	be	VB
+980	22	49	related	VBN
+981	23	49	to	IN
+982	24	49	the	DT
+983	25	49	population	NN
+984	26	49	at	IN
+985	27	49	origin	NN
+986	28	49	and	CC
+987	29	49	destination	NN
+988	30	49	and	CC
+989	31	49	to	TO
+990	32	49	decrease	VB
+991	33	49	with	IN
+992	34	49	the	DT
+993	35	49	distance	NN
+994	36	49	.	.
+995	1	50	The	DT
+996	2	50	mathematical	JJ
+997	3	50	expression	NN
+998	4	50	of	IN
+999	5	50	this	DT
+1000	6	50	law	NN
+1001	7	50	resembles	VBZ
+1002	8	50	Newton	NNP
+1003	9	50	’s	NNP
+1004	10	50	law	NN
+1005	11	50	of	IN
+1006	12	50	gravity	NN
+1007	13	50	,	,
+1008	14	50	which	WDT
+1009	15	50	explains	VBZ
+1010	16	50	its	PRP$
+1011	17	50	name	NN
+1012	18	50	.	.
+1013	1	51	Another	DT
+1014	2	51	popular	JJ
+1015	3	51	approach	NN
+1016	4	51	is	VBZ
+1017	5	51	inspired	VBN
+1018	6	51	by	IN
+1019	7	51	the	DT
+1020	8	51	theory	NN
+1021	9	51	of	IN
+1022	10	51	intervening	VBG
+1023	11	51	opportunities	NNS
+1024	12	51	and	CC
+1025	13	51	it	PRP
+1026	14	51	has	VBZ
+1027	15	51	been	VBN
+1028	16	51	concreted	VBN
+1029	17	51	into	IN
+1030	18	51	the	DT
+1031	19	51	so	RB
+1032	20	51	-	HYPH
+1033	21	51	called	VBN
+1034	22	51	radiation	NN
+1035	23	51	models	NNS
+1036	24	51	.	.
+1037	1	52	Individuals	NNS
+1038	2	52	are	VBP
+1039	3	52	supposed	VBN
+1040	4	52	to	TO
+1041	5	52	travel	VB
+1042	6	52	until	IN
+1043	7	52	they	PRP
+1044	8	52	find	VBP
+1045	9	52	a	DT
+1046	10	52	job	NN
+1047	11	52	opportunity	NN
+1048	12	52	,	,
+1049	13	52	so	IN
+1050	14	52	the	DT
+1051	15	52	population	NN
+1052	16	52	and	CC
+1053	17	52	jobs	NNS
+1054	18	52	spatial	JJ
+1055	19	52	distributions	NNS
+1056	20	52	naturally	RB
+1057	21	52	lead	VBP
+1058	22	52	to	IN
+1059	23	52	a	DT
+1060	24	52	trip	NN
+1061	25	52	flow	NN
+1062	26	52	network	NN
+1063	27	52	.	.
+1064	1	53	In	IN
+1065	2	53	this	DT
+1066	3	53	paper	NN
+1067	4	53	,	,
+1068	5	53	we	PRP
+1069	6	53	perform	VBP
+1070	7	53	a	DT
+1071	8	53	thorough	JJ
+1072	9	53	comparison	NN
+1073	10	53	between	IN
+1074	11	53	the	DT
+1075	12	53	gravity	NN
+1076	13	53	and	CC
+1077	14	53	the	DT
+1078	15	53	radiation	NN
+1079	16	53	approaches	NNS
+1080	17	53	in	IN
+1081	18	53	their	PRP$
+1082	19	53	ability	NN
+1083	20	53	at	IN
+1084	21	53	estimating	VBG
+1085	22	53	commuting	VBG
+1086	23	53	flows	NNS
+1087	24	53	.	.
+1088	1	54	We	PRP
+1089	2	54	test	VBP
+1090	3	54	the	DT
+1091	4	54	gravity	NN
+1092	5	54	and	CC
+1093	6	54	the	DT
+1094	7	54	radiation	NN
+1095	8	54	laws	NNS
+1096	9	54	against	IN
+1097	10	54	empirical	JJ
+1098	11	54	trip	NN
+1099	12	54	data	NNS
+1100	13	54	at	IN
+1101	14	54	different	JJ
+1102	15	54	scales	NNS
+1103	16	54	and	CC
+1104	17	54	coming	VBG
+1105	18	54	from	IN
+1106	19	54	different	JJ
+1107	20	54	countries	NNS
+1108	21	54	.	.
+1109	1	55	Different	JJ
+1110	2	55	versions	NNS
+1111	3	55	of	IN
+1112	4	55	the	DT
+1113	5	55	gravity	NN
+1114	6	55	and	CC
+1115	7	55	the	DT
+1116	8	55	radiation	NN
+1117	9	55	laws	NNS
+1118	10	55	are	VBP
+1119	11	55	used	VBN
+1120	12	55	to	TO
+1121	13	55	estimate	VB
+1122	14	55	the	DT
+1123	15	55	probability	NN
+1124	16	55	that	IN
+1125	17	55	an	DT
+1126	18	55	individual	NN
+1127	19	55	has	VBZ
+1128	20	55	to	TO
+1129	21	55	commute	VB
+1130	22	55	from	IN
+1131	23	55	one	CD
+1132	24	55	unit	NN
+1133	25	55	to	IN
+1134	26	55	another	DT
+1135	27	55	,	,
+1136	28	55	called	VBN
+1137	29	55	trip	NN
+1138	30	55	distribution	NN
+1139	31	55	law	NN
+1140	32	55	.	.
+1141	1	56	Based	VBN
+1142	2	56	on	IN
+1143	3	56	these	DT
+1144	4	56	probability	NN
+1145	5	56	distribution	NN
+1146	6	56	the	DT
+1147	7	56	commuting	NN
+1148	8	56	networks	NNS
+1149	9	56	are	VBP
+1150	10	56	simulated	VBN
+1151	11	56	with	IN
+1152	12	56	different	JJ
+1153	13	56	trip	NN
+1154	14	56	distribution	NN
+1155	15	56	models	NNS
+1156	16	56	.	.
+1157	1	57	﻿We	TO
+1158	2	57	propose	VB
+1159	3	57	a	DT
+1160	4	57	simple	JJ
+1161	5	57	mean	JJ
+1162	6	57	-	HYPH
+1163	7	57	field	NN
+1164	8	57	ansatz	NN
+1165	9	57	to	TO
+1166	10	57	study	VB
+1167	11	57	phase	NN
+1168	12	57	transitions	NNS
+1169	13	57	from	IN
+1170	14	57	a	DT
+1171	15	57	topological	JJ
+1172	16	57	phase	NN
+1173	17	57	to	IN
+1174	18	57	a	DT
+1175	19	57	trivial	JJ
+1176	20	57	phase	NN
+1177	21	57	.	.
+1178	1	58	We	PRP
+1179	2	58	probe	VBP
+1180	3	58	the	DT
+1181	4	58	efficiency	NN
+1182	5	58	of	IN
+1183	6	58	this	DT
+1184	7	58	approach	NN
+1185	8	58	by	IN
+1186	9	58	considering	VBG
+1187	10	58	the	DT
+1188	11	58	string	NN
+1189	12	58	-	HYPH
+1190	13	58	net	NN
+1191	14	58	model	NN
+1192	15	58	in	IN
+1193	16	58	the	DT
+1194	17	58	presence	NN
+1195	18	58	of	IN
+1196	19	58	a	DT
+1197	20	58	string	NN
+1198	21	58	tension	NN
+1199	22	58	for	IN
+1200	23	58	any	DT
+1201	24	58	anyon	NN
+1202	25	58	theory	NN
+1203	26	58	.	.
+1204	1	59	Such	PDT
+1205	2	59	a	DT
+1206	3	59	perturbation	NN
+1207	4	59	is	VBZ
+1208	5	59	known	VBN
+1209	6	59	to	TO
+1210	7	59	be	VB
+1211	8	59	responsible	JJ
+1212	9	59	for	IN
+1213	10	59	a	DT
+1214	11	59	deconfinement	NN
+1215	12	59	-	HYPH
+1216	13	59	confinement	NN
+1217	14	59	phase	NN
+1218	15	59	transition	NN
+1219	16	59	which	WDT
+1220	17	59	is	VBZ
+1221	18	59	well	RB
+1222	19	59	described	VBN
+1223	20	59	by	IN
+1224	21	59	the	DT
+1225	22	59	present	JJ
+1226	23	59	variational	JJ
+1227	24	59	setup	NN
+1228	25	59	.	.
+1229	1	60	We	PRP
+1230	2	60	argue	VBP
+1231	3	60	that	IN
+1232	4	60	mean	JJ
+1233	5	60	-	HYPH
+1234	6	60	field	NN
+1235	7	60	results	NNS
+1236	8	60	become	VBP
+1237	9	60	exact	JJ
+1238	10	60	in	IN
+1239	11	60	the	DT
+1240	12	60	limit	NN
+1241	13	60	of	IN
+1242	14	60	large	JJ
+1243	15	60	total	JJ
+1244	16	60	quantum	JJ
+1245	17	60	dimension	NN
+1246	18	60	.	.
+1247	1	61	PACS	NNP
+1248	2	61	numbers	NNS
+1249	3	61	:	:
+1250	4	61	05.30.Pr	NFP
+1251	1	62	,	,
+1252	2	62	05.30.Rt	NFP
+1253	3	62	,	,
+1254	4	62	71.10.Pm	LS
+1255	5	62	,	,
+1256	6	62	75.10.Jm	VB
+1257	7	62	The	DT
+1258	8	62	blend	NN
+1259	9	62	of	IN
+1260	10	62	quantum	JJ
+1261	11	62	computation	NN
+1262	12	62	and	CC
+1263	13	62	of	IN
+1264	14	62	topological	JJ
+1265	15	62	phases	NNS
+1266	16	62	of	IN
+1267	17	62	matter	NN
+1268	18	62	[	-LRB-
+1269	19	62	1	CD
+1270	20	62	]	-RRB-
+1271	21	62	have	VBP
+1272	22	62	led	VBN
+1273	23	62	to	IN
+1274	24	62	the	DT
+1275	25	62	idea	NN
+1276	26	62	of	IN
+1277	27	62	topological	JJ
+1278	28	62	quantum	JJ
+1279	29	62	computation	NN
+1280	30	62	[	-LRB-
+1281	31	62	2–4	NN
+1282	32	62	]	-RRB-
+1283	33	62	.	.
+1284	1	63	In	IN
+1285	2	63	this	DT
+1286	3	63	field	NN
+1287	4	63	,	,
+1288	5	63	the	DT
+1289	6	63	essential	JJ
+1290	7	63	ingredient	NN
+1291	8	63	is	VBZ
+1292	9	63	the	DT
+1293	10	63	construction	NN
+1294	11	63	of	IN
+1295	12	63	physical	JJ
+1296	13	63	systems	NNS
+1297	14	63	sustaining	VBG
+1298	15	63	exotic	JJ
+1299	16	63	excitations	NNS
+1300	17	63	known	VBN
+1301	18	63	as	IN
+1302	19	63	non	AFX
+1303	20	63	-	HYPH
+1304	21	63	Abelian	JJ
+1305	22	63	anyons	NNS
+1306	23	63	(	-LRB-
+1307	24	63	see	VB
+1308	25	63	Ref	NNP
+1309	26	63	.	.
+1310	1	64	[	-LRB-
+1311	2	64	5	CD
+1312	3	64	]	-RRB-
+1313	4	64	for	IN
+1314	5	64	a	DT
+1315	6	64	review	NN
+1316	7	64	)	-RRB-
+1317	8	64	.	.
+1318	1	65	Being	VBG
+1319	2	65	genuinely	RB
+1320	3	65	non	AFX
+1321	4	65	local	JJ
+1322	5	65	,	,
+1323	6	65	these	DT
+1324	7	65	anyons	NNS
+1325	8	65	allow	VBP
+1326	9	65	for	IN
+1327	10	65	efficient	JJ
+1328	11	65	storage	NN
+1329	12	65	and	CC
+1330	13	65	manipulation	NN
+1331	14	65	of	IN
+1332	15	65	quantum	JJ
+1333	16	65	information	NN
+1334	17	65	.	.
+1335	1	66	Indeed	RB
+1336	2	66	,	,
+1337	3	66	topologically	RB
+1338	4	66	ordered	VBN
+1339	5	66	systems	NNS
+1340	6	66	[	-LRB-
+1341	7	66	1	CD
+1342	8	66	]	-RRB-
+1343	9	66	are	VBP
+1344	10	66	stable	JJ
+1345	11	66	under	IN
+1346	12	66	local	JJ
+1347	13	66	perturbations	NNS
+1348	14	66	[	-LRB-
+1349	15	66	6	CD
+1350	16	66	]	-RRB-
+1351	17	66	and	CC
+1352	18	66	hence	RB
+1353	19	66	protected	VBN
+1354	20	66	against	IN
+1355	21	66	undesirable	JJ
+1356	22	66	effects	NNS
+1357	23	66	such	JJ
+1358	24	66	as	IN
+1359	25	66	decoherence	NN
+1360	26	66	.	.
+1361	1	67	However	RB
+1362	2	67	,	,
+1363	3	67	strong	JJ
+1364	4	67	enough	JJ
+1365	5	67	perturbations	NNS
+1366	6	67	,	,
+1367	7	67	may	MD
+1368	8	67	drive	VB
+1369	9	67	the	DT
+1370	10	67	system	NN
+1371	11	67	to	IN
+1372	12	67	a	DT
+1373	13	67	non	AFX
+1374	14	67	topological	JJ
+1375	15	67	phase	NN
+1376	16	67	.	.
+1377	1	68	In	IN
+1378	2	68	recent	JJ
+1379	3	68	years	NNS
+1380	4	68	,	,
+1381	5	68	many	JJ
+1382	6	68	works	NNS
+1383	7	68	have	VBP
+1384	8	68	been	VBN
+1385	9	68	devoted	VBN
+1386	10	68	to	IN
+1387	11	68	the	DT
+1388	12	68	study	NN
+1389	13	68	of	IN
+1390	14	68	this	DT
+1391	15	68	robustness	NN
+1392	16	68	in	IN
+1393	17	68	microscopic	JJ
+1394	18	68	models	NNS
+1395	19	68	.	.
+1396	1	69	﻿Walking	VBG
+1397	2	69	animals	NNS
+1398	3	69	,	,
+1399	4	69	like	IN
+1400	5	69	stick	NN
+1401	6	69	insects	NNS
+1402	7	69	,	,
+1403	8	69	cockroaches	NNS
+1404	9	69	or	CC
+1405	10	69	ants	NNS
+1406	11	69	,	,
+1407	12	69	demonstrate	VB
+1408	13	69	a	DT
+1409	14	69	fascinating	JJ
+1410	15	69	range	NN
+1411	16	69	of	IN
+1412	17	69	locomotive	JJ
+1413	18	69	abilities	NNS
+1414	19	69	and	CC
+1415	20	69	complex	JJ
+1416	21	69	behaviors	NNS
+1417	22	69	.	.
+1418	1	70	The	DT
+1419	2	70	locomotive	JJ
+1420	3	70	behaviors	NNS
+1421	4	70	can	MD
+1422	5	70	consist	VB
+1423	6	70	of	IN
+1424	7	70	a	DT
+1425	8	70	variety	NN
+1426	9	70	of	IN
+1427	10	70	walking	VBG
+1428	11	70	patterns	NNS
+1429	12	70	along	IN
+1430	13	70	with	IN
+1431	14	70	adaptation	NN
+1432	15	70	that	WDT
+1433	16	70	allow	VBP
+1434	17	70	the	DT
+1435	18	70	animals	NNS
+1436	19	70	to	TO
+1437	20	70	deal	VB
+1438	21	70	with	IN
+1439	22	70	changes	NNS
+1440	23	70	in	IN
+1441	24	70	environmental	JJ
+1442	25	70	conditions	NNS
+1443	26	70	,	,
+1444	27	70	like	IN
+1445	28	70	uneven	JJ
+1446	29	70	terrains	NNS
+1447	30	70	,	,
+1448	31	70	gaps	NNS
+1449	32	70	,	,
+1450	33	70	obstacles	NNS
+1451	34	70	etc	FW
+1452	35	70	.	.
+1453	1	71	Biological	JJ
+1454	2	71	study	NN
+1455	3	71	has	VBZ
+1456	4	71	revealed	VBN
+1457	5	71	that	IN
+1458	6	71	such	JJ
+1459	7	71	complex	JJ
+1460	8	71	behaviors	NNS
+1461	9	71	are	VBP
+1462	10	71	a	DT
+1463	11	71	result	NN
+1464	12	71	of	IN
+1465	13	71	a	DT
+1466	14	71	combination	NN
+1467	15	71	of	IN
+1468	16	71	biomechanics	NNS
+1469	17	71	and	CC
+1470	18	71	neural	JJ
+1471	19	71	mechanism	NN
+1472	20	71	thus	RB
+1473	21	71	representing	VBG
+1474	22	71	the	DT
+1475	23	71	true	JJ
+1476	24	71	nature	NN
+1477	25	71	of	IN
+1478	26	71	embodied	JJ
+1479	27	71	interactions	NNS
+1480	28	71	.	.
+1481	1	72	While	IN
+1482	2	72	the	DT
+1483	3	72	biomechanics	NNS
+1484	4	72	helps	VBZ
+1485	5	72	maintain	VB
+1486	6	72	flexibility	NN
+1487	7	72	and	CC
+1488	8	72	sustain	VB
+1489	9	72	a	DT
+1490	10	72	variety	NN
+1491	11	72	of	IN
+1492	12	72	movements	NNS
+1493	13	72	,	,
+1494	14	72	the	DT
+1495	15	72	neural	JJ
+1496	16	72	mechanisms	NNS
+1497	17	72	generate	VBP
+1498	18	72	movements	NNS
+1499	19	72	while	IN
+1500	20	72	making	VBG
+1501	21	72	appropriate	JJ
+1502	22	72	predictions	NNS
+1503	23	72	crucial	JJ
+1504	24	72	for	IN
+1505	25	72	achieving	VBG
+1506	26	72	adaptation	NN
+1507	27	72	.	.
+1508	1	73	Such	JJ
+1509	2	73	predictions	NNS
+1510	3	73	or	CC
+1511	4	73	planning	VBG
+1512	5	73	ahead	RB
+1513	6	73	can	MD
+1514	7	73	be	VB
+1515	8	73	achieved	VBN
+1516	9	73	by	IN
+1517	10	73	way	NN
+1518	11	73	of	IN
+1519	12	73	internal	JJ
+1520	13	73	models	NNS
+1521	14	73	that	WDT
+1522	15	73	are	VBP
+1523	16	73	grounded	VBN
+1524	17	73	in	IN
+1525	18	73	the	DT
+1526	19	73	overall	JJ
+1527	20	73	behavior	NN
+1528	21	73	of	IN
+1529	22	73	the	DT
+1530	23	73	animal	NN
+1531	24	73	.	.
+1532	1	74	Inspired	VBN
+1533	2	74	by	IN
+1534	3	74	these	DT
+1535	4	74	findings	NNS
+1536	5	74	,	,
+1537	6	74	we	PRP
+1538	7	74	present	VBP
+1539	8	74	here	RB
+1540	9	74	,	,
+1541	10	74	an	DT
+1542	11	74	artificial	JJ
+1543	12	74	bio	NN
+1544	13	74	-	HYPH
+1545	14	74	inspired	VBN
+1546	15	74	walking	NN
+1547	16	74	system	NN
+1548	17	74	which	WDT
+1549	18	74	effectively	RB
+1550	19	74	combines	VBZ
+1551	20	74	biomechanics	NNS
+1552	21	74	(	-LRB-
+1553	22	74	in	IN
+1554	23	74	terms	NNS
+1555	24	74	of	IN
+1556	25	74	the	DT
+1557	26	74	body	NN
+1558	27	74	and	CC
+1559	28	74	leg	NN
+1560	29	74	structures	NNS
+1561	30	74	)	-RRB-
+1562	31	74	with	IN
+1563	32	74	the	DT
+1564	33	74	underlying	VBG
+1565	34	74	neural	JJ
+1566	35	74	mechanisms	NNS
+1567	36	74	.	.
+1568	1	75	The	DT
+1569	2	75	neural	JJ
+1570	3	75	mechanisms	NNS
+1571	4	75	consist	VBP
+1572	5	75	of	IN
+1573	6	75	1	CD
+1574	7	75	)	-RRB-
+1575	8	75	central	JJ
+1576	9	75	pattern	NN
+1577	10	75	generator	NN
+1578	11	75	based	VBN
+1579	12	75	control	NN
+1580	13	75	for	IN
+1581	14	75	generating	VBG
+1582	15	75	basic	JJ
+1583	16	75	rhythmic	JJ
+1584	17	75	patterns	NNS
+1585	18	75	and	CC
+1586	19	75	coordinated	JJ
+1587	20	75	movements	NNS
+1588	21	75	,	,
+1589	22	75	2	LS
+1590	23	75	)	-RRB-
+1591	24	75	distributed	VBN
+1592	25	75	(	-LRB-
+1593	26	75	at	IN
+1594	27	75	each	DT
+1595	28	75	leg	NN
+1596	29	75	)	-RRB-
+1597	30	75	recurrent	JJ
+1598	31	75	neural	NN
+1599	32	75	network	NN
+1600	33	75	based	VBN
+1601	34	75	adaptive	JJ
+1602	35	75	forward	NN
+1603	36	75	models	NNS
+1604	37	75	with	IN
+1605	38	75	efference	NN
+1606	39	75	copies	NNS
+1607	40	75	as	IN
+1608	41	75	internal	JJ
+1609	42	75	models	NNS
+1610	43	75	for	IN
+1611	44	75	sensory	JJ
+1612	45	75	predictions	NNS
+1613	46	75	and	CC
+1614	47	75	instantaneous	JJ
+1615	48	75	state	NN
+1616	49	75	estimations	NNS
+1617	50	75	,	,
+1618	51	75	and	CC
+1619	52	75	3	LS
+1620	53	75	)	-RRB-
+1621	54	75	searching	VBG
+1622	55	75	and	CC
+1623	56	75	elevation	NN
+1624	57	75	control	NN
+1625	58	75	for	IN
+1626	59	75	adapting	VBG
+1627	60	75	the	DT
+1628	61	75	movement	NN
+1629	62	75	of	IN
+1630	63	75	an	DT
+1631	64	75	individual	JJ
+1632	65	75	leg	NN
+1633	66	75	to	TO
+1634	67	75	deal	VB
+1635	68	75	with	IN
+1636	69	75	different	JJ
+1637	70	75	environmental	JJ
+1638	71	75	conditions	NNS
+1639	72	75	.	.
+1640	1	76	﻿Perceptual	JJ
+1641	2	76	similarity	NN
+1642	3	76	is	VBZ
+1643	4	76	a	DT
+1644	5	76	cognitive	JJ
+1645	6	76	judgment	NN
+1646	7	76	that	WDT
+1647	8	76	represents	VBZ
+1648	9	76	the	DT
+1649	10	76	end	NN
+1650	11	76	-	HYPH
+1651	12	76	stage	NN
+1652	13	76	of	IN
+1653	14	76	a	DT
+1654	15	76	complex	JJ
+1655	16	76	cascade	NN
+1656	17	76	of	IN
+1657	18	76	hierarchical	JJ
+1658	19	76	processing	NN
+1659	20	76	throughout	IN
+1660	21	76	visual	JJ
+1661	22	76	cortex	NN
+1662	23	76	.	.
+1663	1	77	Although	IN
+1664	2	77	it	PRP
+1665	3	77	is	VBZ
+1666	4	77	intuitive	JJ
+1667	5	77	that	IN
+1668	6	77	visual	JJ
+1669	7	77	objects	NNS
+1670	8	77	that	WDT
+1671	9	77	appear	VBP
+1672	10	77	similar	JJ
+1673	11	77	may	MD
+1674	12	77	share	VB
+1675	13	77	similar	JJ
+1676	14	77	underlying	JJ
+1677	15	77	patterns	NNS
+1678	16	77	of	IN
+1679	17	77	neural	JJ
+1680	18	77	activation	NN
+1681	19	77	,	,
+1682	20	77	a	DT
+1683	21	77	direct	JJ
+1684	22	77	mapping	NN
+1685	23	77	between	IN
+1686	24	77	perceptual	JJ
+1687	25	77	similarity	NN
+1688	26	77	and	CC
+1689	27	77	representational	NN
+1690	28	77	distance	NN
+1691	29	77	has	VBZ
+1692	30	77	not	RB
+1693	31	77	been	VBN
+1694	32	77	demonstrated	VBN
+1695	33	77	.	.
+1696	1	78	Here	RB
+1697	2	78	we	PRP
+1698	3	78	explore	VBP
+1699	4	78	the	DT
+1700	5	78	relationship	NN
+1701	6	78	between	IN
+1702	7	78	the	DT
+1703	8	78	human	JJ
+1704	9	78	brain	NN
+1705	10	78	’s	JJ
+1706	11	78	time	NN
+1707	12	78	-	HYPH
+1708	13	78	varying	VBG
+1709	14	78	representation	NN
+1710	15	78	of	IN
+1711	16	78	visual	JJ
+1712	17	78	patterns	NNS
+1713	18	78	and	CC
+1714	19	78	behavioral	JJ
+1715	20	78	judgments	NNS
+1716	21	78	of	IN
+1717	22	78	perceptual	JJ
+1718	23	78	similarity	NN
+1719	24	78	.	.
+1720	1	79	The	DT
+1721	2	79	visual	JJ
+1722	3	79	stimuli	NNS
+1723	4	79	were	VBD
+1724	5	79	abstract	JJ
+1725	6	79	patterns	NNS
+1726	7	79	constructed	VBN
+1727	8	79	from	IN
+1728	9	79	identical	JJ
+1729	10	79	perceptual	JJ
+1730	11	79	units	NNS
+1731	12	79	(	-LRB-
+1732	13	79	oriented	VBN
+1733	14	79	Gabor	NNP
+1734	15	79	patches	NNS
+1735	16	79	)	-RRB-
+1736	17	79	so	IN
+1737	18	79	that	IN
+1738	19	79	each	DT
+1739	20	79	pattern	NN
+1740	21	79	had	VBD
+1741	22	79	a	DT
+1742	23	79	unique	JJ
+1743	24	79	global	JJ
+1744	25	79	form	NN
+1745	26	79	or	CC
+1746	27	79	perceptual	JJ
+1747	28	79	'	``
+1748	29	79	Gestalt	NNP
+1749	30	79	'	''
+1750	31	79	.	.
+1751	1	80	The	DT
+1752	2	80	visual	JJ
+1753	3	80	stimuli	NNS
+1754	4	80	were	VBD
+1755	5	80	decodable	JJ
+1756	6	80	from	IN
+1757	7	80	evoked	VBN
+1758	8	80	neural	JJ
+1759	9	80	activation	NN
+1760	10	80	patterns	NNS
+1761	11	80	measured	VBN
+1762	12	80	with	IN
+1763	13	80	magnetoencephalography	NN
+1764	14	80	(	-LRB-
+1765	15	80	MEG	NNP
+1766	16	80	)	-RRB-
+1767	17	80	,	,
+1768	18	80	however	RB
+1769	19	80	,	,
+1770	20	80	stimuli	NNS
+1771	21	80	differed	VBD
+1772	22	80	in	IN
+1773	23	80	the	DT
+1774	24	80	similarity	NN
+1775	25	80	of	IN
+1776	26	80	their	PRP$
+1777	27	80	neural	JJ
+1778	28	80	representation	NN
+1779	29	80	as	IN
+1780	30	80	estimated	VBN
+1781	31	80	by	IN
+1782	32	80	differences	NNS
+1783	33	80	in	IN
+1784	34	80	decodability	NN
+1785	35	80	.	.
+1786	1	81	Early	RB
+1787	2	81	after	IN
+1788	3	81	stimulus	NN
+1789	4	81	onset	NN
+1790	5	81	(	-LRB-
+1791	6	81	from	IN
+1792	7	81	50ms	NNP
+1793	8	81	)	-RRB-
+1794	9	81	,	,
+1795	10	81	a	DT
+1796	11	81	model	NN
+1797	12	81	based	VBN
+1798	13	81	on	IN
+1799	14	81	retinotopic	NN
+1800	15	81	organization	NN
+1801	16	81	predicted	VBD
+1802	17	81	the	DT
+1803	18	81	representational	JJ
+1804	19	81	similarity	NN
+1805	20	81	of	IN
+1806	21	81	the	DT
+1807	22	81	visual	JJ
+1808	23	81	stimuli	NNS
+1809	24	81	.	.
+1810	1	82	Following	VBG
+1811	2	82	the	DT
+1812	3	82	peak	NN
+1813	4	82	correlation	NN
+1814	5	82	between	IN
+1815	6	82	the	DT
+1816	7	82	retinotopic	JJ
+1817	8	82	model	NN
+1818	9	82	and	CC
+1819	10	82	neural	JJ
+1820	11	82	data	NNS
+1821	12	82	at	IN
+1822	13	82	80ms	NN
+1823	14	82	,	,
+1824	15	82	the	DT
+1825	16	82	neural	JJ
+1826	17	82	representations	NNS
+1827	18	82	quickly	RB
+1828	19	82	evolved	VBD
+1829	20	82	so	IN
+1830	21	82	that	IN
+1831	22	82	retinotopy	NN
+1832	23	82	no	RB
+1833	24	82	longer	RB
+1834	25	82	provided	VBN
+1835	26	82	a	DT
+1836	27	82	sufficient	JJ
+1837	28	82	account	NN
+1838	29	82	of	IN
+1839	30	82	the	DT
+1840	31	82	brain	NN
+1841	32	82	’s	JJ
+1842	33	82	time	NN
+1843	34	82	-	HYPH
+1844	35	82	varying	VBG
+1845	36	82	representation	NN
+1846	37	82	of	IN
+1847	38	82	the	DT
+1848	39	82	stimuli	NNS
+1849	40	82	.	.
+1850	1	83	Overall	RB
+1851	2	83	the	DT
+1852	3	83	strongest	JJS
+1853	4	83	predictor	NN
+1854	5	83	of	IN
+1855	6	83	the	DT
+1856	7	83	brain	NN
+1857	8	83	’s	JJ
+1858	9	83	representation	NN
+1859	10	83	was	VBD
+1860	11	83	a	DT
+1861	12	83	model	NN
+1862	13	83	based	VBN
+1863	14	83	on	IN
+1864	15	83	human	JJ
+1865	16	83	judgments	NNS
+1866	17	83	of	IN
+1867	18	83	perceptual	JJ
+1868	19	83	similarity	NN
+1869	20	83	,	,
+1870	21	83	which	WDT
+1871	22	83	reached	VBD
+1872	23	83	the	DT
+1873	24	83	theoretical	JJ
+1874	25	83	limits	NNS
+1875	26	83	of	IN
+1876	27	83	the	DT
+1877	28	83	maximum	JJ
+1878	29	83	correlation	NN
+1879	30	83	with	IN
+1880	31	83	the	DT
+1881	32	83	neural	JJ
+1882	33	83	data	NNS
+1883	34	83	defined	VBN
+1884	35	83	by	IN
+1885	36	83	the	DT
+1886	37	83	'	``
+1887	38	83	noise	NN
+1888	39	83	ceiling	NN
+1889	40	83	'	''
+1890	41	83	.	.
+1891	1	84	﻿We	TO
+1892	2	84	compare	VB
+1893	3	84	in	IN
+1894	4	84	this	DT
+1895	5	84	paper	NN
+1896	6	84	several	JJ
+1897	7	84	feature	NN
+1898	8	84	selection	NN
+1899	9	84	methods	NNS
+1900	10	84	for	IN
+1901	11	84	the	DT
+1902	12	84	Naive	NNP
+1903	13	84	Bayes	NNP
+1904	14	84	Classifier	NNP
+1905	15	84	(	-LRB-
+1906	16	84	NBC	NNP
+1907	17	84	)	-RRB-
+1908	18	84	when	WRB
+1909	19	84	the	DT
+1910	20	84	data	NN
+1911	21	84	under	IN
+1912	22	84	study	NN
+1913	23	84	are	VBP
+1914	24	84	described	VBN
+1915	25	84	by	IN
+1916	26	84	a	DT
+1917	27	84	large	JJ
+1918	28	84	number	NN
+1919	29	84	of	IN
+1920	30	84	redundant	JJ
+1921	31	84	binary	JJ
+1922	32	84	indicators	NNS
+1923	33	84	.	.
+1924	1	85	Wrapper	WDT
+1925	2	85	approaches	VBZ
+1926	3	85	guided	VBN
+1927	4	85	by	IN
+1928	5	85	the	DT
+1929	6	85	NBC	NNP
+1930	7	85	estimation	NN
+1931	8	85	of	IN
+1932	9	85	the	DT
+1933	10	85	classification	NN
+1934	11	85	error	NN
+1935	12	85	probability	NN
+1936	13	85	outperform	NN
+1937	14	85	filter	NN
+1938	15	85	approaches	NNS
+1939	16	85	while	IN
+1940	17	85	retaining	VBG
+1941	18	85	a	DT
+1942	19	85	reasonable	JJ
+1943	20	85	computational	JJ
+1944	21	85	cost	NN
+1945	22	85	.	.
+1946	23	85	1	CD
+1947	24	85	Introduction	NN
+1948	25	85	We	PRP
+1949	26	85	consider	VBP
+1950	27	85	in	IN
+1951	28	85	this	DT
+1952	29	85	paper	NN
+1953	30	85	application	NN
+1954	31	85	contexts	NNS
+1955	32	85	in	IN
+1956	33	85	which	WDT
+1957	34	85	a	DT
+1958	35	85	large	JJ
+1959	36	85	body	NN
+1960	37	85	of	IN
+1961	38	85	expert	JJ
+1962	39	85	knowledge	NN
+1963	40	85	is	VBZ
+1964	41	85	available	JJ
+1965	42	85	as	IN
+1966	43	85	a	DT
+1967	44	85	series	NN
+1968	45	85	of	IN
+1969	46	85	simple	JJ
+1970	47	85	and	CC
+1971	48	85	low	JJ
+1972	49	85	level	NN
+1973	50	85	parametric	JJ
+1974	51	85	scores	NNS
+1975	52	85	.	.
+1976	1	86	The	DT
+1977	2	86	goal	NN
+1978	3	86	is	VBZ
+1979	4	86	to	TO
+1980	5	86	build	VB
+1981	6	86	an	DT
+1982	7	86	interpretable	JJ
+1983	8	86	classifier	NN
+1984	9	86	from	IN
+1985	10	86	this	DT
+1986	11	86	knowledge	NN
+1987	12	86	(	-LRB-
+1988	13	86	and	CC
+1989	14	86	from	IN
+1990	15	86	a	DT
+1991	16	86	learning	NN
+1992	17	86	set	NN
+1993	18	86	)	-RRB-
+1994	19	86	.	.
+1995	1	87	Then	RB
+1996	2	87	the	DT
+1997	3	87	scores	NNS
+1998	4	87	are	VBP
+1999	5	87	assumed	VBN
+2000	6	87	to	TO
+2001	7	87	be	VB
+2002	8	87	simple	JJ
+2003	9	87	parametric	JJ
+2004	10	87	functions	NNS
+2005	11	87	from	IN
+2006	12	87	the	DT
+2007	13	87	data	NNS
+2008	14	87	space	NN
+2009	15	87	to	IN
+2010	16	87	R	NN
+2011	17	87	with	IN
+2012	18	87	the	DT
+2013	19	87	interpretation	NN
+2014	20	87	that	IN
+2015	21	87	a	DT
+2016	22	87	high	JJ
+2017	23	87	value	NN
+2018	24	87	of	IN
+2019	25	87	a	DT
+2020	26	87	score	NN
+2021	27	87	indicates	VBZ
+2022	28	87	that	IN
+2023	29	87	the	DT
+2024	30	87	datum	NN
+2025	31	87	submitted	VBN
+2026	32	87	to	IN
+2027	33	87	the	DT
+2028	34	87	score	NN
+2029	35	87	belongs	VBZ
+2030	36	87	probably	RB
+2031	37	87	to	IN
+2032	38	87	the	DT
+2033	39	87	class	NN
+2034	40	87	that	WDT
+2035	41	87	the	DT
+2036	42	87	score	NN
+2037	43	87	has	VBZ
+2038	44	87	been	VBN
+2039	45	87	designed	VBN
+2040	46	87	to	TO
+2041	47	87	detect	VB
+2042	48	87	.	.
+2043	1	88	Let	VB
+2044	2	88	’s	TO
+2045	3	88	consider	VB
+2046	4	88	a	DT
+2047	5	88	concrete	JJ
+2048	6	88	example	NN
+2049	7	88	from	IN
+2050	8	88	our	PRP$
+2051	9	88	main	JJ
+2052	10	88	application	NN
+2053	11	88	domain	NN
+2054	12	88	,	,
+2055	13	88	aircraft	NN
+2056	14	88	engine	NN
+2057	15	88	monitoring	NN
+2058	16	88	(	-LRB-
+2059	17	88	see	VB
+2060	18	88	[	-LRB-
+2061	19	88	7	CD
+2062	20	88	]	-RRB-
+2063	21	88	for	IN
+2064	22	88	details	NNS
+2065	23	88	)	-RRB-
+2066	24	88	.	.
+2067	1	89	We	PRP
+2068	2	89	aim	VBP
+2069	3	89	here	RB
+2070	4	89	at	IN
+2071	5	89	classifying	VBG
+2072	6	89	some	DT
+2073	7	89	short	JJ
+2074	8	89	time	NN
+2075	9	89	series	NN
+2076	10	89	(	-LRB-
+2077	11	89	around	IN
+2078	12	89	150	CD
+2079	13	89	time	NN
+2080	14	89	points	NNS
+2081	15	89	,	,
+2082	16	89	each	DT
+2083	17	89	series	NN
+2084	18	89	having	VBG
+2085	19	89	its	PRP$
+2086	20	89	own	JJ
+2087	21	89	specific	JJ
+2088	22	89	length	NN
+2089	23	89	)	-RRB-
+2090	24	89	into	IN
+2091	25	89	different	JJ
+2092	26	89	classes	NNS
+2093	27	89	(	-LRB-
+2094	28	89	normal	JJ
+2095	29	89	signal	NN
+2096	30	89	and	CC
+2097	31	89	different	JJ
+2098	32	89	types	NNS
+2099	33	89	of	IN
+2100	34	89	anomalies	NNS
+2101	35	89	corresponding	VBG
+2102	36	89	to	IN
+2103	37	89	some	DT
+2104	38	89	non	AFX
+2105	39	89	stationarity	NN
+2106	40	89	in	IN
+2107	41	89	the	DT
+2108	42	89	signal	NN
+2109	43	89	)	-RRB-
+2110	44	89	.	.
+2111	1	90	﻿We	TO
+2112	2	90	propose	VB
+2113	3	90	a	DT
+2114	4	90	new	JJ
+2115	5	90	gradient	NN
+2116	6	90	-	HYPH
+2117	7	90	domain	NN
+2118	8	90	technique	NN
+2119	9	90	for	IN
+2120	10	90	processing	NN
+2121	11	90	registered	VBN
+2122	12	90	EM	NNP
+2123	13	90	image	NN
+2124	14	90	stacks	NNS
+2125	15	90	to	TO
+2126	16	90	remove	VB
+2127	17	90	inter	NN
+2128	18	90	-	HYPH
+2129	19	90	image	NN
+2130	20	90	discontinuities	NNS
+2131	21	90	while	IN
+2132	22	90	preserving	VBG
+2133	23	90	intra	NN
+2134	24	90	-	HYPH
+2135	25	90	image	NN
+2136	26	90	detail	NN
+2137	27	90	.	.
+2138	1	91	To	IN
+2139	2	91	this	DT
+2140	3	91	end	NN
+2141	4	91	,	,
+2142	5	91	we	PRP
+2143	6	91	process	VBP
+2144	7	91	the	DT
+2145	8	91	image	NN
+2146	9	91	stack	NN
+2147	10	91	by	IN
+2148	11	91	first	JJ
+2149	12	91	performing	VBG
+2150	13	91	anisotropic	NN
+2151	14	91	smoothing	VBG
+2152	15	91	along	IN
+2153	16	91	the	DT
+2154	17	91	slice	NN
+2155	18	91	axis	NN
+2156	19	91	and	CC
+2157	20	91	then	RB
+2158	21	91	solving	VBG
+2159	22	91	a	DT
+2160	23	91	Poisson	NNP
+2161	24	91	equation	NN
+2162	25	91	within	IN
+2163	26	91	each	DT
+2164	27	91	slice	NN
+2165	28	91	to	TO
+2166	29	91	re	VB
+2167	30	91	-	:
+2168	31	91	introduce	VB
+2169	32	91	the	DT
+2170	33	91	detail	NN
+2171	34	91	.	.
+2172	1	92	The	DT
+2173	2	92	final	JJ
+2174	3	92	image	NN
+2175	4	92	stack	NN
+2176	5	92	is	VBZ
+2177	6	92	continuous	JJ
+2178	7	92	across	IN
+2179	8	92	the	DT
+2180	9	92	slice	NN
+2181	10	92	axis	NN
+2182	11	92	and	CC
+2183	12	92	maintains	VBZ
+2184	13	92	sharp	JJ
+2185	14	92	details	NNS
+2186	15	92	within	IN
+2187	16	92	each	DT
+2188	17	92	slice	NN
+2189	18	92	.	.
+2190	1	93	Adapting	VBG
+2191	2	93	existing	VBG
+2192	3	93	out	RB
+2193	4	93	-	HYPH
+2194	5	93	of	IN
+2195	6	93	-	HYPH
+2196	7	93	core	NN
+2197	8	93	techniques	NNS
+2198	9	93	for	IN
+2199	10	93	solving	VBG
+2200	11	93	the	DT
+2201	12	93	linear	JJ
+2202	13	93	system	NN
+2203	14	93	,	,
+2204	15	93	we	PRP
+2205	16	93	describe	VBP
+2206	17	93	a	DT
+2207	18	93	parallel	JJ
+2208	19	93	algorithm	NN
+2209	20	93	with	IN
+2210	21	93	time	NN
+2211	22	93	complexity	NN
+2212	23	93	that	WDT
+2213	24	93	is	VBZ
+2214	25	93	linear	JJ
+2215	26	93	in	IN
+2216	27	93	the	DT
+2217	28	93	size	NN
+2218	29	93	of	IN
+2219	30	93	the	DT
+2220	31	93	data	NNS
+2221	32	93	and	CC
+2222	33	93	space	NN
+2223	34	93	complexity	NN
+2224	35	93	that	WDT
+2225	36	93	is	VBZ
+2226	37	93	sub	NN
+2227	38	93	-	HYPH
+2228	39	93	linear	NN
+2229	40	93	,	,
+2230	41	93	allowing	VBG
+2231	42	93	us	PRP
+2232	43	93	to	TO
+2233	44	93	process	VB
+2234	45	93	datasets	NNS
+2235	46	93	as	RB
+2236	47	93	large	JJ
+2237	48	93	as	IN
+2238	49	93	five	CD
+2239	50	93	teravoxels	NNS
+2240	51	93	with	IN
+2241	52	93	a	DT
+2242	53	93	600	CD
+2243	54	93	MB	NN
+2244	55	93	memory	NN
+2245	56	93	footprint	NN
+2246	57	93	.	.
+2247	1	94	Index	NNP
+2248	2	94	Terms	NNS
+2249	3	94	—	NFP
+2250	4	94	Gradient	NNP
+2251	5	94	Domain	NNP
+2252	6	94	,	,
+2253	7	94	Image	NNP
+2254	8	94	Processing	NNP
+2255	9	94	,	,
+2256	10	94	Image	NNP
+2257	11	94	Fusion	NNP
+2258	12	94	I.	NN
+2259	13	94	INTRODUCTION	NN
+2260	14	94	Recent	JJ
+2261	15	94	innovation	NN
+2262	16	94	and	CC
+2263	17	94	automation	NN
+2264	18	94	of	IN
+2265	19	94	electron	NN
+2266	20	94	microscopy	NN
+2267	21	94	sectioning	NN
+2268	22	94	has	VBZ
+2269	23	94	made	VBN
+2270	24	94	it	PRP
+2271	25	94	possible	JJ
+2272	26	94	to	TO
+2273	27	94	obtain	VB
+2274	28	94	high	JJ
+2275	29	94	-	HYPH
+2276	30	94	resolution	NN
+2277	31	94	image	NN
+2278	32	94	stacks	NNS
+2279	33	94	capturing	VBG
+2280	34	94	the	DT
+2281	35	94	relationships	NNS
+2282	36	94	between	IN
+2283	37	94	cellular	JJ
+2284	38	94	structures	NNS
+2285	39	94	[	-LRB-
+2286	40	94	1	CD
+2287	41	94	]	-RRB-
+2288	42	94	.	.
+2289	1	95	This	DT
+2290	2	95	,	,
+2291	3	95	in	IN
+2292	4	95	turn	NN
+2293	5	95	,	,
+2294	6	95	has	VBZ
+2295	7	95	motivated	VBN
+2296	8	95	research	NN
+2297	9	95	in	IN
+2298	10	95	areas	NNS
+2299	11	95	such	JJ
+2300	12	95	as	IN
+2301	13	95	connectomics	NNS
+2302	14	95	[	-LRB-
+2303	15	95	2	CD
+2304	16	95	]	-RRB-
+2305	17	95	,	,
+2306	18	95	[	-LRB-
+2307	19	95	3	CD
+2308	20	95	]	-RRB-
+2309	21	95	,	,
+2310	22	95	[	-LRB-
+2311	23	95	4	CD
+2312	24	95	]	-RRB-
+2313	25	95	,	,
+2314	26	95	[	-LRB-
+2315	27	95	5	CD
+2316	28	95	]	-RRB-
+2317	29	95	which	WDT
+2318	30	95	aims	VBZ
+2319	31	95	to	TO
+2320	32	95	gain	VB
+2321	33	95	insight	NN
+2322	34	95	into	IN
+2323	35	95	neural	JJ
+2324	36	95	function	NN
+2325	37	95	through	IN
+2326	38	95	the	DT
+2327	39	95	study	NN
+2328	40	95	of	IN
+2329	41	95	the	DT
+2330	42	95	connectivity	NN
+2331	43	95	network	NN
+2332	44	95	.	.
+2333	1	96	While	IN
+2334	2	96	the	DT
+2335	3	96	technological	JJ
+2336	4	96	advances	NNS
+2337	5	96	in	IN
+2338	6	96	acquisition	NN
+2339	7	96	and	CC
+2340	8	96	registration	NN
+2341	9	96	have	VBP
+2342	10	96	made	VBN
+2343	11	96	it	PRP
+2344	12	96	possible	JJ
+2345	13	96	to	TO
+2346	14	96	acquire	VB
+2347	15	96	unprecedentedly	RB
+2348	16	96	large	JJ
+2349	17	96	micron	NN
+2350	18	96	-	HYPH
+2351	19	96	resolution	NN
+2352	20	96	volumes	NNS
+2353	21	96	,	,
+2354	22	96	the	DT
+2355	23	96	acquisition	NN
+2356	24	96	process	NN
+2357	25	96	itself	PRP
+2358	26	96	introduces	VBZ
+2359	27	96	undesirable	JJ
+2360	28	96	artifacts	NNS
+2361	29	96	in	IN
+2362	30	96	the	DT
+2363	31	96	data	NNS
+2364	32	96	,	,
+2365	33	96	complicating	VBG
+2366	34	96	tasks	NNS
+2367	35	96	of	IN
+2368	36	96	(	-LRB-
+2369	37	96	semi-)automatic	JJ
+2370	38	96	anatomy	NN
+2371	39	96	tracking	VBG
+2372	40	96	.	.
+2373	1	97	﻿One	CD
+2374	2	97	morning	NN
+2375	3	97	,	,
+2376	4	97	when	WRB
+2377	5	97	Gregor	NNP
+2378	6	97	Samsa	NNP
+2379	7	97	woke	VBD
+2380	8	97	from	IN
+2381	9	97	troubled	JJ
+2382	10	97	dreams	NNS
+2383	11	97	,	,
+2384	12	97	he	PRP
+2385	13	97	found	VBD
+2386	14	97	himself	PRP
+2387	15	97	transformed	VBN
+2388	16	97	in	IN
+2389	17	97	his	PRP$
+2390	18	97	bed	NN
+2391	19	97	into	IN
+2392	20	97	a	DT
+2393	21	97	horrible	JJ
+2394	22	97	vermin	NN
+2395	23	97	.	.
+2396	1	98	He	PRP
+2397	2	98	lay	VBD
+2398	3	98	on	IN
+2399	4	98	his	PRP$
+2400	5	98	armour	NN
+2401	6	98	-	HYPH
+2402	7	98	like	JJ
+2403	8	98	back	RB
+2404	9	98	,	,
+2405	10	98	and	CC
+2406	11	98	if	IN
+2407	12	98	he	PRP
+2408	13	98	lifted	VBD
+2409	14	98	his	PRP$
+2410	15	98	head	NN
+2411	16	98	a	DT
+2412	17	98	little	JJ
+2413	18	98	he	PRP
+2414	19	98	could	MD
+2415	20	98	see	VB
+2416	21	98	his	PRP$
+2417	22	98	brown	JJ
+2418	23	98	belly	NN
+2419	24	98	,	,
+2420	25	98	slightly	RB
+2421	26	98	domed	JJ
+2422	27	98	and	CC
+2423	28	98	divided	VBN
+2424	29	98	by	IN
+2425	30	98	arches	NNS
+2426	31	98	into	IN
+2427	32	98	stiff	JJ
+2428	33	98	sections	NNS
+2429	34	98	.	.
+2430	1	99	The	DT
+2431	2	99	bedding	NN
+2432	3	99	was	VBD
+2433	4	99	hardly	RB
+2434	5	99	able	JJ
+2435	6	99	to	TO
+2436	7	99	cover	VB
+2437	8	99	it	PRP
+2438	9	99	and	CC
+2439	10	99	seemed	VBD
+2440	11	99	ready	JJ
+2441	12	99	to	TO
+2442	13	99	slide	VB
+2443	14	99	off	IN
+2444	15	99	any	DT
+2445	16	99	moment	NN
+2446	17	99	.	.
+2447	1	100	His	PRP$
+2448	2	100	many	JJ
+2449	3	100	legs	NNS
+2450	4	100	,	,
+2451	5	100	pitifully	RB
+2452	6	100	thin	JJ
+2453	7	100	compared	VBN
+2454	8	100	with	IN
+2455	9	100	the	DT
+2456	10	100	size	NN
+2457	11	100	of	IN
+2458	12	100	the	DT
+2459	13	100	rest	NN
+2460	14	100	of	IN
+2461	15	100	him	PRP
+2462	16	100	,	,
+2463	17	100	waved	VBD
+2464	18	100	about	RB
+2465	19	100	helplessly	RB
+2466	20	100	as	IN
+2467	21	100	he	PRP
+2468	22	100	looked	VBD
+2469	23	100	.	.
+2470	1	101	"	``
+2471	2	101	What	WP
+2472	3	101	's	VBZ
+2473	4	101	happened	VBN
+2474	5	101	to	IN
+2475	6	101	me	PRP
+2476	7	101	?	.
+2477	8	101	"	''
+2478	9	101	he	PRP
+2479	10	101	thought	VBD
+2480	11	101	.	.
+2481	1	102	It	PRP
+2482	2	102	was	VBD
+2483	3	102	n't	RB
+2484	4	102	a	DT
+2485	5	102	dream	NN
+2486	6	102	.	.
+2487	1	103	His	PRP$
+2488	2	103	room	NN
+2489	3	103	,	,
+2490	4	103	a	DT
+2491	5	103	proper	JJ
+2492	6	103	human	JJ
+2493	7	103	room	NN
+2494	8	103	although	IN
+2495	9	103	a	DT
+2496	10	103	little	JJ
+2497	11	103	too	RB
+2498	12	103	small	JJ
+2499	13	103	,	,
+2500	14	103	lay	VBD
+2501	15	103	peacefully	RB
+2502	16	103	between	IN
+2503	17	103	its	PRP$
+2504	18	103	four	CD
+2505	19	103	familiar	JJ
+2506	20	103	walls	NNS
+2507	21	103	.	.
+2508	1	104	A	DT
+2509	2	104	collection	NN
+2510	3	104	of	IN
+2511	4	104	textile	NN
+2512	5	104	samples	NNS
+2513	6	104	lay	VBD
+2514	7	104	spread	VBN
+2515	8	104	out	RP
+2516	9	104	on	IN
+2517	10	104	the	DT
+2518	11	104	table	NN
+2519	12	104	-	HYPH
+2520	13	104	Samsa	NNP
+2521	14	104	was	VBD
+2522	15	104	a	DT
+2523	16	104	travelling	VBG
+2524	17	104	salesman	NN
+2525	18	104	-	HYPH
+2526	19	104	and	CC
+2527	20	104	above	IN
+2528	21	104	it	PRP
+2529	22	104	there	RB
+2530	23	104	hung	VBD
+2531	24	104	a	DT
+2532	25	104	picture	NN
+2533	26	104	that	WDT
+2534	27	104	he	PRP
+2535	28	104	had	VBD
+2536	29	104	recently	RB
+2537	30	104	cut	VBN
+2538	31	104	out	RP
+2539	32	104	of	IN
+2540	33	104	an	DT
+2541	34	104	illustrated	VBN
+2542	35	104	magazine	NN
+2543	36	104	and	CC
+2544	37	104	housed	VBN
+2545	38	104	in	IN
+2546	39	104	a	DT
+2547	40	104	nice	JJ
+2548	41	104	,	,
+2549	42	104	gilded	JJ
+2550	43	104	frame	NN
+2551	44	104	.	.
+2552	1	105	It	PRP
+2553	2	105	showed	VBD
+2554	3	105	a	DT
+2555	4	105	lady	NN
+2556	5	105	fitted	VBN
+2557	6	105	out	RP
+2558	7	105	with	IN
+2559	8	105	a	DT
+2560	9	105	fur	NN
+2561	10	105	hat	NN
+2562	11	105	and	CC
+2563	12	105	fur	NN
+2564	13	105	boa	NN
+2565	14	105	who	WP
+2566	15	105	sat	VBD
+2567	16	105	upright	RB
+2568	17	105	,	,
+2569	18	105	raising	VBG
+2570	19	105	a	DT
+2571	20	105	heavy	JJ
+2572	21	105	fur	NN
+2573	22	105	muff	NN
+2574	23	105	that	WDT
+2575	24	105	covered	VBD
+2576	25	105	the	DT
+2577	26	105	whole	NN
+2578	27	105	of	IN
+2579	28	105	her	PRP$
+2580	29	105	lower	JJR
+2581	30	105	arm	NN
+2582	31	105	towards	IN
+2583	32	105	the	DT
+2584	33	105	viewer	NN
+2585	34	105	.	.
+2586	1	106	Gregor	NNP
+2587	2	106	then	RB
+2588	3	106	turned	VBD
+2589	4	106	to	TO
+2590	5	106	look	VB
+2591	6	106	out	IN
+2592	7	106	the	DT
+2593	8	106	window	NN
+2594	9	106	at	IN
+2595	10	106	the	DT
+2596	11	106	dull	JJ
+2597	12	106	weather	NN
+2598	13	106	.	.
+2599	1	107	It	PRP
+2600	2	107	was	VBD
+2601	3	107	the	DT
+2602	4	107	year	NN
+2603	5	107	of	IN
+2604	6	107	Our	PRP$
+2605	7	107	Lord	NNP
+2606	8	107	one	CD
+2607	9	107	thousand	CD
+2608	10	107	seven	CD
+2609	11	107	hundred	CD
+2610	12	107	and	CC
+2611	13	107	seventy	CD
+2612	14	107	-	HYPH
+2613	15	107	five	CD
+2614	16	107	.	.
+2615	1	108	Spiritual	JJ
+2616	2	108	revelations	NNS
+2617	3	108	were	VBD
+2618	4	108	conceded	VBN
+2619	5	108	to	IN
+2620	6	108	England	NNP
+2621	7	108	at	IN
+2622	8	108	that	WDT
+2623	9	108	favoured	JJ
+2624	10	108	period	NN
+2625	11	108	,	,
+2626	12	108	as	IN
+2627	13	108	at	IN
+2628	14	108	this	DT
+2629	15	108	.	.
+2630	1	109	Mrs.	NNP
+2631	2	109	Southcott	NNP
+2632	3	109	had	VBD
+2633	4	109	recently	RB
+2634	5	109	attained	VBN
+2635	6	109	her	PRP$
+2636	7	109	five	CD
+2637	8	109	-	HYPH
+2638	9	109	and	CC
+2639	10	109	-	HYPH
+2640	11	109	twentieth	JJ
+2641	12	109	blessed	JJ
+2642	13	109	birthday	NN
+2643	14	109	,	,
+2644	15	109	of	IN
+2645	16	109	whom	WP
+2646	17	109	a	DT
+2647	18	109	prophetic	JJ
+2648	19	109	private	JJ
+2649	20	109	in	IN
+2650	21	109	the	DT
+2651	22	109	Life	NNP
+2652	23	109	Guards	NNPS
+2653	24	109	had	VBD
+2654	25	109	heralded	VBN
+2655	26	109	the	DT
+2656	27	109	sublime	JJ
+2657	28	109	appearance	NN
+2658	29	109	by	IN
+2659	30	109	announcing	VBG
+2660	31	109	that	DT
+2661	32	109	arrangements	NNS
+2662	33	109	were	VBD
+2663	34	109	made	VBN
+2664	35	109	for	IN
+2665	36	109	the	DT
+2666	37	109	swallowing	VBG
+2667	38	109	up	RP
+2668	39	109	of	IN
+2669	40	109	London	NNP
+2670	41	109	and	CC
+2671	42	109	Westminster	NNP
+2672	43	109	.	.
+2673	1	110	Even	RB
+2674	2	110	the	DT
+2675	3	110	Cock	NNP
+2676	4	110	-	HYPH
+2677	5	110	lane	NN
+2678	6	110	ghost	NN
+2679	7	110	had	VBD
+2680	8	110	been	VBN
+2681	9	110	laid	VBN
+2682	10	110	only	RB
+2683	11	110	a	DT
+2684	12	110	round	JJ
+2685	13	110	dozen	NN
+2686	14	110	of	IN
+2687	15	110	years	NNS
+2688	16	110	,	,
+2689	17	110	after	IN
+2690	18	110	rapping	VBG
+2691	19	110	out	RP
+2692	20	110	its	PRP$
+2693	21	110	messages	NNS
+2694	22	110	,	,
+2695	23	110	as	IN
+2696	24	110	the	DT
+2697	25	110	spirits	NNS
+2698	26	110	of	IN
+2699	27	110	this	DT
+2700	28	110	very	JJ
+2701	29	110	year	NN
+2702	30	110	last	JJ
+2703	31	110	past	NN
+2704	32	110	(	-LRB-
+2705	33	110	supernaturally	RB
+2706	34	110	deficient	JJ
+2707	35	110	in	IN
+2708	36	110	originality	NN
+2709	37	110	)	-RRB-
+2710	38	110	rapped	VBD
+2711	39	110	out	IN
+2712	40	110	theirs	PRP
+2713	41	110	.	.
+2714	1	111	Mere	JJ
+2715	2	111	messages	NNS
+2716	3	111	in	IN
+2717	4	111	the	DT
+2718	5	111	earthly	JJ
+2719	6	111	order	NN
+2720	7	111	of	IN
+2721	8	111	events	NNS
+2722	9	111	had	VBD
+2723	10	111	lately	RB
+2724	11	111	come	VBN
+2725	12	111	to	IN
+2726	13	111	the	DT
+2727	14	111	English	JJ
+2728	15	111	Crown	NNP
+2729	16	111	and	CC
+2730	17	111	People	NNS
+2731	18	111	,	,
+2732	19	111	from	IN
+2733	20	111	a	DT
+2734	21	111	congress	NN
+2735	22	111	of	IN
+2736	23	111	British	JJ
+2737	24	111	subjects	NNS
+2738	25	111	in	IN
+2739	26	111	America	NNP
+2740	27	111	:	:
+2741	28	111	which	WDT
+2742	29	111	,	,
+2743	30	111	strange	JJ
+2744	31	111	to	TO
+2745	32	111	relate	VB
+2746	33	111	,	,
+2747	34	111	have	VBP
+2748	35	111	proved	VBN
+2749	36	111	more	RBR
+2750	37	111	important	JJ
+2751	38	111	to	IN
+2752	39	111	the	DT
+2753	40	111	human	JJ
+2754	41	111	race	NN
+2755	42	111	than	IN
+2756	43	111	any	DT
+2757	44	111	communications	NNS
+2758	45	111	yet	RB
+2759	46	111	received	VBN
+2760	47	111	through	IN
+2761	48	111	any	DT
+2762	49	111	of	IN
+2763	50	111	the	DT
+2764	51	111	chickens	NNS
+2765	52	111	of	IN
+2766	53	111	the	DT
+2767	54	111	Cock	NNP
+2768	55	111	-	HYPH
+2769	56	111	lane	NN
+2770	57	111	brood	NN
+2771	58	111	.	.
+2772	1	112	France	NNP
+2773	2	112	,	,
+2774	3	112	less	JJR
+2775	4	112	favoured	JJ
+2776	5	112	on	IN
+2777	6	112	the	DT
+2778	7	112	whole	NN
+2779	8	112	as	IN
+2780	9	112	to	IN
+2781	10	112	matters	NNS
+2782	11	112	spiritual	JJ
+2783	12	112	than	IN
+2784	13	112	her	PRP$
+2785	14	112	sister	NN
+2786	15	112	of	IN
+2787	16	112	the	DT
+2788	17	112	shield	NN
+2789	18	112	and	CC
+2790	19	112	trident	NN
+2791	20	112	,	,
+2792	21	112	rolled	VBD
+2793	22	112	with	IN
+2794	23	112	exceeding	VBG
+2795	24	112	smoothness	NN
+2796	25	112	down	RP
+2797	26	112	hill	NN
+2798	27	112	,	,
+2799	28	112	making	VBG
+2800	29	112	paper	NN
+2801	30	112	money	NN
+2802	31	112	and	CC
+2803	32	112	spending	VBG
+2804	33	112	it	PRP
+2805	34	112	.	.
+2806	1	113	Under	IN
+2807	2	113	the	DT
+2808	3	113	guidance	NN
+2809	4	113	of	IN
+2810	5	113	her	PRP$
+2811	6	113	Christian	JJ
+2812	7	113	pastors	NNS
+2813	8	113	,	,
+2814	9	113	she	PRP
+2815	10	113	entertained	VBD
+2816	11	113	herself	PRP
+2817	12	113	,	,
+2818	13	113	besides	IN
+2819	14	113	,	,
+2820	15	113	with	IN
+2821	16	113	such	JJ
+2822	17	113	humane	JJ
+2823	18	113	achievements	NNS
+2824	19	113	as	IN
+2825	20	113	sentencing	VBG
+2826	21	113	a	DT
+2827	22	113	youth	NN
+2828	23	113	to	TO
+2829	24	113	have	VB
+2830	25	113	his	PRP$
+2831	26	113	hands	NNS
+2832	27	113	cut	VBN
+2833	28	113	off	RP
+2834	29	113	,	,
+2835	30	113	his	PRP$
+2836	31	113	tongue	NN
+2837	32	113	torn	VBN
+2838	33	113	out	RP
+2839	34	113	with	IN
+2840	35	113	pincers	NNS
+2841	36	113	,	,
+2842	37	113	and	CC
+2843	38	113	his	PRP$
+2844	39	113	body	NN
+2845	40	113	burned	VBN
+2846	41	113	alive	JJ
+2847	42	113	,	,
+2848	43	113	because	IN
+2849	44	113	he	PRP
+2850	45	113	had	VBD
+2851	46	113	not	RB
+2852	47	113	kneeled	VBN
+2853	48	113	down	RP
+2854	49	113	in	IN
+2855	50	113	the	DT
+2856	51	113	rain	NN
+2857	52	113	to	TO
+2858	53	113	do	VB
+2859	54	113	honour	NN
+2860	55	113	to	IN
+2861	56	113	a	DT
+2862	57	113	dirty	JJ
+2863	58	113	procession	NN
+2864	59	113	of	IN
+2865	60	113	monks	NNS
+2866	61	113	which	WDT
+2867	62	113	passed	VBD
+2868	63	113	within	IN
+2869	64	113	his	PRP$
+2870	65	113	view	NN
+2871	66	113	,	,
+2872	67	113	at	IN
+2873	68	113	a	DT
+2874	69	113	distance	NN
+2875	70	113	of	IN
+2876	71	113	some	DT
+2877	72	113	fifty	CD
+2878	73	113	or	CC
+2879	74	113	sixty	CD
+2880	75	113	yards	NNS
+2881	76	113	.	.
+2882	1	114	﻿Well	NN
+2883	2	114	,	,
+2884	3	114	then	RB
+2885	4	114	,	,
+2886	5	114	the	DT
+2887	6	114	old	JJ
+2888	7	114	thingcommenced	NN
+2889	8	114	again	RB
+2890	9	114	.	.
+2891	1	115	The	DT
+2892	2	115	widow	NN
+2893	3	115	rung	VBD
+2894	4	115	a	DT
+2895	5	115	bell	NN
+2896	6	115	for	IN
+2897	7	115	supper	NN
+2898	8	115	,	,
+2899	9	115	and	CC
+2900	10	115	you	PRP
+2901	11	115	had	VBD
+2902	12	115	to	TO
+2903	13	115	cometo	VB
+2904	14	115	time	NN
+2905	15	115	.	.
+2906	1	116	When	WRB
+2907	2	116	you	PRP
+2908	3	116	got	VBD
+2909	4	116	to	IN
+2910	5	116	the	DT
+2911	6	116	table	NN
+2912	7	116	you	PRP
+2913	8	116	could	MD
+2914	9	116	n't	RB
+2915	10	116	go	VB
+2916	11	116	right	RB
+2917	12	116	to	IN
+2918	13	116	eating	NN
+2919	14	116	,	,
+2920	15	116	butyou	NN
+2921	16	116	had	VBD
+2922	17	116	to	TO
+2923	18	116	wait	VB
+2924	19	116	for	IN
+2925	20	116	the	DT
+2926	21	116	widow	NN
+2927	22	116	to	TO
+2928	23	116	tuck	VB
+2929	24	116	down	RP
+2930	25	116	her	PRP$
+2931	26	116	head	NN
+2932	27	116	and	CC
+2933	28	116	grumble	VB
+2934	29	116	a	DT
+2935	30	116	littleover	NN
+2936	31	116	the	DT
+2937	32	116	victuals	NNS
+2938	33	116	,	,
+2939	34	116	though	IN
+2940	35	116	there	EX
+2941	36	116	warn't	WP
+2942	37	116	really	RB
+2943	38	116	anything	NN
+2944	39	116	the	DT
+2945	40	116	matter	NN
+2946	41	116	withthem,--that	WP
+2947	42	116	is	VBZ
+2948	43	116	,	,
+2949	44	116	nothing	NN
+2950	45	116	only	RB
+2951	46	116	everything	NN
+2952	47	116	was	VBD
+2953	48	116	cooked	VBN
+2954	49	116	by	IN
+2955	50	116	itself	PRP
+2956	51	116	.	.
+2957	1	117	In	IN
+2958	2	117	abarrel	NN
+2959	3	117	of	IN
+2960	4	117	odds	NNS
+2961	5	117	and	CC
+2962	6	117	ends	VBZ
+2963	7	117	it	PRP
+2964	8	117	is	VBZ
+2965	9	117	different	JJ
+2966	10	117	;	:
+2967	11	117	things	NNS
+2968	12	117	get	VBP
+2969	13	117	mixed	VBN
+2970	14	117	up	RP
+2971	15	117	,	,
+2972	16	117	and	CC
+2973	17	117	thejuice	NN
+2974	18	117	kind	RB
+2975	19	117	of	RB
+2976	20	117	swaps	NNS
+2977	21	117	around	RB
+2978	22	117	,	,
+2979	23	117	and	CC
+2980	24	117	the	DT
+2981	25	117	things	NNS
+2982	26	117	go	VBP
+2983	27	117	better	RB
+2984	28	117	.	.
+2985	1	118	After	IN
+2986	2	118	supper	NN
+2987	3	118	she	PRP
+2988	4	118	got	VBD
+2989	5	118	out	RP
+2990	6	118	her	PRP$
+2991	7	118	book	NN
+2992	8	118	and	CC
+2993	9	118	learned	VBD
+2994	10	118	me	PRP
+2995	11	118	about	IN
+2996	12	118	Moses	NNP
+2997	13	118	and	CC
+2998	14	118	theBulrushers	NNS
+2999	15	118	,	,
+3000	16	118	and	CC
+3001	17	118	I	PRP
+3002	18	118	was	VBD
+3003	19	118	in	IN
+3004	20	118	a	DT
+3005	21	118	sweat	NN
+3006	22	118	to	TO
+3007	23	118	find	VB
+3008	24	118	out	RP
+3009	25	118	all	DT
+3010	26	118	about	IN
+3011	27	118	him	PRP
+3012	28	118	;	:
+3013	29	118	but	CC
+3014	30	118	by	IN
+3015	31	118	andby	NN
+3016	32	118	she	PRP
+3017	33	118	let	VBD
+3018	34	118	it	PRP
+3019	35	118	out	RP
+3020	36	118	that	IN
+3021	37	118	Moses	NNP
+3022	38	118	had	VBD
+3023	39	118	been	VBN
+3024	40	118	dead	JJ
+3025	41	118	a	DT
+3026	42	118	considerable	JJ
+3027	43	118	long	JJ
+3028	44	118	time	NN
+3029	45	118	;	:
+3030	46	118	sothen	NN
+3031	47	118	I	PRP
+3032	48	118	did	VBD
+3033	49	118	n't	RB
+3034	50	118	care	VB
+3035	51	118	no	DT
+3036	52	118	more	JJR
+3037	53	118	about	IN
+3038	54	118	him	PRP
+3039	55	118	,	,
+3040	56	118	because	IN
+3041	57	118	I	PRP
+3042	58	118	do	VBP
+3043	59	118	n't	RB
+3044	60	118	take	VB
+3045	61	118	no	DT
+3046	62	118	stock	NN
+3047	63	118	indead	RB
+3048	64	118	people	NNS
+3049	65	118	.	.
+3050	1	119	Pretty	RB
+3051	2	119	soon	RB
+3052	3	119	I	PRP
+3053	4	119	wanted	VBD
+3054	5	119	to	TO
+3055	6	119	smoke	VB
+3056	7	119	,	,
+3057	8	119	and	CC
+3058	9	119	asked	VBD
+3059	10	119	the	DT
+3060	11	119	widow	NN
+3061	12	119	to	TO
+3062	13	119	let	VB
+3063	14	119	me	PRP
+3064	15	119	.	.
+3065	1	120	But	CC
+3066	2	120	shewouldn't	PRP
+3067	3	120	.	.
+3068	1	121	She	PRP
+3069	2	121	said	VBD
+3070	3	121	it	PRP
+3071	4	121	was	VBD
+3072	5	121	a	DT
+3073	6	121	mean	JJ
+3074	7	121	practice	NN
+3075	8	121	and	CC
+3076	9	121	was	VBD
+3077	10	121	n't	RB
+3078	11	121	clean	JJ
+3079	12	121	,	,
+3080	13	121	and	CC
+3081	14	121	I	PRP
+3082	15	121	musttry	VBP
+3083	16	121	to	TO
+3084	17	121	not	RB
+3085	18	121	do	VB
+3086	19	121	it	PRP
+3087	20	121	any	DT
+3088	21	121	more	RBR
+3089	22	121	.	.
+3090	1	122	That	DT
+3091	2	122	is	VBZ
+3092	3	122	just	RB
+3093	4	122	the	DT
+3094	5	122	way	NN
+3095	6	122	with	IN
+3096	7	122	some	DT
+3097	8	122	people	NNS
+3098	9	122	.	.
+3099	1	123	Theyget	VB
+3100	2	123	down	RP
+3101	3	123	on	IN
+3102	4	123	a	DT
+3103	5	123	thing	NN
+3104	6	123	when	WRB
+3105	7	123	they	PRP
+3106	8	123	do	VBP
+3107	9	123	n't	RB
+3108	10	123	know	VB
+3109	11	123	nothing	NN
+3110	12	123	about	IN
+3111	13	123	it	PRP
+3112	14	123	.	.
+3113	1	124	And	CC
+3114	2	124	yet	RB
+3115	3	124	there	EX
+3116	4	124	was	VBD
+3117	5	124	but	CC
+3118	6	124	one	CD
+3119	7	124	woman	NN
+3120	8	124	to	IN
+3121	9	124	him	PRP
+3122	10	124	,	,
+3123	11	124	and	CC
+3124	12	124	that	DT
+3125	13	124	woman	NN
+3126	14	124	was	VBD
+3127	15	124	the	DT
+3128	16	124	late	JJ
+3129	17	124	Irene	NNP
+3130	18	124	Adler	NNP
+3131	19	124	,	,
+3132	20	124	of	IN
+3133	21	124	dubious	JJ
+3134	22	124	and	CC
+3135	23	124	questionable	JJ
+3136	24	124	memory	NN
+3137	25	124	.	.
+3138	1	125	I	PRP
+3139	2	125	had	VBD
+3140	3	125	seen	VBN
+3141	4	125	little	JJ
+3142	5	125	of	IN
+3143	6	125	Holmes	NNP
+3144	7	125	lately	RB
+3145	8	125	.	.
+3146	1	126	My	PRP$
+3147	2	126	marriage	NN
+3148	3	126	had	VBD
+3149	4	126	drifted	VBN
+3150	5	126	us	PRP
+3151	6	126	away	RB
+3152	7	126	from	IN
+3153	8	126	each	DT
+3154	9	126	other	JJ
+3155	10	126	.	.
+3156	1	127	My	PRP$
+3157	2	127	own	JJ
+3158	3	127	complete	JJ
+3159	4	127	happiness	NN
+3160	5	127	,	,
+3161	6	127	and	CC
+3162	7	127	the	DT
+3163	8	127	home	NN
+3164	9	127	-	HYPH
+3165	10	127	centred	JJ
+3166	11	127	interests	NNS
+3167	12	127	which	WDT
+3168	13	127	rise	VBP
+3169	14	127	up	RP
+3170	15	127	around	IN
+3171	16	127	the	DT
+3172	17	127	man	NN
+3173	18	127	who	WP
+3174	19	127	first	RB
+3175	20	127	finds	VBZ
+3176	21	127	himself	PRP
+3177	22	127	master	NN
+3178	23	127	of	IN
+3179	24	127	his	PRP$
+3180	25	127	own	JJ
+3181	26	127	establishment	NN
+3182	27	127	,	,
+3183	28	127	were	VBD
+3184	29	127	sufficient	JJ
+3185	30	127	to	TO
+3186	31	127	absorb	VB
+3187	32	127	all	PDT
+3188	33	127	my	PRP$
+3189	34	127	attention	NN
+3190	35	127	,	,
+3191	36	127	while	IN
+3192	37	127	Holmes	NNP
+3193	38	127	,	,
+3194	39	127	who	WP
+3195	40	127	loathed	VBD
+3196	41	127	every	DT
+3197	42	127	form	NN
+3198	43	127	of	IN
+3199	44	127	society	NN
+3200	45	127	with	IN
+3201	46	127	his	PRP$
+3202	47	127	whole	JJ
+3203	48	127	Bohemian	JJ
+3204	49	127	soul	NN
+3205	50	127	,	,
+3206	51	127	remained	VBD
+3207	52	127	in	IN
+3208	53	127	our	PRP$
+3209	54	127	lodgings	NNS
+3210	55	127	in	IN
+3211	56	127	Baker	NNP
+3212	57	127	Street	NNP
+3213	58	127	,	,
+3214	59	127	buried	VBD
+3215	60	127	among	IN
+3216	61	127	his	PRP$
+3217	62	127	old	JJ
+3218	63	127	books	NNS
+3219	64	127	,	,
+3220	65	127	and	CC
+3221	66	127	alternating	VBG
+3222	67	127	from	IN
+3223	68	127	week	NN
+3224	69	127	to	IN
+3225	70	127	week	NN
+3226	71	127	between	IN
+3227	72	127	cocaine	NN
+3228	73	127	and	CC
+3229	74	127	ambition	NN
+3230	75	127	,	,
+3231	76	127	the	DT
+3232	77	127	drowsiness	NN
+3233	78	127	of	IN
+3234	79	127	the	DT
+3235	80	127	drug	NN
+3236	81	127	,	,
+3237	82	127	and	CC
+3238	83	127	the	DT
+3239	84	127	fierce	JJ
+3240	85	127	energy	NN
+3241	86	127	of	IN
+3242	87	127	his	PRP$
+3243	88	127	own	JJ
+3244	89	127	keen	JJ
+3245	90	127	nature	NN
+3246	91	127	.	.
+3247	1	128	He	PRP
+3248	2	128	was	VBD
+3249	3	128	still	RB
+3250	4	128	,	,
+3251	5	128	as	IN
+3252	6	128	ever	RB
+3253	7	128	,	,
+3254	8	128	deeply	RB
+3255	9	128	attracted	VBN
+3256	10	128	by	IN
+3257	11	128	the	DT
+3258	12	128	study	NN
+3259	13	128	of	IN
+3260	14	128	crime	NN
+3261	15	128	,	,
+3262	16	128	and	CC
+3263	17	128	occupied	VBD
+3264	18	128	his	PRP$
+3265	19	128	immense	JJ
+3266	20	128	faculties	NNS
+3267	21	128	and	CC
+3268	22	128	extraordinary	JJ
+3269	23	128	powers	NNS
+3270	24	128	of	IN
+3271	25	128	observation	NN
+3272	26	128	in	IN
+3273	27	128	following	VBG
+3274	28	128	out	IN
+3275	29	128	those	DT
+3276	30	128	clues	NNS
+3277	31	128	,	,
+3278	32	128	and	CC
+3279	33	128	clearing	VBG
+3280	34	128	up	RP
+3281	35	128	those	DT
+3282	36	128	mysteries	NNS
+3283	37	128	which	WDT
+3284	38	128	had	VBD
+3285	39	128	been	VBN
+3286	40	128	abandoned	VBN
+3287	41	128	as	IN
+3288	42	128	hopeless	JJ
+3289	43	128	by	IN
+3290	44	128	the	DT
+3291	45	128	official	JJ
+3292	46	128	police	NNS
+3293	47	128	.	.
+3294	1	129	From	IN
+3295	2	129	time	NN
+3296	3	129	to	IN
+3297	4	129	time	NN
+3298	5	129	I	PRP
+3299	6	129	heard	VBD
+3300	7	129	some	DT
+3301	8	129	vague	JJ
+3302	9	129	account	NN
+3303	10	129	of	IN
+3304	11	129	his	PRP$
+3305	12	129	doings	NNS
+3306	13	129	:	:
+3307	14	129	of	IN
+3308	15	129	his	PRP$
+3309	16	129	summons	NNS
+3310	17	129	to	IN
+3311	18	129	Odessa	NNP
+3312	19	129	in	IN
+3313	20	129	the	DT
+3314	21	129	case	NN
+3315	22	129	of	IN
+3316	23	129	the	DT
+3317	24	129	Trepoff	NNP
+3318	25	129	murder	NN
+3319	26	129	,	,
+3320	27	129	of	IN
+3321	28	129	his	PRP$
+3322	29	129	clearing	NN
+3323	30	129	up	IN
+3324	31	129	of	IN
+3325	32	129	the	DT
+3326	33	129	singular	JJ
+3327	34	129	tragedy	NN
+3328	35	129	of	IN
+3329	36	129	the	DT
+3330	37	129	Atkinson	NNP
+3331	38	129	brothers	NNS
+3332	39	129	at	IN
+3333	40	129	Trincomalee	NNP
+3334	41	129	,	,
+3335	42	129	and	CC
+3336	43	129	finally	RB
+3337	44	129	of	IN
+3338	45	129	the	DT
+3339	46	129	mission	NN
+3340	47	129	which	WDT
+3341	48	129	he	PRP
+3342	49	129	had	VBD
+3343	50	129	accomplished	VBN
+3344	51	129	so	RB
+3345	52	129	delicately	RB
+3346	53	129	and	CC
+3347	54	129	successfully	RB
+3348	55	129	for	IN
+3349	56	129	the	DT
+3350	57	129	reigning	VBG
+3351	58	129	family	NN
+3352	59	129	of	IN
+3353	60	129	Holland	NNP
+3354	61	129	.	.
+3355	1	130	﻿Emma	NNP
+3356	2	130	Woodhouse	NNP
+3357	3	130	,	,
+3358	4	130	handsome	JJ
+3359	5	130	,	,
+3360	6	130	clever	JJ
+3361	7	130	,	,
+3362	8	130	and	CC
+3363	9	130	rich	JJ
+3364	10	130	,	,
+3365	11	130	with	IN
+3366	12	130	a	DT
+3367	13	130	comfortable	JJ
+3368	14	130	homeand	NN
+3369	15	130	happy	JJ
+3370	16	130	disposition	NN
+3371	17	130	,	,
+3372	18	130	seemed	VBD
+3373	19	130	to	TO
+3374	20	130	unite	VB
+3375	21	130	some	DT
+3376	22	130	of	IN
+3377	23	130	the	DT
+3378	24	130	best	JJS
+3379	25	130	blessings	NNS
+3380	26	130	ofexistence	NN
+3381	27	130	;	:
+3382	28	130	and	CC
+3383	29	130	had	VBD
+3384	30	130	lived	VBN
+3385	31	130	nearly	RB
+3386	32	130	twenty	CD
+3387	33	130	-	HYPH
+3388	34	130	one	CD
+3389	35	130	years	NNS
+3390	36	130	in	IN
+3391	37	130	the	DT
+3392	38	130	world	NN
+3393	39	130	with	IN
+3394	40	130	verylittle	NN
+3395	41	130	to	IN
+3396	42	130	distress	NN
+3397	43	130	or	CC
+3398	44	130	vex	VB
+3399	45	130	her	PRP
+3400	46	130	.	.
+3401	1	131	She	PRP
+3402	2	131	was	VBD
+3403	3	131	the	DT
+3404	4	131	youngest	JJS
+3405	5	131	of	IN
+3406	6	131	the	DT
+3407	7	131	two	CD
+3408	8	131	daughters	NNS
+3409	9	131	of	IN
+3410	10	131	a	DT
+3411	11	131	most	RBS
+3412	12	131	affectionate	JJ
+3413	13	131	,	,
+3414	14	131	indulgent	JJ
+3415	15	131	father	NN
+3416	16	131	;	:
+3417	17	131	and	CC
+3418	18	131	had	VBD
+3419	19	131	,	,
+3420	20	131	in	IN
+3421	21	131	consequence	NN
+3422	22	131	of	IN
+3423	23	131	her	PRP$
+3424	24	131	sister	NN
+3425	25	131	's	POS
+3426	26	131	marriage	NN
+3427	27	131	,	,
+3428	28	131	beenmistress	NN
+3429	29	131	of	IN
+3430	30	131	his	PRP$
+3431	31	131	house	NN
+3432	32	131	from	IN
+3433	33	131	a	DT
+3434	34	131	very	RB
+3435	35	131	early	JJ
+3436	36	131	period	NN
+3437	37	131	.	.
+3438	1	132	Her	PRP$
+3439	2	132	mother	NN
+3440	3	132	had	VBD
+3441	4	132	diedtoo	RB
+3442	5	132	long	RB
+3443	6	132	ago	RB
+3444	7	132	for	IN
+3445	8	132	her	PRP
+3446	9	132	to	TO
+3447	10	132	have	VB
+3448	11	132	more	JJR
+3449	12	132	than	IN
+3450	13	132	an	DT
+3451	14	132	indistinct	JJ
+3452	15	132	remembrance	NN
+3453	16	132	ofher	NN
+3454	17	132	caresses	VBZ
+3455	18	132	;	:
+3456	19	132	and	CC
+3457	20	132	her	PRP$
+3458	21	132	place	NN
+3459	22	132	had	VBD
+3460	23	132	been	VBN
+3461	24	132	supplied	VBN
+3462	25	132	by	IN
+3463	26	132	an	DT
+3464	27	132	excellent	JJ
+3465	28	132	woman	NN
+3466	29	132	asgoverness	NN
+3467	30	132	,	,
+3468	31	132	who	WP
+3469	32	132	had	VBD
+3470	33	132	fallen	VBN
+3471	34	132	little	JJ
+3472	35	132	short	JJ
+3473	36	132	of	IN
+3474	37	132	a	DT
+3475	38	132	mother	NN
+3476	39	132	in	IN
+3477	40	132	affection	NN
+3478	41	132	.	.
+3479	1	133	Sixteen	CD
+3480	2	133	years	NNS
+3481	3	133	had	VBD
+3482	4	133	Miss	NNP
+3483	5	133	Taylor	NNP
+3484	6	133	been	VBN
+3485	7	133	in	IN
+3486	8	133	Mr.	NNP
+3487	9	133	Woodhouse	NNP
+3488	10	133	's	POS
+3489	11	133	family	NN
+3490	12	133	,	,
+3491	13	133	less	JJR
+3492	14	133	as	IN
+3493	15	133	agoverness	NN
+3494	16	133	than	IN
+3495	17	133	a	DT
+3496	18	133	friend	NN
+3497	19	133	,	,
+3498	20	133	very	RB
+3499	21	133	fond	JJ
+3500	22	133	of	IN
+3501	23	133	both	DT
+3502	24	133	daughters	NNS
+3503	25	133	,	,
+3504	26	133	but	CC
+3505	27	133	particularlyof	NN
+3506	28	133	Emma	NNP
+3507	29	133	.	.
+3508	1	134	Between	IN
+3509	2	134	_	-RRB-
+3510	3	134	them	PRP
+3511	4	134	_	NFP
+3512	5	134	it	PRP
+3513	6	134	was	VBD
+3514	7	134	more	JJR
+3515	8	134	the	DT
+3516	9	134	intimacy	NN
+3517	10	134	of	IN
+3518	11	134	sisters	NNS
+3519	12	134	.	.
+3520	1	135	Even	RB
+3521	2	135	beforeMiss	NNP
+3522	3	135	Taylor	NNP
+3523	4	135	had	VBD
+3524	5	135	ceased	VBN
+3525	6	135	to	TO
+3526	7	135	hold	VB
+3527	8	135	the	DT
+3528	9	135	nominal	JJ
+3529	10	135	office	NN
+3530	11	135	of	IN
+3531	12	135	governess	NN
+3532	13	135	,	,
+3533	14	135	themildness	NN
+3534	15	135	of	IN
+3535	16	135	her	PRP$
+3536	17	135	temper	NN
+3537	18	135	had	VBD
+3538	19	135	hardly	RB
+3539	20	135	allowed	VBN
+3540	21	135	her	PRP
+3541	22	135	to	TO
+3542	23	135	impose	VB
+3543	24	135	any	DT
+3544	25	135	restraint;and	NN
+3545	26	135	the	DT
+3546	27	135	shadow	NN
+3547	28	135	of	IN
+3548	29	135	authority	NN
+3549	30	135	being	VBG
+3550	31	135	now	RB
+3551	32	135	long	RB
+3552	33	135	passed	VBN
+3553	34	135	away	RP
+3554	1	136	,	,
+3555	2	136	they	PRP
+3556	3	136	had	VBD
+3557	4	136	beenliving	VBG
+3558	5	136	together	RB
+3559	6	136	as	IN
+3560	7	136	friend	NN
+3561	8	136	and	CC
+3562	9	136	friend	NN
+3563	10	136	very	RB
+3564	11	136	mutually	RB
+3565	12	136	attached	JJ
+3566	13	136	,	,
+3567	14	136	and	CC
+3568	1	137	Emmadoing	NNP
+3569	2	137	just	RB
+3570	3	137	what	WP
+3571	4	137	she	PRP
+3572	5	137	liked	VBD
+3573	6	137	;	:
+3574	7	137	highly	RB
+3575	8	137	esteeming	VBG
+3576	9	137	Miss	NNP
+3577	10	137	Taylor	NNP
+3578	11	137	's	POS
+3579	12	137	judgment	NN
+3580	13	137	,	,
+3581	14	137	butdirected	VBN
+3582	15	137	chiefly	RB
+3583	16	137	by	IN
+3584	17	137	her	PRP$
+3585	18	137	own	JJ
+3586	19	137	.	.
+3587	1	138	﻿The	DT
+3588	2	138	studio	NN
+3589	3	138	was	VBD
+3590	4	138	filled	VBN
+3591	5	138	with	IN
+3592	6	138	the	DT
+3593	7	138	rich	JJ
+3594	8	138	odour	NN
+3595	9	138	of	IN
+3596	10	138	roses	NNS
+3597	11	138	,	,
+3598	12	138	and	CC
+3599	13	138	when	WRB
+3600	14	138	the	DT
+3601	15	138	lightsummer	NN
+3602	16	138	wind	NN
+3603	17	138	stirred	VBN
+3604	18	138	amidst	IN
+3605	19	138	the	DT
+3606	20	138	trees	NNS
+3607	21	138	of	IN
+3608	22	138	the	DT
+3609	23	138	garden	NN
+3610	24	138	,	,
+3611	25	138	there	EX
+3612	26	138	came	VBD
+3613	27	138	throughthe	DT
+3614	28	138	open	JJ
+3615	29	138	door	NN
+3616	30	138	the	DT
+3617	31	138	heavy	JJ
+3618	32	138	scent	NN
+3619	33	138	of	IN
+3620	34	138	the	DT
+3621	35	138	lilac	NN
+3622	36	138	,	,
+3623	37	138	or	CC
+3624	38	138	the	DT
+3625	39	138	more	JJR
+3626	40	138	delicateperfume	NN
+3627	41	138	of	IN
+3628	42	138	the	DT
+3629	43	138	pink	JJ
+3630	44	138	-	HYPH
+3631	45	138	flowering	VBG
+3632	46	138	thorn	NN
+3633	47	138	.	.
+3634	1	139	From	IN
+3635	2	139	the	DT
+3636	3	139	corner	NN
+3637	4	139	of	IN
+3638	5	139	the	DT
+3639	6	139	divan	NN
+3640	7	139	of	IN
+3641	8	139	Persian	NNP
+3642	9	139	saddle	NN
+3643	10	139	-	HYPH
+3644	11	139	bags	NNS
+3645	12	139	on	IN
+3646	13	139	which	WDT
+3647	14	139	he	PRP
+3648	15	139	waslying	VBG
+3649	16	139	,	,
+3650	17	139	smoking	NN
+3651	18	139	,	,
+3652	19	139	as	IN
+3653	20	139	was	VBD
+3654	21	139	his	PRP$
+3655	22	139	custom	NN
+3656	23	139	,	,
+3657	24	139	innumerable	JJ
+3658	25	139	cigarettes	NNS
+3659	26	139	,	,
+3660	27	139	Lord	NNP
+3661	28	139	HenryWotton	NNP
+3662	29	139	could	MD
+3663	30	139	just	RB
+3664	31	139	catch	VB
+3665	32	139	the	DT
+3666	33	139	gleam	NN
+3667	34	139	of	IN
+3668	35	139	the	DT
+3669	36	139	honey	NN
+3670	37	139	-	HYPH
+3671	38	139	sweet	JJ
+3672	39	139	and	CC
+3673	40	139	honey	NN
+3674	41	139	-	HYPH
+3675	42	139	colouredblossoms	NNS
+3676	43	139	of	IN
+3677	44	139	a	DT
+3678	45	139	laburnum	NN
+3679	46	139	,	,
+3680	47	139	whose	WP$
+3681	48	139	tremulous	JJ
+3682	49	139	branches	NNS
+3683	50	139	seemed	VBD
+3684	51	139	hardly	RB
+3685	52	139	able	JJ
+3686	53	139	tobear	VB
+3687	54	139	the	DT
+3688	55	139	burden	NN
+3689	56	139	of	IN
+3690	57	139	a	DT
+3691	58	139	beauty	NN
+3692	59	139	so	RB
+3693	60	139	flamelike	JJ
+3694	61	139	as	IN
+3695	62	139	theirs	PRP
+3696	63	139	;	:
+3697	64	139	and	CC
+3698	65	139	now	RB
+3699	66	139	and	CC
+3700	67	139	thenthe	VB
+3701	68	139	fantastic	JJ
+3702	69	139	shadows	NNS
+3703	70	139	of	IN
+3704	71	139	birds	NNS
+3705	72	139	in	IN
+3706	73	139	flight	NN
+3707	74	139	flitted	VBD
+3708	75	139	across	IN
+3709	76	139	the	DT
+3710	77	139	longtussore	NN
+3711	78	139	-	HYPH
+3712	79	139	silk	NN
+3713	80	139	curtains	NNS
+3714	81	139	that	WDT
+3715	82	139	were	VBD
+3716	83	139	stretched	VBN
+3717	84	139	in	IN
+3718	85	139	front	NN
+3719	86	139	of	IN
+3720	87	139	the	DT
+3721	88	139	huge	JJ
+3722	89	139	window	NN
+3723	90	139	,	,
+3724	91	139	producing	VBG
+3725	92	139	a	DT
+3726	93	139	kind	NN
+3727	94	139	of	IN
+3728	95	139	momentary	JJ
+3729	96	139	Japanese	JJ
+3730	97	139	effect	NN
+3731	98	139	,	,
+3732	99	139	and	CC
+3733	100	139	making	VBG
+3734	101	139	him	PRP
+3735	102	139	think	VB
+3736	103	139	ofthose	RB
+3737	104	139	pallid	JJ
+3738	105	139	,	,
+3739	106	139	jade	NN
+3740	107	139	-	HYPH
+3741	108	139	faced	VBN
+3742	109	139	painters	NNS
+3743	110	139	of	IN
+3744	111	139	Tokyo	NNP
+3745	112	139	who	WP
+3746	113	139	,	,
+3747	114	139	through	IN
+3748	115	139	the	DT
+3749	116	139	medium	JJ
+3750	117	139	ofan	JJ
+3751	118	139	art	NN
+3752	119	139	that	WDT
+3753	120	139	is	VBZ
+3754	121	139	necessarily	RB
+3755	122	139	immobile	JJ
+3756	123	139	,	,
+3757	124	139	seek	VB
+3758	125	139	to	TO
+3759	126	139	convey	VB
+3760	127	139	the	DT
+3761	128	139	sense	NN
+3762	129	139	ofswiftness	NN
+3763	130	139	and	CC
+3764	131	139	motion	NN
+3765	132	139	.	.
+3766	1	140	The	DT
+3767	2	140	sullen	JJ
+3768	3	140	murmur	NN
+3769	4	140	of	IN
+3770	5	140	the	DT
+3771	6	140	bees	NNS
+3772	7	140	shouldering	VBG
+3773	8	140	theirway	NN
+3774	9	140	through	IN
+3775	10	140	the	DT
+3776	11	140	long	JJ
+3777	12	140	unmown	JJ
+3778	13	140	grass	NN
+3779	14	140	,	,
+3780	15	140	or	CC
+3781	16	140	circling	VBG
+3782	17	140	with	IN
+3783	18	140	monotonousinsistence	NN
+3784	19	140	round	IN
+3785	20	140	the	DT
+3786	21	140	dusty	JJ
+3787	22	140	gilt	NN
+3788	23	140	horns	NNS
+3789	24	140	of	IN
+3790	25	140	the	DT
+3791	26	140	straggling	VBG
+3792	27	140	woodbine	NN
+3793	28	140	,	,
+3794	29	140	seemed	VBD
+3795	30	140	to	TO
+3796	31	140	make	VB
+3797	32	140	the	DT
+3798	33	140	stillness	NN
+3799	34	140	more	RBR
+3800	35	140	oppressive	JJ
+3801	36	140	.	.
+3802	1	141	The	DT
+3803	2	141	dim	JJ
+3804	3	141	roar	NN
+3805	4	141	of	IN
+3806	5	141	Londonwas	NNP
+3807	6	141	like	IN
+3808	7	141	the	DT
+3809	8	141	bourdon	NN
+3810	9	141	note	NN
+3811	10	141	of	IN
+3812	11	141	a	DT
+3813	12	141	distant	JJ
+3814	13	141	organ	NN
+3815	14	141	.	.
+3816	1	142	﻿He	NN
+3817	2	142	went	VBD
+3818	3	142	up	RP
+3819	4	142	to	IN
+3820	5	142	Anna	NNP
+3821	6	142	Pavlovna	NNP
+3822	7	142	,	,
+3823	8	142	kissed	VBD
+3824	9	142	her	PRP$
+3825	10	142	hand	NN
+3826	11	142	,	,
+3827	12	142	presenting	VBG
+3828	13	142	to	IN
+3829	14	142	her	PRP$
+3830	15	142	his	PRP$
+3831	16	142	bald	NN
+3832	17	142	,	,
+3833	18	142	scented	VBN
+3834	19	142	,	,
+3835	20	142	and	CC
+3836	21	142	shining	VBG
+3837	22	142	head	NN
+3838	23	142	,	,
+3839	24	142	and	CC
+3840	25	142	complacently	RB
+3841	26	142	seated	VBD
+3842	27	142	himself	PRP
+3843	28	142	on	IN
+3844	29	142	the	DT
+3845	30	142	sofa	NN
+3846	31	142	.	.
+3847	1	143	"	``
+3848	2	143	First	NNP
+3849	3	143	of	IN
+3850	4	143	all	DT
+3851	5	143	,	,
+3852	6	143	dear	JJ
+3853	7	143	friend	NN
+3854	8	143	,	,
+3855	9	143	tell	VB
+3856	10	143	me	PRP
+3857	11	143	how	WRB
+3858	12	143	you	PRP
+3859	13	143	are	VBP
+3860	14	143	.	.
+3861	1	144	Set	VBN
+3862	2	144	your	PRP$
+3863	3	144	friend	NN
+3864	4	144	's	POS
+3865	5	144	mind	NN
+3866	6	144	at	IN
+3867	7	144	rest	NN
+3868	8	144	,	,
+3869	9	144	"	''
+3870	10	144	said	VBD
+3871	11	144	he	PRP
+3872	12	144	without	IN
+3873	13	144	altering	VBG
+3874	14	144	his	PRP$
+3875	15	144	tone	NN
+3876	16	144	,	,
+3877	17	144	beneath	IN
+3878	18	144	the	DT
+3879	19	144	politeness	NN
+3880	20	144	and	CC
+3881	21	144	affected	JJ
+3882	22	144	sympathy	NN
+3883	23	144	of	IN
+3884	24	144	which	WDT
+3885	25	144	indifference	NN
+3886	26	144	and	CC
+3887	27	144	even	RB
+3888	28	144	irony	NN
+3889	29	144	could	MD
+3890	30	144	be	VB
+3891	31	144	discerned	VBN
+3892	32	144	.	.
+3893	1	145	"	``
+3894	2	145	Can	MD
+3895	3	145	one	NN
+3896	4	145	be	VB
+3897	5	145	well	RB
+3898	6	145	while	IN
+3899	7	145	suffering	VBG
+3900	8	145	morally	RB
+3901	9	145	?	.
+3902	1	146	Can	MD
+3903	2	146	one	NN
+3904	3	146	be	VB
+3905	4	146	calm	VBN
+3906	5	146	in	IN
+3907	6	146	times	NNS
+3908	7	146	like	IN
+3909	8	146	these	DT
+3910	9	146	if	IN
+3911	10	146	one	CD
+3912	11	146	has	VBZ
+3913	12	146	any	DT
+3914	13	146	feeling	NN
+3915	14	146	?	.
+3916	15	146	"	''
+3917	16	146	said	VBD
+3918	17	146	Anna	NNP
+3919	18	146	Pavlovna	NNP
+3920	19	146	.	.
+3921	1	147	"	``
+3922	2	147	You	PRP
+3923	3	147	are	VBP
+3924	4	147	staying	VBG
+3925	5	147	the	DT
+3926	6	147	whole	JJ
+3927	7	147	evening	NN
+3928	8	147	,	,
+3929	9	147	I	PRP
+3930	10	147	hope	VBP
+3931	11	147	?	.
+3932	12	147	"	''
+3933	1	148	"	``
+3934	2	148	And	CC
+3935	3	148	the	DT
+3936	4	148	fete	NN
+3937	5	148	at	IN
+3938	6	148	the	DT
+3939	7	148	English	JJ
+3940	8	148	ambassador	NN
+3941	9	148	's	POS
+3942	10	148	?	.
+3943	1	149	Today	NN
+3944	2	149	is	VBZ
+3945	3	149	Wednesday	NNP
+3946	4	149	.	.
+3947	1	150	I	PRP
+3948	2	150	must	MD
+3949	3	150	put	VB
+3950	4	150	in	IN
+3951	5	150	an	DT
+3952	6	150	appearance	NN
+3953	7	150	there	RB
+3954	8	150	,	,
+3955	9	150	"	''
+3956	10	150	said	VBD
+3957	11	150	the	DT
+3958	12	150	prince	NN
+3959	13	150	.	.
+3960	1	151	"	``
+3961	2	151	My	PRP$
+3962	3	151	daughter	NN
+3963	4	151	is	VBZ
+3964	5	151	coming	VBG
+3965	6	151	for	IN
+3966	7	151	me	PRP
+3967	8	151	to	TO
+3968	9	151	take	VB
+3969	10	151	me	PRP
+3970	11	151	there	RB
+3971	12	151	.	.
+3972	13	151	"	''
+3973	1	152	"	``
+3974	2	152	I	PRP
+3975	3	152	thought	VBD
+3976	4	152	today	NN
+3977	5	152	's	POS
+3978	6	152	fete	NN
+3979	7	152	had	VBD
+3980	8	152	been	VBN
+3981	9	152	canceled	VBN
+3982	10	152	.	.
+3983	1	153	I	PRP
+3984	2	153	confess	VBP
+3985	3	153	all	PDT
+3986	4	153	these	DT
+3987	5	153	festivities	NNS
+3988	6	153	and	CC
+3989	7	153	fireworks	NNS
+3990	8	153	are	VBP
+3991	9	153	becoming	VBG
+3992	10	153	wearisome	JJ
+3993	11	153	.	.
+3994	12	153	"	''
+3995	1	154	"	``
+3996	2	154	If	IN
+3997	3	154	they	PRP
+3998	4	154	had	VBD
+3999	5	154	known	VBN
+4000	6	154	that	IN
+4001	7	154	you	PRP
+4002	8	154	wished	VBD
+4003	9	154	it	PRP
+4004	10	154	,	,
+4005	11	154	the	DT
+4006	12	154	entertainment	NN
+4007	13	154	would	MD
+4008	14	154	have	VB
+4009	15	154	been	VBN
+4010	16	154	put	VBN
+4011	17	154	off	RP
+4012	18	154	,	,
+4013	19	154	"	''
+4014	20	154	said	VBD
+4015	21	154	the	DT
+4016	22	154	prince	NN
+4017	23	154	,	,
+4018	24	154	who	WP
+4019	25	154	,	,
+4020	26	154	like	IN
+4021	27	154	a	DT
+4022	28	154	wound	NN
+4023	29	154	-	HYPH
+4024	30	154	up	NN
+4025	31	154	clock	NN
+4026	32	154	,	,
+4027	33	154	by	IN
+4028	34	154	force	NN
+4029	35	154	of	IN
+4030	36	154	habit	NN
+4031	37	154	said	VBD
+4032	38	154	things	NNS
+4033	39	154	he	PRP
+4034	40	154	did	VBD
+4035	41	154	not	RB
+4036	42	154	even	RB
+4037	43	154	wish	VB
+4038	44	154	to	TO
+4039	45	154	be	VB
+4040	46	154	believed	VBN
+4041	47	154	.	.
+4042	1	155	"	``
+4043	2	155	Do	VB
+4044	3	155	n't	RB
+4045	4	155	tease	VB
+4046	5	155	!	.
+4047	1	156	Well	UH
+4048	2	156	,	,
+4049	3	156	and	CC
+4050	4	156	what	WP
+4051	5	156	has	VBZ
+4052	6	156	been	VBN
+4053	7	156	decided	VBN
+4054	8	156	about	IN
+4055	9	156	Novosiltsev	NNP
+4056	10	156	's	POS
+4057	11	156	dispatch	NN
+4058	12	156	?	.
+4059	1	157	You	PRP
+4060	2	157	know	VBP
+4061	3	157	everything	NN
+4062	4	157	.	.
+4063	5	157	"	''
+4064	1	158	"	``
+4065	2	158	What	WP
+4066	3	158	can	MD
+4067	4	158	one	PRP
+4068	5	158	say	VB
+4069	6	158	about	IN
+4070	7	158	it	PRP
+4071	8	158	?	.
+4072	9	158	"	''
+4073	1	159	replied	VBD
+4074	2	159	the	DT
+4075	3	159	prince	NN
+4076	4	159	in	IN
+4077	5	159	a	DT
+4078	6	159	cold	JJ
+4079	7	159	,	,
+4080	8	159	listless	JJ
+4081	9	159	tone	NN
+4082	10	159	.	.
+4083	1	160	"	``
+4084	2	160	What	WP
+4085	3	160	has	VBZ
+4086	4	160	been	VBN
+4087	5	160	decided	VBN
+4088	6	160	?	.
+4089	1	161	They	PRP
+4090	2	161	have	VBP
+4091	3	161	decided	VBN
+4092	4	161	that	IN
+4093	5	161	Buonaparte	NNP
+4094	6	161	has	VBZ
+4095	7	161	burnt	VBN
+4096	8	161	his	PRP$
+4097	9	161	boats	NNS
+4098	10	161	,	,
+4099	11	161	and	CC
+4100	12	161	I	PRP
+4101	13	161	believe	VBP
+4102	14	161	that	IN
+4103	15	161	we	PRP
+4104	16	161	are	VBP
+4105	17	161	ready	JJ
+4106	18	161	to	TO
+4107	19	161	burn	VB
+4108	20	161	ours	PRP
+4109	21	161	.	.
+4110	22	161	"	''
+4111	1	162	﻿In	PDT
+4112	2	162	the	DT
+4113	3	162	offing	VBG
+4114	4	162	the	DT
+4115	5	162	sea	NN
+4116	6	162	and	CC
+4117	7	162	the	DT
+4118	8	162	sky	NN
+4119	9	162	were	VBD
+4120	10	162	welded	VBN
+4121	11	162	together	RB
+4122	12	162	without	IN
+4123	13	162	a	DT
+4124	14	162	joint	JJ
+4125	15	162	,	,
+4126	16	162	and	CC
+4127	17	162	in	IN
+4128	18	162	the	DT
+4129	19	162	luminous	JJ
+4130	20	162	space	NN
+4131	21	162	the	DT
+4132	22	162	tanned	JJ
+4133	23	162	sails	NNS
+4134	24	162	of	IN
+4135	25	162	the	DT
+4136	26	162	barges	NNS
+4137	27	162	drifting	VBG
+4138	28	162	up	RP
+4139	29	162	with	IN
+4140	30	162	the	DT
+4141	31	162	tide	NN
+4142	32	162	seemed	VBD
+4143	33	162	to	TO
+4144	34	162	stand	VB
+4145	35	162	still	RB
+4146	36	162	in	IN
+4147	37	162	red	JJ
+4148	38	162	clusters	NNS
+4149	39	162	of	IN
+4150	40	162	canvas	NN
+4151	41	162	sharply	RB
+4152	42	162	peaked	VBD
+4153	43	162	,	,
+4154	44	162	with	IN
+4155	45	162	gleams	NNS
+4156	46	162	of	IN
+4157	47	162	varnished	JJ
+4158	48	162	sprits	NNS
+4159	49	162	.	.
+4160	1	163	A	DT
+4161	2	163	haze	NN
+4162	3	163	rested	VBD
+4163	4	163	on	IN
+4164	5	163	the	DT
+4165	6	163	low	JJ
+4166	7	163	shores	NNS
+4167	8	163	that	WDT
+4168	9	163	ran	VBD
+4169	10	163	out	RP
+4170	11	163	to	IN
+4171	12	163	sea	NN
+4172	13	163	in	IN
+4173	14	163	vanishing	VBG
+4174	15	163	flatness	NN
+4175	16	163	.	.
+4176	1	164	The	DT
+4177	2	164	air	NN
+4178	3	164	was	VBD
+4179	4	164	dark	JJ
+4180	5	164	above	IN
+4181	6	164	Gravesend	NNP
+4182	7	164	,	,
+4183	8	164	and	CC
+4184	9	164	farther	RB
+4185	10	164	back	RB
+4186	11	164	still	RB
+4187	12	164	seemed	VBD
+4188	13	164	condensed	VBN
+4189	14	164	into	IN
+4190	15	164	a	DT
+4191	16	164	mournful	JJ
+4192	17	164	gloom	NN
+4193	18	164	,	,
+4194	19	164	brooding	VBG
+4195	20	164	motionless	RB
+4196	21	164	over	IN
+4197	22	164	the	DT
+4198	23	164	biggest	JJS
+4199	24	164	,	,
+4200	25	164	and	CC
+4201	26	164	the	DT
+4202	27	164	greatest	JJS
+4203	28	164	,	,
+4204	29	164	town	NN
+4205	30	164	on	IN
+4206	31	164	earth	NN
+4207	32	164	.	.
+4208	1	165	The	DT
+4209	2	165	Director	NNP
+4210	3	165	of	IN
+4211	4	165	Companies	NNPS
+4212	5	165	was	VBD
+4213	6	165	our	PRP$
+4214	7	165	captain	NN
+4215	8	165	and	CC
+4216	9	165	our	PRP$
+4217	10	165	host	NN
+4218	11	165	.	.
+4219	1	166	We	PRP
+4220	2	166	four	CD
+4221	3	166	affectionately	RB
+4222	4	166	watched	VBD
+4223	5	166	his	PRP$
+4224	6	166	back	NN
+4225	7	166	as	IN
+4226	8	166	he	PRP
+4227	9	166	stood	VBD
+4228	10	166	in	IN
+4229	11	166	the	DT
+4230	12	166	bows	NNS
+4231	13	166	looking	VBG
+4232	14	166	to	IN
+4233	15	166	seaward	VB
+4234	16	166	.	.
+4235	1	167	On	IN
+4236	2	167	the	DT
+4237	3	167	whole	JJ
+4238	4	167	river	NN
+4239	5	167	there	EX
+4240	6	167	was	VBD
+4241	7	167	nothing	NN
+4242	8	167	that	WDT
+4243	9	167	looked	VBD
+4244	10	167	half	RB
+4245	11	167	so	RB
+4246	12	167	nautical	JJ
+4247	13	167	.	.
+4248	1	168	He	PRP
+4249	2	168	resembled	VBD
+4250	3	168	a	DT
+4251	4	168	pilot	NN
+4252	5	168	,	,
+4253	6	168	which	WDT
+4254	7	168	to	IN
+4255	8	168	a	DT
+4256	9	168	seaman	NN
+4257	10	168	is	VBZ
+4258	11	168	trustworthiness	NN
+4259	12	168	personified	VBN
+4260	13	168	.	.
+4261	1	169	It	PRP
+4262	2	169	was	VBD
+4263	3	169	difficult	JJ
+4264	4	169	to	TO
+4265	5	169	realize	VB
+4266	6	169	his	PRP$
+4267	7	169	work	NN
+4268	8	169	was	VBD
+4269	9	169	not	RB
+4270	10	169	out	RB
+4271	11	169	there	RB
+4272	12	169	in	IN
+4273	13	169	the	DT
+4274	14	169	luminous	JJ
+4275	15	169	estuary	NN
+4276	16	169	,	,
+4277	17	169	but	CC
+4278	18	169	behind	IN
+4279	19	169	him	PRP
+4280	20	169	,	,
+4281	21	169	within	IN
+4282	22	169	the	DT
+4283	23	169	brooding	JJ
+4284	24	169	gloom	NN
+4285	25	169	.	.
+4286	1	170	Between	IN
+4287	2	170	us	PRP
+4288	3	170	there	EX
+4289	4	170	was	VBD
+4290	5	170	,	,
+4291	6	170	as	IN
+4292	7	170	I	PRP
+4293	8	170	have	VBP
+4294	9	170	already	RB
+4295	10	170	said	VBN
+4296	11	170	somewhere	RB
+4297	12	170	,	,
+4298	13	170	the	DT
+4299	14	170	bond	NN
+4300	15	170	of	IN
+4301	16	170	the	DT
+4302	17	170	sea	NN
+4303	18	170	.	.
+4304	1	171	Besides	IN
+4305	2	171	holding	VBG
+4306	3	171	our	PRP$
+4307	4	171	hearts	NNS
+4308	5	171	together	RB
+4309	6	171	through	IN
+4310	7	171	long	JJ
+4311	8	171	periods	NNS
+4312	9	171	of	IN
+4313	10	171	separation	NN
+4314	11	171	,	,
+4315	12	171	it	PRP
+4316	13	171	had	VBD
+4317	14	171	the	DT
+4318	15	171	effect	NN
+4319	16	171	of	IN
+4320	17	171	making	VBG
+4321	18	171	us	PRP
+4322	19	171	tolerant	JJ
+4323	20	171	of	IN
+4324	21	171	each	DT
+4325	22	171	other	JJ
+4326	23	171	's	POS
+4327	24	171	yarns	NNS
+4328	25	171	--	:
+4329	26	171	and	CC
+4330	27	171	even	RB
+4331	28	171	convictions	NNS
+4332	29	171	.	.
+4333	1	172	The	DT
+4334	2	172	Lawyer	NNP
+4335	3	172	--	:
+4336	4	172	the	DT
+4337	5	172	best	JJS
+4338	6	172	of	IN
+4339	7	172	old	JJ
+4340	8	172	fellows	NNS
+4341	9	172	--	:
+4342	10	172	had	VBD
+4343	11	172	,	,
+4344	12	172	because	IN
+4345	13	172	of	IN
+4346	14	172	his	PRP$
+4347	15	172	many	JJ
+4348	16	172	years	NNS
+4349	17	172	and	CC
+4350	18	172	many	JJ
+4351	19	172	virtues	NNS
+4352	20	172	,	,
+4353	21	172	the	DT
+4354	22	172	only	JJ
+4355	23	172	cushion	NN
+4356	24	172	on	IN
+4357	25	172	deck	NN
+4358	26	172	,	,
+4359	27	172	and	CC
+4360	28	172	was	VBD
+4361	29	172	lying	VBG
+4362	30	172	on	IN
+4363	31	172	the	DT
+4364	32	172	only	JJ
+4365	33	172	rug	NN
+4366	34	172	.	.
+4367	1	173	From	IN
+4368	2	173	the	DT
+4369	3	173	listless	JJ
+4370	4	173	repose	NN
+4371	5	173	of	IN
+4372	6	173	the	DT
+4373	7	173	place	NN
+4374	8	173	,	,
+4375	9	173	and	CC
+4376	10	173	the	DT
+4377	11	173	peculiar	JJ
+4378	12	173	character	NN
+4379	13	173	of	IN
+4380	14	173	its	PRP$
+4381	15	173	inhabitants	NNS
+4382	16	173	,	,
+4383	17	173	who	WP
+4384	18	173	are	VBP
+4385	19	173	descendants	NNS
+4386	20	173	from	IN
+4387	21	173	the	DT
+4388	22	173	original	JJ
+4389	23	173	Dutch	JJ
+4390	24	173	settlers	NNS
+4391	25	173	,	,
+4392	26	173	this	DT
+4393	27	173	sequestered	VBD
+4394	28	173	glen	NNP
+4395	29	173	has	VBZ
+4396	30	173	long	RB
+4397	31	173	been	VBN
+4398	32	173	known	VBN
+4399	33	173	by	IN
+4400	34	173	the	DT
+4401	35	173	name	NN
+4402	36	173	of	IN
+4403	37	173	SLEEPY	NNP
+4404	38	173	HOLLOW	NNP
+4405	39	173	,	,
+4406	40	173	and	CC
+4407	41	173	its	PRP$
+4408	42	173	rustic	JJ
+4409	43	173	lads	NNS
+4410	44	173	are	VBP
+4411	45	173	called	VBN
+4412	46	173	the	DT
+4413	47	173	Sleepy	NNP
+4414	48	173	Hollow	NNP
+4415	49	173	Boys	NNPS
+4416	50	173	throughout	IN
+4417	51	173	all	PDT
+4418	52	173	the	DT
+4419	53	173	neighboring	NN
+4420	54	173	country	NN
+4421	55	173	.	.
+4422	1	174	A	DT
+4423	2	174	drowsy	JJ
+4424	3	174	,	,
+4425	4	174	dreamy	JJ
+4426	5	174	influence	NN
+4427	6	174	seems	VBZ
+4428	7	174	to	TO
+4429	8	174	hang	VB
+4430	9	174	over	IN
+4431	10	174	the	DT
+4432	11	174	land	NN
+4433	12	174	,	,
+4434	13	174	and	CC
+4435	14	174	to	TO
+4436	15	174	pervade	VB
+4437	16	174	the	DT
+4438	17	174	very	RB
+4439	18	174	atmosphere	NN
+4440	19	174	.	.
+4441	1	175	Some	DT
+4442	2	175	say	VBP
+4443	3	175	that	IN
+4444	4	175	the	DT
+4445	5	175	place	NN
+4446	6	175	was	VBD
+4447	7	175	bewitched	VBN
+4448	8	175	by	IN
+4449	9	175	a	DT
+4450	10	175	High	JJ
+4451	11	175	German	JJ
+4452	12	175	doctor	NN
+4453	13	175	,	,
+4454	14	175	during	IN
+4455	15	175	the	DT
+4456	16	175	early	JJ
+4457	17	175	days	NNS
+4458	18	175	of	IN
+4459	19	175	the	DT
+4460	20	175	settlement	NN
+4461	21	175	;	:
+4462	22	175	others	NNS
+4463	23	175	,	,
+4464	24	175	that	IN
+4465	25	175	an	DT
+4466	26	175	old	JJ
+4467	27	175	Indian	JJ
+4468	28	175	chief	NN
+4469	29	175	,	,
+4470	30	175	the	DT
+4471	31	175	prophet	NN
+4472	32	175	or	CC
+4473	33	175	wizard	NN
+4474	34	175	of	IN
+4475	35	175	his	PRP$
+4476	36	175	tribe	NN
+4477	37	175	,	,
+4478	38	175	held	VBD
+4479	39	175	his	PRP$
+4480	40	175	powwows	NNS
+4481	41	175	there	RB
+4482	42	175	before	IN
+4483	43	175	the	DT
+4484	44	175	country	NN
+4485	45	175	was	VBD
+4486	46	175	discovered	VBN
+4487	47	175	by	IN
+4488	48	175	Master	NNP
+4489	49	175	Hendrick	NNP
+4490	50	175	Hudson	NNP
+4491	51	175	.	.
+4492	1	176	Certain	JJ
+4493	2	176	it	PRP
+4494	3	176	is	VBZ
+4495	4	176	,	,
+4496	5	176	the	DT
+4497	6	176	place	NN
+4498	7	176	still	RB
+4499	8	176	continues	VBZ
+4500	9	176	under	IN
+4501	10	176	the	DT
+4502	11	176	sway	NN
+4503	12	176	of	IN
+4504	13	176	some	DT
+4505	14	176	witching	NN
+4506	15	176	power	NN
+4507	16	176	,	,
+4508	17	176	that	WDT
+4509	18	176	holds	VBZ
+4510	19	176	a	DT
+4511	20	176	spell	NN
+4512	21	176	over	IN
+4513	22	176	the	DT
+4514	23	176	minds	NNS
+4515	24	176	of	IN
+4516	25	176	the	DT
+4517	26	176	good	JJ
+4518	27	176	people	NNS
+4519	28	176	,	,
+4520	29	176	causing	VBG
+4521	30	176	them	PRP
+4522	31	176	to	TO
+4523	32	176	walk	VB
+4524	33	176	in	IN
+4525	34	176	a	DT
+4526	35	176	continual	JJ
+4527	36	176	reverie	NN
+4528	37	176	.	.
+4529	1	177	They	PRP
+4530	2	177	are	VBP
+4531	3	177	given	VBN
+4532	4	177	to	IN
+4533	5	177	all	DT
+4534	6	177	kinds	NNS
+4535	7	177	of	IN
+4536	8	177	marvellous	JJ
+4537	9	177	beliefs	NNS
+4538	10	177	,	,
+4539	11	177	are	VBP
+4540	12	177	subject	JJ
+4541	13	177	to	IN
+4542	14	177	trances	NNS
+4543	15	177	and	CC
+4544	16	177	visions	NNS
+4545	17	177	,	,
+4546	18	177	and	CC
+4547	19	177	frequently	RB
+4548	20	177	see	VB
+4549	21	177	strange	JJ
+4550	22	177	sights	NNS
+4551	23	177	,	,
+4552	24	177	and	CC
+4553	25	177	hear	VBP
+4554	26	177	music	NN
+4555	27	177	and	CC
+4556	28	177	voices	NNS
+4557	29	177	in	IN
+4558	30	177	the	DT
+4559	31	177	air	NN
+4560	32	177	.	.
+4561	1	178	The	DT
+4562	2	178	whole	JJ
+4563	3	178	neighborhood	NN
+4564	4	178	abounds	VBZ
+4565	5	178	with	IN
+4566	6	178	local	JJ
+4567	7	178	tales	NNS
+4568	8	178	,	,
+4569	9	178	haunted	VBN
+4570	10	178	spots	NNS
+4571	11	178	,	,
+4572	12	178	and	CC
+4573	13	178	twilight	NN
+4574	14	178	superstitions	NNS
+4575	15	178	;	:
+4576	16	178	stars	NNS
+4577	17	178	shoot	VBP
+4578	18	178	and	CC
+4579	19	178	meteors	NNS
+4580	20	178	glare	VBP
+4581	21	178	oftener	NN
+4582	22	178	across	IN
+4583	23	178	the	DT
+4584	24	178	valley	NN
+4585	25	178	than	IN
+4586	26	178	in	IN
+4587	27	178	any	DT
+4588	28	178	other	JJ
+4589	29	178	part	NN
+4590	30	178	of	IN
+4591	31	178	the	DT
+4592	32	178	country	NN
+4593	33	178	,	,
+4594	34	178	and	CC
+4595	35	178	the	DT
+4596	36	178	nightmare	NN
+4597	37	178	,	,
+4598	38	178	with	IN
+4599	39	178	her	PRP$
+4600	40	178	whole	JJ
+4601	41	178	ninefold	JJ
+4602	42	178	,	,
+4603	43	178	seems	VBZ
+4604	44	178	to	TO
+4605	45	178	make	VB
+4606	46	178	it	PRP
+4607	47	178	the	DT
+4608	48	178	favorite	JJ
+4609	49	178	scene	NN
+4610	50	178	of	IN
+4611	51	178	her	PRP$
+4612	52	178	gambols	NNS
+4613	53	178	.	.
+4614	1	179	“	.
+4615	2	179	This	DT
+4616	3	179	is	VBZ
+4617	4	179	our	PRP$
+4618	5	179	home	NN
+4619	6	179	,	,
+4620	7	179	”	''
+4621	8	179	she	PRP
+4622	9	179	said	VBD
+4623	10	179	Tuesday	NNP
+4624	11	179	,	,
+4625	12	179	standing	VBG
+4626	13	179	in	IN
+4627	14	179	her	PRP$
+4628	15	179	driveway	NN
+4629	16	179	wearing	VBG
+4630	17	179	a	DT
+4631	18	179	sleeveless	JJ
+4632	19	179	blouse	NN
+4633	20	179	and	CC
+4634	21	179	open	JJ
+4635	22	179	-	HYPH
+4636	23	179	toed	JJ
+4637	24	179	sandals	NNS
+4638	25	179	.	.
+4639	1	180	“	NFP
+4640	2	180	Until	IN
+4641	3	180	it	PRP
+4642	4	180	’s	CD
+4643	5	180	in	IN
+4644	6	180	my	PRP$
+4645	7	180	backyard	NN
+4646	8	180	and	CC
+4647	9	180	that	IN
+4648	10	180	rubber	NN
+4649	11	180	is	VBZ
+4650	12	180	melting	VBG
+4651	13	180	on	IN
+4652	14	180	my	PRP$
+4653	15	180	truck	NN
+4654	16	180	I	PRP
+4655	17	180	’m	VBP
+4656	18	180	not	RB
+4657	19	180	going	VBG
+4658	20	180	anywhere	RB
+4659	21	180	.	.
+4660	1	181	We	PRP
+4661	2	181	’ve	VB
+4662	3	181	got	VBD
+4663	4	181	to	TO
+4664	5	181	protect	VB
+4665	6	181	the	DT
+4666	7	181	neighborhood	NN
+4667	8	181	.	.
+4668	1	182	Who	WP
+4669	2	182	else	RB
+4670	3	182	is	VBZ
+4671	4	182	going	VBG
+4672	5	182	to	TO
+4673	6	182	?	.
+4674	7	182	”	.
+4675	1	183	The	DT
+4676	2	183	flames	NNS
+4677	3	183	came	VBD
+4678	4	183	close	RB
+4679	5	183	to	IN
+4680	6	183	this	DT
+4681	7	183	neighborhood	NN
+4682	8	183	on	IN
+4683	9	183	the	DT
+4684	10	183	fire	NN
+4685	11	183	's	POS
+4686	12	183	northern	JJ
+4687	13	183	edge	NN
+4688	14	183	Monday	NNP
+4689	15	183	night	NN
+4690	16	183	.	.
+4691	1	184	A	DT
+4692	2	184	wind	NN
+4693	3	184	shift	NN
+4694	4	184	pushed	VBD
+4695	5	184	flames	NNS
+4696	6	184	from	IN
+4697	7	184	the	DT
+4698	8	184	next	JJ
+4699	9	184	road	NN
+4700	10	184	south	RB
+4701	11	184	--	:
+4702	12	184	West	NNP
+4703	13	184	Sockeye	NNP
+4704	14	184	Avenue	NNP
+4705	15	184	,	,
+4706	16	184	near	IN
+4707	17	184	where	WRB
+4708	18	184	the	DT
+4709	19	184	fire	NN
+4710	20	184	started	VBD
+4711	21	184	--	:
+4712	22	184	and	CC
+4713	23	184	toward	IN
+4714	24	184	the	DT
+4715	25	184	rural	JJ
+4716	26	184	West	NNP
+4717	27	184	Sheep	NNP
+4718	28	184	Creek	NNP
+4719	29	184	Drive	NNP
+4720	30	184	neighborhood	NN
+4721	31	184	where	WRB
+4722	32	184	Walz	NNP
+4723	33	184	lives	VBZ
+4724	34	184	,	,
+4725	35	184	amid	IN
+4726	36	184	a	DT
+4727	37	184	thick	JJ
+4728	38	184	canopy	NN
+4729	39	184	of	IN
+4730	40	184	the	DT
+4731	41	184	same	JJ
+4732	42	184	black	JJ
+4733	43	184	spruce	NN
+4734	44	184	that	WDT
+4735	45	184	this	DT
+4736	46	184	fire	NN
+4737	47	184	blows	VBZ
+4738	48	184	through	IN
+4739	49	184	like	UH
+4740	50	184	standing	VBG
+4741	51	184	tinder	NN
+4742	52	184	.	.
+4743	1	185	Alaska	NNP
+4744	2	185	State	NNP
+4745	3	185	Troopers	NNPS
+4746	4	185	told	VBD
+4747	5	185	the	DT
+4748	6	185	scattered	VBN
+4749	7	185	residents	NNS
+4750	8	185	along	IN
+4751	9	185	the	DT
+4752	10	185	gravel	NN
+4753	11	185	road	NN
+4754	12	185	to	TO
+4755	13	185	evacuate	VB
+4756	14	185	.	.
+4757	1	186	Walz	NNP
+4758	2	186	lost	VBD
+4759	3	186	her	PRP$
+4760	4	186	home	NN
+4761	5	186	in	IN
+4762	6	186	the	DT
+4763	7	186	1996	CD
+4764	8	186	Miller	NNP
+4765	9	186	's	POS
+4766	10	186	Reach	NNP
+4767	11	186	fire	NN
+4768	12	186	that	WDT
+4769	13	186	destroyed	VBD
+4770	14	186	more	JJR
+4771	15	186	than	IN
+4772	16	186	400	CD
+4773	17	186	.	.
+4774	1	187	“	NFP
+4775	1	188	I	PRP
+4776	2	188	told	VBD
+4777	3	188	him	PRP
+4778	4	188	I	PRP
+4779	5	188	was	VBD
+4780	6	188	n’t	RB
+4781	7	188	leaving	VBG
+4782	8	188	,	,
+4783	9	188	”	''
+4784	10	188	she	PRP
+4785	11	188	said	VBD
+4786	12	188	.	.
+4787	1	189	“	:
+4788	1	190	They	PRP
+4789	2	190	said	VBD
+4790	3	190	it	PRP
+4791	4	190	was	VBD
+4792	5	190	voluntary	JJ
+4793	6	190	anyway	RB
+4794	7	190	.	.
+4795	8	190	”	NFP
+4796	1	191	This	DT
+4797	2	191	fire	NN
+4798	3	191	,	,
+4799	4	191	however	RB
+4800	5	191	,	,
+4801	6	191	is	VBZ
+4802	7	191	expected	VBN
+4803	8	191	to	TO
+4804	9	191	turn	VB
+4805	10	191	ugly	JJ
+4806	11	191	again	RB
+4807	12	191	.	.
+4808	1	192	Forecasts	NNS
+4809	2	192	called	VBD
+4810	3	192	for	IN
+4811	4	192	extreme	JJ
+4812	5	192	behavior	NN
+4813	6	192	Tuesday	NNP
+4814	7	192	night	NN
+4815	8	192	due	IN
+4816	9	192	to	IN
+4817	10	192	thunderstorms	NNS
+4818	11	192	and	CC
+4819	12	192	erratic	JJ
+4820	13	192	winds	NNS
+4821	14	192	.	.
+4822	1	193	The	DT
+4823	2	193	crews	NNS
+4824	3	193	fighting	VBG
+4825	4	193	the	DT
+4826	5	193	fire	NN
+4827	6	193	acknowledge	VB
+4828	7	193	the	DT
+4829	8	193	state	NN
+4830	9	193	's	POS
+4831	10	193	general	JJ
+4832	11	193	policy	NN
+4833	12	193	against	IN
+4834	13	193	mandatory	JJ
+4835	14	193	evacuations	NNS
+4836	15	193	.	.
+4837	1	194	But	CC
+4838	2	194	they	PRP
+4839	3	194	do	VBP
+4840	4	194	n't	RB
+4841	5	194	like	VB
+4842	6	194	it	PRP
+4843	7	194	,	,
+4844	8	194	officials	NNS
+4845	9	194	say	VBP
+4846	10	194	,	,
+4847	11	194	because	IN
+4848	12	194	homeowners	NNS
+4849	13	194	may	MD
+4850	14	194	misjudge	VB
+4851	15	194	the	DT
+4852	16	194	danger	NN
+4853	17	194	.	.
+4854	1	195	“	NFP
+4855	1	196	The	DT
+4856	2	196	troopers	NNS
+4857	3	196	are	VBP
+4858	4	196	very	RB
+4859	5	196	cautious	JJ
+4860	6	196	in	IN
+4861	7	196	advising	VBG
+4862	8	196	us	PRP
+4863	9	196	that	IN
+4864	10	196	evacuations	NNS
+4865	11	196	are	VBP
+4866	12	196	voluntary	JJ
+4867	13	196	,	,
+4868	14	196	”	''
+4869	15	196	Tom	NNP
+4870	16	196	Kurth	NNP
+4871	17	196	,	,
+4872	18	196	incident	NN
+4873	19	196	commander	NN
+4874	20	196	on	IN
+4875	21	196	the	DT
+4876	22	196	fire	NN
+4877	23	196	,	,
+4878	24	196	said	VBD
+4879	25	196	during	IN
+4880	26	196	a	DT
+4881	27	196	press	NN
+4882	28	196	conference	NN
+4883	29	196	Tuesday	NNP
+4884	30	196	.	.
+4885	1	197	“	.
+4886	1	198	Little	JJ
+4887	2	198	by	IN
+4888	3	198	little	JJ
+4889	4	198	,	,
+4890	5	198	we	PRP
+4891	6	198	’ve	VB
+4892	7	198	allowed	VBN
+4893	8	198	our	PRP$
+4894	9	198	freedom	NN
+4895	10	198	to	TO
+4896	11	198	slip	VB
+4897	12	198	away	RB
+4898	13	198	,	,
+4899	14	198	”	.
+4900	1	199	Mr.	NNP
+4901	2	199	Paul	NNP
+4902	3	199	said	VBD
+4903	4	199	during	IN
+4904	5	199	a	DT
+4905	6	199	lengthy	JJ
+4906	7	199	floor	NN
+4907	8	199	soliloquy	NN
+4908	9	199	.	.
+4909	1	200	The	DT
+4910	2	200	expiration	NN
+4911	3	200	of	IN
+4912	4	200	surveillance	NN
+4913	5	200	authority	NN
+4914	6	200	demonstrates	VBZ
+4915	7	200	a	DT
+4916	8	200	profound	JJ
+4917	9	200	shift	NN
+4918	10	200	in	IN
+4919	11	200	American	JJ
+4920	12	200	attitudes	NNS
+4921	13	200	since	IN
+4922	14	200	the	DT
+4923	15	200	days	NNS
+4924	16	200	after	IN
+4925	17	200	the	DT
+4926	18	200	Sept.	NNP
+4927	19	200	11	CD
+4928	20	200	,	,
+4929	21	200	2001	CD
+4930	22	200	,	,
+4931	23	200	terrorist	JJ
+4932	24	200	attacks	NNS
+4933	25	200	,	,
+4934	26	200	when	WRB
+4935	27	200	national	JJ
+4936	28	200	security	NN
+4937	29	200	was	VBD
+4938	30	200	pre	JJ
+4939	31	200	-	HYPH
+4940	32	200	eminent	NN
+4941	33	200	in	IN
+4942	34	200	both	DT
+4943	35	200	parties	NNS
+4944	36	200	.	.
+4945	1	201	Fourteen	CD
+4946	2	201	years	NNS
+4947	3	201	after	IN
+4948	4	201	that	DT
+4949	5	201	attack	NN
+4950	6	201	,	,
+4951	7	201	even	RB
+4952	8	201	as	IN
+4953	9	201	American	JJ
+4954	10	201	conflicts	NNS
+4955	11	201	continue	VBP
+4956	12	201	abroad	RB
+4957	13	201	,	,
+4958	14	201	a	DT
+4959	15	201	swell	NN
+4960	16	201	of	IN
+4961	17	201	privacy	NN
+4962	18	201	concerns	NNS
+4963	19	201	stemming	VBG
+4964	20	201	from	IN
+4965	21	201	both	PDT
+4966	22	201	the	DT
+4967	23	201	vast	JJ
+4968	24	201	expansion	NN
+4969	25	201	of	IN
+4970	26	201	communication	NN
+4971	27	201	systems	NNS
+4972	28	201	and	CC
+4973	29	201	an	DT
+4974	30	201	increasing	VBG
+4975	31	201	distrust	NN
+4976	32	201	of	IN
+4977	33	201	government	NN
+4978	34	201	’s	NFP
+4979	35	201	use	NN
+4980	36	201	of	IN
+4981	37	201	data	NNS
+4982	38	201	has	VBZ
+4983	39	201	turned	VBN
+4984	40	201	those	DT
+4985	41	201	concerns	NNS
+4986	42	201	on	IN
+4987	43	201	their	PRP$
+4988	44	201	head	NN
+4989	45	201	.	.
+4990	1	202	While	IN
+4991	2	202	it	PRP
+4992	3	202	would	MD
+4993	4	202	represent	VB
+4994	5	202	a	DT
+4995	6	202	retrenchment	NN
+4996	7	202	on	IN
+4997	8	202	the	DT
+4998	9	202	part	NN
+4999	10	202	of	IN
+5000	11	202	the	DT
+5001	12	202	government	NN
+5002	13	202	,	,
+5003	14	202	it	PRP
+5004	15	202	does	VBZ
+5005	16	202	not	RB
+5006	17	202	end	VB
+5007	18	202	the	DT
+5008	19	202	argument	NN
+5009	20	202	over	IN
+5010	21	202	the	DT
+5011	22	202	dual	JJ
+5012	23	202	imperatives	NNS
+5013	24	202	of	IN
+5014	25	202	security	NN
+5015	26	202	and	CC
+5016	27	202	individual	JJ
+5017	28	202	liberty	NN
+5018	29	202	brought	VBD
+5019	30	202	to	IN
+5020	31	202	light	NN
+5021	32	202	by	IN
+5022	33	202	Edward	NNP
+5023	34	202	J.	NNP
+5024	35	202	Snowden	NNP
+5025	36	202	,	,
+5026	37	202	a	DT
+5027	38	202	former	JJ
+5028	39	202	contractor	NN
+5029	40	202	for	IN
+5030	41	202	the	DT
+5031	42	202	National	NNP
+5032	43	202	Security	NNP
+5033	44	202	Agency	NNP
+5034	45	202	.	.
+5035	1	203	The	DT
+5036	2	203	expiration	NN
+5037	3	203	of	IN
+5038	4	203	three	CD
+5039	5	203	key	JJ
+5040	6	203	provisions	NNS
+5041	7	203	of	IN
+5042	8	203	the	DT
+5043	9	203	Patriot	NNP
+5044	10	203	Act	NNP
+5045	11	203	means	VBZ
+5046	12	203	that	IN
+5047	13	203	,	,
+5048	14	203	for	IN
+5049	15	203	now	RB
+5050	16	203	,	,
+5051	17	203	the	DT
+5052	18	203	N.S.A.	NNP
+5053	19	203	will	MD
+5054	20	203	no	RB
+5055	21	203	longer	RB
+5056	22	203	collect	VBP
+5057	23	203	newly	RB
+5058	24	203	created	VBN
+5059	25	203	logs	NNS
+5060	26	203	of	IN
+5061	27	203	Americans’	JJ
+5062	28	203	phone	NN
+5063	29	203	calls	NNS
+5064	30	203	in	IN
+5065	31	203	bulk	NN
+5066	32	203	.	.
+5067	1	204	It	PRP
+5068	2	204	also	RB
+5069	3	204	means	VBZ
+5070	4	204	that	IN
+5071	5	204	the	DT
+5072	6	204	F.B.I.	NNP
+5073	7	204	can	MD
+5074	8	204	not	RB
+5075	9	204	invoke	VB
+5076	10	204	the	DT
+5077	11	204	Patriot	NNP
+5078	12	204	Act	NNP
+5079	13	204	to	TO
+5080	14	204	obtain	VB
+5081	15	204	,	,
+5082	16	204	for	IN
+5083	17	204	new	JJ
+5084	18	204	investigations	NNS
+5085	19	204	,	,
+5086	20	204	wiretap	NN
+5087	21	204	orders	NNS
+5088	22	204	that	WDT
+5089	23	204	follow	VBP
+5090	24	204	a	DT
+5091	25	204	suspect	NN
+5092	26	204	who	WP
+5093	27	204	changes	VBZ
+5094	28	204	phones	NNS
+5095	29	204	,	,
+5096	30	204	wiretap	NN
+5097	31	204	orders	NNS
+5098	32	204	for	IN
+5099	33	204	a	DT
+5100	34	204	“	.
+5101	1	205	lone	JJ
+5102	2	205	wolf	NN
+5103	3	205	”	.
+5104	1	206	terrorism	NN
+5105	2	206	suspect	VBP
+5106	3	206	not	RB
+5107	4	206	linked	VBN
+5108	5	206	to	IN
+5109	6	206	a	DT
+5110	7	206	group	NN
+5111	8	206	,	,
+5112	9	206	or	CC
+5113	10	206	court	NN
+5114	11	206	orders	NNS
+5115	12	206	to	TO
+5116	13	206	obtain	VB
+5117	14	206	business	NN
+5118	15	206	records	NNS
+5119	16	206	relevant	JJ
+5120	17	206	to	IN
+5121	18	206	an	DT
+5122	19	206	investigation	NN
+5123	20	206	.	.
+5124	1	207	The	DT
+5125	2	207	Food	NNP
+5126	3	207	and	CC
+5127	4	207	Drug	NNP
+5128	5	207	Administration	NNP
+5129	6	207	on	IN
+5130	7	207	Tuesday	NNP
+5131	8	207	ordered	VBD
+5132	9	207	food	NN
+5133	10	207	companies	NNS
+5134	11	207	to	TO
+5135	12	207	phase	VB
+5136	13	207	out	RP
+5137	14	207	artificial	JJ
+5138	15	207	trans	NNS
+5139	16	207	fats	NNS
+5140	17	207	,	,
+5141	18	207	calling	VBG
+5142	19	207	them	PRP
+5143	20	207	a	DT
+5144	21	207	threat	NN
+5145	22	207	to	IN
+5146	23	207	public	JJ
+5147	24	207	health	NN
+5148	25	207	.	.
+5149	1	208	Consumers	NNS
+5150	2	208	are	VBP
+5151	3	208	n't	RB
+5152	4	208	likely	JJ
+5153	5	208	to	TO
+5154	6	208	notice	VB
+5155	7	208	much	RB
+5156	8	208	of	IN
+5157	9	208	a	DT
+5158	10	208	difference	NN
+5159	11	208	in	IN
+5160	12	208	their	PRP$
+5161	13	208	favorite	JJ
+5162	14	208	foods	NNS
+5163	15	208	,	,
+5164	16	208	but	CC
+5165	17	208	the	DT
+5166	18	208	administration	NN
+5167	19	208	says	VBZ
+5168	20	208	the	DT
+5169	21	208	move	NN
+5170	22	208	will	MD
+5171	23	208	reduce	VB
+5172	24	208	coronary	JJ
+5173	25	208	heart	NN
+5174	26	208	disease	NN
+5175	27	208	and	CC
+5176	28	208	prevent	VB
+5177	29	208	thousands	NNS
+5178	30	208	of	IN
+5179	31	208	fatal	JJ
+5180	32	208	heart	NN
+5181	33	208	attacks	NNS
+5182	34	208	every	DT
+5183	35	208	year	NN
+5184	36	208	.	.
+5185	1	209	Scientists	NNS
+5186	2	209	say	VBP
+5187	3	209	there	EX
+5188	4	209	are	VBP
+5189	5	209	no	DT
+5190	6	209	health	NN
+5191	7	209	benefits	NNS
+5192	8	209	to	IN
+5193	9	209	the	DT
+5194	10	209	fats	NNS
+5195	11	209	,	,
+5196	12	209	which	WDT
+5197	13	209	are	VBP
+5198	14	209	used	VBN
+5199	15	209	in	IN
+5200	16	209	processing	VBG
+5201	17	209	food	NN
+5202	18	209	and	CC
+5203	19	209	in	IN
+5204	20	209	restaurants	NNS
+5205	21	209	,	,
+5206	22	209	usually	RB
+5207	23	209	to	TO
+5208	24	209	improve	VB
+5209	25	209	texture	NN
+5210	26	209	,	,
+5211	27	209	shelf	NN
+5212	28	209	life	NN
+5213	29	209	or	CC
+5214	30	209	flavor	NN
+5215	31	209	.	.
+5216	1	210	They	PRP
+5217	2	210	can	MD
+5218	3	210	raise	VB
+5219	4	210	levels	NNS
+5220	5	210	of	IN
+5221	6	210	"	``
+5222	7	210	bad	JJ
+5223	8	210	"	''
+5224	9	210	cholesterol	NN
+5225	10	210	and	CC
+5226	11	210	lower	JJR
+5227	12	210	"	``
+5228	13	210	good	JJ
+5229	14	210	"	''
+5230	15	210	cholesterol	NN
+5231	16	210	,	,
+5232	17	210	increasing	VBG
+5233	18	210	the	DT
+5234	19	210	risk	NN
+5235	20	210	of	IN
+5236	21	210	heart	NN
+5237	22	210	disease	NN
+5238	23	210	,	,
+5239	24	210	the	DT
+5240	25	210	leading	VBG
+5241	26	210	cause	NN
+5242	27	210	of	IN
+5243	28	210	death	NN
+5244	29	210	in	IN
+5245	30	210	the	DT
+5246	31	210	United	NNP
+5247	32	210	States	NNP
+5248	33	210	.	.
+5249	1	211	The	DT
+5250	2	211	fats	NNS
+5251	3	211	are	VBP
+5252	4	211	created	VBN
+5253	5	211	when	WRB
+5254	6	211	hydrogen	NN
+5255	7	211	is	VBZ
+5256	8	211	added	VBN
+5257	9	211	to	IN
+5258	10	211	vegetable	JJ
+5259	11	211	oil	NN
+5260	12	211	to	TO
+5261	13	211	make	VB
+5262	14	211	it	PRP
+5263	15	211	more	RBR
+5264	16	211	solid	JJ
+5265	17	211	,	,
+5266	18	211	which	WDT
+5267	19	211	is	VBZ
+5268	20	211	why	WRB
+5269	21	211	they	PRP
+5270	22	211	are	VBP
+5271	23	211	often	RB
+5272	24	211	called	VBN
+5273	25	211	partially	RB
+5274	26	211	hydrogenated	JJ
+5275	27	211	oils	NNS
+5276	28	211	.	.
+5277	1	212	Once	IN
+5278	2	212	a	DT
+5279	3	212	staple	NN
+5280	4	212	of	IN
+5281	5	212	the	DT
+5282	6	212	American	JJ
+5283	7	212	diet	NN
+5284	8	212	—	:
+5285	9	212	think	VBP
+5286	10	212	shortening	NN
+5287	11	212	and	CC
+5288	12	212	microwave	NN
+5289	13	212	popcorn	NN
+5290	14	212	—	:
+5291	15	212	most	JJS
+5292	16	212	artificial	JJ
+5293	17	212	trans	NNS
+5294	18	212	fats	NNS
+5295	19	212	are	VBP
+5296	20	212	already	RB
+5297	21	212	gone	VBN
+5298	22	212	.	.
+5299	1	213	The	DT
+5300	2	213	FDA	NNP
+5301	3	213	says	VBZ
+5302	4	213	that	IN
+5303	5	213	between	IN
+5304	6	213	2003	CD
+5305	7	213	and	CC
+5306	8	213	2012	CD
+5307	9	213	,	,
+5308	10	213	people	NNS
+5309	11	213	ate	VBD
+5310	12	213	about	RB
+5311	13	213	78	CD
+5312	14	213	percent	NN
+5313	15	213	less	JJR
+5314	16	213	trans	NNS
+5315	17	213	fat	JJ
+5316	18	213	as	IN
+5317	19	213	food	NN
+5318	20	213	companies	NNS
+5319	21	213	began	VBD
+5320	22	213	using	VBG
+5321	23	213	other	JJ
+5322	24	213	kinds	NNS
+5323	25	213	of	IN
+5324	26	213	oils	NNS
+5325	27	213	to	TO
+5326	28	213	replace	VB
+5327	29	213	them	PRP
+5328	30	213	.	.
+5329	1	214	But	CC
+5330	2	214	some	DT
+5331	3	214	foods	NNS
+5332	4	214	still	RB
+5333	5	214	have	VBP
+5334	6	214	them	PRP
+5335	7	214	,	,
+5336	8	214	and	CC
+5337	9	214	the	DT
+5338	10	214	FDA	NNP
+5339	11	214	says	VBZ
+5340	12	214	those	DT
+5341	13	214	trans	NNS
+5342	14	214	fats	NNS
+5343	15	214	remaining	VBG
+5344	16	214	in	IN
+5345	17	214	the	DT
+5346	18	214	food	NN
+5347	19	214	supply	NN
+5348	20	214	are	VBP
+5349	21	214	a	DT
+5350	22	214	health	NN
+5351	23	214	concern	NN
+5352	24	214	.	.
+5353	1	215	In	IN
+5354	2	215	a	DT
+5355	3	215	day	NN
+5356	4	215	of	IN
+5357	5	215	protests	NNS
+5358	6	215	in	IN
+5359	7	215	Egypt	NNP
+5360	8	215	,	,
+5361	9	215	hundreds	NNS
+5362	10	215	of	IN
+5363	11	215	thousands	NNS
+5364	12	215	of	IN
+5365	13	215	people	NNS
+5366	14	215	marched	VBD
+5367	15	215	in	IN
+5368	16	215	the	DT
+5369	17	215	streets	NNS
+5370	18	215	on	IN
+5371	19	215	January	NNP
+5372	20	215	25th	NN
+5373	21	215	facing	VBG
+5374	22	215	down	RP
+5375	23	215	riot	NN
+5376	24	215	police	NNS
+5377	25	215	,	,
+5378	26	215	water	NN
+5379	27	215	cannons	NNS
+5380	28	215	,	,
+5381	29	215	baton	NN
+5382	30	215	charges	NNS
+5383	31	215	and	CC
+5384	32	215	tear	JJ
+5385	33	215	gas	NN
+5386	34	215	.	.
+5387	1	216	The	DT
+5388	2	216	people	NNS
+5389	3	216	are	VBP
+5390	4	216	chanting	VBG
+5391	5	216	for	IN
+5392	6	216	freedom	NN
+5393	7	216	and	CC
+5394	8	216	an	DT
+5395	9	216	end	NN
+5396	10	216	to	IN
+5397	11	216	the	DT
+5398	12	216	corrupt	JJ
+5399	13	216	administration	NN
+5400	14	216	of	IN
+5401	15	216	Hosni	NNP
+5402	16	216	Mubarak	NNP
+5403	17	216	,	,
+5404	18	216	who	WP
+5405	19	216	has	VBZ
+5406	20	216	been	VBN
+5407	21	216	in	IN
+5408	22	216	power	NN
+5409	23	216	for	IN
+5410	24	216	30	CD
+5411	25	216	years	NNS
+5412	26	216	,	,
+5413	27	216	with	IN
+5414	28	216	the	DT
+5415	29	216	demand	NN
+5416	30	216	that	IN
+5417	31	216	he	PRP
+5418	32	216	join	VBP
+5419	33	216	the	DT
+5420	34	216	Tunisian	JJ
+5421	35	216	dictator	NN
+5422	36	216	Ben	NNP
+5423	37	216	Ali	NNP
+5424	38	216	in	IN
+5425	39	216	Saudi	NNP
+5426	40	216	Arabia	NNP
+5427	41	216	.	.
+5428	1	217	By	IN
+5429	2	217	mid	JJ
+5430	3	217	-	HYPH
+5431	4	217	afternoon	NN
+5432	5	217	,	,
+5433	6	217	the	DT
+5434	7	217	Egyptian	JJ
+5435	8	217	government	NN
+5436	9	217	had	VBD
+5437	10	217	blocked	VBN
+5438	11	217	Twitter	NNP
+5439	12	217	,	,
+5440	13	217	websites	NNS
+5441	14	217	of	IN
+5442	15	217	independent	JJ
+5443	16	217	newspapers	NNS
+5444	17	217	and	CC
+5445	18	217	live	VBP
+5446	19	217	streaming	VBG
+5447	20	217	application	NN
+5448	21	217	#	NN
+5449	22	217	bambuser	NN
+5450	23	217	.	.
+5451	1	218	There	EX
+5452	2	218	are	VBP
+5453	3	218	reports	NNS
+5454	4	218	that	IN
+5455	5	218	phone	NN
+5456	6	218	lines	NNS
+5457	7	218	used	VBN
+5458	8	218	by	IN
+5459	9	218	lawyers	NNS
+5460	10	218	and	CC
+5461	11	218	activists	NNS
+5462	12	218	providing	VBG
+5463	13	218	support	NN
+5464	14	218	are	VBP
+5465	15	218	also	RB
+5466	16	218	being	VBG
+5467	17	218	suspended	VBN
+5468	18	218	,	,
+5469	19	218	and	CC
+5470	20	218	many	JJ
+5471	21	218	phone	NN
+5472	22	218	lines	NNS
+5473	23	218	have	VBP
+5474	24	218	had	VBN
+5475	25	218	data	NNS
+5476	26	218	services	NNS
+5477	27	218	disabled	JJ
+5478	28	218	.	.
+5479	1	219	At	IN
+5480	2	219	least	JJS
+5481	3	219	six	CD
+5482	4	219	protesters	NNS
+5483	5	219	were	VBD
+5484	6	219	killed	VBN
+5485	7	219	with	IN
+5486	8	219	some	DT
+5487	9	219	reports	NNS
+5488	10	219	that	IN
+5489	11	219	police	NNS
+5490	12	219	in	IN
+5491	13	219	some	DT
+5492	14	219	cities	NNS
+5493	15	219	used	VBN
+5494	16	219	live	JJ
+5495	17	219	ammunition	NN
+5496	18	219	on	IN
+5497	19	219	crowds	NNS
+5498	20	219	.	.
+5499	1	220	Over	IN
+5500	2	220	1000	CD
+5501	3	220	protesters	NNS
+5502	4	220	have	VBP
+5503	5	220	been	VBN
+5504	6	220	arrested	VBN
+5505	7	220	and	CC
+5506	8	220	Egyptian	JJ
+5507	9	220	telecoms	NNS
+5508	10	220	are	VBP
+5509	11	220	attempting	VBG
+5510	12	220	to	TO
+5511	13	220	block	VB
+5512	14	220	access	NN
+5513	15	220	to	IN
+5514	16	220	sites	NNS
+5515	17	220	where	WRB
+5516	18	220	protesters	NNS
+5517	19	220	can	MD
+5518	20	220	post	VB
+5519	21	220	coverage	NN
+5520	22	220	.	.
+5521	1	221	While	IN
+5522	2	221	few	JJ
+5523	3	221	people	NNS
+5524	4	221	will	MD
+5525	5	221	openly	RB
+5526	6	221	admit	VB
+5527	7	221	to	IN
+5528	8	221	liking	VBG
+5529	9	221	the	DT
+5530	10	221	dictatorship	NN
+5531	11	221	of	IN
+5532	12	221	Mubarak	NNP
+5533	13	221	,	,
+5534	14	221	he	PRP
+5535	15	221	is	VBZ
+5536	16	221	one	CD
+5537	17	221	of	IN
+5538	18	221	the	DT
+5539	19	221	largest	JJS
+5540	20	221	recipients	NNS
+5541	21	221	of	IN
+5542	22	221	US	NNP
+5543	23	221	aid	NN
+5544	24	221	and	CC
+5545	25	221	maintains	VBZ
+5546	26	221	his	PRP$
+5547	27	221	power	NN
+5548	28	221	largely	RB
+5549	29	221	because	IN
+5550	30	221	of	IN
+5551	31	221	the	DT
+5552	32	221	US	NNP
+5553	33	221	backing	NN
+5554	34	221	.	.
+5555	35	221	.	.
+5556	1	222	In	IN
+5557	2	222	a	DT
+5558	3	222	January	NNP
+5559	4	222	27th	JJ
+5560	5	222	PBS	NNP
+5561	6	222	interview	NN
+5562	7	222	,	,
+5563	8	222	Vice	NNP
+5564	9	222	President	NNP
+5565	10	222	Biden	NNP
+5566	11	222	said	VBD
+5567	12	222	he	PRP
+5568	13	222	would	MD
+5569	14	222	not	RB
+5570	15	222	refer	VB
+5571	16	222	to	IN
+5572	17	222	Egyptian	NNP
+5573	18	222	President	NNP
+5574	19	222	Mubarak	NNP
+5575	20	222	as	IN
+5576	21	222	a	DT
+5577	22	222	dictator	NN
+5578	23	222	and	CC
+5579	24	222	instead	RB
+5580	25	222	called	VBD
+5581	26	222	him	PRP
+5582	27	222	an	DT
+5583	28	222	“	JJ
+5584	29	222	ally	NN
+5585	30	222	”	-RRB-
+5586	31	222	on	IN
+5587	32	222	a	DT
+5588	33	222	number	NN
+5589	34	222	of	IN
+5590	35	222	key	JJ
+5591	36	222	foreign	JJ
+5592	37	222	policy	NN
+5593	38	222	issues	NNS
+5594	39	222	.	.
+5595	1	223	This	DT
+5596	2	223	year	NN
+5597	3	223	,	,
+5598	4	223	Pope	NNP
+5599	5	223	Francis	NNP
+5600	6	223	brought	VBD
+5601	7	223	a	DT
+5602	8	223	little	JJ
+5603	9	223	something	NN
+5604	10	223	extra	JJ
+5605	11	223	for	IN
+5606	12	223	the	DT
+5607	13	223	Curia	NNP
+5608	14	223	:	:
+5609	15	223	a	DT
+5610	16	223	15-point	JJ
+5611	17	223	“	NN
+5612	18	223	catalog	NN
+5613	19	223	”	''
+5614	20	223	of	IN
+5615	21	223	spiritual	JJ
+5616	22	223	diseases	NNS
+5617	23	223	he	PRP
+5618	24	223	’s	VBZ
+5619	25	223	seen	VBN
+5620	26	223	among	IN
+5621	27	223	leadership	NN
+5622	28	223	there	RB
+5623	29	223	,	,
+5624	30	223	and	CC
+5625	31	223	how	WRB
+5626	32	223	a	DT
+5627	33	223	little	JJ
+5628	34	223	bit	NN
+5629	35	223	of	IN
+5630	36	223	Christmas	NNP
+5631	37	223	spirit	NN
+5632	38	223	might	MD
+5633	39	223	help	VB
+5634	40	223	to	TO
+5635	41	223	make	VB
+5636	42	223	things	NNS
+5637	43	223	better	RBR
+5638	44	223	.	.
+5639	1	224	It	PRP
+5640	2	224	’s	VBZ
+5641	3	224	not	RB
+5642	4	224	a	DT
+5643	5	224	perfect	JJ
+5644	6	224	analogy	NN
+5645	7	224	,	,
+5646	8	224	but	CC
+5647	9	224	Francis	NNP
+5648	10	224	’s	NNP
+5649	11	224	Christmas	NNP
+5650	12	224	greeting	NN
+5651	13	224	Monday	NNP
+5652	14	224	was	VBD
+5653	15	224	roughly	RB
+5654	16	224	the	DT
+5655	17	224	equivalent	NN
+5656	18	224	of	IN
+5657	19	224	a	DT
+5658	20	224	CEO	NN
+5659	21	224	sending	VBG
+5660	22	224	his	PRP$
+5661	23	224	or	CC
+5662	24	224	her	PRP$
+5663	25	224	top	JJ
+5664	26	224	executives	NNS
+5665	27	224	off	RB
+5666	28	224	to	IN
+5667	29	224	Christmas	NNP
+5668	30	224	vacation	NN
+5669	31	224	with	IN
+5670	32	224	a	DT
+5671	33	224	cleverly	RB
+5672	34	224	-	HYPH
+5673	35	224	worded	VBN
+5674	36	224	list	NN
+5675	37	224	of	IN
+5676	38	224	everything	NN
+5677	39	224	they	PRP
+5678	40	224	do	VBP
+5679	41	224	wrong	NN
+5680	42	224	at	IN
+5681	43	224	the	DT
+5682	44	224	company	NN
+5683	45	224	.	.
+5684	1	225	Merry	JJ
+5685	2	225	Christmas	NNP
+5686	3	225	?	.
+5687	1	226	The	DT
+5688	2	226	list	NN
+5689	3	226	of	IN
+5690	4	226	diseases	NNS
+5691	5	226	included	VBN
+5692	6	226	“	.
+5693	1	227	spiritual	JJ
+5694	2	227	Alzheimer	NNP
+5695	3	227	’s	NNP
+5696	4	227	,	,
+5697	5	227	”	NFP
+5698	1	228	“	NFP
+5699	2	228	spiritual	JJ
+5700	3	228	petrification	NN
+5701	4	228	,	,
+5702	5	228	”	:
+5703	6	228	a	DT
+5704	7	228	feeling	NN
+5705	8	228	of	IN
+5706	9	228	being	VBG
+5707	10	228	“	-RRB-
+5708	11	228	immortal	JJ
+5709	12	228	,	,
+5710	13	228	”	NFP
+5711	14	228	and	CC
+5712	15	228	“	NFP
+5713	16	228	funereal	NN
+5714	17	228	face	NN
+5715	18	228	,	,
+5716	19	228	”	,
+5717	20	228	a	DT
+5718	21	228	concept	NN
+5719	22	228	Francis	NNP
+5720	23	228	referred	VBD
+5721	24	228	to	IN
+5722	25	228	this	DT
+5723	26	228	month	NN
+5724	27	228	,	,
+5725	28	228	urging	VBG
+5726	29	228	followers	NNS
+5727	30	228	to	TO
+5728	31	228	prepare	VB
+5729	32	228	for	IN
+5730	33	228	Christmas	NNP
+5731	34	228	with	IN
+5732	35	228	“	JJ
+5733	36	228	joy	NN
+5734	37	228	,	,
+5735	38	228	”	,
+5736	39	228	instead	RB
+5737	40	228	of	IN
+5738	41	228	dourness	NN
+5739	42	228	or	CC
+5740	43	228	anxiety	NN
+5741	44	228	.	.
+5742	1	229	The	DT
+5743	2	229	pope	NN
+5744	3	229	also	RB
+5745	4	229	blasted	VBD
+5746	5	229	gossiping	NN
+5747	6	229	among	IN
+5748	7	229	officials	NNS
+5749	8	229	as	IN
+5750	9	229	a	DT
+5751	10	229	form	NN
+5752	11	229	of	IN
+5753	12	229	“	NFP
+5754	13	229	satanic	JJ
+5755	14	229	assassination	NN
+5756	15	229	.	.
+5757	1	230	”	.
+5758	1	231	He	PRP
+5759	2	231	said	VBD
+5760	3	231	:	:
+5761	4	231	“	``
+5762	5	231	Sometimes	RB
+5763	6	231	,	,
+5764	7	231	[	-LRB-
+5765	8	231	officials	NNS
+5766	9	231	of	IN
+5767	10	231	the	DT
+5768	11	231	Curia	NNP
+5769	12	231	]	-RRB-
+5770	13	231	feel	VBP
+5771	14	231	themselves	PRP
+5772	15	231	‘	.
+5773	1	232	lords	NNS
+5774	2	232	of	IN
+5775	3	232	the	DT
+5776	4	232	manor’	NN
+5777	5	232	–	.
+5778	1	233	superior	JJ
+5779	2	233	to	IN
+5780	3	233	everyone	NN
+5781	4	233	and	CC
+5782	5	233	everything	NN
+5783	6	233	.	.
+5784	1	234	”	NFP
+5785	1	235	Francis	NNP
+5786	2	235	hoped	VBD
+5787	3	235	that	IN
+5788	4	235	the	DT
+5789	5	235	Christmas	NNP
+5790	6	235	season	NN
+5791	7	235	would	MD
+5792	8	235	help	VB
+5793	9	235	the	DT
+5794	10	235	governing	VBG
+5795	11	235	body	NN
+5796	12	235	to	TO
+5797	13	235	heal	VB
+5798	14	235	some	DT
+5799	15	235	of	IN
+5800	16	235	what	WP
+5801	17	235	ails	VBZ
+5802	18	235	it	PRP
+5803	19	235	.	.
+5804	1	236	The	DT
+5805	2	236	Vatican	NNP
+5806	3	236	released	VBD
+5807	4	236	an	DT
+5808	5	236	English	JJ
+5809	6	236	version	NN
+5810	7	236	of	IN
+5811	8	236	the	DT
+5812	9	236	list	NN
+5813	10	236	.	.
+5814	1	237	Some	DT
+5815	2	237	of	IN
+5816	3	237	the	DT
+5817	4	237	highlights	NNS
+5818	5	237	—	:
+5819	6	237	or	CC
+5820	7	237	lowlights	NNS
+5821	8	237	—	:
+5822	9	237	depending	VBG
+5823	10	237	on	IN
+5824	11	237	whether	IN
+5825	12	237	you	PRP
+5826	13	237	are	VBP
+5827	14	237	a	DT
+5828	15	237	member	NN
+5829	16	237	of	IN
+5830	17	237	the	DT
+5831	18	237	Curia	NNP
+5832	19	237	or	CC
+5833	20	237	not	RB
+5834	21	237	:	:
+5835	22	237	On	IN
+5836	23	237	feeling	NN
+5837	24	237	“	.
+5838	1	238	immortal	JJ
+5839	2	238	”	NN
+5840	3	238	:	:
+5841	4	238	“	.
+5842	1	239	A	DT
+5843	2	239	curia	NN
+5844	3	239	that	WDT
+5845	4	239	does	VBZ
+5846	5	239	not	RB
+5847	6	239	practice	VB
+5848	7	239	self	NN
+5849	8	239	-	HYPH
+5850	9	239	criticism	NN
+5851	10	239	,	,
+5852	11	239	does	VBZ
+5853	12	239	not	RB
+5854	13	239	keep	VB
+5855	14	239	up	RP
+5856	15	239	to	IN
+5857	16	239	date	NN
+5858	17	239	,	,
+5859	18	239	does	VBZ
+5860	19	239	not	RB
+5861	20	239	try	VB
+5862	21	239	to	TO
+5863	22	239	better	VB
+5864	23	239	itself	PRP
+5865	24	239	,	,
+5866	25	239	is	VBZ
+5867	26	239	an	DT
+5868	27	239	infirm	JJ
+5869	28	239	Body.’	NN
+5870	29	239	Messages	NNS
+5871	30	239	in	IN
+5872	31	239	support	NN
+5873	32	239	of	IN
+5874	33	239	adjunct	JJ
+5875	34	239	-	HYPH
+5876	35	239	faculty	NN
+5877	36	239	members	NNS
+5878	37	239	and	CC
+5879	38	239	a	DT
+5880	39	239	more	RBR
+5881	40	239	democratized	VBN
+5882	41	239	University	NNP
+5883	42	239	of	IN
+5884	43	239	California	NNP
+5885	44	239	system	NN
+5886	45	239	were	VBD
+5887	46	239	displayed	VBN
+5888	47	239	as	IN
+5889	48	239	individuals	NNS
+5890	49	239	held	VBD
+5891	50	239	several	JJ
+5892	51	239	large	JJ
+5893	52	239	,	,
+5894	53	239	colorful	JJ
+5895	54	239	puppets	NNS
+5896	55	239	.	.
+5897	1	240	Food	NN
+5898	2	240	was	VBD
+5899	3	240	served	VBN
+5900	4	240	,	,
+5901	5	240	and	CC
+5902	6	240	the	DT
+5903	7	240	day	NN
+5904	8	240	-	HYPH
+5905	9	240	long	JJ
+5906	10	240	event	NN
+5907	11	240	was	VBD
+5908	12	240	dubbed	VBN
+5909	13	240	"	``
+5910	14	240	St.	NNP
+5911	15	240	Precaria	NNP
+5912	16	240	's	POS
+5913	17	240	Picnic	NNP
+5914	18	240	.	.
+5915	19	240	"	''
+5916	1	241	Lecturers	NNS
+5917	2	241	are	VBP
+5918	3	241	non	JJ
+5919	4	241	-	HYPH
+5920	5	241	tenure	NN
+5921	6	241	track	NN
+5922	7	241	adjunct	NN
+5923	8	241	-	HYPH
+5924	9	241	faculty	NN
+5925	10	241	members	NNS
+5926	11	241	.	.
+5927	1	242	They	PRP
+5928	2	242	say	VBP
+5929	3	242	that	IN
+5930	4	242	they	PRP
+5931	5	242	are	VBP
+5932	6	242	not	RB
+5933	7	242	treated	VBN
+5934	8	242	like	IN
+5935	9	242	professionals	NNS
+5936	10	242	,	,
+5937	11	242	even	RB
+5938	12	242	though	IN
+5939	13	242	they	PRP
+5940	14	242	teach	VBP
+5941	15	242	classes	NNS
+5942	16	242	,	,
+5943	17	242	engage	VB
+5944	18	242	in	IN
+5945	19	242	writing	NN
+5946	20	242	and	CC
+5947	21	242	research	NN
+5948	22	242	,	,
+5949	23	242	and	CC
+5950	24	242	hold	VB
+5951	25	242	advanced	JJ
+5952	26	242	degrees	NNS
+5953	27	242	from	IN
+5954	28	242	top	JJ
+5955	29	242	universities	NNS
+5956	30	242	.	.
+5957	1	243	Across	IN
+5958	2	243	the	DT
+5959	3	243	University	NNP
+5960	4	243	of	IN
+5961	5	243	California	NNP
+5962	6	243	system	NN
+5963	7	243	about	IN
+5964	8	243	one	CD
+5965	9	243	-	HYPH
+5966	10	243	third	NN
+5967	11	243	of	IN
+5968	12	243	all	DT
+5969	13	243	classes	NNS
+5970	14	243	are	VBP
+5971	15	243	taught	VBN
+5972	16	243	by	IN
+5973	17	243	Lecturers	NNPS
+5974	18	243	,	,
+5975	19	243	and	CC
+5976	20	243	contingent	JJ
+5977	21	243	faculty	NN
+5978	22	243	members	NNS
+5979	23	243	teach	VBP
+5980	24	243	over	IN
+5981	25	243	half	NN
+5982	26	243	of	IN
+5983	27	243	the	DT
+5984	28	243	UC	NNP
+5985	29	243	's	POS
+5986	30	243	undergraduate	JJ
+5987	31	243	credit	NN
+5988	32	243	hours	NNS
+5989	33	243	in	IN
+5990	34	243	total	NN
+5991	35	243	,	,
+5992	36	243	if	IN
+5993	37	243	graduate	JJ
+5994	38	243	student	NN
+5995	39	243	teachers	NNS
+5996	40	243	are	VBP
+5997	41	243	included	VBN
+5998	42	243	in	IN
+5999	43	243	the	DT
+6000	44	243	equation	NN
+6001	45	243	.	.
+6002	1	244	The	DT
+6003	2	244	majority	NN
+6004	3	244	of	IN
+6005	4	244	Lecturers	NNPS
+6006	5	244	are	VBP
+6007	6	244	hired	VBN
+6008	7	244	year	NN
+6009	8	244	-	HYPH
+6010	9	244	by	IN
+6011	10	244	-	HYPH
+6012	11	244	year	NN
+6013	12	244	or	CC
+6014	13	244	quarter	NN
+6015	14	244	-	HYPH
+6016	15	244	by	JJ
+6017	16	244	-	HYPH
+6018	17	244	quarter	NN
+6019	18	244	as	IN
+6020	19	244	"	``
+6021	20	244	temp	NN
+6022	21	244	"	''
+6023	22	244	workers	NNS
+6024	23	244	,	,
+6025	24	244	which	WDT
+6026	25	244	leaves	VBZ
+6027	26	244	them	PRP
+6028	27	244	with	IN
+6029	28	244	no	DT
+6030	29	244	job	NN
+6031	30	244	security	NN
+6032	31	244	.	.
+6033	1	245	Additionally	RB
+6034	2	245	,	,
+6035	3	245	a	DT
+6036	4	245	full	JJ
+6037	5	245	-	HYPH
+6038	6	245	time	NN
+6039	7	245	Lecturer	NNP
+6040	8	245	's	POS
+6041	9	245	workload	NN
+6042	10	245	is	VBZ
+6043	11	245	typically	RB
+6044	12	245	twice	PDT
+6045	13	245	that	DT
+6046	14	245	of	IN
+6047	15	245	a	DT
+6048	16	245	tenure	NN
+6049	17	245	track	NN
+6050	18	245	professor	NN
+6051	19	245	,	,
+6052	20	245	yet	CC
+6053	21	245	they	PRP
+6054	22	245	are	VBP
+6055	23	245	paid	VBN
+6056	24	245	significantly	RB
+6057	25	245	less	RBR
+6058	26	245	.	.
+6059	1	246	Many	JJ
+6060	2	246	of	IN
+6061	3	246	the	DT
+6062	4	246	picket	NN
+6063	5	246	signs	NNS
+6064	6	246	displayed	VBD
+6065	7	246	at	IN
+6066	8	246	the	DT
+6067	9	246	picnic	NN
+6068	10	246	communicated	VBN
+6069	11	246	around	IN
+6070	12	246	the	DT
+6071	13	246	theme	NN
+6072	14	246	of	IN
+6073	15	246	precarity	NN
+6074	16	246	.	.
+6075	1	247	One	CD
+6076	2	247	such	JJ
+6077	3	247	message	NN
+6078	4	247	,	,
+6079	5	247	"	''
+6080	1	248	A	DT
+6081	2	248	Precarious	JJ
+6082	3	248	Faculty	NN
+6083	4	248	=	VBZ
+6084	5	248	A	DT
+6085	6	248	Precarious	JJ
+6086	7	248	University	NNP
+6087	8	248	,	,
+6088	1	249	"	``
+6089	2	249	was	VBD
+6090	3	249	emblazoned	VBN
+6091	4	249	on	IN
+6092	5	249	a	DT
+6093	6	249	gold	NN
+6094	7	249	flag	NN
+6095	8	249	along	IN
+6096	9	249	with	IN
+6097	10	249	the	DT
+6098	11	249	stencil	NN
+6099	12	249	of	IN
+6100	13	249	a	DT
+6101	14	249	fist	NN
+6102	15	249	holding	VBG
+6103	16	249	a	DT
+6104	17	249	pencil	NN
+6105	18	249	.	.
+6106	1	250	Precarity	NNP
+6107	2	250	has	VBZ
+6108	3	250	been	VBN
+6109	4	250	defined	VBN
+6110	5	250	as	IN
+6111	6	250	a	DT
+6112	7	250	condition	NN
+6113	8	250	of	IN
+6114	9	250	instability	NN
+6115	10	250	in	IN
+6116	11	250	the	DT
+6117	12	250	workforce	NN
+6118	13	250	created	VBN
+6119	14	250	in	IN
+6120	15	250	postindustrial	JJ
+6121	16	250	societies	NNS
+6122	17	250	when	WRB
+6123	18	250	management	NN
+6124	19	250	seeks	VBZ
+6125	20	250	to	TO
+6126	21	250	increase	VB
+6127	22	250	its	PRP$
+6128	23	250	own	JJ
+6129	24	250	strength	NN
+6130	25	250	by	IN
+6131	26	250	limiting	VBG
+6132	27	250	job	NN
+6133	28	250	opportunities	NNS
+6134	29	250	to	IN
+6135	30	250	temporary	JJ
+6136	31	250	and	CC
+6137	32	250	or	CC
+6138	33	250	part	NN
+6139	34	250	-	HYPH
+6140	35	250	time	NN
+6141	36	250	work	NN
+6142	37	250	.	.
+6143	1	251	Carl	NNP
+6144	2	251	Krawitt	NNP
+6145	3	251	has	VBZ
+6146	4	251	watched	VBN
+6147	5	251	his	PRP$
+6148	6	251	son	NN
+6149	7	251	,	,
+6150	8	251	Rhett	NNP
+6151	9	251	,	,
+6152	10	251	now	RB
+6153	11	251	6	CD
+6154	12	251	,	,
+6155	13	251	fight	VB
+6156	14	251	leukemia	NN
+6157	15	251	for	IN
+6158	16	251	the	DT
+6159	17	251	past	JJ
+6160	18	251	4	CD
+6161	19	251	1/2	CD
+6162	20	251	years	NNS
+6163	21	251	.	.
+6164	1	252	For	IN
+6165	2	252	more	JJR
+6166	3	252	than	IN
+6167	4	252	three	CD
+6168	5	252	of	IN
+6169	6	252	those	DT
+6170	7	252	years	NNS
+6171	8	252	,	,
+6172	9	252	Rhett	NNP
+6173	10	252	has	VBZ
+6174	11	252	undergone	VBN
+6175	12	252	round	NN
+6176	13	252	after	IN
+6177	14	252	round	NN
+6178	15	252	of	IN
+6179	16	252	chemotherapy	NN
+6180	17	252	.	.
+6181	1	253	Last	JJ
+6182	2	253	year	NN
+6183	3	253	he	PRP
+6184	4	253	finished	VBD
+6185	5	253	chemotherapy	NN
+6186	6	253	,	,
+6187	7	253	and	CC
+6188	8	253	doctors	NNS
+6189	9	253	say	VBP
+6190	10	253	he	PRP
+6191	11	253	is	VBZ
+6192	12	253	in	IN
+6193	13	253	remission	NN
+6194	14	253	.	.
+6195	1	254	Now	RB
+6196	2	254	,	,
+6197	3	254	there	EX
+6198	4	254	's	VBZ
+6199	5	254	a	DT
+6200	6	254	new	JJ
+6201	7	254	threat	NN
+6202	8	254	,	,
+6203	9	254	one	CD
+6204	10	254	that	WDT
+6205	11	254	the	DT
+6206	12	254	family	NN
+6207	13	254	should	MD
+6208	14	254	not	RB
+6209	15	254	have	VB
+6210	16	254	to	TO
+6211	17	254	worry	VB
+6212	18	254	about	IN
+6213	19	254	:	:
+6214	20	254	measles	NNS
+6215	21	254	.	.
+6216	1	255	Rhett	NNP
+6217	2	255	can	MD
+6218	3	255	not	RB
+6219	4	255	be	VB
+6220	5	255	vaccinated	VBN
+6221	6	255	,	,
+6222	7	255	because	IN
+6223	8	255	his	PRP$
+6224	9	255	immune	JJ
+6225	10	255	system	NN
+6226	11	255	is	VBZ
+6227	12	255	still	RB
+6228	13	255	rebuilding	VBG
+6229	14	255	.	.
+6230	1	256	It	PRP
+6231	2	256	may	MD
+6232	3	256	be	VB
+6233	4	256	months	NNS
+6234	5	256	more	JJR
+6235	6	256	before	IN
+6236	7	256	his	PRP$
+6237	8	256	body	NN
+6238	9	256	is	VBZ
+6239	10	256	healthy	JJ
+6240	11	256	enough	RB
+6241	12	256	to	TO
+6242	13	256	get	VB
+6243	14	256	all	DT
+6244	15	256	his	PRP$
+6245	16	256	immunizations	NNS
+6246	17	256	.	.
+6247	1	257	Until	IN
+6248	2	257	then	RB
+6249	3	257	,	,
+6250	4	257	he	PRP
+6251	5	257	depends	VBZ
+6252	6	257	on	IN
+6253	7	257	everyone	NN
+6254	8	257	around	IN
+6255	9	257	him	PRP
+6256	10	257	for	IN
+6257	11	257	protection	NN
+6258	12	257	—	:
+6259	13	257	what	WP
+6260	14	257	's	VBZ
+6261	15	257	known	VBN
+6262	16	257	as	IN
+6263	17	257	herd	NN
+6264	18	257	immunity	NN
+6265	19	257	.	.
+6266	1	258	But	CC
+6267	2	258	Rhett	NNP
+6268	3	258	lives	VBZ
+6269	4	258	in	IN
+6270	5	258	Marin	NNP
+6271	6	258	County	NNP
+6272	7	258	,	,
+6273	8	258	Calif.	NNP
+6274	9	258	,	,
+6275	10	258	a	DT
+6276	11	258	county	NN
+6277	12	258	with	IN
+6278	13	258	the	DT
+6279	14	258	dubious	JJ
+6280	15	258	honor	NN
+6281	16	258	of	IN
+6282	17	258	having	VBG
+6283	18	258	the	DT
+6284	19	258	highest	JJS
+6285	20	258	rate	NN
+6286	21	258	of	IN
+6287	22	258	"	``
+6288	23	258	personal	JJ
+6289	24	258	belief	NN
+6290	25	258	exemptions	NNS
+6291	26	258	"	''
+6292	27	258	in	IN
+6293	28	258	the	DT
+6294	29	258	Bay	NNP
+6295	30	258	Area	NNP
+6296	31	258	and	CC
+6297	32	258	among	IN
+6298	33	258	the	DT
+6299	34	258	highest	JJS
+6300	35	258	in	IN
+6301	36	258	the	DT
+6302	37	258	state	NN
+6303	38	258	.	.
+6304	1	259	This	DT
+6305	2	259	school	NN
+6306	3	259	year	NN
+6307	4	259	,	,
+6308	5	259	6.45	CD
+6309	6	259	percent	NN
+6310	7	259	of	IN
+6311	8	259	children	NNS
+6312	9	259	in	IN
+6313	10	259	Marin	NNP
+6314	11	259	have	VBP
+6315	12	259	a	DT
+6316	13	259	personal	JJ
+6317	14	259	belief	NN
+6318	15	259	exemption	NN
+6319	16	259	,	,
+6320	17	259	which	WDT
+6321	18	259	allows	VBZ
+6322	19	259	parents	NNS
+6323	20	259	to	TO
+6324	21	259	lawfully	RB
+6325	22	259	send	VB
+6326	23	259	their	PRP$
+6327	24	259	children	NNS
+6328	25	259	to	IN
+6329	26	259	school	NN
+6330	27	259	unvaccinated	VBN
+6331	28	259	against	IN
+6332	29	259	communicable	JJ
+6333	30	259	diseases	NNS
+6334	31	259	like	IN
+6335	32	259	measles	NNS
+6336	33	259	,	,
+6337	34	259	polio	NN
+6338	35	259	,	,
+6339	36	259	whooping	JJ
+6340	37	259	cough	NN
+6341	38	259	and	CC
+6342	39	259	more	JJR
+6343	40	259	.	.
+6344	1	260	Carl	NNP
+6345	2	260	Krawitt	NNP
+6346	3	260	has	VBZ
+6347	4	260	had	VBN
+6348	5	260	just	RB
+6349	6	260	about	RB
+6350	7	260	enough	JJ
+6351	8	260	.	.
+6352	1	261	"	``
+6353	2	261	It	PRP
+6354	3	261	's	VBZ
+6355	4	261	very	RB
+6356	5	261	emotional	JJ
+6357	6	261	for	IN
+6358	7	261	me	PRP
+6359	8	261	,	,
+6360	9	261	"	''
+6361	10	261	he	PRP
+6362	11	261	said	VBD
+6363	12	261	.	.
+6364	1	262	"	``
+6365	2	262	If	IN
+6366	3	262	you	PRP
+6367	4	262	choose	VBP
+6368	5	262	not	RB
+6369	6	262	to	TO
+6370	7	262	immunize	VB
+6371	8	262	your	PRP$
+6372	9	262	own	JJ
+6373	10	262	child	NN
+6374	11	262	and	CC
+6375	12	262	your	PRP$
+6376	13	262	own	JJ
+6377	14	262	child	NN
+6378	15	262	dies	VBZ
+6379	16	262	because	IN
+6380	17	262	they	PRP
+6381	18	262	get	VBP
+6382	19	262	measles	NNS
+6383	20	262	,	,
+6384	21	262	OK	UH
+6385	22	262	,	,
+6386	23	262	that	DT
+6387	24	262	's	VBZ
+6388	25	262	your	PRP$
+6389	26	262	responsibility	NN
+6390	27	262	,	,
+6391	28	262	that	DT
+6392	29	262	's	VBZ
+6393	30	262	your	PRP$
+6394	31	262	choice	NN
+6395	32	262	.	.
+6396	1	263	But	CC
+6397	2	263	if	IN
+6398	3	263	your	PRP$
+6399	4	263	child	NN
+6400	5	263	gets	VBZ
+6401	6	263	sick	JJ
+6402	7	263	and	CC
+6403	8	263	gets	VBZ
+6404	9	263	my	PRP$
+6405	10	263	child	NN
+6406	11	263	sick	JJ
+6407	12	263	and	CC
+6408	13	263	my	PRP$
+6409	14	263	child	NN
+6410	15	263	dies	VBZ
+6411	16	263	,	,
+6412	17	263	then	RB
+6413	1	264	...	:
+6414	2	264	your	PRP$
+6415	3	264	action	NN
+6416	4	264	has	VBZ
+6417	5	264	harmed	VBN
+6418	6	264	my	PRP$
+6419	7	264	child	NN
+6420	8	264	.	.
+6421	9	264	"	''
+6422	1	265	South	NNP
+6423	2	265	Korea	NNP
+6424	3	265	’s	XX
+6425	4	265	startup	NN
+6426	5	265	culture	NN
+6427	6	265	has	VBZ
+6428	7	265	been	VBN
+6429	8	265	gaining	VBG
+6430	9	265	more	JJR
+6431	10	265	attention	NN
+6432	11	265	as	IN
+6433	12	265	of	IN
+6434	13	265	late	RB
+6435	14	265	.	.
+6436	1	266	According	VBG
+6437	2	266	to	IN
+6438	3	266	Korea	NNP
+6439	4	266	’s	NNP
+6440	5	266	Small	NNP
+6441	6	266	and	CC
+6442	7	266	Medium	NNP
+6443	8	266	Business	NNP
+6444	9	266	Administration	NNP
+6445	10	266	,	,
+6446	11	266	the	DT
+6447	12	266	number	NN
+6448	13	266	of	IN
+6449	14	266	startups	NNS
+6450	15	266	in	IN
+6451	16	266	the	DT
+6452	17	266	country	NN
+6453	18	266	soared	VBD
+6454	19	266	to	IN
+6455	20	266	roughly	RB
+6456	21	266	30,000	CD
+6457	22	266	as	IN
+6458	23	266	of	IN
+6459	24	266	January	NNP
+6460	25	266	this	DT
+6461	26	266	year	NN
+6462	27	266	,	,
+6463	28	266	up	RB
+6464	29	266	from	IN
+6465	30	266	a	DT
+6466	31	266	mere	JJ
+6467	32	266	2,000	CD
+6468	33	266	some	DT
+6469	34	266	16	CD
+6470	35	266	years	NNS
+6471	36	266	ago	RB
+6472	37	266	.	.
+6473	1	267	And	CC
+6474	2	267	among	IN
+6475	3	267	that	DT
+6476	4	267	group	NN
+6477	5	267	,	,
+6478	6	267	63	CD
+6479	7	267	have	VBP
+6480	8	267	risen	VBN
+6481	9	267	to	IN
+6482	10	267	No	NN
+6483	11	267	.	.
+6484	12	267	1	CD
+6485	13	267	in	IN
+6486	14	267	terms	NNS
+6487	15	267	of	IN
+6488	16	267	market	NN
+6489	17	267	share	NN
+6490	18	267	in	IN
+6491	19	267	their	PRP$
+6492	20	267	respective	JJ
+6493	21	267	industries	NNS
+6494	22	267	.	.
+6495	1	268	But	CC
+6496	2	268	in	IN
+6497	3	268	spite	NN
+6498	4	268	of	IN
+6499	5	268	that	DT
+6500	6	268	growth	NN
+6501	7	268	and	CC
+6502	8	268	the	DT
+6503	9	268	government	NN
+6504	10	268	’s	XX
+6505	11	268	ongoing	JJ
+6506	12	268	support	NN
+6507	13	268	for	IN
+6508	14	268	building	VBG
+6509	15	268	a	DT
+6510	16	268	“	``
+6511	17	268	creative	JJ
+6512	18	268	economy	NN
+6513	19	268	,	,
+6514	20	268	”	:
+6515	21	268	one	NN
+6516	22	268	that	WDT
+6517	23	268	favors	VBZ
+6518	24	268	and	CC
+6519	25	268	encourages	VBZ
+6520	26	268	young	JJ
+6521	27	268	entrepreneurship	NN
+6522	28	268	,	,
+6523	29	268	Korea	NNP
+6524	30	268	’s	NNP
+6525	31	268	startup	NN
+6526	32	268	culture	NN
+6527	33	268	is	VBZ
+6528	34	268	not	RB
+6529	35	268	as	RB
+6530	36	268	advantageous	JJ
+6531	37	268	or	CC
+6532	38	268	conducive	JJ
+6533	39	268	as	IN
+6534	40	268	it	PRP
+6535	41	268	might	MD
+6536	42	268	seem	VB
+6537	43	268	.	.
+6538	1	269	While	IN
+6539	2	269	many	JJ
+6540	3	269	have	VBP
+6541	4	269	the	DT
+6542	5	269	impression	NN
+6543	6	269	the	DT
+6544	7	269	country	NN
+6545	8	269	’s	XX
+6546	9	269	startup	NN
+6547	10	269	landscape	NN
+6548	11	269	is	VBZ
+6549	12	269	teeming	VBG
+6550	13	269	with	IN
+6551	14	269	opportunity	NN
+6552	15	269	,	,
+6553	16	269	there	EX
+6554	17	269	are	VBP
+6555	18	269	some	DT
+6556	19	269	who	WP
+6557	20	269	remain	VBP
+6558	21	269	skeptical	JJ
+6559	22	269	of	IN
+6560	23	269	its	PRP$
+6561	24	269	true	JJ
+6562	25	269	offerings	NNS
+6563	26	269	.	.
+6564	1	270	One	CD
+6565	2	270	such	JJ
+6566	3	270	entrepreneur	NN
+6567	4	270	is	VBZ
+6568	5	270	Jae	NNP
+6569	6	270	Lee	NNP
+6570	7	270	,	,
+6571	8	270	founder	NN
+6572	9	270	and	CC
+6573	10	270	CEO	NN
+6574	11	270	of	IN
+6575	12	270	Movable	NNP
+6576	13	270	Ads	NNPS
+6577	14	270	,	,
+6578	15	270	a	DT
+6579	16	270	mobile	JJ
+6580	17	270	advertising	NN
+6581	18	270	application	NN
+6582	19	270	that	WDT
+6583	20	270	empowers	VBZ
+6584	21	270	sports	NNS
+6585	22	270	fans	NNS
+6586	23	270	from	IN
+6587	24	270	all	RB
+6588	25	270	over	IN
+6589	26	270	the	DT
+6590	27	270	world	NN
+6591	28	270	to	TO
+6592	29	270	engage	VB
+6593	30	270	and	CC
+6594	31	270	cheer	VB
+6595	32	270	on	IN
+6596	33	270	their	PRP$
+6597	34	270	favorite	JJ
+6598	35	270	teams	NNS
+6599	36	270	or	CC
+6600	37	270	players	NNS
+6601	38	270	in	IN
+6602	39	270	real	JJ
+6603	40	270	time	NN
+6604	41	270	.	.
+6605	1	271	The	DT
+6606	2	271	company	NN
+6607	3	271	has	VBZ
+6608	4	271	offices	NNS
+6609	5	271	in	IN
+6610	6	271	Texas	NNP
+6611	7	271	and	CC
+6612	8	271	Seoul	NNP
+6613	9	271	,	,
+6614	10	271	and	CC
+6615	11	271	has	VBZ
+6616	12	271	already	RB
+6617	13	271	begun	VBN
+6618	14	271	to	TO
+6619	15	271	expand	VB
+6620	16	271	into	IN
+6621	17	271	the	DT
+6622	18	271	European	JJ
+6623	19	271	market	NN
+6624	20	271	with	IN
+6625	21	271	a	DT
+6626	22	271	another	DT
+6627	23	271	branch	NN
+6628	24	271	in	IN
+6629	25	271	Germany	NNP
+6630	26	271	.	.
+6631	1	272	The	DT
+6632	2	272	TPP	NNP
+6633	3	272	would	MD
+6634	4	272	create	VB
+6635	5	272	an	DT
+6636	6	272	environment	NN
+6637	7	272	hostile	JJ
+6638	8	272	to	IN
+6639	9	272	journalists	NNS
+6640	10	272	and	CC
+6641	11	272	whistleblowers	NNS
+6642	12	272	,	,
+6643	13	272	said	VBD
+6644	14	272	policy	NN
+6645	15	272	directors	NNS
+6646	16	272	for	IN
+6647	17	272	the	DT
+6648	18	272	Electronic	NNP
+6649	19	272	Frontier	NNP
+6650	20	272	Foundation	NNP
+6651	21	272	and	CC
+6652	22	272	Fight	NNP
+6653	23	272	for	IN
+6654	24	272	the	DT
+6655	25	272	Future	NNP
+6656	26	272	,	,
+6657	27	272	co	NN
+6658	28	272	-	,
+6659	29	272	authors	NNS
+6660	30	272	of	IN
+6661	31	272	the	DT
+6662	32	272	letter	NN
+6663	33	272	.	.
+6664	1	273	“	NFP
+6665	2	273	TPP	NN
+6666	3	273	’s	JJ
+6667	4	273	trade	NN
+6668	5	273	secrets	NNS
+6669	6	273	provisions	NNS
+6670	7	273	could	MD
+6671	8	273	make	VB
+6672	9	273	it	PRP
+6673	10	273	a	DT
+6674	11	273	crime	NN
+6675	12	273	for	IN
+6676	13	273	people	NNS
+6677	14	273	to	TO
+6678	15	273	reveal	VB
+6679	16	273	corporate	JJ
+6680	17	273	wrongdoing	NN
+6681	18	273	‘	.
+6682	1	274	through	IN
+6683	2	274	a	DT
+6684	3	274	computer	NN
+6685	4	274	system’	NN
+6686	5	274	,	,
+6687	6	274	”	''
+6688	7	274	says	VBZ
+6689	8	274	the	DT
+6690	9	274	letter	NN
+6691	10	274	.	.
+6692	1	275	“	NFP
+6693	1	276	The	DT
+6694	2	276	language	NN
+6695	3	276	is	VBZ
+6696	4	276	dangerously	RB
+6697	5	276	vague	JJ
+6698	6	276	,	,
+6699	7	276	and	CC
+6700	8	276	enables	VBZ
+6701	9	276	signatory	JJ
+6702	10	276	countries	NNS
+6703	11	276	to	TO
+6704	12	276	enact	VB
+6705	13	276	rules	NNS
+6706	14	276	that	WDT
+6707	15	276	would	MD
+6708	16	276	ban	VB
+6709	17	276	reporting	NN
+6710	18	276	on	IN
+6711	19	276	timely	JJ
+6712	20	276	,	,
+6713	21	276	critical	JJ
+6714	22	276	issues	NNS
+6715	23	276	affecting	VBG
+6716	24	276	the	DT
+6717	25	276	public	NN
+6718	26	276	.	.
+6719	1	277	”	NFP
+6720	1	278	Among	IN
+6721	2	278	the	DT
+6722	3	278	signatories	NNS
+6723	4	278	are	VBP
+6724	5	278	activist	NN
+6725	6	278	,	,
+6726	7	278	sci	NN
+6727	8	278	-	HYPH
+6728	9	278	fi	NN
+6729	10	278	author	NN
+6730	11	278	and	CC
+6731	12	278	Guardian	NNP
+6732	13	278	tech	NN
+6733	14	278	columnist	NN
+6734	15	278	Cory	NNP
+6735	16	278	Doctorow	NNP
+6736	17	278	.	.
+6737	1	279	“	NFP
+6738	2	279	Democracies	NNS
+6739	3	279	make	VBP
+6740	4	279	their	PRP$
+6741	5	279	laws	NNS
+6742	6	279	in	IN
+6743	7	279	public	JJ
+6744	8	279	,	,
+6745	9	279	not	RB
+6746	10	279	in	IN
+6747	11	279	smoke	NN
+6748	12	279	-	HYPH
+6749	13	279	filled	VBN
+6750	14	279	rooms	NNS
+6751	15	279	,	,
+6752	16	279	”	.
+6753	17	279	Doctorow	NNP
+6754	18	279	wrote	VBD
+6755	19	279	.	.
+6756	1	280	“	NFP
+6757	1	281	If	IN
+6758	2	281	TPP	NNP
+6759	3	281	’s	NNP
+6760	4	281	backers	NNS
+6761	5	281	truly	RB
+6762	6	281	believed	VBD
+6763	7	281	that	IN
+6764	8	281	they	PRP
+6765	9	281	were	VBD
+6766	10	281	doing	VBG
+6767	11	281	the	DT
+6768	12	281	people	NNS
+6769	13	281	’s	JJ
+6770	14	281	work	NN
+6771	15	281	,	,
+6772	16	281	they	PRP
+6773	17	281	’d	MD
+6774	18	281	have	VB
+6775	19	281	invited	VBN
+6776	20	281	the	DT
+6777	21	281	people	NNS
+6778	22	281	into	IN
+6779	23	281	the	DT
+6780	24	281	room	NN
+6781	25	281	.	.
+6782	1	282	The	DT
+6783	2	282	fact	NN
+6784	3	282	that	IN
+6785	4	282	they	PRP
+6786	5	282	went	VBD
+6787	6	282	to	IN
+6788	7	282	extreme	JJ
+6789	8	282	,	,
+6790	9	282	unprecedented	JJ
+6791	10	282	measures	NNS
+6792	11	282	to	TO
+6793	12	282	stop	VB
+6794	13	282	anyone	NN
+6795	14	282	from	IN
+6796	15	282	finding	VBG
+6797	16	282	out	RP
+6798	17	282	what	WP
+6799	18	282	was	VBD
+6800	19	282	going	VBG
+6801	20	282	on	IN
+6802	21	282	–	NFP
+6803	22	282	even	RB
+6804	23	282	going	VBG
+6805	24	282	so	RB
+6806	25	282	far	RB
+6807	26	282	as	IN
+6808	27	282	to	TO
+6809	28	282	threaten	VB
+6810	29	282	Congress	NNP
+6811	30	282	with	IN
+6812	31	282	jail	NN
+6813	32	282	if	IN
+6814	33	282	they	PRP
+6815	34	282	spoke	VBD
+6816	35	282	about	IN
+6817	36	282	it	PRP
+6818	37	282	–	.
+6819	1	283	tells	VBZ
+6820	2	283	you	PRP
+6821	3	283	that	IN
+6822	4	283	this	DT
+6823	5	283	is	VBZ
+6824	6	283	something	NN
+6825	7	283	being	VBG
+6826	8	283	done	VBN
+6827	9	283	*	NFP
+6828	10	283	to	IN
+6829	11	283	*	NFP
+6830	12	283	Americans	NNPS
+6831	13	283	,	,
+6832	14	283	not	RB
+6833	15	283	*	NFP
+6834	16	283	for	IN
+6835	17	283	*	NFP
+6836	18	283	Americans	NNPS
+6837	19	283	.	.
+6838	20	283	”	.
+6839	1	284	Also	RB
+6840	2	284	on	IN
+6841	3	284	the	DT
+6842	4	284	list	NN
+6843	5	284	were	VBD
+6844	6	284	prominent	JJ
+6845	7	284	members	NNS
+6846	8	284	of	IN
+6847	9	284	the	DT
+6848	10	284	open	JJ
+6849	11	284	source	NN
+6850	12	284	community	NN
+6851	13	284	,	,
+6852	14	284	including	VBG
+6853	15	284	David	NNP
+6854	16	284	Heinemeier	NNP
+6855	17	284	Hansson	NNP
+6856	18	284	,	,
+6857	19	284	creator	NN
+6858	20	284	of	IN
+6859	21	284	the	DT
+6860	22	284	popular	JJ
+6861	23	284	Ruby	NNP
+6862	24	284	on	IN
+6863	25	284	Rails	NNPS
+6864	26	284	web	NN
+6865	27	284	development	NN
+6866	28	284	framework	NN
+6867	29	284	,	,
+6868	30	284	image	NN
+6869	31	284	hosting	VBG
+6870	32	284	company	NN
+6871	33	284	Imgur	NNP
+6872	34	284	and	CC
+6873	35	284	domain	NN
+6874	36	284	name	NN
+6875	37	284	manager	NN
+6876	38	284	Namecheap	NNP
+6877	39	284	.	.
+6878	1	285	The	DT
+6879	2	285	hacking	NN
+6880	3	285	group	NN
+6881	4	285	that	WDT
+6882	5	285	calls	VBZ
+6883	6	285	itself	PRP
+6884	7	285	Anonymous	NNP
+6885	8	285	,	,
+6886	9	285	following	VBG
+6887	10	285	through	IN
+6888	11	285	on	IN
+6889	12	285	a	DT
+6890	13	285	video	NN
+6891	14	285	threat	NN
+6892	15	285	,	,
+6893	16	285	revealed	VBD
+6894	17	285	the	DT
+6895	18	285	names	NNS
+6896	19	285	of	IN
+6897	20	285	two	CD
+6898	21	285	of	IN
+6899	22	285	the	DT
+6900	23	285	Vineland	NNP
+6901	24	285	,	,
+6902	25	285	N.J.	NNP
+6903	26	285	,	,
+6904	27	285	officers	NNS
+6905	28	285	involved	VBN
+6906	29	285	in	IN
+6907	30	285	a	DT
+6908	31	285	fatal	JJ
+6909	32	285	arrest	NN
+6910	33	285	last	JJ
+6911	34	285	week	NN
+6912	35	285	,	,
+6913	36	285	and	CC
+6914	37	285	officials	NNS
+6915	38	285	confirmed	VBD
+6916	39	285	the	DT
+6917	40	285	names	NNS
+6918	41	285	Tuesday	NNP
+6919	42	285	.	.
+6920	1	286	Chief	NNP
+6921	2	286	Timothy	NNP
+6922	3	286	Codispoti	NNP
+6923	4	286	posted	VBD
+6924	5	286	recordings	NNS
+6925	6	286	of	IN
+6926	7	286	the	DT
+6927	8	286	911	CD
+6928	9	286	call	NN
+6929	10	286	and	CC
+6930	11	286	police	NN
+6931	12	286	dispatches	NNS
+6932	13	286	from	IN
+6933	14	286	the	DT
+6934	15	286	arrest	NN
+6935	16	286	of	IN
+6936	17	286	Phillip	NNP
+6937	18	286	White	NNP
+6938	19	286	on	IN
+6939	20	286	the	DT
+6940	21	286	department	NN
+6941	22	286	's	POS
+6942	23	286	Facebook	NNP
+6943	24	286	page	NN
+6944	25	286	.	.
+6945	1	287	A	DT
+6946	2	287	lawyer	NN
+6947	3	287	representing	VBG
+6948	4	287	the	DT
+6949	5	287	three	CD
+6950	6	287	officers	NNS
+6951	7	287	involved	VBN
+6952	8	287	in	IN
+6953	9	287	the	DT
+6954	10	287	incident	NN
+6955	11	287	confirmed	VBD
+6956	12	287	their	PRP$
+6957	13	287	names	NNS
+6958	14	287	,	,
+6959	15	287	as	IN
+6960	16	287	did	VBD
+6961	17	287	the	DT
+6962	18	287	chief	NN
+6963	19	287	,	,
+6964	20	287	who	WP
+6965	21	287	was	VBD
+6966	22	287	cited	VBN
+6967	23	287	by	IN
+6968	24	287	NJ.com	NNP
+6969	25	287	.	.
+6970	1	288	Police	NNS
+6971	2	288	used	VBD
+6972	3	288	a	DT
+6973	4	288	dog	NN
+6974	5	288	to	TO
+6975	6	288	restrain	VB
+6976	7	288	White	NNP
+6977	8	288	,	,
+6978	9	288	32	CD
+6979	10	288	,	,
+6980	11	288	of	IN
+6981	12	288	Vineland	NNP
+6982	13	288	,	,
+6983	14	288	after	IN
+6984	15	288	they	PRP
+6985	16	288	said	VBD
+6986	17	288	he	PRP
+6987	18	288	tried	VBD
+6988	19	288	to	TO
+6989	20	288	reach	VB
+6990	21	288	for	IN
+6991	22	288	one	CD
+6992	23	288	of	IN
+6993	24	288	the	DT
+6994	25	288	officers	NNS
+6995	26	288	'	POS
+6996	27	288	weapons	NNS
+6997	28	288	on	IN
+6998	29	288	March	NNP
+6999	30	288	31	CD
+7000	31	288	.	.
+7001	1	289	White	NNP
+7002	2	289	's	POS
+7003	3	289	family	NN
+7004	4	289	and	CC
+7005	5	289	a	DT
+7006	6	289	rights	NNS
+7007	7	289	activist	NN
+7008	8	289	,	,
+7009	9	289	citing	VBG
+7010	10	289	witnesses	NNS
+7011	11	289	,	,
+7012	12	289	allege	VB
+7013	13	289	that	IN
+7014	14	289	the	DT
+7015	15	289	officers	NNS
+7016	16	289	punched	VBD
+7017	17	289	and	CC
+7018	18	289	beat	VBD
+7019	19	289	White	NNP
+7020	20	289	before	IN
+7021	21	289	he	PRP
+7022	22	289	was	VBD
+7023	23	289	placed	VBN
+7024	24	289	in	IN
+7025	25	289	an	DT
+7026	26	289	ambulance	NN
+7027	27	289	for	IN
+7028	28	289	respiratory	JJ
+7029	29	289	distress	NN
+7030	30	289	.	.
+7031	1	290	They	PRP
+7032	2	290	also	RB
+7033	3	290	point	VBP
+7034	4	290	to	IN
+7035	5	290	a	DT
+7036	6	290	bystander	NN
+7037	7	290	's	POS
+7038	8	290	cellphone	NN
+7039	9	290	video	NN
+7040	10	290	,	,
+7041	11	290	which	WDT
+7042	12	290	they	PRP
+7043	13	290	say	VBP
+7044	14	290	shows	VBZ
+7045	15	290	a	DT
+7046	16	290	police	NN
+7047	17	290	dog	NN
+7048	18	290	biting	VBG
+7049	19	290	White	NNP
+7050	20	290	as	IN
+7051	21	290	he	PRP
+7052	22	290	lies	VBZ
+7053	23	290	on	IN
+7054	24	290	the	DT
+7055	25	290	ground	NN
+7056	26	290	.	.
+7057	1	291	On	IN
+7058	2	291	Tuesday	NNP
+7059	3	291	,	,
+7060	4	291	the	DT
+7061	5	291	names	NNS
+7062	6	291	,	,
+7063	7	291	home	NN
+7064	8	291	addresses	NNS
+7065	9	291	,	,
+7066	10	291	and	CC
+7067	11	291	phone	NN
+7068	12	291	numbers	NNS
+7069	13	291	of	IN
+7070	14	291	Officers	NNS
+7071	15	291	Louis	NNP
+7072	16	291	Platania	NNP
+7073	17	291	and	CC
+7074	18	291	Jeffrey	NNP
+7075	19	291	Travaline	NNP
+7076	20	291	were	VBD
+7077	21	291	posted	VBN
+7078	22	291	on	IN
+7079	23	291	a	DT
+7080	24	291	website	NN
+7081	25	291	that	WDT
+7082	26	291	has	VBZ
+7083	27	291	been	VBN
+7084	28	291	used	VBN
+7085	29	291	by	IN
+7086	30	291	Anonymous	NNP
+7087	31	291	hackers	NNS
+7088	32	291	.	.
+7089	1	292	Stuart	NNP
+7090	2	292	Alterman	NNP
+7091	3	292	,	,
+7092	4	292	who	WP
+7093	5	292	said	VBD
+7094	6	292	he	PRP
+7095	7	292	has	VBZ
+7096	8	292	been	VBN
+7097	9	292	hired	VBN
+7098	10	292	by	IN
+7099	11	292	the	DT
+7100	12	292	police	NNS
+7101	13	292	union	NN
+7102	14	292	to	TO
+7103	15	292	represent	VB
+7104	16	292	the	DT
+7105	17	292	three	CD
+7106	18	292	officers	NNS
+7107	19	292	,	,
+7108	20	292	called	VBD
+7109	21	292	the	DT
+7110	22	292	release	NN
+7111	23	292	of	IN
+7112	24	292	names	NNS
+7113	25	292	by	IN
+7114	26	292	Anonymous	NNP
+7115	27	292	"	``
+7116	28	292	unfortunate	JJ
+7117	29	292	,	,
+7118	30	292	"	''
+7119	31	292	saying	VBG
+7120	32	292	the	DT
+7121	33	292	investigation	NN
+7122	34	292	should	MD
+7123	35	292	be	VB
+7124	36	292	allowed	VBN
+7125	37	292	to	TO
+7126	38	292	play	VB
+7127	39	292	out	RP
+7128	40	292	.	.
 
