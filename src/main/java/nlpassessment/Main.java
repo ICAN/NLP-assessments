@@ -37,10 +37,10 @@ public class Main {
     public static void main(String[] args) {
 //
 
-
-//        AssessmentPipeline.runJavaAnnotators();
-//        AssessmentPipeline.runPreGoldPOSPipeline();
-        AssessmentPipeline.runPostGoldPOSPipeline();
+        //POS stuff
+//        POSPipeline.runJavaAnnotators();
+        POSPipeline.runPreGoldPOSPipeline();
+//        POSPipeline.runPostGoldPOSPipeline();
 
         //Lemma stuff
 //        CoreNLP.runAnnotatorStackedLines("corpora/lemmas.txt", "annotator_outputs/lemmas-core.txt");

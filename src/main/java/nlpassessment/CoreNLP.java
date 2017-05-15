@@ -101,7 +101,6 @@ public class CoreNLP {
             sentenceNumber++;
         }
 
-        document.PennToSimplifiedPOSTags();
 
         renormalizeBrackets(document.tokens);
         Utility.writeFile(document.toTSV(FIELDS), outfileName);

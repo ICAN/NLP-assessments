@@ -37,7 +37,6 @@ import opennlp.tools.tokenize.Tokenizer;
 import opennlp.tools.tokenize.TokenizerME;
 import opennlp.tools.tokenize.TokenizerModel;
 import opennlp.tools.util.Span;
-import opennlp.tools.lemmatizer.SimpleLemmatizer;
 /**
  *
  * @author Neal
@@ -142,8 +141,7 @@ public class OpenNLP {
                 tokenCount++;
             }
         }
-        
-        document.PennToSimplifiedPOSTags();
+       
         
         ArrayList<String> output = document.toTSV(FIELDS);
 

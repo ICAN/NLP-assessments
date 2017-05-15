@@ -15,6 +15,9 @@ VB = re.compile("V.*")
 JJ = re.compile("A.*")
 RB = re.compile("R.*")
 
+print(wordnet.ADV)
+
+
 def simplify_pos(tag):
     if re.match(NN, tag):
         return wordnet.NOUN

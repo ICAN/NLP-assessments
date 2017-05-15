@@ -8,9 +8,8 @@ NOTE: Works in Python 3.5.2; does not appear to work in Python 2.7 due to a stri
 
 
 """
-
-import spacy;
-from spacy.en import English;
+import spacy
+# import spacy.en
 import sys;
 import utility
 import re
@@ -37,7 +36,6 @@ def span_contains(outer, inner):
         yield False
     else:
         yield True
-
 
 def sent_process(file_in):
     # _doc = nlp(unicode(file_in, encoding="utf-8"))
