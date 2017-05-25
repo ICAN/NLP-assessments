@@ -1,0 +1,104 @@
+//ORG, LOC
+When kids dream of growing up to work for NASA, they generally imagine themselves piloting rocketships or exploring Mars, not tromping around in the snow.
+
+//GPE
+Others said that, going forward, the president would need to ask for and receive formal congressional authorization or at least present a detailed Syria strategy to the country before any further military action.
+
+//ORG, ORG, MONEY
+AT&T Inc (T.N) said on Monday it would buy Straight Path Communications Inc (STRP.A), a holder of licenses to wireless spectrum, for $1.25 billion in an all-stock deal as it aims to accumulate the airwaves it needs for a next generation network.
+
+//DATE, PRODUCT, PRODUCT, LOC
+The company made history again in May 2012 when its Dragon spacecraft attached to the International Space Station, exchanged cargo payloads, and returned safely to Earth — a technically challenging feat previously accomplished only by governments.
+
+//GPE, NORP, GPE, NORP, GPE, PERSON, DATE
+Noting that Norway was one of the first Western countries to recognize the People's Republic of China (PRC) and the first European country to acknowledge China's market economy status, Xi said that friendship and cooperation have featured throughout the 63-year diplomatic relations.
+
+//GPE?, ORG|NORP?, LOC
+She said the Norwegian side supports the Belt and Road Initiative, and is ready to expand cooperation of mutual benefit in areas including Arctic issues and cement communication and coordination on global issues.
+
+//EVENT?, DATE, MEDICAL, CARD?, LOC, EVENT, QUANTITY, MEDICAL
+During the years classified as El Niño between 2000 and 2014, cholera incidence increased threefold in regions such as East Africa that had the strongest association between El Niño and cholera, with 177 million people living in areas that experienced an increase in cholera cases during a time of additional rainfall.
+
+//Misleadingly capitalized non-NE
+But the sensory system of the wing-like, high AR fins was also more sensitive, meaning the fins were more responsive to a smaller magnitude of bending. Aiello said he believes that a more sensitive nervous system evolved in the high AR fins because it needed to be more responsive to smaller movements as the fish use these stiff, less flexible fins to swim.
+
+//GPE, GPE, GPE, T-shirt?, PERCENT, GPE
+The town of Tirupur, South India, is India's T-shirt capital (70 percent of India's knitted garments are produced there).
+
+//NORP?, NORP?, NORP?, DATE, GPE, LOC, GPE, GPE, GPE, GPE, GPE, GPE, GPE, GPE
+Farther south, migrating Borderlanders contended not with Yankees but with a powerful nation that was in the midst of adopting European ways. In the 1740s, the Cherokee Indian nation controlled the core of what we now think of as Appalachia: most of what is now Kentucky and Tennessee, a third of South Carolina, Georgia, Alabama, and West Virginia, and the westernmost swaths of Virginia and North Carolina. 
+
+//PERSON, PERSON?, NORP?, 
+Then again, Swift's account of the Leader who is usually to be found ruling over a tribe of Yahoos, and of the "favourite" who acts first as a dirty-worker and later as a scapegoat, fits remarkably well into the pattern of our own time. 
+
+//DATE, ORG, PERSON, DATE, PERSON, PRODUCT, PERSON, PRODUCT
+By June 2004, the Cyberkinetics team had recruited the former footballer Matthew Nagle. Later that month, Friehs used a pneumatic wand to inject a Utah array into Nagle's motor cortex, installing a pedestal atop his skull to connect him to the BrainGate system.
+
+//EMAIL, METHOD, LANGUAGE
+Too, he opens up the old message from root@eruditorum.org giving the Pontifex Transform, expressed as a few lines of Perl code.
+
+//GPE, FACILITY
+There was a reservation for a single room in Fort Irwin's Visiting Officers' Quarters, which he had never reached.
+
+//PERSON, ADDRESS, DATE
+This may be goodbye—if it is, write my son George Goodenough Akeley, 176 Pleasant St., San Diego, Cal., but don't come up here. Write the boy if you don't hear from me in a week, and watch the papers for news.
+
+//ORG|FACILITY, PERSON, LOC,  
+Gathered in a classroom at Gettysburg College, Rube's jeesh knew only two things: They were going to Lake Chinnereth, and they had to do it without anyone knowing they had entered the state on a military mission.
+
+//PERSON, METHOD, METHOD
+Portunia Persson said, "Dreamwalking is all very well, but might I suggest a good Visitation? That's the only language that these people understand."
+
+//PERSON, PERSON, PERSON, PRODUCT, QUANTITY
+Sma went as Xeny, Skaffen-Amtiskaw as a model of the Xenophobe, and the ship itself produced yet another remote drone; an aquatic one, still brown and yellow, but looking like a rather fat and large-eyed fish, and floating in a field-held meter-diameter sphere of water which drifted through the party-space like some odd balloon.
+
+//PERSON, FACILITY?
+J-J nodded because she wanted him to but nothing was okay at all, even going to Jenny's.
+
+//PERSON, PUBLICATION|WORK_OF_ART, PERSON
+Billy turned his attention to his deks. There was an open copy of The Review of Optometry there. It was open to an editorial, which Billy now read, his lips moving slightly.
+
+//9CARDINAL, Dresdeners:NORP?
+Eight Dresdeners crossed the steel spaghetti of the railroad yard. They were wearing new uniforms.
+
+//10 FACILITY?, 
+These suspect elements of Site D were so numerous and so intricately interrelated that it was very hard for a single mind to attempt to arrange or order them.
+
+//11 PERSON, LOC, LOC
+"Hey, Horwitz," I said. "You ever pass by the lagoon in Central Park? Down by Central Park South?"
+
+//12 PERSON, PERSON, PRODUCT, PERSON, GPE, MONEY
+On the way to the flagship, Struan read the dispatches. Profits on last year's teas, good. Perry had made a lucrative voyage, good. A copy of Scarlet Cloud's bill of lading that Perry had brought from Calcutta; bad: two hundred and ten thousand pounds sterling of opium lost.
+
+//13 CARDINAL
+A little girl was carrying a gray dog on her outstretched arms. Two gentlemen were exchanging information on some subject, at times turning the whole front of their bodies to each other, and then slowly turning aside themselves again; it was like doors ajar in the wind.
+
+//14 PERSON, PERSON
+After Kumiko and I were married, a number of occasions arose in which it was necessary for Noboru Wataya and me, as brothers-in-law, to exchange words—if not to engage in actual conversation.
+
+//15 PERSON, PERSON, FACILITY|ORGANIZATION
+A few days after Ushikawa's first visit, I asked Cinnamon to bring me a newspaper whenever he came to the Residence.
+
+//16 EVENT?, 
+From then on, until Tet, Uncle Chinh didn't come by the house anymore. On the twenty-eighth day of the last month before New Year's, Neighbor Vi closed up her shop and spent the whole night washing the rice and beans, cutting the pork and the banana leaves for the New Year's cakes.
+
+//METHOD?, uncapitalized METHOD?
+The most common method of initialisation for GP is the so-called ramped half-and-half method.
+//PERSON, PERSON, non-NPE capitalized
+Such a function is called a Liapunov function. If a Liapunov function exists, then closed orbits are forbidden, by the same reasoning as in Example 7.2.2.
+//PERSON|METHOD
+Cramer's rule is also a theoretical tool. It can be used to study how sensitive the solution of Ax = b is to changes in an entry in b or in A (perhaps due to experimental error when acquiring the entries for b or A).
+//4
+For these reasons, partially observale MDPs (or POMDPs—pronounced "pom-dee-pees") are usually viewed as much more difficult than ordinary MDPs. We cannot avoid POMDPs, however, because the real world is one.
+//PERSON?, DATE, NORP|LOC?, DATE, NORP|LOC, DATE, NORP|GPE, NORP|GPE, LANGUAGE, PERSON?, NORP, WORK_OF_ART, DATE
+Tlaltecuhtli [t͡ɬaɬteˈkʷt͡ɬi] is a pre-Columbian Mesoamerican deity, identified from sculpture and iconography dating to the Late Postclassic period of Mesoamerican chronology (ca. 6) 1200–1519), primarily among the Mexica (Aztec) and other Nahuatl-speaking cultures. Tlaltecuhtli is also known from several post-conquest manuscripts that surveyed Mexica mythology and belief systems, such as the Histoyre du méchique compiled in the mid-16th century.[1]
+
+
+///////// WEIRD CASES ///////////////
+
+//PERSON, ORG? with : and /
+"We can do high-resolution captures of anything that comes in, 3D objects, flat objects," said Christine Pittsley, the project managers for the state's Remembering World War I: Sharing History/Preserving Memories program. 
+
+//Uncapitalized MEDICAL, quoted uncapitalized MEDICAL
+In amblyopia, also known as 'lazy eye', the brain does not interpret visual signals from one eye properly, leading to an increase in visual crowding.
+
