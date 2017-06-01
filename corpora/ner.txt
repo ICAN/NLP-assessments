@@ -71,12 +71,12 @@ These suspect elements of Site D were so numerous and so intricately interrelate
 On the way to the flagship, Struan read the dispatches. Profits on last year's teas, good. Perry had made a lucrative voyage, good. A copy of Scarlet Cloud's bill of lading that Perry had brought from Calcutta; bad: two hundred and ten thousand pounds sterling of opium lost.
 
 //13 CARDINAL
-A little girl was carrying a gray dog on her outstretched arms. Two gentlemen were exchanging information on some subject, at times turning the whole front of their bodies to each other, and then slowly turning aside themselves again; it was like doors ajar in the wind.
+Two gentlemen were exchanging information on some subject, at times turning the whole front of their bodies to each other, and then slowly turning aside themselves again; it was like doors ajar in the wind.
 
 //14 PERSON, PERSON
 After Kumiko and I were married, a number of occasions arose in which it was necessary for Noboru Wataya and me, as brothers-in-law, to exchange words—if not to engage in actual conversation.
 
-//15 PERSON, PERSON, FACILITY|ORGANIZATION
+//15 PERSON, PERSON, FACILITY|ORG
 A few days after Ushikawa's first visit, I asked Cinnamon to bring me a newspaper whenever he came to the Residence.
 
 //16 EVENT?, 
@@ -84,14 +84,53 @@ From then on, until Tet, Uncle Chinh didn't come by the house anymore. On the tw
 
 //METHOD?, uncapitalized METHOD?
 The most common method of initialisation for GP is the so-called ramped half-and-half method.
+
 //PERSON, PERSON, non-NPE capitalized
 Such a function is called a Liapunov function. If a Liapunov function exists, then closed orbits are forbidden, by the same reasoning as in Example 7.2.2.
+
 //PERSON|METHOD
 Cramer's rule is also a theoretical tool. It can be used to study how sensitive the solution of Ax = b is to changes in an entry in b or in A (perhaps due to experimental error when acquiring the entries for b or A).
-//4
+
+//METHOD
 For these reasons, partially observale MDPs (or POMDPs—pronounced "pom-dee-pees") are usually viewed as much more difficult than ordinary MDPs. We cannot avoid POMDPs, however, because the real world is one.
+
 //PERSON?, DATE, NORP|LOC?, DATE, NORP|LOC, DATE, NORP|GPE, NORP|GPE, LANGUAGE, PERSON?, NORP, WORK_OF_ART, DATE
 Tlaltecuhtli [t͡ɬaɬteˈkʷt͡ɬi] is a pre-Columbian Mesoamerican deity, identified from sculpture and iconography dating to the Late Postclassic period of Mesoamerican chronology (ca. 6) 1200–1519), primarily among the Mexica (Aztec) and other Nahuatl-speaking cultures. Tlaltecuhtli is also known from several post-conquest manuscripts that surveyed Mexica mythology and belief systems, such as the Histoyre du méchique compiled in the mid-16th century.[1]
+
+//LOC
+Typically, this part of the country is known for selling citrus and producing some of the best coffee in the world. But things are changing in the southern Peruvian Amazon.
+
+//EVENT
+Hence the famous lawsuits after Hurricane Katrina, when people who came home to empty slabs were asked to prove that their losses were a result of wind and not waves.
+
+//EVENT, FACILITY
+A new dedication to the rescue and recovery effort after 9/11 is being planned at the current 9/11 Memorial site.
+
+//EVENT, EVENT, NORP|GPE, GPE, GPE
+The Battle of Baqubah II (March–August 2007) took place during the Iraq War in the capital of the Iraqi province Diyala, to the north-east of Baghdad.
+
+//EVENT, LOC|FACILITY
+In what became widely known as the Tiananmen Square Massacre, troops with assault rifles and tanks killed at least several hundred demonstrators trying to block the military's advance towards Tiananmen Square.
+
+//DATE, FACILITY, ORG, PRODUCT
+As of 2017, only Launch Complex 39A is active, launching SpaceX's Falcon 9.
+
+//ORG|FACILITY, MONEY
+Chicago's O'Hare International Airport is getting $60 million in federal funds for runway construction and other improvements.
+
+//WORK_OF_ART
+Rogue One received generally positive reviews, with praise for its acting, action sequences, musical score and darker tone, although some criticism was directed at the characterization and the film's use of computer-generated imagery to recreate the likenesses of some actors.
+
+//WORK_OF_ART, NORP, NORP, NORP, NORP
+There are many versions of the Ramayana in Indian languages, besides Buddhist, Sikh and Jain adaptations
+
+//PERSON, ??, ORG, ORG, PERSON
+The distraught young Queen Victoria, whose ardent political sympathies were with the Whigs, first asked the Duke of Wellington, a former Tory prime minister, to form a new government, but he politely declined. She then reluctantly invited Tory leader Robert Peel to form a government. 
+
+//WORK_OF_ART, PERSON
+The Tale of Genji (源氏物語? Genji monogatari) is a classic work of Japanese literature written by the noblewoman and lady-in-waiting Murasaki Shikibu in the early years of the 11th century in "concertina" or "orihon" style made of several sheets of paper pasted together and folded alternately in one direction then the other (Lyons, 2011[1]), around the peak of the Heian period.
+
+
 
 
 ///////// WEIRD CASES ///////////////
