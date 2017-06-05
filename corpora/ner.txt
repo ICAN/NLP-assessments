@@ -1,134 +1,176 @@
-//ORG, LOC
+//ORG: NASA, LOC: Mars
 When kids dream of growing up to work for NASA, they generally imagine themselves piloting rocketships or exploring Mars, not tromping around in the snow.
 
-//GPE
-Others said that, going forward, the president would need to ask for and receive formal congressional authorization or at least present a detailed Syria strategy to the country before any further military action.
-
-//ORG, ORG, MONEY
+//ORG: AT&T Inc, DATE: Monday, ORG: Straight Path Communications Inc, MONEY: $1.25 billion
 AT&T Inc (T.N) said on Monday it would buy Straight Path Communications Inc (STRP.A), a holder of licenses to wireless spectrum, for $1.25 billion in an all-stock deal as it aims to accumulate the airwaves it needs for a next generation network.
 
-//DATE, PRODUCT, PRODUCT, LOC
+//DATE: May 2012, PRODUCT: Dragon, PRODUCT|FACILITY: International Space Station, LOC: Earth
 The company made history again in May 2012 when its Dragon spacecraft attached to the International Space Station, exchanged cargo payloads, and returned safely to Earth — a technically challenging feat previously accomplished only by governments.
 
-//GPE, NORP, GPE, NORP, GPE, PERSON, DATE
+//GPE: Norway, NORP: Western, GPE: People's Republic of China (PRC), NORP: European, GPE: China's, PERSON: Xi, DATE: 63-year
 Noting that Norway was one of the first Western countries to recognize the People's Republic of China (PRC) and the first European country to acknowledge China's market economy status, Xi said that friendship and cooperation have featured throughout the 63-year diplomatic relations.
 
-//GPE?, ORG|NORP?, LOC
+//NORP: Norwegian, ORG?: Belt and Road Initiative, LOC: Arctic
 She said the Norwegian side supports the Belt and Road Initiative, and is ready to expand cooperation of mutual benefit in areas including Arctic issues and cement communication and coordination on global issues.
 
-//EVENT?, DATE, MEDICAL, CARD?, LOC, EVENT, QUANTITY, MEDICAL
+//EVENT: El Niño, DATE: between 2000 and 2014, MEDICAL: cholera, CARD?: threefold, LOC: East Africa, EVENT: El Niño, QUANTITY: 177 million, MEDICAL: cholera
 During the years classified as El Niño between 2000 and 2014, cholera incidence increased threefold in regions such as East Africa that had the strongest association between El Niño and cholera, with 177 million people living in areas that experienced an increase in cholera cases during a time of additional rainfall.
 
 //Misleadingly capitalized non-NE
 But the sensory system of the wing-like, high AR fins was also more sensitive, meaning the fins were more responsive to a smaller magnitude of bending. Aiello said he believes that a more sensitive nervous system evolved in the high AR fins because it needed to be more responsive to smaller movements as the fish use these stiff, less flexible fins to swim.
 
-//GPE, GPE, GPE, T-shirt?, PERCENT, GPE
+//GPE: Tirupur, South India, GPE: India, PRODUCT?: T-shirt, PERCENT: 70 percent, GPE: India
 The town of Tirupur, South India, is India's T-shirt capital (70 percent of India's knitted garments are produced there).
 
-//NORP?, NORP?, NORP?, DATE, GPE, LOC, GPE, GPE, GPE, GPE, GPE, GPE, GPE, GPE
-Farther south, migrating Borderlanders contended not with Yankees but with a powerful nation that was in the midst of adopting European ways. In the 1740s, the Cherokee Indian nation controlled the core of what we now think of as Appalachia: most of what is now Kentucky and Tennessee, a third of South Carolina, Georgia, Alabama, and West Virginia, and the westernmost swaths of Virginia and North Carolina. 
+//NORP?: Borderlanders, NORP?: Yankees, NORP?: European, DATE: 1740s, NORP|GPE: Cherokee Indian nation, LOC: Appalachia
+Farther south, migrating Borderlanders contended not with Yankees but with a powerful nation that was in the midst of adopting European ways. In the 1740s, the Cherokee Indian nation controlled the core of what we now think of as Appalachia.
 
-//PERSON, PERSON?, NORP?, 
+//PERSON: Swift, PERSON?: Leader, NORP?: Yahoos, 
 Then again, Swift's account of the Leader who is usually to be found ruling over a tribe of Yahoos, and of the "favourite" who acts first as a dirty-worker and later as a scapegoat, fits remarkably well into the pattern of our own time. 
 
-//DATE, ORG, PERSON, DATE, PERSON, PRODUCT, PERSON, PRODUCT
+//DATE: June 2004, ORG: Cyberkinetics team, PERSON: Matthew Nagle, DATE: Later that month, PERSON: Friehs, PRODUCT: Utah array, PERSON: Nagle, PRODUCT: BrainGate system
 By June 2004, the Cyberkinetics team had recruited the former footballer Matthew Nagle. Later that month, Friehs used a pneumatic wand to inject a Utah array into Nagle's motor cortex, installing a pedestal atop his skull to connect him to the BrainGate system.
 
-//EMAIL, METHOD, LANGUAGE
+//EMAIL: root@eruditorum.org, METHOD: Pontifex Transform, LANGUAGE: Perl
 Too, he opens up the old message from root@eruditorum.org giving the Pontifex Transform, expressed as a few lines of Perl code.
 
-//GPE, FACILITY
+//ORG?: Fort Irwin, FACILITY: Visiting Officers' Quarters
 There was a reservation for a single room in Fort Irwin's Visiting Officers' Quarters, which he had never reached.
 
-//PERSON, ADDRESS, DATE
+//PERSON: George Goodenough Akeley, LOC: 176 Pleasant St., San Diego, Cal., DATE: in a week
 This may be goodbye—if it is, write my son George Goodenough Akeley, 176 Pleasant St., San Diego, Cal., but don't come up here. Write the boy if you don't hear from me in a week, and watch the papers for news.
 
-//ORG|FACILITY, PERSON, LOC,  
+//ORG|FACILITY: Gettysburg College, PERSON: Rube, LOC?: Lake Chinnereth  
 Gathered in a classroom at Gettysburg College, Rube's jeesh knew only two things: They were going to Lake Chinnereth, and they had to do it without anyone knowing they had entered the state on a military mission.
 
-//PERSON, METHOD, METHOD
+//PERSON: Portunia Persson, METHOD: Dreamwalking, METHOD: Visitation
 Portunia Persson said, "Dreamwalking is all very well, but might I suggest a good Visitation? That's the only language that these people understand."
 
-//PERSON, PERSON, PERSON, PRODUCT, QUANTITY
+//PERSON: Sma, PERSON: Xeny, PERSON: Skaffen-Amtiskaw, PRODUCT: Xenophobe, QUANTITY: meter
 Sma went as Xeny, Skaffen-Amtiskaw as a model of the Xenophobe, and the ship itself produced yet another remote drone; an aquatic one, still brown and yellow, but looking like a rather fat and large-eyed fish, and floating in a field-held meter-diameter sphere of water which drifted through the party-space like some odd balloon.
 
-//PERSON, FACILITY?
+//PERSON: J-J, PERSON|FACILITY|LOC?: Jenny's
 J-J nodded because she wanted him to but nothing was okay at all, even going to Jenny's.
 
-//PERSON, PUBLICATION|WORK_OF_ART, PERSON
-Billy turned his attention to his deks. There was an open copy of The Review of Optometry there. It was open to an editorial, which Billy now read, his lips moving slightly.
+//PERSON: Billy, WORK_OF_ART: The Review of Optometry
+Billy turned his attention to his deks. There was an open copy of The Review of Optometry there.
 
-//9CARDINAL, Dresdeners:NORP?
+//QUANTITY: Eight, NORP?: Dresdeners
 Eight Dresdeners crossed the steel spaghetti of the railroad yard. They were wearing new uniforms.
 
-//10 FACILITY?, 
+//FACILITY|LOC?: Site D 
 These suspect elements of Site D were so numerous and so intricately interrelated that it was very hard for a single mind to attempt to arrange or order them.
 
-//11 PERSON, LOC, LOC
+//PERSON: Horwitz, LOC|FACILITY: Central Park, LOC|FACILITY: Central Park South
 "Hey, Horwitz," I said. "You ever pass by the lagoon in Central Park? Down by Central Park South?"
 
-//12 PERSON, PERSON, PRODUCT, PERSON, GPE, MONEY
+//PERSON: Struan, PERSON: Perry, PRODUCT|ORG: Scarlet Cloud, PERSON: Perry, GPE: Calcutta, MONEY: two hundred and ten thousand pounds sterling
 On the way to the flagship, Struan read the dispatches. Profits on last year's teas, good. Perry had made a lucrative voyage, good. A copy of Scarlet Cloud's bill of lading that Perry had brought from Calcutta; bad: two hundred and ten thousand pounds sterling of opium lost.
 
-//13 CARDINAL
+//QUANTITY: TWO
 Two gentlemen were exchanging information on some subject, at times turning the whole front of their bodies to each other, and then slowly turning aside themselves again; it was like doors ajar in the wind.
 
-//14 PERSON, PERSON
+//PERSON: Kumiko, PERSON: Noboru Wataya
 After Kumiko and I were married, a number of occasions arose in which it was necessary for Noboru Wataya and me, as brothers-in-law, to exchange words—if not to engage in actual conversation.
 
-//15 PERSON, PERSON, FACILITY|ORG
+//PERSON: Ushikawa, PERSON: Cinnamon, FACILITY|ORG|LOC: the Residence
 A few days after Ushikawa's first visit, I asked Cinnamon to bring me a newspaper whenever he came to the Residence.
 
-//16 EVENT?, 
+//EVENT?: Tet, PERSON: Uncle Chinh, DATE: the twenty-eighth day of the last month before New Year's, PERSON: Neighbor Vi, Product: New Year's cakes
 From then on, until Tet, Uncle Chinh didn't come by the house anymore. On the twenty-eighth day of the last month before New Year's, Neighbor Vi closed up her shop and spent the whole night washing the rice and beans, cutting the pork and the banana leaves for the New Year's cakes.
 
-//METHOD?, uncapitalized METHOD?
+//METHOD?: GP, METHOD?: ramped half-and-half method
 The most common method of initialisation for GP is the so-called ramped half-and-half method.
 
-//PERSON, PERSON, non-NPE capitalized
-Such a function is called a Liapunov function. If a Liapunov function exists, then closed orbits are forbidden, by the same reasoning as in Example 7.2.2.
+//PERSON|METHOD?: Liapunov function, capitalized non-NE: Example 7.2.2
+If a Liapunov function exists, then closed orbits are forbidden, by the same reasoning as in Example 7.2.2.
 
-//PERSON|METHOD
+//PERSON|METHOD: Cramer's rule
 Cramer's rule is also a theoretical tool. It can be used to study how sensitive the solution of Ax = b is to changes in an entry in b or in A (perhaps due to experimental error when acquiring the entries for b or A).
 
-//METHOD
-For these reasons, partially observale MDPs (or POMDPs—pronounced "pom-dee-pees") are usually viewed as much more difficult than ordinary MDPs. We cannot avoid POMDPs, however, because the real world is one.
+//??: partially observale MDPs, ??: POMDPs, ??: ordinary MDPs
+For these reasons, partially observale MDPs (or POMDPs—pronounced "pom-dee-pees") are usually viewed as much more difficult than ordinary MDPs.
 
 //PERSON?, DATE, NORP|LOC?, DATE, NORP|LOC, DATE, NORP|GPE, NORP|GPE, LANGUAGE, PERSON?, NORP, WORK_OF_ART, DATE
 Tlaltecuhtli [t͡ɬaɬteˈkʷt͡ɬi] is a pre-Columbian Mesoamerican deity, identified from sculpture and iconography dating to the Late Postclassic period of Mesoamerican chronology (ca. 6) 1200–1519), primarily among the Mexica (Aztec) and other Nahuatl-speaking cultures. Tlaltecuhtli is also known from several post-conquest manuscripts that surveyed Mexica mythology and belief systems, such as the Histoyre du méchique compiled in the mid-16th century.[1]
 
-//LOC
+//LOC: Peruvian Amazon
 Typically, this part of the country is known for selling citrus and producing some of the best coffee in the world. But things are changing in the southern Peruvian Amazon.
 
-//EVENT
+//EVENT: Hurricane Katrina
 Hence the famous lawsuits after Hurricane Katrina, when people who came home to empty slabs were asked to prove that their losses were a result of wind and not waves.
 
-//EVENT, FACILITY
+//EVENT: 9/11, FACILITY|LOC: 9/11 Memorial site
 A new dedication to the rescue and recovery effort after 9/11 is being planned at the current 9/11 Memorial site.
 
-//EVENT, EVENT, NORP|GPE, GPE, GPE
-The Battle of Baqubah II (March–August 2007) took place during the Iraq War in the capital of the Iraqi province Diyala, to the north-east of Baghdad.
+//EVENT: The Battle of Baqubah, DATE: March–August 2007, EVENT: Iraq War, NORP|GPE: Iraqi, GPE: Diyala, GPE: Baghdad
+The Battle of Baqubah (March–August 2007) took place during the Iraq War in the capital of the Iraqi province Diyala, to the north-east of Baghdad.
 
-//EVENT, LOC|FACILITY
+//EVENT: Tiananmen Square Massacre, QUANTITY: several hundred, LOC|FACILITY: Tiananmen Square
 In what became widely known as the Tiananmen Square Massacre, troops with assault rifles and tanks killed at least several hundred demonstrators trying to block the military's advance towards Tiananmen Square.
 
-//DATE, FACILITY, ORG, PRODUCT
+//DATE: 2017, FACILITY: Launch Complex 39A, ORG: SpaceX, PRODUCT: Falcon 9
 As of 2017, only Launch Complex 39A is active, launching SpaceX's Falcon 9.
 
-//ORG|FACILITY, MONEY
+//GPE: Chicago, ORG|FACILITY: O'Hare International Airport, MONEY: $60 million
 Chicago's O'Hare International Airport is getting $60 million in federal funds for runway construction and other improvements.
 
-//WORK_OF_ART
-Rogue One received generally positive reviews, with praise for its acting, action sequences, musical score and darker tone, although some criticism was directed at the characterization and the film's use of computer-generated imagery to recreate the likenesses of some actors.
+//WORK_OF_ART: Rogue One, PERSON: George Lucas, WORK_OF_ART: Star Wars, DATE: 1977
+Rogue One leans into the broad political strokes that George Lucas set out when initially creating Star Wars in 1977
 
-//WORK_OF_ART, NORP, NORP, NORP, NORP
+//WORK_OF_ART: Ramayana, NORP: Indian, NORP: Buddhist, NORP: Sikh, NORP: Jain
 There are many versions of the Ramayana in Indian languages, besides Buddhist, Sikh and Jain adaptations
 
-//PERSON, ??, ORG, ORG, PERSON
+//PERSON: Queen Victoria, NORP|ORG: Whigs, PERSON: Duke of Wellington, NORP|ORG: Tory, PERSON: Robert Peel
 The distraught young Queen Victoria, whose ardent political sympathies were with the Whigs, first asked the Duke of Wellington, a former Tory prime minister, to form a new government, but he politely declined. She then reluctantly invited Tory leader Robert Peel to form a government. 
 
-//WORK_OF_ART, PERSON
+//WORK_OF_ART: The Tale of Genji, Genji monogatari, NORP|LANGUAGE: Japanese, PERSON: Murasaki Shikibu
 The Tale of Genji (源氏物語? Genji monogatari) is a classic work of Japanese literature written by the noblewoman and lady-in-waiting Murasaki Shikibu in the early years of the 11th century in "concertina" or "orihon" style made of several sheets of paper pasted together and folded alternately in one direction then the other (Lyons, 2011[1]), around the peak of the Heian period.
+
+//ORG: Foreign Intelligence Surveillance court, ORG: NSA, DATE: Novermber, Product??: USA Freedom Act
+The Foreign Intelligence Surveillance court granted the NSA an extension through November to shutter the program, a provision that was included in the USA Freedom Act.
+
+//PERSON:Athena, PERSON:Penelope, PERSON?:Suitors, PERSON|PRODUCT?:Oddyseus' bow
+The next day, at Athena's prompting, Penelope maneuvers the Suitors into competing for her hand with an archery competition using Odysseus' bow.
+
+//DATE: 1996, EVENT: Rwandan Civil War and genocide, NORP: Tutsi, GPE: Rwanda, NORP: Rwandan Hutu, ORG?: Interahamwe, GPE: Zaire, GPE: Rwanda
+By 1996, following the Rwandan Civil War and genocide and the ascension of a Tutsi-led government in Rwanda, Rwandan Hutu militia forces (Interahamwe) fled to eastern Zaire and used refugee camps as a base for incursions against Rwanda.
+
+//PERSON: Leopold II, EVENT: Berlin Conference, QUANTITY: 2,344,000 km2 (905,000 sq mi), GPE: Congo Free State
+But Leopold II emerged triumphant from the Berlin Conference[12] and his single-shareholder "philanthropic" organization received a large share of territory (2,344,000 km2 (905,000 sq mi)) to be organized as the Congo Free State.
+
+//PERSON: Abd al-Aziz ibn Musa, PERSON: Ayyub ibn Habib al-Lakhmi, GPE: Al-Andalus
+In the end Abd al-Aziz ibn Musa's cousin, Ayyub ibn Habib al-Lakhmi became the emir of Al-Andalus.
+
+//NORP: Indian, WORK_OF_ART: the Mahabharata
+The Indian epic, the Mahabharata, offers one of the first written discussions of a "just war."
+
+//PERSON: Kiyomori, PERSON: Yoshitomo, QUANTITY: 600, ??: Sutoku, EVENT: Siege of Shirakawa-den
+At night, Kiyomori and Yoshitomo led 600 cavalry and attacked Sutoku in the Siege of Shirakawa-den
+
+//ORG: Ballets Russes, DATE: 1917, PERSON: Stravinsky, WORK_OF_ART: Le Sacre du Printemps, DATE: five years earlier
+First performed by the Ballets Russes in 1917, it succeeded in creating a scandal but in a different way than Stravinsky's Le Sacre du Printemps had done almost five years earlier.
+
+//PERSON: Picasso, EVENT?: African-influenced Period DATE: 1907–1909 WORK_OF_ART: Les Demoiselles d'Avignon
+Picasso's African-influenced Period (1907–1909) begins with his painting Les Demoiselles d'Avignon.
+
+//PERSON: Brandy, PERSON: Monica, DATE: 13 weeks, ??: Billboard Hot 100, WORK_OF_ART: The Boy Is Mine
+And so the battle began: Brandy and Monica spent their first of 13 weeks sparring atop the Billboard Hot 100 with "The Boy Is Mine."
+
+//ORG: Oasis, DATE: May 22nd, NORP: Mancunian, WORK_OF_ART: Don't Look Back in Anger, GPE: Manchester, ORG: Oasis, NORP: British
+The Oasis classic has become an anthem for the city following the May 22nd terror attack, with Mancunians singing "Don't Look Back in Anger" during a public memorial in Manchester; Oasis hail from the British city.
+
+//PERSON: Allman, PERSON: Michael Lehman, PERSON: Allman, WORK_OF_ART: LP Southern Blood, ORG: Rolling Stone, DATE: September
+Allman's manager Michael Lehman said Allman spent his final night listening to tracks off his upcoming solo LP Southern Blood; a rep told Rolling Stone the album would arrive in September.
+
+//WORK_OF_ART: Romance of the Three Kingdoms, WORK_OF_ART: Records of the Three Kingdoms, GPE: Han Dynasty, GPE|LOC: China, GPE: Shu Han, GPE: Cao Wei, GPE: Eastern Wu 
+The series are based on the romanticized Romance of the Three Kingdoms novel and the historical text Records of the Three Kingdoms, the storyline takes place during the Han Dynasty in China with many warring factions that included the Shu Han, Cao Wei and Eastern Wu kingdoms.
+
+//EVENT: The 1964 Alaskan earthquake, EVENT: Great Alaskan earthquake, EVENT: Good Friday earthquake, TIME: 5:36 P.M. AST, EVENT: Good Friday, DATE: March 27
+The 1964 Alaskan earthquake, also known as the Great Alaskan earthquake and Good Friday earthquake, occurred at 5:36 P.M. AST on Good Friday, March 27.
+
+//EVENT: Cretaceous–Tertiary (K–T) extinction, QUANTITY: three-quarters, LOC: Earth, DATE: approximately 65 million years ago 
+The Cretaceous–Tertiary (K–T) extinction was a mass extinction of some three-quarters of the plant and animal species on Earth that occurred over a geologically short period of time[2][3][4] approximately 65 million years ago.
 
 
 
