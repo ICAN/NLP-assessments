@@ -85,7 +85,7 @@ The most common method of initialisation for GP is the so-called ramped half-and
 //PERSON|METHOD?: Liapunov function, capitalized non-NE: Example 7.2.2
 If a Liapunov function exists, then closed orbits are forbidden, by the same reasoning as in Example 7.2.2.
 
-//PERSON|METHOD: Cramer's rule
+//PERSON?|METHOD: Cramer's rule
 Cramer's rule is also a theoretical tool. It can be used to study how sensitive the solution of Ax = b is to changes in an entry in b or in A (perhaps due to experimental error when acquiring the entries for b or A).
 
 //??: partially observale MDPs, ??: POMDPs, ??: ordinary MDPs
@@ -172,6 +172,47 @@ The 1964 Alaskan earthquake, also known as the Great Alaskan earthquake and Good
 //EVENT: Cretaceous–Tertiary (K–T) extinction, QUANTITY: three-quarters, LOC: Earth, DATE: approximately 65 million years ago 
 The Cretaceous–Tertiary (K–T) extinction was a mass extinction of some three-quarters of the plant and animal species on Earth that occurred over a geologically short period of time[2][3][4] approximately 65 million years ago.
 
+//NORP: Japanese, EVENT: Beipu uprising of 1907, EVENT: Tapini incident of 1915, EVENT: Musha incident of 1930, NORP: Japanese
+Several subsequent rebellions against the Japanese (the Beipu uprising of 1907, the Tapani incident of 1915, and the Musha incident of 1930) were all unsuccessful but demonstrated opposition to Japanese colonial rule.
+
+//DATE: Between 1602 and 1796, ORG: the VOC, QUANTITY: almost a million, LOC: Asia, QUANTITY: 4,785, QUANTITY: 2.5 million, NORP: Asian 
+Between 1602 and 1796 the VOC sent almost a million Europeans to work in the Asia trade on 4,785 ships, and netted for their efforts more than 2.5 million tons of Asian trade goods. 
+
+//QUANTITY: two, EVENT: World Cup, DATE: 13 July 1930, GPE: France, GPE: USA, GPE: Mexico, QUANTITY: 4-1, GPE: Belgium, QUANTITY: 3-0 
+The first two World Cup matches took place simultaneously on 13 July 1930, and were won by France and the USA, who defeated Mexico 4–1 and Belgium 3–0 respectively.
+
+//TIME: 10:03:11, LOC|GPE: Indian Lake, Pennsylvania LOC: Shanksville, Pennsylvania, FACILITY: Diamond T. Mine, ORG: PBS Coals, GPE:  Stonycreek Township GPE: Somerset County
+At 10:03:11, near Indian Lake and Shanksville, Pennsylvania, the plane crashed into a field near a reclaimed coal strip mine known as the Diamond T. Mine owned by PBS Coals in Stonycreek Township in Somerset County.
+
+//TIME: 8:00, FACILITY: gate A17, TIME: 8:01
+The aircraft was scheduled to depart at 08:00 and pushed back from gate A17 at 08:01.
+
+//LOC|CARD: 2001:db8:1234::/48, LOC|CARD: 2001:db8:1234:ffff:ffff:ffff:ffff:ffff.
+For example, the network written as 2001:db8:1234::/48 ends at address 2001:db8:1234:ffff:ffff:ffff:ffff:ffff.
+
+//CARD: 0xf, 1, 0xe
+0xf is 1 more than 0xe. 
+
+//TIME: 11:25 CET on January 14, PRODUCT: Robert C. Byrd Green Bank Telescope (GBT), GPE|LOC: West Virginia, PRODUCT: Huygens probe
+At 11:25 CET on January 14, the Robert C. Byrd Green Bank Telescope (GBT) in West Virginia detected the carrier signal from the Huygens probe.
+
+//TIME: two minutes, CARD: from two o’clock to five o’clock. 
+After two minutes, rotate the steaks from two o’clock to five o’clock. 
+
+//PERSON?: Mayor, GPE: Hot Springs, TIME: five o'clock, DATE: May 5
+The current Mayor of Hot Springs will stay in office after no one met the five o'clock deadline on May 5 to enter the race.
+
+//TIME: 3:15, TIME|EVENT?: the third period 
+3:15 into the third period.
+
+//EVENT: Stanley Cup Playoffs, ORG: Pittsburgh Penguins, PERSON: Jake Guentzel
+No one has more goals in these Stanley Cup Playoffs than Pittsburgh Penguins rookie Jake Guentzel. 
+
+//DATE: Sunday, PERSON: Alfred Hitchcock, WORK_OF_ART: Saboteur, TIME: 4:15 ET/1:15 PT, WORK_OF_ART: Across the Pacific, TIME: 6:15 ET/3:15 PT, WORK_OF_ART: Twelve O’Clock High, TIME: 8 ET/5 PT, WORK_OF_ART: Tora! Tora! Tora!, TIME: 10:30 ET/7:30 PT
+Sunday, the highlights kick off with one of Alfred Hitchcock’s early and more entertaining “innocent man caught up in conspiracy” classics Saboteur (4:15 ET/1:15 PT),  and continue with Across the Pacific (6:15 ET/3:15 PT); Twelve O’Clock High (8 ET/5 PT),and Tora! Tora! Tora! (10:30 ET/7:30 PT).
+
+//ORG: 60 Minutes, PERSON: Sharyn Alfonsi, ORG: U.S. Army,  PERSON: Col. Ben Skardon, EVENT: the Bataan Death March, PERSON: Ken Scar, ORG: 60 Minutes
+In a '60 Minutes' report, Sharyn Alfonsi talks to retired U.S. Army Col. Ben Skardon, a survivor of the Bataan Death March. (Ken Scar/60 Minutes).
 
 
 
@@ -182,4 +223,6 @@ The Cretaceous–Tertiary (K–T) extinction was a mass extinction of some three
 
 //Uncapitalized MEDICAL, quoted uncapitalized MEDICAL
 In amblyopia, also known as 'lazy eye', the brain does not interpret visual signals from one eye properly, leading to an increase in visual crowding.
+
+
 
