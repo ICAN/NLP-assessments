@@ -39,8 +39,8 @@ public class Main {
 
         //POS stuff
 //        POSPipeline.runJavaAnnotators();
-        POSPipeline.runPreGoldPOSPipeline();
-//        POSPipeline.runPostGoldPOSPipeline();
+//        POSPipeline.runPreGoldPOSPipeline();
+        POSPipeline.runPostGoldPOSPipeline();
 
         //Lemma stuff
 //        CoreNLP.runAnnotatorStackedLines("corpora/lemmas.txt", "annotator_outputs/lemmas-core.txt");

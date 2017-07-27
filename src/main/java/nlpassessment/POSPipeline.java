@@ -150,7 +150,7 @@ public class POSPipeline {
     //Phase 3: Assumes pre-gold std assessment pipeline has been run and that gold standards have been assembled
     //TODO: Generalize for more texts
     public static void runPostGoldPOSPipeline() {
-
+        
         String[] GRADED_POS_FIELDS = {
             Tag.INDEX_IN_TEXT,
             Tag.TOKEN,
@@ -203,7 +203,7 @@ public class POSPipeline {
             Tag.PPOS_WH_POSS_PRON,
             Tag.PPOS_WH_ADV
         }; //STEP 1: Import docs, gold standards, etc. from "common_tokens" and "gold_std"
-        Document gold = Utility.importTSVDocument("gold_standards/pos-gold.tsv", "\t");
+        Document gold = Utility.importTSVDocument("gold_standards/pos-gold-2017-07-27.tsv", "\t");
         ArrayList<Document> commonTokenOutputs = new ArrayList<>();
 
         for (String annotator : PIPELINE_ANNOTATORS) {
@@ -222,7 +222,7 @@ public class POSPipeline {
                     token.set(Tag.CORRECTNESS, Tag.WAS_INCORRECT);
                 }
             }
-            Utility.writeFile(doc.toTSV(GRADED_POS_FIELDS), "graded_outputs/pos-" + doc.name + "-graded.tsv");
+            Utility.writeFile(doc.toTSV(GRADED_POS_FIELDS), "graded_outputs/" + doc.name + "-graded-" + "2017-07-27" + ".tsv");
 
             ArrayList<String> results = new ArrayList<>();
             results.add(doc.name);
